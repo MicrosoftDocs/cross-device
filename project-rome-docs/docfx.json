@@ -29,7 +29,13 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+        "uhfHeaderId": "MSDocsHeader-WinUWP",
+        "titleSuffix": "UWP app developer",
+        "breadcrumb_path":  "/windows/uwp/breadcrumbs/toc.json",
+        "extendBreadcrumb": false,
+        "htmlDangerZone":  true
+    },
     "fileMetadata": {},
     "template": [],
     "dest": "project-rome"

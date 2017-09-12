@@ -1,12 +1,12 @@
 # Communicate with a remote app service (Android client)
 In addition to launching an app on a remote Windows device using a URI, your Android app can also interact with app services on Windows devices. This allows Android and Windows devices to communicate with each other via generic messages that can be handled by the apps on both platforms. 
 
-This provides an almost unlimited number of ways to communicate with Windows devices from your Android app&mdash;all without needing to bring an app to the foreground of the Windows device. See the [Android sample app](https://github.com/Microsoft/project-rome/tree/master/Android/sample) for a working example of remote app service connectivity.
+This provides an almost unlimited number of ways to communicate with Windows devices from your Android app&mdash;all without needing to bring an app to the foreground of the Windows device. See the [Android sample app](../sample/) for a working example of remote app service connectivity.
 
 >Note: The code snippets in this guide will not work properly unless you have already initialized the remote systems platform by following the steps in [Getting started with Connected Devices (Android)](getting-started-rome-android.md).
 
 ## Set up the app service on the target device
-This guide will use the Random Number Generator app service for UWP, which is available on the [Windows universal samples repo](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/AppServices). For instructions on how to write your own UWP app service, see [Create and consume an app service](https://docs.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service).
+This guide will use the Random Number Generator app service for UWP, which is available on the [Windows universal samples repo](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/AppServices). For instructions on how to write your own UWP app service, see [Create and consume an app service](how-to-create-and-consume-an-app-service.md).
 
 Whether you are using an already-made app service or writing your own, you will need to make a few edits in order to make the service compatible with Connected Devices. In Visual Studio, go to the app service provider project and select its Package.appxmanifest file. Right-click and select **View Code** to view the full contents of the file. Find the **Extension** element that defines the project as an app service and names its parent project.
 
@@ -44,7 +44,7 @@ In order to use elements in this new namespace, you must add the namespace defin
 Build your app service provider project and deploy it to the target device(s).
 
 ## Open an app service connection on the client device
-Your Android app must acquire a reference to a remote device. See [Getting started with Connected Devices (Android)](getting-started-rome-android.md) for a simple way to do this, or [Discover remote devices (Android client)](discover-remote-devices-android.md) for more in-depth options. 
+Your Android app must acquire a reference to a remote device. See [Getting started with Connected Devices (Android)](getting-started-rome-android.md) for a simple way to do this, or [Discover remote devices (Android client)](disover-remote-device-android.md) for more in-depth options. 
 
 Your app will identify its targeted Windows app service by two strings: the *app service name* and *package family name*. These are found in the source code of the app service provider (see [Create and consume an app service](https://msdn.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service) for details). It also must implement an [**IAppServiceClientConnectionListener**](../IAppServiceClientConnectionListener) and [**IAppServiceResponseListener**](../IAppServiceResponseListener) to handle events related to the connection itself and communications over that connection. This is done in the next section.
 

@@ -21,14 +21,17 @@ repositories {
 }
 
 dependencies { 
-    compile(group: 'com.microsoft.connecteddevices', name: 'connecteddevices-sdk-armv7', version: '0.4.0', ext: 'aar', classifier: 'release')
+    compile(group: 'com.microsoft.connecteddevices', name: 'connecteddevices-sdk-armeabi-v7a', version: '0.6.2', ext: 'aar', classifier: 'release')
 }
 
 ```
 
 If you wish to use ProGuard in your app, add the ProGuard Rules for these new APIs. Create a file called *proguard-rules.txt* in the *App* folder of your project, and paste in the contents of [ProGuard_Rules_for_Android_Rome_SDK.txt](../ProGuard_Rules_for_Android_Rome_SDK.txt).
 
-In your project's *AndroidManifest.xml* file, add the following permissions inside the `<manifest>` element (if they are not already present). This gives your app permission to connect to the Internet.
+In your project's *AndroidManifest.xml* file, add the following permissions inside the `<manifest>` element (if they are not already present). This gives your app permission to connect to the Internet and to enable Bluetooth discovery on your device.
+
+> Note: The Bluetooth-related permissions are only necessary for using Bluetooth discovery; they are not needed for the other features in the Connected Devices platform. Additionally, `ACCESS_COARSE_LOCATION` is only required on Android SDKs 21 and later. On Android SDKs 23 and later, the developer must also prompt the user to grant location access at runtime.
+
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.BLUETOOTH" />
@@ -62,11 +65,12 @@ Platform.initialize(getApplicationContext(),
         }
  
         @Override 
-        // Connected Devices platform also needs the app's client id to initialize
+        // Connected Devices platform also needs the app ID to initialize
         public String getClientId() { 
-            // recommended: retrieve client id previously and store as a global constant. 
-            // The client id is provided when you register your app on the Microsoft developer portal
-            return CLIENT_ID; 
+            // recommended: retrieve app ID previously and store as a global constant. 
+            // The app ID is provided when you register your app on the Microsoft developer portal
+            // (https://apps.dev.microsoft.com/)
+            return APP_ID; 
         } 
     },  
     // Implement an IPlatformInitializationHandler - not required
@@ -170,30 +174,30 @@ The Android client SDK, like the Windows implementation, uses a watcher pattern 
 Get an instance of **RemoteSystemDiscovery** using its corresponding Builder class. At this point you must also instantiate a custom **RemoteSystemsListener** to handle the discovery events. You may want to show and maintain a list view of all the available remote devices and their basic info.
 
 ```java
-RemoteSystemDiscovery.Builder discoveryBuilder; 
 
-discoveryBuilder = new RemoteSystemDiscovery.Builder().setListener(new IRemoteSystemDiscoveryListener() { 
-    @Override 
-    public void onRemoteSystemAdded(RemoteSystem remoteSystem) { 
-        // handle the added event. At minimum, you should acquire a 
-        // reference to the discovered device.
-    }
-    @Override
-    public void onRemoteSystemUpdated(RemoteSystem remoteSystem) {
-        // update the reference to the device
-    }
-    @Override
-    public void onRemoteSystemRemoved(String remoteSystemId) {
-        // remove the reference to the device
-    }
-    @Override
-    public void onComplete(){
-        // execute code when the initial discovery process has completed
-    }
-}); 
+// use the builder pattern to get a RemoteSystemDiscovery instance.
+RemoteSystemDiscovery discovery = new RemoteSystemDiscovery.Builder()
+    .setListener(new IRemoteSystemDiscoveryListener() {	// set the listener for discovery events
+        @Override 
+        public void onRemoteSystemAdded(RemoteSystem remoteSystem) { 
+            // handle the added event. At minimum, you should acquire a 
+            // reference to the discovered device.
+        }
+        @Override
+        public void onRemoteSystemUpdated(RemoteSystem remoteSystem) {
+            // update the reference to the device
+        }
+        @Override
+        public void onRemoteSystemRemoved(String remoteSystemId) {
+            // remove the reference to the device
+        }
+        @Override
+        public void onComplete(){
+            // execute code when the initial discovery process has completed
+        }
+    })
+    .getResult(); // return a RemoteSystemDiscovery instance
 
-// get the discovery instance
-RemoteSystemDiscovery discovery = discoveryBuilder.getResult(); 
 // begin watching for remote devices
 discovery.start(); 
 ```

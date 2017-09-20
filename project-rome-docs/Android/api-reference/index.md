@@ -20,7 +20,7 @@
 #### [IRemoteSystemFilter interface](IRemoteSystemFilter.md)
 #### [Platform.IAuthCodeHandler interface](Platform.IAuthCodeHandler.md)
 #### [Platform class](Platform.md)
-#### [RemoteLauncherUriStatus enum](RemoteLauncherUriStatus.md)
+#### [RemoteLaunchUriStatus enum](RemoteLaunchUriStatus.md)
 #### [RemoteLauncher class](RemoteLauncher.md)
 #### [RemoteLauncherOptions class](RemoteLauncherOptions.md)
 #### [RemoteSystem class](RemoteSystem.md)

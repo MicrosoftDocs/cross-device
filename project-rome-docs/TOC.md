@@ -3,9 +3,9 @@
 ## [Android](Android\README.md)
 
 ### How-to guides
-#### [Communicate with a remote app service (Android client)](Android\how-to%20guides\communicate-with-a-remote-app-service-android.md)
-#### [Discover remote devices (Android client)](Android\how-to%20guides\discover-remote-devices-android.md)
-#### [Getting started with Connected Devices (Android)](Android\how-to%20guides\getting-started-rome-android.md)
+#### [Communicate with a remote app service (Android client)](Android\how-to-guides\communicate-with-a-remote-app-service-android.md)
+#### [Discover remote devices (Android client)](Android\how-to-guides\discover-remote-devices-android.md)
+#### [Getting started with Connected Devices (Android)](Android\how-to-guides\getting-started-rome-android.md)
 
 ### [API reference](Android\api-reference\index.md)
 

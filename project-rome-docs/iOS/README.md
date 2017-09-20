@@ -3,7 +3,7 @@
 Currently, Project Rome is implemented for iOS-client-to-Windows-host scenarios. You will need an iOS app development IDE and an iOS device or emulator to use this feature.
 
 * Download the iOS SDK from the [binaries](https://github.com/Microsoft/project-rome/tree/master/iOS/binaries) section. The SDK is also compatible with the [CocoaPods](https://cocoapods.org/?q=projectrome) dependency manager.
-* View the API reference documentation in the [reference documentation](reference%20documentation/) folder.
+* View the API reference documentation in the [reference documentation](api-reference/) folder.
 * See code samples for Rome iOS apps in the [sample](https://github.com/Microsoft/project-rome/tree/master/iOS/sample) section.
 
 ## Preliminary setup for Connected Devices functionality on iOS

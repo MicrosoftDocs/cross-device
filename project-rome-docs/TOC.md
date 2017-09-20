@@ -11,7 +11,7 @@
 
 ## [iOS](iOS\README.md)
 
-### [API reference](iOS\reference%20documentation\index.md)
+### [API reference](iOS\api-reference\index.md)
 
 ## [Microsoft Graph](MSGraph\README.md)
 

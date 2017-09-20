@@ -16,7 +16,7 @@ Project Rome is currently implemented for the following scenarios. Follow the li
 [ios-sdk]:                 https://cocoapods.org/?q=ProjectRomeSdk
 [ios-sdk-badge]:           https://img.shields.io/cocoapods/v/ProjectRomeSdk.svg?style=flat-square
 [ios-sample]:              https://github.com/Microsoft/project-rome/tree/master/iOS/sample 
-[ios-docs]:                iOS/reference%20documentation
+[ios-docs]:                iOS/api-reference
 
 [android-sdk]:             https://bintray.com/projectrome/maven/public_sdk/_latestVersion
 [android-sdk-badge]:       https://img.shields.io/bintray/v/projectrome/maven/public_sdk.svg?style=flat-square

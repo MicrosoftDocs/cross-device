@@ -16,12 +16,12 @@ Project Rome is currently implemented for the following scenarios. Follow the li
 [ios-sdk]:                 https://cocoapods.org/?q=ProjectRomeSdk
 [ios-sdk-badge]:           https://img.shields.io/cocoapods/v/ProjectRomeSdk.svg?style=flat-square
 [ios-sample]:              https://github.com/Microsoft/project-rome/tree/master/iOS/sample 
-[ios-docs]:                iOS/api-reference
+[ios-docs]:                iOS/api-reference/
 
 [android-sdk]:             https://bintray.com/projectrome/maven/public_sdk/_latestVersion
 [android-sdk-badge]:       https://img.shields.io/bintray/v/projectrome/maven/public_sdk.svg?style=flat-square
 [android-sample]:          https://github.com/Microsoft/project-rome/tree/master/Android/sample
-[android-docs]:            Android/api-reference
+[android-docs]:            Android/api-reference/
 
 [graph-sdk]:               https://developer.microsoft.com/graph/docs/api-reference/beta/resources/project_rome_overview
 [graph-sdk-badge]:         https://img.shields.io/badge/REST-Beta-orange.svg?style=flat-square

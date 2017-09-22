@@ -1,25 +1,32 @@
 # iOS SDK reference documentation
 
-#### [MCDAppServiceClientClosedStatus enum](MCDAppServiceClientClosedStatus.md)
+## Classes
 #### [MCDAppServiceClientConnectionManager class](MCDAppServiceClientConnectionManager.md)
-#### [MCDAppServiceClientConnectionManagerDelegate protocol](MCDAppServiceClientConnectionManagerDelegate.md)
-#### [MCDAppServiceClientConnectionStatus enum](MCDAppServiceClientConnectionStatus.md)
 #### [MCDAppServiceClientResponse class](MCDAppServiceClientResponse.md)
 #### [MCDAppServiceResponseStatus class](MCDAppServiceResponseStatus.md)
-#### [MCDOAuthCodeProviderDelegate protocol](MCDOAuthCodeProviderDelegate.md)
 #### [MCDPlatform class](MCDPlatform.md)
 #### [MCDRemoteLauncher class](MCDRemoteLauncher.md)
 #### [MCDRemoteLauncherOptions class](MCDRemoteLauncherOptions.md)
-#### [MCDRemoteLauncherUriStatus enum](MCDRemoteLauncherUriStatus.md)
 #### [MCDRemoteSystem class](MCDRemoteSystem.md)
 #### [MCDRemoteSystemConnectionRequest class](MCDRemoteSystemConnectionRequest.md)
 #### [MCDRemoteSystemDiscoveryManager class](MCDRemoteSystemDiscoveryManager.md)
-#### [protocol MCDRemoteSystemDiscoveryManagerDelegate](MCDRemoteSystemDiscoveryManagerDelegate.md)
-#### [MCDRemoteSystemDiscoveryType enum](MCDRemoteSystemDiscoveryType.md)
 #### [MCDRemoteSystemDiscoveryTypeFilter class](MCDRemoteSystemDiscoveryTypeFilter.md)
-#### [MCDRemoteSystemFilter protocol](MCDRemoteSystemFilter.md)
-#### [MCDRemoteSystemKind structure](MCDRemoteSystemKind.md)
 #### [MCDRemoteSystemKindFilter class](MCDRemoteSystemKindFilter.md)
+#### [MCDRemoteSystemStatusTypeFilter class](MCDRemoteSystemStatusTypeFilter.md)
+
+## Protocols
+#### [MCDAppServiceClientConnectionManagerDelegate protocol](MCDAppServiceClientConnectionManagerDelegate.md)
+#### [MCDOAuthCodeProviderDelegate protocol](MCDOAuthCodeProviderDelegate.md)
+#### [MCDRemoteSystemDiscoveryManagerDelegate protocol](MCDRemoteSystemDiscoveryManagerDelegate.md)
+#### [MCDRemoteSystemFilter protocol](MCDRemoteSystemFilter.md)
+
+## Enums
+#### [MCDAppServiceClientClosedStatus enum](MCDAppServiceClientClosedStatus.md)
+#### [MCDAppServiceClientConnectionStatus enum](MCDAppServiceClientConnectionStatus.md)
+#### [MCDRemoteLauncherUriStatus enum](MCDRemoteLauncherUriStatus.md)
+#### [MCDRemoteSystemDiscoveryType enum](MCDRemoteSystemDiscoveryType.md)
 #### [MCDRemoteSystemStatus enum](MCDRemoteSystemStatus.md)
 #### [MCDRemoteSystemStatusType enum](MCDRemoteSystemStatusType.md)
-#### [MCDRemoteSystemStatusTypeFilter class](MCDRemoteSystemStatusTypeFilter.md)
+
+## Structures
+#### [MCDRemoteSystemKind structure](MCDRemoteSystemKind.md)

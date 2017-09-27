@@ -34,10 +34,10 @@ Project Rome is currently implemented for the following scenarios. Follow the li
 [graph-ref]:               https://developer.microsoft.com/graph/docs/api-reference/beta/resources/project_rome_overview 
 [graph-docs]:              https://developer.microsoft.com/graph/docs/api-reference/beta/resources/project_rome_overview
 
-|  Code samples  |     SDK package    | API reference | How-to docs  |
-| :------------- | :----------------: | :------- | :----------- |
-| [Windows samples][windows-sample] / [end-to-end apps][windows-apps] |  [![SDK][windows-sdk-badge]][windows-sdk]   | [Windows ref][windows-ref]  | [Windows docs][windows-docs] |
-| [Android samples][android-sample] | [![Maven][android-sdk-badge]][android-sdk]      | [Android ref][android-ref]  | [Android docs][android-docs] |
-| [iOS samples][ios-sample]         |     [![CocoaPod][ios-sdk-badge]][ios-sdk]       | [iOS ref][ios-ref]          | [iOS docs][ios-docs]         |
-| [Xamarin samples][xamarin-sample] |[![Nuget][xamarin-sdk-badge]][xamarin-sdk]       | N/A                | [Xamarin docs][xamarin-docs]  |
-| N/A                               |[![REST][graph-sdk-badge]][graph-sdk]            | [Graph ref][graph-ref]      | [Graph docs][graph-docs]  |
+Platform |  Code samples  |     SDK package    | API reference | How-to docs  |
+:--------- | :---------- | :----------------: | :------- | :----------- |
+Windows | [Windows samples][windows-sample] / [end-to-end apps][windows-apps] |  [![SDK][windows-sdk-badge]][windows-sdk]   | [Windows ref][windows-ref]  | [Windows docs][windows-docs] |
+Android | [Android samples][android-sample] | [![Maven][android-sdk-badge]][android-sdk]  | [Android ref][android-ref] | [Android docs][android-docs] |
+iOS | [iOS samples][ios-sample]  |     [![CocoaPod][ios-sdk-badge]][ios-sdk]  | [iOS ref][ios-ref]   | [iOS docs][ios-docs]         |
+Xamarin | [Xamarin samples][xamarin-sample] |[![Nuget][xamarin-sdk-badge]][xamarin-sdk]   | N/A | [Xamarin docs][xamarin-docs]  |
+MS Graph | N/A        |[![REST][graph-sdk-badge]][graph-sdk]            | [Graph ref][graph-ref]      | [Graph docs][graph-docs]  |

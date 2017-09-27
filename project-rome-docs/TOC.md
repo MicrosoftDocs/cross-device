@@ -13,7 +13,7 @@
 #### [Communicate with a remote app service (Android client)](Android/how-to-guides/communicate-with-a-remote-app-service-android.md)
 ### [API reference](Android/api-reference/index.md)
 
-## [Xamarin for Android (preview)](Xamarin/readme.md)
+## [Xamarin for Android (preview)](Xamarin/index.md)
 
 ## iOS (preview)
 ### [How-to guides](iOS/how-to-guides/index.md)

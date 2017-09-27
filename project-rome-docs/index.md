@@ -14,30 +14,33 @@ Project Rome is currently implemented for the following scenarios. Follow the li
 [xamarin-sdk]:             https://www.nuget.org/packages/Microsoft.ConnectedDevices.Xamarin.Droid
 [xamarin-sdk-badge]:       https://img.shields.io/nuget/v/Microsoft.ConnectedDevices.Xamarin.Droid.svg?style=flat-square
 [xamarin-sample]:          https://github.com/Microsoft/project-rome/tree/master/Xamarin/samples
-[xamarin-docs]:            Xamarin/
+[xamarin-docs]:            Xamarin/index.md
 
 [ios-sdk]:                 https://cocoapods.org/?q=ProjectRomeSdk
 [ios-sdk-badge]:           https://img.shields.io/cocoapods/v/ProjectRomeSdk.svg?style=flat-square
 [ios-sample]:              https://github.com/Microsoft/project-rome/tree/master/iOS/sample 
-[ios-ref]:                 iOS/api-reference/
-[ios-docs]:                iOS/how-to-guides/
+[ios-ref]:                 iOS/api-reference/index.md
+[ios-docs]:                iOS/how-to-guides/index.md
 
 [android-sdk]:             https://bintray.com/projectrome/maven/public_sdk/_latestVersion
 [android-sdk-badge]:       https://img.shields.io/bintray/v/projectrome/maven/public_sdk.svg?style=flat-square
 [android-sample]:          https://github.com/Microsoft/project-rome/tree/master/Android/sample
-[android-ref]:             Android/api-reference/
-[android-docs]:            Android/how-to-guides/
+[android-ref]:             Android/api-reference/index.md
+[android-docs]:            Android/how-to-guides/index.md
 
 [graph-sdk]:               https://developer.microsoft.com/graph/docs/api-reference/beta/resources/project_rome_overview
 [graph-sdk-badge]:         https://img.shields.io/badge/REST-Beta-orange.svg?style=flat-square
-[graph-sample]:            
+[graph-sample]:            N/A
 [graph-ref]:               https://developer.microsoft.com/graph/docs/api-reference/beta/resources/project_rome_overview 
 [graph-docs]:              https://developer.microsoft.com/graph/docs/api-reference/beta/resources/project_rome_overview
 
 |  Code samples  |     SDK package    | API reference | How-to docs  |
 | :------------- | :----------------: | :------- | :----------- |
-| [Windows samples][windows-sample] / [end-to-end apps][windows-apps] |  [![SDK][windows-sdk-badge]][windows-sdk]       | [Windows ref][windows-ref]  | [Windows docs][windows-docs] |
+| [Windows samples][windows-sample] / [end-to-end apps][windows-apps] |  [![SDK][windows-sdk-badge]][windows-sdk]   | [Windows ref][windows-ref]  | [Windows docs][windows-docs] |
 | [Android samples][android-sample] | [![Maven][android-sdk-badge]][android-sdk]      | [Android ref][android-ref]  | [Android docs][android-docs] |
 | [iOS samples][ios-sample]         |     [![CocoaPod][ios-sdk-badge]][ios-sdk]       | [iOS ref][ios-ref]          | [iOS docs][ios-docs]         |
-| [Xamarin samples][xamarin-sample] |[![Nuget][xamarin-sdk-badge]][xamarin-sdk]       | N/A                | [docs]
-| N/A                               |[![REST][graph-sdk-badge]][graph-sdk]            | [Graph ref][graph-ref]      | [Graph docs][graph-docs]
+| [Xamarin samples][xamarin-sample] |[![Nuget][xamarin-sdk-badge]][xamarin-sdk]       | N/A                | [Xamarin docs][xamarin-docs]  |
+| N/A                               |[![REST][graph-sdk-badge]][graph-sdk]            | [Graph ref][graph-ref]      | [Graph docs][graph-docs]  |
+
+
+[Graph ref][android-ref]

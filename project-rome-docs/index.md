@@ -41,6 +41,3 @@ Project Rome is currently implemented for the following scenarios. Follow the li
 | [iOS samples][ios-sample]         |     [![CocoaPod][ios-sdk-badge]][ios-sdk]       | [iOS ref][ios-ref]          | [iOS docs][ios-docs]         |
 | [Xamarin samples][xamarin-sample] |[![Nuget][xamarin-sdk-badge]][xamarin-sdk]       | N/A                | [Xamarin docs][xamarin-docs]  |
 | N/A                               |[![REST][graph-sdk-badge]][graph-sdk]            | [Graph ref][graph-ref]      | [Graph docs][graph-docs]  |
-
-
-[Graph ref][android-ref]

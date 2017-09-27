@@ -1,12 +1,11 @@
-# Project Rome for iOS (preview release)
+# Getting started with Connected Devices (iOS)
+This guide shows you how to remotely launch a Universal Windows Platform (UWP) app or Windows desktop app on a Windows device from an app on an iOS device. Refer to the [iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/sample) for a working example.
 
-Currently, Project Rome is implemented for iOS-client-to-Windows-host scenarios. You will need an iOS app development IDE and an iOS device or emulator to use this feature.
+Remote app launching can be useful when the user wishes to start a task on one device and finish it on another. For example, you might receive a Skype call on your Android phone and later wish to launch the Skype app on your desktop PC to continue the call there. Note, however, that the client's and host's apps do not need to be the same: your iOS app can launch any Windows app on a connected Windows device.
 
-* Download the iOS SDK from the [binaries](https://github.com/Microsoft/project-rome/tree/master/iOS/binaries) section. The SDK is also compatible with the [CocoaPods](https://cocoapods.org/?q=projectrome) dependency manager.
-* View the API reference documentation in the [reference documentation](api-reference/index.md) section.
-* See code samples for Rome iOS apps in the [sample](https://github.com/Microsoft/project-rome/tree/master/iOS/sample) section.
+Remote launch is achieved by sending a Uniform Resource Identifier (URI) from one device to another. A URI specifies a *scheme*, which determines which app(s) can handle its information. See [Launch the default app for a URI](https://msdn.microsoft.com/windows/uwp/launch-resume/launch-default-app) for information on using URIs to launch Windows apps.
 
-## Preliminary setup for Connected Devices functionality on iOS
+## Preliminary setup for Connected Devices functionality
 
 Before implementing device discovery and connectivity, there are a few steps you'll need to take to give your iOS app the capability to connect to remote Windows devices.
 
@@ -14,7 +13,7 @@ First, you must register your app with Microsoft by following the instructions o
 
 The simplest way to add the Connected Devices platform to your iOS app is by using the [CocoaPods](https://cocoapods.org/) dependency manager. Go to your iOS project's *Podfile* and insert the following entry:
 
-```ObjectiveC
+```Objective-C
 platform :ios, '10.0'
 
 target 'ProjectName' do
@@ -22,6 +21,9 @@ target 'ProjectName' do
 end
 ```
 
+You can also download and install versions of the iOS SDK manually from the [binaries folder](https://github.com/Microsoft/project-rome/tree/master/iOS/binaries).
+
+See the [sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/sample) for proper usage of the core Connected Devices APIs for iOS.
 
 ## Known issues
 
@@ -35,4 +37,3 @@ As this is a preview release, there are some known bugs in the Connected Devices
 |  Any consuming app's documents on drive will grow monotonically in size over time.| No current workaround.|
 |App crashes without **CFBundleDisplayName** entry.|Create a **CFBundleDisplayName** entry in your _Info.plist_ file.|
 |Connected Devices framework includes simulator (x86, x86_64) slices which will fail App Store ingestion. | Remove using lipo|
-

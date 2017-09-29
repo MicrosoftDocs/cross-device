@@ -1,3 +1,9 @@
+---
+title: ConnectedDevicesError 
+description: Indicates an error condition that has occurred in the platform.
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # ConnectedDevicesError enum
 Indicates an error condition that has occurred in the platform.
 

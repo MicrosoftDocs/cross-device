@@ -1,3 +1,9 @@
+---
+title: MCDPlatform
+description:  A static class to perform global scale commands to the Remote Systems platform.
+keywords: microsoft, windows, project rome, how-to iOS, how-to iPhone
+---
+
 # class `MCDPlatform` 
 
 ```

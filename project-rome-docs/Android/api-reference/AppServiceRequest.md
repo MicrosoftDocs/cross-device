@@ -1,3 +1,9 @@
+---
+title: AppServiceRequest 
+description: Represents a message sent from one app service to another over a remote app service connection.
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # AppServiceRequest class
 Represents a message sent from one app service to another over a remote app service connection.
 

@@ -1,3 +1,9 @@
+---
+title: IRemoteSystemFilter 
+description: Provides the ability to check whether a **RemoteSystem** passes through the implemented filter.
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # IRemoteSystemFilter interface
 Provides the ability to check whether a **RemoteSystem** passes through the implemented filter.
 

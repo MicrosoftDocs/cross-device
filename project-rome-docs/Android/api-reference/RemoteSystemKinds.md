@@ -1,3 +1,9 @@
+---
+title: RemoteSystemKind
+description: Contains the string values that identify various device types.
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # RemoteSystemKind enum
 Contains the string values that identify various device types.
 

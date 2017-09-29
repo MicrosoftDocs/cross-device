@@ -1,3 +1,9 @@
+---
+title: ConnectedDevicesException 
+description: Defines a Remote-Systems-specific exception.
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # ConnectedDevicesException class
 Defines a Remote-Systems-specific exception.
 

@@ -1,3 +1,9 @@
+---
+title: MCDRemoteSystemStatus
+description:  Contains values that describe the status of a response message from a remote app service.
+keywords: microsoft, windows, project rome, how-to iOS, how-to iPhone
+---
+
 # enum `MCDRemoteSystemStatus`
 ```
 typedef NS_ENUM(NSInteger, MCDRemoteSystemStatus)

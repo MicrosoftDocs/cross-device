@@ -1,3 +1,9 @@
+---
+title: RemoteSystemDiscoveryType
+description: Contains the values that describe how a remote system is able to be discovered.
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # RemoteSystemDiscoveryType enum
 Contains the values that describe how a remote system is able to be discovered.
 

@@ -1,3 +1,9 @@
+---
+title: RemoteLauncher class
+description: This class handles the launching of an app on a remote device through the use of a URI. 
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # RemoteLauncher class
 This class handles the launching of an app on a remote device through the use of a URI.
 

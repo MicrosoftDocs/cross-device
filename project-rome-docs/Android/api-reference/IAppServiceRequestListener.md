@@ -1,3 +1,9 @@
+---
+title: IAppServiceRequestListener 
+description: Handles the receiving of incoming app service requests over the remote app service connection.
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # IAppServiceRequestListener interface
 Handles the receiving of incoming app service requests over the remote app service connection.
 

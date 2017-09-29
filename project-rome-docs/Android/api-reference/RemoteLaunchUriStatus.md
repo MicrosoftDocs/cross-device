@@ -1,3 +1,9 @@
+---
+title: RemoteLaunchUriStatus class
+description: Specifies the result of an attempt to launch an application on a remote device via URI.
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # RemoteLaunchUriStatus enum
 Specifies the result of an attempt to launch an application on a remote device via URI.
 

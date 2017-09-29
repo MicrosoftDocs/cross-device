@@ -1,3 +1,9 @@
+---
+title: # IAppServiceConnectionListener interface 
+description: Contains methods that handle events related to the connection to a remote app service.
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # IAppServiceConnectionListener interface
 Contains methods that handle events related to the connection to a remote app service.
 

@@ -1,3 +1,9 @@
+---
+title: AppServiceConnectionStatus 
+description: Contains the values that describe a connection to a remote app service.
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # AppServiceConnectionStatus enum
 Contains the values that describe a connection to a remote app service.
 

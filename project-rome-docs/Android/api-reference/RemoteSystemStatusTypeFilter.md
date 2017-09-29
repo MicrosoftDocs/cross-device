@@ -1,3 +1,9 @@
+---
+title: RemoteSystemStatusTypeFilter
+description: Limits the set of discoverable remote systems by allowing only those of a specific availability status.
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # RemoteSystemStatusTypeFilter
 An **IRemoteSystemFilter** that limits the set of discoverable remote systems by allowing only those of a specific availability status.
 

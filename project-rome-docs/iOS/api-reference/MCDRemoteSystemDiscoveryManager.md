@@ -1,3 +1,9 @@
+---
+title: MCDRemoteSystemDiscoveryManager
+description:  Contains values that describe the status of a response message from a remote app service.
+keywords: microsoft, windows, project rome, how-to iOS, how-to iPhone
+---
+
 # class `MCDRemoteSystemDiscoveryManager` 
 
 ```

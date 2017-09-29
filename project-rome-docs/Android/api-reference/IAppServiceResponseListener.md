@@ -1,3 +1,9 @@
+---
+title: IAppServiceResponseListener 
+description: Handles the receiving of a message sent from a remote app service in response to a previously sent message.
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # IAppServiceResponseListener interface
 Handles the receiving of a message sent from a remote app service in response to a previously sent message.
 

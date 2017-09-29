@@ -1,3 +1,9 @@
+---
+title: Platform.IAuthCodeHandler 
+description: Provides a method for getting an authorization token.
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # Platform.IAuthCodeHandler interface
 Provides a method for getting an authorization token, as part of the platform initialization process.
 

@@ -1,3 +1,9 @@
+---
+title: RemoteSystemAccessStatus class
+description: Contains the values that describe the app's access to use the **Remote Systems** feature.
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # RemoteSystemAccessStatus enum
 Contains the values that describe the app's access to use the **Remote Systems** feature.
 

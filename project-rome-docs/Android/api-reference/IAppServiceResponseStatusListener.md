@@ -1,3 +1,9 @@
+---
+title: IAppServiceResponseStatusListener 
+description: Handles the receiving of a status report on an outgoing app service response message.
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # IAppServiceResponseStatusListener interface
 Handles the receiving of a status report on an outgoing app service response message.
 

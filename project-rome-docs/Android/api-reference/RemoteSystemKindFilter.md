@@ -1,3 +1,9 @@
+---
+title: RemoteSystemKindFilter
+description: Limits the set of discoverable remote systems by allowing only those of specific device types.
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # RemoteSystemKindFilter class
 An [**IRemoteSystemFilter**](IRemoteSystemFilter.md) that limits the set of discoverable remote systems by allowing only those of specific device types.
 

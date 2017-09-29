@@ -1,5 +1,11 @@
+---
+title: RemoteSystemStatusType
+description: Contains the values that describe a remote system's status type for the purpose of filtered discovery.
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # RemoteSystemStatusType enum
-Contains the values that describe a remote system's status type, for the purpose of filtered discovery. This is a simplification of the [**RemoteSystemStatus**](RemoteSystemStatus.md) enumeration and is used to construct a [**RemoteSystemStatusTypeFilter**](RemoteSystemStatusTypeFilter.md) object.
+Contains the values that describe a remote system's status type for the purpose of filtered discovery. This is a simplification of the [**RemoteSystemStatus**](RemoteSystemStatus.md) enumeration and is used to construct a [**RemoteSystemStatusTypeFilter**](RemoteSystemStatusTypeFilter.md) object.
 
 ## Fields
 

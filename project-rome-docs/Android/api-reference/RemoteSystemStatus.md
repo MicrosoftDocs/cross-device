@@ -1,3 +1,9 @@
+---
+title: RemoteSystemStatus
+description: Contains the values that describe a remote system's availability status.
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # RemoteSystemStatus enum
 Contains the values that describe a remote system's availability status.
 

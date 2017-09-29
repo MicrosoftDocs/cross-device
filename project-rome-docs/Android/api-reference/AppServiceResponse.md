@@ -1,3 +1,9 @@
+---
+title: AppServiceResponse 
+description: Represents a message passed from a remote app service to the client app in response to a previously sent message.
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # AppServiceResponse class
 Represents a message passed from a remote app service to the client app in response to a previously sent message.
 

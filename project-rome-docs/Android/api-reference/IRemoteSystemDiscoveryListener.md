@@ -1,3 +1,9 @@
+---
+title: IRemoteSystemDiscoveryListener 
+description: Handles remote system discovery events.
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # IRemoteSystemDiscoveryListener interface
 Handles remote system discovery events.
 

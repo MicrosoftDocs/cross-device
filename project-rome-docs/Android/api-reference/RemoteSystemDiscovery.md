@@ -1,3 +1,9 @@
+---
+title: RemoteSystemDiscovery class
+description: This class handles the discovery of remote systems.
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # RemoteSystemDiscovery class
 This class handles the discovery of remote systems.
 

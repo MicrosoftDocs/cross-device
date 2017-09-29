@@ -1,3 +1,9 @@
+---
+title: RemoteSystemDiscovery.Builder class
+description: Builder class for producing a RemoteSystemDiscovery.
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # RemoteSystemDiscovery.Builder class
 Builder class for producing a [**RemoteSystemDiscovery**](RemoteSystemDiscovery.md) instance with discovery filters and a listener for discovery events.
 

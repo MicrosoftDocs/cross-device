@@ -1,3 +1,9 @@
+---
+title: RemoteSystemDiscoveryTypeFilter
+description: An IRemoteSystemFilter that limits the set of discoverable remote systems by allowing only those of a specific discovery type.
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # RemoteSystemDiscoveryTypeFilter class
 
 An **IRemoteSystemFilter** that limits the set of discoverable remote systems by allowing only those of a specific discovery type.

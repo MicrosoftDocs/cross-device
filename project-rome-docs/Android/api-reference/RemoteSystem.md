@@ -1,3 +1,9 @@
+---
+title: RemoteSystem class
+description: This class manages the attributes of a discovered remote system (device) which may be reachable by UDP, Bluetooth, or cloud connection.
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # RemoteSystem class
 This class manages the attributes of a discovered remote system (device) which may be reachable by UDP, Bluetooth, or cloud connection.
 

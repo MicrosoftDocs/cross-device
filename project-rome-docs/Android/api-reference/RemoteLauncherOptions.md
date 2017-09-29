@@ -1,3 +1,9 @@
+---
+title: RemoteLauncherOptions class
+description: This class specifies the options used to launch the default app for URI on a remote device.
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # RemoteLauncherOptions class
 This class specifies the options used to launch the default app for URI on a remote device.
 

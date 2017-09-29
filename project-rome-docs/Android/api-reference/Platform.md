@@ -1,3 +1,9 @@
+---
+title: Platform class
+description: This class handles the process of connecting the application to Microsoft's Remote Systems service. 
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # Platform class
 This class handles the process of connecting the application to Microsoft's Remote Systems service. This must be handled before any remote device discovery is attempted.
 

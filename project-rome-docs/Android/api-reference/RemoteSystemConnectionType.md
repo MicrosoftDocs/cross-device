@@ -1,3 +1,9 @@
+---
+title: RemoteSystemConnectionType
+description: Contains the values which correspond to the possible types of connections between the client device and remote system.
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # RemoteSystemConnectionType enum
 Contains the values which correspond to the possible types of connections between the client device and remote system.
 

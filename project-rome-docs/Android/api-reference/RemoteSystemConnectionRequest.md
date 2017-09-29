@@ -1,4 +1,10 @@
-# class `RemoteSystemConnectionRequest class`
+---
+title: RemoteSystemConnectionRequest class
+description: Represents an attempt to communicate with a specific remote system (device).
+keywords: microsoft, windows, project rome, android api reference
+---
+
+# RemoteSystemConnectionRequest class
 
 ```
 @interface CDRemoteSystemConnectionRequest : NSObject

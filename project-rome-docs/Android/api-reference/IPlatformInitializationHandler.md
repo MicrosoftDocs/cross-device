@@ -1,3 +1,9 @@
+---
+title: IPlatformInitializationHandler 
+description: Interface for handling the platform initialization process.
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # IPlatformInitializationHandler interface
 Interface for handling the platform initialization process.
 

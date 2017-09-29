@@ -1,3 +1,9 @@
+---
+title: AppServiceResponseStatus 
+description: Contains values that describe the status of a message sent from one app service to another.
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # AppServiceResponseStatus enum
 Contains values that describe the status of a message sent from one app service to another (whether the message data was successfully delivered).
 

@@ -1,5 +1,11 @@
+---
+title: ConnectedDevicesResult 
+description: The result of an action by the Remote Systems platform.
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # ConnectedDevicesResult class
-The result of an action by the Remote Systems platform
+The result of an action by the Remote Systems platform.
 
 ## Syntax
 `public final class ConnectedDevicesResult`

@@ -1,3 +1,9 @@
+---
+title: IAuthCodeProvider 
+description: Provides methods that produce the MSA OAuth credentials.
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # IAuthCodeProvider interface
 Provides methods that produce the MSA OAuth credentials needed for initializing the Remote Systems platform. An implementation of this interface gets passed in to the [**Platform.initialize**](Platform.md) method.
 

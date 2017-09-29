@@ -1,3 +1,9 @@
+---
+title: IRemoteLauncherListener 
+description: Interface to handle the completion of a remote app launch.
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # IRemoteLauncherListener interface
 Interface to handle the completion of a remote app launch.
 

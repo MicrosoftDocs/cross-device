@@ -1,3 +1,9 @@
+---
+title: MCDOAuthCodeProviderDelegate
+description:  Receives callbacks from the MCDPlatform.
+keywords: microsoft, windows, project rome, how-to iOS, how-to iPhone
+---
+
 # protocol `MCDOAuthCodeProviderDelegate`
 
 ```

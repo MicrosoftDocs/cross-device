@@ -39,7 +39,8 @@
         "ms.prod": "windows",
         "ms.technology": "Project Rome", 
         "ms.date": "09/27/2017", 
-        "author": "pafarley"
+        "ms.author": "pafarley",
+        "author": "PatrickFarley"
     },
     "fileMetadata": {},
     "template": [],

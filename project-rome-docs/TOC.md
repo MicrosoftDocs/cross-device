@@ -4,7 +4,7 @@
 ### [How-to guides](https://docs.microsoft.com/windows/uwp/launch-resume/connected-apps-and-devices)
 ### [API reference](https://docs.microsoft.com/uwp/api/windows.system.remotesystems)
 
-## [Microsoft Graph (preview)](MSGraph/README.md)
+## [Microsoft Graph (preview)](MSGraph/index.md)
 
 ## Android (preview)
 ### [How-to guides](Android/how-to-guides/index.md)

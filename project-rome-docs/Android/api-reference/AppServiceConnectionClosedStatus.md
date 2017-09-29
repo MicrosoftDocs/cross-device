@@ -1,3 +1,9 @@
+---
+title: AppServiceConnectionClosedStatus 
+description: Contains the values that describe the reason that an app service connection was closed.
+keywords: microsoft, windows, project rome, android api reference
+---
+
 # AppServiceConnectionClosedStatus
 Contains the values that describe the reason that an app service connection was closed.
 

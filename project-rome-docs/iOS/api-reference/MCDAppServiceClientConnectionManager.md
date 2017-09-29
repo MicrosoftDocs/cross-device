@@ -1,3 +1,9 @@
+---
+title: MCDAppServiceClientConnectionManager
+description:  A class used to communicate with a remote device using app services. 
+keywords: microsoft, windows, project rome, how-to iOS, how-to iPhone 
+---
+
 # class `MCDAppServiceClientConnectionManager`
 
 ```

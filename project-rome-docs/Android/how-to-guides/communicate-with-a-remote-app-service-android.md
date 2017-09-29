@@ -1,3 +1,9 @@
+---
+title: Communicate with a remote app service (Android client)
+description: This allows Android and Windows devices to communicate with each other via generic messages that can be handled by the apps on both platforms.
+keywords: microsoft, windows, project rome, how-to android 
+---
+
 # Communicate with a remote app service (Android client)
 In addition to launching an app on a remote Windows device using a URI, your Android app can also interact with app services on Windows devices. This allows Android and Windows devices to communicate with each other via generic messages that can be handled by the apps on both platforms. 
 

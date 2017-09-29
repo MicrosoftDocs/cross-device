@@ -1,3 +1,9 @@
+---
+title: Project Rome with iOS API Reference (preview release)
+description:  Using an iOS device to expand your UWP app with Project Rome.
+keywords: microsoft, windows, project rome, how-to iOS, how-to iPhone 
+---
+
 # iOS SDK reference documentation
 
 ## Classes

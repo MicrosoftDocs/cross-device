@@ -1,3 +1,9 @@
+---
+title: Discover remote devices (Android client)
+description:  Connect to and communicate with your Windows devices from an Android device.
+keywords: microsoft, windows, project rome, how-to android 
+---
+
 # Discover remote devices (Android client)
 With the "Project Rome" SDK for Android, you can connect to and communicate with your Windows devices from an Android device. The host devices do not need to have any special software installed in order to be discoverable by the client device, but they must be signed on with the same Microsoft account (MSA) that you used to authorize your Android app (communal devices that can accept anonymous connections, such as the Surface Hub and Xbox One, are also discoverable). See [Getting started with Connected Devices (Android)](getting-started-rome-android.md) for an explanation of MSA authorization as well as the basic end-to-end scenario for Android-to-Windows remote connectivity.
 

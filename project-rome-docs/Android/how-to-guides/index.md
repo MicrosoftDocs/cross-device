@@ -1,3 +1,9 @@
+---
+title: Project Rome for Android (preview release)
+description:  Using an Android device to expand your UWP app with Project Rome.
+keywords: microsoft, windows, project rome, how-to android 
+---
+
 # Project Rome for Android (preview release)
 
 Currently, Project Rome is implemented for Android-client-to-Windows-host scenarios. You will need an Android app development IDE and an Android device or emulator (Android 4.4.2 or later) to use this feature.

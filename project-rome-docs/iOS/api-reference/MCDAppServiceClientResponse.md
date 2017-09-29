@@ -1,3 +1,9 @@
+---
+title: MCDAppServiceClientResponse
+description:  A class that represents a response received from a connected remote app service. 
+keywords: microsoft, windows, project rome, how-to iOS, how-to iPhone
+---
+
 # class `MCDAppServiceClientResponse`
 
 ```

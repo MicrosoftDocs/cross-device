@@ -1,3 +1,9 @@
+---
+title: MCDAppServiceClientConnectionManagerDelegate
+description:  Set of methods to be implemented by objects acting as delegates. 
+keywords: microsoft, windows, project rome, how-to iOS, how-to iPhone
+---
+
 # protocol `MCDAppServiceClientConnectionManagerDelegate`
 
 ```

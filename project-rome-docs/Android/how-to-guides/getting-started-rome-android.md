@@ -1,3 +1,9 @@
+---
+title: Getting started with Connected Devices (Android)
+description:  Remotely launch a Universal Windows Platform (UWP) app or Windows desktop app on a Windows device from an app on an Android device.
+keywords: microsoft, windows, project rome, how-to android 
+---
+
 # Getting started with Connected Devices (Android)
 This guide shows you how to remotely launch a Universal Windows Platform (UWP) app or Windows desktop app on a Windows device from an app on an Android device. Refer to the [Android sample app](https://github.com/Microsoft/project-rome/tree/master/Android/sample) for a working example.
 

@@ -1,3 +1,9 @@
+---
+title: MCDAppServiceClientClosedStatus
+description:  Contains values that describe a closed connection to a remote app service.
+keywords: microsoft, windows, project rome, how-to iOS, how-to iPhone 
+---
+
 # enum `MCDAppServiceClientClosedStatus`
 
 ```

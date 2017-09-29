@@ -1,3 +1,9 @@
+---
+title: Project Rome with Xamarin on Android (preview release)
+description:  Getting started with the Project Rome plugin for Xamarin on Android.
+keywords: microsoft, windows, project rome, how-to Xamarin, xamarin on android 
+---
+
 # Getting started with the Project Rome plugin for Xamarin on Android
 
 This plugin allows you to access the Project Rome Connected Devices APIs on Android while programming in the Xamarin environment. As with the native Android SDK, you use this plugin with Xamarin to discover, launch apps, and send messages to Windows devices and applications from your Android application.

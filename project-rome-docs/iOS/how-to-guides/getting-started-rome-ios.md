@@ -1,3 +1,9 @@
+---
+title: Getting started with Connected Devices (iOS)
+description:  Remotely launch a Universal Windows Platform (UWP) app or Windows desktop app from an iOS device with Project Rome.
+keywords: microsoft, windows, project rome, how-to iOS, how-to iPhone 
+---
+
 # Getting started with Connected Devices (iOS)
 This guide shows you how to remotely launch a Universal Windows Platform (UWP) app or Windows desktop app on a Windows device from an app on an iOS device. Refer to the [iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/sample) for a working example.
 

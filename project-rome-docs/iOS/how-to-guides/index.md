@@ -1,3 +1,9 @@
+---
+title: Project Rome for iOS (preview release)
+description:  Using an iOS device to expand your UWP app with Project Rome.
+keywords: microsoft, windows, project rome, how-to iOS, how-to iPhone 
+---
+
 # Project Rome for iOS (preview release)
 
 Currently, Project Rome is implemented for iOS-client-to-Windows-host scenarios. You will need an iOS app development IDE and an iOS device or emulator to use this feature.

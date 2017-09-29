@@ -1,3 +1,8 @@
+---
+title: AppServiceConnection 
+description: This class manages a connection to an app service on a remote device.
+keywords: microsoft, windows, project rome, android api reference
+---
 # AppServiceConnection class
 This class manages a connection to an app service on a remote device.
 

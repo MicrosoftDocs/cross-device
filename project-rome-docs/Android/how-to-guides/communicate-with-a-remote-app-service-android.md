@@ -1,3 +1,9 @@
+---
+title: Communicate with a remote app service (Android client)
+description: This allows Android and Windows devices to communicate with each other via generic messages that can be handled by the apps on both platforms.
+keywords: microsoft, windows, project rome, Android api reference 
+---
+
 # Communicate with a remote app service (Android client)
 In addition to launching an app on a remote Windows device using a URI, your Android app can also interact with app services on Windows devices. This allows Android and Windows devices to communicate with each other via generic messages that can be handled by the apps on both platforms. 
 
@@ -46,7 +52,7 @@ Build your app service provider project and deploy it to the target device(s).
 ## Open an app service connection on the client device
 Your Android app must acquire a reference to a remote device. See [Getting started with Connected Devices (Android)](getting-started-rome-android.md) for a simple way to do this, or [Discover remote devices (Android client)](discover-remote-devices-android.md) for more in-depth options. 
 
-Your app will identify its targeted Windows app service by two strings: the *app service name* and *package family name*. These are found in the source code of the app service provider (see [Create and consume an app service](https://msdn.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service) for details). It also must implement an [**IAppServiceConnectionListener**](../api-reference/IAppServiceConnectionListener.md) and [**IAppServiceResponseListener**](../api-reference/IAppServiceResponseListener.md) to handle events related to the connection itself and communications over that connection. This is done in the next section.
+Your app will identify its targeted Windows app service by two strings: the *app service name* and *package ID*. These are found in the source code of the app service provider (see [Create and consume an app service](https://msdn.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service) for details). It also must implement an [**IAppServiceConnectionListener**](../api-reference/IAppServiceConnectionListener.md) and [**IAppServiceResponseListener**](../api-reference/IAppServiceResponseListener.md) to handle events related to the connection itself and communications over that connection. This is done in the next section.
 
 ```java
 // the "remoteSystem" object reference has already been selected.

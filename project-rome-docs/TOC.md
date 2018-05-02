@@ -1,20 +1,19 @@
 # [Project Rome](index.md)
 
-## [Android](Android/README.md)
+## Windows
+### [How-to guides](https://docs.microsoft.com/windows/uwp/launch-resume/connected-apps-and-devices)
+### [API reference](https://docs.microsoft.com/uwp/api/windows.system.remotesystems)
 
-### How-to guides
-#### [Communicate with a remote app service (Android client)](Android/how-to-guides/communicate-with-a-remote-app-service-android.md)
-#### [Discover remote devices (Android client)](Android/how-to-guides/discover-remote-devices-android.md)
-#### [Getting started with Connected Devices (Android)](Android/how-to-guides/getting-started-rome-android.md)
+## [Microsoft Graph (preview)](MSGraph/index.md)
 
-### [API reference](Android/api-reference/index.md)
+## Android (preview)
+### [API reference]
+#### [Relay](Android/api-reference/relay/index.md)
+#### [Activities](Android/api-reference/activities/index.md)
 
-## [iOS](iOS/README.md)
+## [Xamarin for Android (preview)](Xamarin/index.md)
 
-### [API reference](iOS/api-reference/index.md)
-
-## [Microsoft Graph](MSGraph/README.md)
-
-## [Windows](Windows/README.md)
-
-## [Xamarin](Xamarin/readme.md)
+## iOS (preview)
+### [API reference]
+#### [Relay](iOS/api-reference/relay/index.md)
+#### [Activities](iOS/api-reference/activities/index.md)

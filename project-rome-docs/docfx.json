@@ -31,10 +31,15 @@
     "externalReference": [],
     "globalMetadata": {
         "uhfHeaderId": "MSDocsHeader-WinUWP",
-        "titleSuffix": "UWP app developer",
         "breadcrumb_path":  "/windows/uwp/breadcrumbs/toc.json",
         "extendBreadcrumb": false,
-        "htmlDangerZone":  true
+        "htmlDangerZone":  true,
+        "titleSuffix": "Universal Windows Platform",
+        "ms.topic": "article",
+        "ms.prod": "windows",
+        "ms.technology": "Project Rome", 
+        "ms.date": "09/27/2017", 
+        "author": "pafarley"
     },
     "fileMetadata": {},
     "template": [],

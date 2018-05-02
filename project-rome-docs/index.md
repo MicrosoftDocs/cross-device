@@ -7,63 +7,37 @@ Project Rome is currently implemented for the following scenarios. Follow the li
 [windows-sdk]:             https://developer.microsoft.com/en-us/windows/downloads
 [windows-sdk-badge]:       https://img.shields.io/badge/sdk-Creators%20Update-brightgreen.svg?style=flat-square
 [windows-sample]:          https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/RemoteSystems
-[windows-docs]:            https://docs.microsoft.com/en-us/windows/uwp/launch-resume/connected-apps-and-devices
+[windows-apps]:            https://github.com/Microsoft/project-rome/tree/master/Windows/samples
+[windows-ref]:             https://docs.microsoft.com/uwp/api/windows.system.remotesystems
+[windows-docs]:            https://docs.microsoft.com/windows/uwp/launch-resume/connected-apps-and-devices
 
 [xamarin-sdk]:             https://www.nuget.org/packages/Microsoft.ConnectedDevices.Xamarin.Droid
 [xamarin-sdk-badge]:       https://img.shields.io/nuget/v/Microsoft.ConnectedDevices.Xamarin.Droid.svg?style=flat-square
 [xamarin-sample]:          https://github.com/Microsoft/project-rome/tree/master/Xamarin/samples
+[xamarin-docs]:            Xamarin/index.md
 
 [ios-sdk]:                 https://cocoapods.org/?q=ProjectRomeSdk
 [ios-sdk-badge]:           https://img.shields.io/cocoapods/v/ProjectRomeSdk.svg?style=flat-square
 [ios-sample]:              https://github.com/Microsoft/project-rome/tree/master/iOS/sample 
-[ios-docs]:                iOS/api-reference/
+[ios-ref]:                 iOS/api-reference/index.md
+[ios-docs]:                iOS/how-to-guides/index.md
 
 [android-sdk]:             https://bintray.com/projectrome/maven/public_sdk/_latestVersion
 [android-sdk-badge]:       https://img.shields.io/bintray/v/projectrome/maven/public_sdk.svg?style=flat-square
 [android-sample]:          https://github.com/Microsoft/project-rome/tree/master/Android/sample
-[android-docs]:            Android/api-reference/
+[android-ref]:             Android/api-reference/index.md
+[android-docs]:            Android/how-to-guides/index.md
 
 [graph-sdk]:               https://developer.microsoft.com/graph/docs/api-reference/beta/resources/project_rome_overview
 [graph-sdk-badge]:         https://img.shields.io/badge/REST-Beta-orange.svg?style=flat-square
-[graph-sample]:            https://developer.microsoft.com/graph/docs/api-reference/beta/resources/project_rome_overview
-[graph-docs]:              MSGraph/
+[graph-sample]:            https://developer.microsoft.com/graph/code-samples-and-sdks
+[graph-ref]:               https://developer.microsoft.com/graph/docs/api-reference/beta/resources/project_rome_overview 
+[graph-docs]:              https://developer.microsoft.com/graph/docs/api-reference/beta/resources/project_rome_overview
 
-|  Platform Samples                       |           SDK Package                           | API Docs
-| --------------------------------------: | :---------------------------------------------: | :----------:
-| **[Windows][windows-sample]**           |  [![SDK][windows-sdk-badge]][windows-sdk]       | [docs][windows-docs]
-| **[Android][android-sample] (Preview)** | [![Maven][android-sdk-badge]][android-sdk]      | [docs][android-docs]
-| **[iOS][ios-sample] (Preview)**         |     [![CocoaPod][ios-sdk-badge]][ios-sdk]       | [docs][ios-docs]
-| **[Xamarin for Android][xamarin-sample] (Preview)** |[![Nuget][xamarin-sdk-badge]][xamarin-sdk]       | Coming Soon
-| **[MSGraph][graph-sample] (Preview)**   |[![REST][graph-sdk-badge]][graph-sdk]            | [docs][graph-docs]
-
-## Project Rome blog posts
-* [Cross-device experiences with Project Rome](https://blogs.windows.com/buildingapps/2016/10/11/cross-device-experience-with-project-rome/#iQTseFlAMJRopU9k.97)
-
-* [Going social: Project Rome, Maps, & Social Network Integration](https://blogs.windows.com/buildingapps/2016/10/27/going-social-project-rome-maps-social-network-integration-app-dev-on-xbox-series/#SCfoEZ1q8c1yBMei.97)
-
-* [Announcing Project Rome Android SDK](https://blogs.windows.com/buildingapps/2017/02/08/announcing-project-rome-android-sdk/#obDkvwkXOGa3tcTx.97)
-
-* [Project Rome for Android Update: Now with App Services Support](https://blogs.windows.com/buildingapps/2017/03/23/project-rome-android-update-now-app-services-support/#DBm1Ic4JX8vXv2h0.97)
-
-* [Building a Remote Control Companion App for Android with Project Rome](https://blog.xamarin.com/building-remote-control-companion-app-android-project-rome/)
-
-* [New Share Experience in Windows 10 Creators Update](https://blogs.windows.com/buildingapps/2017/04/06/new-share-experience-windows-10-creators-update/#OGskrWcLLlrCTCSH.97)
-
-* [Web-to-App Linking with AppUriHandlers](https://blogs.windows.com/buildingapps/2016/10/14/web-to-app-linking-with-appurihandlers/#fIh7USaxBYS8JqfT.97)
-
-## MSDN docs and other resources
-* [Connected apps and devices (Project "Rome") for UWP](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/connected-apps-and-devices)
-
-* [Web-to-app linking](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/web-to-app-linking)
-
-* [//Build 2016 talk](https://channel9.msdn.com/Events/Build/2016/B831)
-
-* [MS Dev Show podcast](http://msdevshow.com/2016/11/project-rome-with-shawn-henry/)
-
-
-## Privacy
-See [Microsoft's privacy statement](https://privacy.microsoft.com/en-us/privacystatement/) for more information. 
-
-## Microsoft Open Source Code of Conduct
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+Platform |  Code samples  |     SDK package    | API reference | How-to docs  |
+:--------- | :---------- | :----------------: | :------- | :----------- |
+Windows | [Windows samples][windows-sample] / [end-to-end apps][windows-apps] |  [![SDK][windows-sdk-badge]][windows-sdk]   | [Windows ref][windows-ref]  | [Windows docs][windows-docs] |
+Android | [Android samples][android-sample] | [![Maven][android-sdk-badge]][android-sdk]  | [Android ref][android-ref] | [Android docs][android-docs] |
+iOS | [iOS samples][ios-sample]  |     [![CocoaPod][ios-sdk-badge]][ios-sdk]  | [iOS ref][ios-ref]   | [iOS docs][ios-docs]         |
+Xamarin | [Xamarin samples][xamarin-sample] |[![Nuget][xamarin-sdk-badge]][xamarin-sdk]   | N/A | [Xamarin docs][xamarin-docs]  |
+MS Graph | [MS Graph samples][graph-sample]      |[![REST][graph-sdk-badge]][graph-sdk]            | [Graph ref][graph-ref]      | [Graph docs][graph-docs]  |

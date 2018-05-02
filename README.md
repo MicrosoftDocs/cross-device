@@ -8,6 +8,8 @@ A device runtime for connecting and integrating Windows-based, cross-platform, a
 
 [Staging site for Project Rome docs](https://review.docs.microsoft.com/en-us/windows/project-rome/?branch=master)
 
+## Privacy
+See [Microsoft's privacy statement](https://privacy.microsoft.com/en-us/privacystatement/) for more information. 
 
 ## Microsoft Open Source Code of Conduct
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).

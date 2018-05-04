@@ -1,6 +1,7 @@
 ---
 title: MCDUserNotificationChangeReader
-description: TBD
+description: This class is responsible for retrieving the state changes of a user's notifications.
+
 keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone 
 ---
 
@@ -10,7 +11,8 @@ keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone
 @interface MCDUserNotificationChangeReader : NSObject
 ```
 
-TBD
+This class is responsible for retrieving the state changes of a user's notifications.
+
 
 ## Properties
 

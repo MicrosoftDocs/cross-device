@@ -23,4 +23,4 @@ This method is called when the app receives a push notification; it exposes the 
 * `bundle` The notification information.
 
 #### Returns
-true if the connected devices platform processed the notification, false otherwise.
+**true** if the Connected Devices platform processed the notification, **false** if the notification was not associated with the Platform.

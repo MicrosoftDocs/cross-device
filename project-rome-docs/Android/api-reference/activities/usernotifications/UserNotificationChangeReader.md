@@ -10,7 +10,7 @@ keywords: microsoft, windows, device relay, Android, Android api reference
 public class UserNotificationChangeReader
 ```
 
-This class is responsible for retrieving a user's notifications. TBD
+This class is responsible for retrieving the state changes of a user's notifications.
 
 ## Methods
 

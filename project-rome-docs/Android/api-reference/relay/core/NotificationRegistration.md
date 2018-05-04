@@ -1,6 +1,6 @@
 ---
 title: NotificationRegistration
-description: TBD
+description: This class represents the app's registration with a push notification service (necessary for some Project Rome scenarios). 
 keywords: microsoft, windows, device relay, Android, Android api reference 
 ---
 
@@ -10,7 +10,7 @@ keywords: microsoft, windows, device relay, Android, Android api reference
 public final class NotificationRegistration
 ```
 
-TBD
+This class represents the app's registration with a push notification service (necessary for some Project Rome scenarios). It conveys this information to the Connected Devices Platform.
 
 
 ## Constructors
@@ -21,10 +21,10 @@ TBD
 Creates a new instance of this class with the given notification type, token, app ID, and app name.
 
 #### Parameters
-* `type` TBD
-* `token`
-* `senderId`
-* `displayName`
+* `type` A [NotificationType](NotificationType.md) value describing the platform type.
+* `token` The string that the messaging service sends to your registration intent service.
+* `senderId` The numeric Sender ID that you received when you registered your app for push notifications. 
+* `displayName` The app display name. This should be the name of the app that was used for registration on the Microsoft dev portal.
 
 #### Returns
 A new instance of this class.
@@ -37,31 +37,31 @@ A new instance of this class.
 ### getNotificationType
 `public NotificationType getNotificationType()`
 
-TBD
+Gets the type of notifications in this setup.
 
 #### Returns
-tbd
+The type of notifications in this setup.
 
 ### getToken
 `public String getToken()`
 
-TBD
+Gets the registration token.
 
 #### Returns
-tbd
+The registration token.
 
 ### getApplicationId
 `public String getApplicationId()`
 
-TBD
+Gets the app ID for push notification registration
 
 #### Returns
-tbd
+The app ID.
 
 ### getApplicationDisplayName
 `public String getApplicationDisplayName()`
 
-TBD
+Gets the app display name. This should be the name of the app that was used for registration on the Microsoft dev portal.
 
 #### Returns
-tbd
+The app display name.

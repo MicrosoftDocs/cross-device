@@ -24,7 +24,7 @@ Creates and initializes an instance of this class.
 ### addAttribute
 `public void addAttribute(@NonNull String name, @Nullable String value)`
 
-Adds a key/value attribute to the application registration.
+Adds a key/value attribute to the application registration. 
 
 #### Parameters
 * `value` The attribute value.

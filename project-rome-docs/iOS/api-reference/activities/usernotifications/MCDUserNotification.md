@@ -18,10 +18,9 @@ This class represents a user notification created by the user's notification cha
 `@property(nonatomic, readonly, nonnull) NSString* notificationId;`
 A unique identifier for the notification.
 
-
 ### groupId
 `@property(nonatomic, readonly, nonnull) NSString* groupId;`
-TBD
+The group ID.
 
 ### expirationTime
 `@property(nonatomic, readonly, nonnull) NSDate* expirationTime;`
@@ -34,7 +33,6 @@ The priority attribute of the notification.
 ### content
 `@property(nonatomic, readonly, nonnull) NSString* content;`
 The text content of the notification.
-
 
 ###  readState
 `@property(nonatomic, readwrite) MCDUserNotificationReadState readState;`

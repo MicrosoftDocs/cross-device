@@ -24,11 +24,17 @@ An ID String.
 
 ### getGroupId
 `public String getGroupId()`
-TBD
+Gets the group ID
+
+#### Returns
+The group ID.
 
 ### getExpirationTime
 `public Date getExpirationTime()`
 Gets the notification's expiration time.
+
+#### Returns
+The expiration time.
 
 ### getContent
 `public String getContent()`

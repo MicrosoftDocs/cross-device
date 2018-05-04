@@ -26,7 +26,7 @@ Initialized an instance of this class with default values.
 Initializes an instance of the RemoteLauncherOptions class.
 
 #### Parameters  
-* `fallbackUri` The URI of the web site to open in the event that the original URI cannot be handled by the intended app
+* `fallbackUri` The URI of the website to open in the event that the original URI cannot be handled by the intended app
 * `preferredPackageIds` a list of package IDs of apps that should be used to launch the URI on the remote device. The first string on the list should correspond to the preferred application.  
 
 ## Methods

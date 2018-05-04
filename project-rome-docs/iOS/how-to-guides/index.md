@@ -6,8 +6,8 @@ keywords: microsoft, windows, project rome, iOS, iOS api reference, iPhone
 
 # Project Rome for iOS (preview release)
 
-Currently, Project Rome is implemented for iOS-client-to-Windows-host scenarios. You will need an iOS app development IDE and an iOS device or emulator to use this feature.
-
-* See the [Getting started](getting-started-rome-ios.md) guide for further instructions on how to use the SDK.
-* View the API reference documentation in the [api reference](../api-reference/index.md) section.
-* See code samples for Rome iOS apps in the [sample](https://github.com/Microsoft/project-rome/tree/master/iOS/sample) section.
+Here you will find how-to guides for developers who wish to implement Project Rome features in their iOS apps. You will need an iOS app development IDE and an iOS device or emulator to use these features.
+* First, see the [Getting started](getting-started-rome-ios.md) guide for all the preliminary steps needed to set up the Rome SDK for iOS.
+* Then, see the [Commanding guide](gettings-started-rome-ios.md), [Hosting guide](hosting-ios.md), or [Activities guide](user-activities-ios.md), depending on which scenarios you are targeting.
+* You can view the API reference documentation in the [api reference](../api-reference/index.md) section.
+* Take a look at the [iOS sample app](tbdGH) to see a working example of Project Rome features.

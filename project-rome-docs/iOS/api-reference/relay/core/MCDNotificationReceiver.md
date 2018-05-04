@@ -20,7 +20,7 @@ This class is responsible for receiving push notifications and relaying them int
 This method is called when the app receives a push notification; it exposes the notification to the connected devices platform.
 
 #### Parameters
-* `userInfo` Information about the user to which the notification was sent. TBD
+* `userInfo` The notification information.
 
 #### Returns
-YES if the connected devices platform processed the notification, NO otherwise.
+YES if the connected devices platform processed the notification, NO if the notification was not associated with the Platform.

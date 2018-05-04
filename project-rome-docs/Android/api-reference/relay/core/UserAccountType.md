@@ -14,6 +14,6 @@ Contains values that describe the type of Microsoft-provided user account.
 
 |Name | Value | Description |
 |:-- |:-- |:-- |
-| AAD |0| Azure Active Directory workplace account.|
+| AAD |0| Azure Active Directory workplace account (not currently supported).|
 | MSA |1| Microsoft personal account.|
 

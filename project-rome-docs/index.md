@@ -1,6 +1,6 @@
 # Project Rome
 
-"Project Rome" is a project code name for Microsoft's cross-device experiences platform using the Microsoft Graph. This toolkit, consisting of API sets on multiple development platforms, allows an app on a client (local) device to interact with apps and services on a host (remote) device that is signed in with or receptive to the Microsoft Account (MSA) or Azure Active Directory (AAD) account on the client device. This allows developers to program cross-device and cross-platform experiences that are centered around user tasks rather than devices.
+"Project Rome" is a project code name for Microsoft's cross-device experiences platform using the Microsoft Graph. This toolkit, consisting of API sets on multiple development platforms, allows an app on a client (local) device to interact with apps and services on a host (remote) device that is signed in with or receptive to the Microsoft Account (MSA) account on the client device. This allows developers to program cross-device and cross-platform experiences that are centered around user tasks rather than devices.
 
 Project Rome is currently implemented for the following scenarios. Follow the links for each corresponding section.
 

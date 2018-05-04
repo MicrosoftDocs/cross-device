@@ -19,7 +19,7 @@ This class manages the life cycle of user notifications.
 `public UserNotificationChannel(UserAccount account)`
 
 #### Parameters 
-* `account` tbd
+* `account` The associated user account to track notifications for.
 
 #### Returns
 A new instance of this class.

@@ -105,6 +105,25 @@ The following is an implementation of **MCDNotificationProvider** from the sampl
 @end
 ```
 
+The following sample code updates this **MCDNotificationProvider** with a filled-in **MCDNotificationRegistration**.
+
+```ObjectiveC
+/*
+* NotificationRegistration is constructed with four parameters:
+* Type: This is GCM or FCM or APN (the notification platform type).
+* Token: This is the NSData that APNs sends to your app delegate's didRegisterForRemoteNotificationsWithDeviceToken: method. You must convert the NSData into a string by hex-encoding it.
+* SenderId: This is your app’s bundle identifier. 
+* DisplayName: This should be the name of the app that you used when you registered it on the Microsoft dev portal. 
+*/
+[NotificationProvider
+    updateNotificationRegistration:[[MCDNotificationRegistration alloc]
+        initWithNotificationType:MCDNotificationTypeAPN
+        token:deviceTokenStr
+        appId:[[NSBundle mainBundle] bundleIdentifier]
+        appDisplayName:(NSString*)[[NSBundle mainBundle]
+                                                                        objectForInfoDictionaryKey:@"CFBundleDisplayName"]]];
+```
+
 The next steps will depend on which scenarios you are targeting. You can set up your app to be remotely launched or to provide an app service. The next two sections will cover these scenarios.
 
 ## A) Implement hosting for remote launch

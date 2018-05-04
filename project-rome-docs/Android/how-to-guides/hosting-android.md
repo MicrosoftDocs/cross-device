@@ -46,9 +46,9 @@ private NotificationRegistration mNotificationRegistration;
 
 /**
 * NotificationRegistration is constructed with four parameters:
-* Type: This is GCM or FCM or APN (the notification platform type). 
-* Token: On Android, this is the string that GCM or FCM sends to your registration intent service. On iOS, it’s the NSData that APNs sends to your app delegate’s didRegisterForRemoteNotificationsWithDeviceToken: method. (You must convert the NSData into a string by hex-encoding it.) 
-*SenderId: On Android, this is the numeric Sender ID that you received when you registered your app for push notifications. On iOS, this is your app’s bundle identifier. 
+* Type: This is GCM or FCM or APN (the notification platform type).
+* Token: This is the string that GCM or FCM sends to your registration intent service.
+*SenderId: This is the numeric Sender ID that you received when you registered your app for push notifications.
 * DisplayName: This should be the name of the app that you used when you registered it on the Microsoft dev portal. 
 */
 mNotificationRegistration = new NotificationRegistration(NotificationType.FCM, token, FCM_SENDER_ID, "MyAppName");

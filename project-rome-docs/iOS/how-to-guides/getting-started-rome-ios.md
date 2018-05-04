@@ -19,9 +19,7 @@ Microsoft Account (MSA) authentication is required for all features of the SDK, 
 If you do not already have an MSA, Register for one on [account.microsoft.com](https://account.microsoft.com/account).
 
 The Project Rome SDK requires an OAuth 2.0 access token to register with the platform. An OAuth 2.0 access token can be obtained using the developer's preferred method. In an attempt to help developers onboard with the platform more easily, we have provided an authentication provider as part of the  
-iOS and iOS samples. The [sample authentication provider](TBDGH) can be used to obtain the OAuth 2.0 access token and refresh token for your app.
-
----
+iOS and iOS samples. The [sample authentication provider](https://github.com/Microsoft/project-rome/tree/master/iOS/samples/account-provider-sample) can be used to obtain the OAuth 2.0 access token and refresh token for your app.
 
 Next, you must register your app with Microsoft by following the cross platform instructions on the [Application Registration Portal](https://apps.dev.microsoft.com/) (if you do not have a Microsoft developer account created, you must do this first). You should receive a client ID string for your app - save this for later. This will allow your app to access Microsoft's Connected Devices Platform resources. 
 
@@ -50,7 +48,7 @@ The **MCDPlatform** `createWithNotificationProviderAsync:` method takes three pa
 The **MCDNotificationProvider** parameter is only needed for remote app hosting and User Activities, which are not covered in this guide. It can be left `null` for the scenarios here.
 
 
-The **MCDUserAccountProvider** is needed to deliver an ID for the current user to the Connected Devices Platform. It will be called the first time the app is run and upon the expiration of a platform-managed refresh token. This is where the class(es) in the [sample authentication provider](TBDGH) can be used. It provides classes that implement the **MCDUserAccountProvider** interface and facilitate the account-fetching process.
+The **MCDUserAccountProvider** is needed to deliver an ID for the current user to the Connected Devices Platform. It will be called the first time the app is run and upon the expiration of a platform-managed refresh token. This is where the class(es) in the [sample authentication provider](https://github.com/Microsoft/project-rome/tree/master/iOS/samples/account-provider-sample) can be used. It provides classes that implement the **MCDUserAccountProvider** interface and facilitate the account-fetching process.
 
 The following code from the sample app shows the initialization of the MCDPlatform.
 

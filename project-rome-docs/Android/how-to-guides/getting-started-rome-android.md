@@ -19,9 +19,7 @@ Microsoft Account (MSA) authentication is required for all features of the SDK, 
 If you do not already have an MSA, Register for one on [account.microsoft.com](https://account.microsoft.com/account).
 
 The Project Rome SDK requires an OAuth 2.0 access token to register with the platform. An OAuth 2.0 access token can be obtained using the developer's preferred method. In an attempt to help developers onboard with the platform more easily, we have provided an authentication provider as part of the  
-Android and iOS samples. The [sample authentication provider](TBDGH) can be used to obtain the OAuth 2.0 access token and refresh token for your app.
-
----
+Android and iOS samples. The [sample authentication provider](https://github.com/Microsoft/project-rome/tree/master/Android/samples/account-provider-sample) can be used to obtain the OAuth 2.0 access token and refresh token for your app.
 
 Next, you must register your app with Microsoft by following the cross platform instructions on the [Application Registration Portal](https://apps.dev.microsoft.com/) (if you do not have a Microsoft developer account created, you must do this first). You should receive a client ID string for your app - save this for later. This will allow your app to access Microsoft's Connected Devices Platform resources. 
 
@@ -76,7 +74,7 @@ The **Platform.createInstanceAsync** method takes four parameters: the **Context
 The **NotificationProvider** parameter is only needed for remote app hosting and User Activities, which are not covered in this guide. It can be left `null` for the scenarios here.
 
 
-The **UserAccountProvider** is needed to deliver an ID for the current user to the Connected Devices Platform. It will be called the first time the app is run and upon the expiration of a platform-managed refresh token. This is where the class(es) in the [sample authentication provider](TBDGH) can be used. In the code below, `getSignInHelper()` references an MSAAccountProvider, also initialized below; this provided class implements the UserAccountProvider interface, and it facilitates the account-fetching process.
+The **UserAccountProvider** is needed to deliver an ID for the current user to the Connected Devices Platform. It will be called the first time the app is run and upon the expiration of a platform-managed refresh token. This is where the class(es) in the [sample authentication provider](https://github.com/Microsoft/project-rome/tree/master/Android/samples/account-provider-sample) can be used. In the code below, `getSignInHelper()` references an MSAAccountProvider, also initialized below; this provided class implements the UserAccountProvider interface, and it facilitates the account-fetching process.
 
 ```Java
 private MSAAccountProvider mSignInHelper;

@@ -17,5 +17,5 @@
 #### [Core](iOS/api-reference/relay/core/index.md)
 #### [Discovery](iOS/api-reference/relay/discovery/index.md)
 #### [Hosting](iOS/api-reference/relay/hosting/index.md)
-#### [UserActivities]((iOS/api-reference/activities/useractivities/index.md)
-#### [UserNotifications]((iOS/api-reference/activities/usernotifications/index.md)
+#### [UserActivities](iOS/api-reference/activities/useractivities/index.md)
+#### [UserNotifications](iOS/api-reference/activities/usernotifications/index.md)

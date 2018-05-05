@@ -5,7 +5,7 @@ keywords: microsoft, windows, project rome, Android api reference
 ---
 
 # Getting started with Connected Devices (Android)
-This guide shows you how to set up the Connected Devices Platform on an Android app and use it to discover and connect to remote devices and apps. Refer to the [Android sample app](TBDGH) for a working example of all Android scenarios.
+This guide shows you how to set up the Connected Devices Platform on an Android app and use it to discover and connect to remote devices and apps. Refer to the [Android sample app](https://github.com/Microsoft/project-rome/tree/master/Android/samples) for a working example of all Android scenarios.
 
 
 ## Preliminary setup for Connected Devices functionality

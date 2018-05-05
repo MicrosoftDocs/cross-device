@@ -39,7 +39,7 @@
     "globalMetadata": {
         "uhfHeaderId": "MSDocsHeader-WinUWP",
         "breadcrumb_path":  "~/breadcrumb/toc.yml",
-        "extendBreadcrumb": true,
+        "extendBreadcrumb": false,
         "titleSuffix": "Universal Windows Platform",
         "ms.topic": "article",
         "ms.prod": "windows",

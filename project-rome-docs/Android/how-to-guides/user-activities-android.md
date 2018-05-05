@@ -122,7 +122,7 @@ mActivity.getVisualElements().setDisplayText(mDisplayText);
 mActivity.setActivationUri(mActivationUri);
 ```
 
-For more information on the different ways that a UserActivity can be customized, see the **[UserActivity](../api-reference/activities/useractivities/UserActivity.md)**, **[UserActivityVisualElements](../api-reference/activities/useractivities/UserActivityVisualElements.md)**, and **[UserActivityAttribution](../api-reference/activities/useractivities/UserActivityAttribution.md)** classes.
+For more information on the different ways that a UserActivity can be customized, see the **[UserActivity](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.useractivities._user_activity)**, **[UserActivityVisualElements](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.useractivities._user_activity_visual_elements)**, and **[UserActivityAttribution](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.useractivities._user_activity_attribution)** classes.
 
 Finally, publish the Activity to the cloud. 
 
@@ -198,4 +198,4 @@ operation.whenCompleteAsync(new AsyncOperation.ResultBiConsumer<UserActivitySess
 });
 ```
 
-Now your app should have a populated list of **UserActivitySessionHistoryItem**s. Each of these can deliver the underlying **UserActivity** (see [UserActivitySessionHistoryItem](../api-reference/activities/useractivities/UserActivitySessionHistoryItem.md) for details), which you can then display to the user.
+Now your app should have a populated list of **UserActivitySessionHistoryItem**s. Each of these can deliver the underlying **UserActivity** (see [UserActivitySessionHistoryItem](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.useractivities._user_activity_session_history_item) for details), which you can then display to the user.

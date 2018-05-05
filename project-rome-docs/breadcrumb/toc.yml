@@ -8,7 +8,7 @@
     items:
     - name: Project Rome
       tocHref: /windows/project-rome/
-      topicHref: /windows/project-rome/iOS/index
+      topicHref: /windows/project-rome/index
       items:
       - name: iOS
         tocHref: /windows/project-rome/iOS/
@@ -52,5 +52,3 @@
       - name: MS Graph
         tocHref: /windows/project-rome/MSGraph/
         topicHref: /windows/project-rome/MSGraph/index
-
-      

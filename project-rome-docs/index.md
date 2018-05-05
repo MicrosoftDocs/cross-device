@@ -25,7 +25,7 @@ Project Rome is currently implemented for the following scenarios. Follow the li
 [android-sdk]:             https://bintray.com/projectrome/maven/public_sdk/_latestVersion
 [android-sdk-badge]:       https://img.shields.io/bintray/v/projectrome/maven/public_sdk.svg?style=flat-square
 [android-sample]:          https://github.com/Microsoft/project-rome/tree/master/Android/sample
-[android-ref]:             Android/api-reference/index.md
+[android-ref]:             https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.base
 [android-docs]:            Android/how-to-guides/index.md
 
 [graph-sdk]:               https://developer.microsoft.com/graph/docs/api-reference/beta/resources/project_rome_overview

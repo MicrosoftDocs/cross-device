@@ -4,7 +4,8 @@
       {
         "files": [
           "**/*.md",
-          "**/*.yml"
+          "**/*.yml",
+          "toc.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -33,7 +34,7 @@
     "externalReference": [],
     "globalMetadata": {
         "uhfHeaderId": "MSDocsHeader-WinUWP",
-        "breadcrumb_path":  "./breadcrumb/toc.yml",
+        "breadcrumb_path":  "windows/project-rome/breadcrumb/toc.json",
         "extendBreadcrumb": false,
         "htmlDangerZone":  true,
         "titleSuffix": "Universal Windows Platform",

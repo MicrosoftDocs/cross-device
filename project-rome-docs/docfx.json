@@ -13,6 +13,13 @@
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ]
+      },
+      {
+        "files": [
+          "**/toc.yml"
+        ],
+        "src": "breadcrumb",
+        "dest": "rome_bread"
       }
     ],
     "resource": [

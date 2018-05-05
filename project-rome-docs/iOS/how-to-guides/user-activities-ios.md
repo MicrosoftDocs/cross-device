@@ -139,7 +139,7 @@ The following button method from the sample app toggles a session on and off.
     // Start a new a session for the UserActivity
     if (self.session == nil)
     {
-        self.session = [self.activity createSession];
+       self.session = [self.activity createSession];
         dispatch_async(dispatch_get_main_queue(), ^{
             NSLog(@"UserActivitySession has started %@", self.session);
             self.session = [self.activity createSession];
@@ -194,4 +194,4 @@ Your app can read User Activities and present them to the user just as the Windo
 }
 ```
 
-Now your app should have a populated list of **UserActivitySessionHistoryItem**s. Each of these can deliver the underlying **UserActivity** (see [UserActivitySessionHistoryItem](../api-reference/activities/useractivities/UserActivitySessionHistoryItem.md) for details), which you can then display to the user.
+Now your app should have a populated list of **UserActivitySessionHistoryItem**s. Each of these can deliver the underlying **UserActivity** (see [MCDUserActivitySessionHistoryItem](../api-reference/activities/useractivities/MCDUserActivitySessionHistoryItem.md) for details), which you can then display to the user.

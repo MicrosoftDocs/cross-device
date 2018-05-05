@@ -19,7 +19,8 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/**.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -31,7 +32,7 @@
     "externalReference": [],
     "globalMetadata": {
         "uhfHeaderId": "MSDocsHeader-WinUWP",
-        "breadcrumb_path":  "/windows/uwp/breadcrumbs/toc.json",
+        "breadcrumb_path":  "/windows/project-rome/breadcrumb/toc.json",
         "extendBreadcrumb": false,
         "htmlDangerZone":  true,
         "titleSuffix": "Universal Windows Platform",

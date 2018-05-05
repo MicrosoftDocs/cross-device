@@ -14,7 +14,7 @@ Project Rome is currently implemented for the following scenarios. Follow the li
 [xamarin-sdk]:             https://www.nuget.org/packages/Microsoft.ConnectedDevices.Xamarin.Droid
 [xamarin-sdk-badge]:       https://img.shields.io/nuget/v/Microsoft.ConnectedDevices.Xamarin.Droid.svg?style=flat-square
 [xamarin-sample]:          https://github.com/Microsoft/project-rome/tree/master/Xamarin/samples
-[xamarin-docs]:            Xamarin/index.md
+[xamarin-docs]:            https://docs.microsoft.com/xamarin
 
 [ios-sdk]:                 https://cocoapods.org/?q=ProjectRomeSdk
 [ios-sdk-badge]:           https://img.shields.io/cocoapods/v/ProjectRomeSdk.svg?style=flat-square

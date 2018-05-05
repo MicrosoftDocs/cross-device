@@ -15,6 +15,8 @@
 
 ## [iOS (preview)](iOS/index.md)
 ### [How-to guides](iOS/how-to-guides/index.md)
+#### [Commanding Guide](iOS/how-to-guides/command-remote-devices-and-apps-ios.md)
+#### [Hosting Guide](iOS/how-to-guides/hosting-ios.md)
 ### [API reference](iOS/api-reference/index.md)
 #### [Base](iOS/api-reference/relay/base/index.md)
 #### [Commanding](iOS/api-reference/relay/commanding/index.md)

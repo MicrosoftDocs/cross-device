@@ -116,7 +116,7 @@ It's important to note that a remote launch can target a remote device (in which
 
 Depending on the URI that is sent, you can launch an app in a specific state or configuration on a remote device. This allows for the ability to continue a user task, like watching a movie, on a different device without interruption. 
 
-As the previous section demonstrates, discovery happens at the device level first (a **MCDRemoteSystem** represents a device), but you can call the `getApplications` method on a **MCDRemoteSystem** instance to get an array of **MCDRemoteSystemApplication** objects, which represent apps on the remote device that have been registered to use the Connected Devices Platform (just as you registered your own app in the [Getting started guide](getting-started-rome-iOS)). Both **MCDRemoteSystem** and **MCDRemoteSystemApplication** can be used to construct a **MCDRemoteSystemConnectionRequest**, which is what is needed to launch a URI.
+As the previous section demonstrates, discovery happens at the device level first (a **MCDRemoteSystem** represents a device), but you can call the `getApplications` method on a **MCDRemoteSystem** instance to get an array of **MCDRemoteSystemApplication** objects, which represent apps on the remote device that have been registered to use the Connected Devices Platform (just as you registered your own app in the [Getting started guide](getting-started-rome-ios.md)). Both **MCDRemoteSystem** and **MCDRemoteSystemApplication** can be used to construct a **MCDRemoteSystemConnectionRequest**, which is what is needed to launch a URI.
 
 The following code from the sample shows the remote launching of a URI over a connection request.
 
@@ -150,7 +150,7 @@ The following code from the sample shows the remote launching of a URI over a co
 ```
 
 
-Depending on your use, you may need to cover the cases in which no apps on the targeted system can handle the URI, or multiple apps can handle it. The **[MCDRemoteLauncher](../api-reference/relay/discovery/MCDRemoteLauncher.md)** class and **[MCDRemoteLauncherOptions](../api-reference/relay/discovery/MCDRemoteLauncherOptions.md)** class describe how to do this.
+Depending on your use, you may need to cover the cases in which no apps on the targeted system can handle the URI, or multiple apps can handle it. The **[MCDRemoteLauncher](../api-reference/relay/commanding/MCDRemoteLauncher.md)** class and **[MCDRemoteLauncherOptions](../api-reference/relay/commanding/MCDRemoteLauncherOptions.md)** class describe how to do this.
 
 ## B) Remote app services
 

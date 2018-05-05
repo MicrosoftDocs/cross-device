@@ -1,48 +1,57 @@
-- name: Project Rome docs
-  tocHref: /windows/project-rome/
-  topicHref: /windows/project-rome/iOS/index
-  items:
-  - name: iOS
-    tocHref: /windows/project-rome/iOS/
-    topicHref: /windows/project-rome/iOS/index
-    items:
-    - name: How-to guides
-      tocHref: /windows/project-rome/iOS/how-to-guides/
-      topicHref: /windows/project-rome/iOS/how-to-guides/index
-    - name: Api reference
-      tocHref: /windows/project-rome/iOS/api-reference/
-      topicHref: /windows/project-rome/iOS/api-reference/index
-      items:
-        - name: Base
-          tocHref: /windows/project-rome/iOS/api-reference/relay/base/
-          topicHref: /windows/project-rome/iOS/api-reference/relay/base/index
-        - name: Commanding
-          tocHref: /windows/project-rome/iOS/api-reference/relay/commanding/
-          topicHref: /windows/project-rome/iOS/api-reference/relay/commanding/index
-        - name: Core
-          tocHref: /windows/project-rome/iOS/api-reference/relay/core/
-          topicHref: /windows/project-rome/iOS/api-reference/relay/core/index
-        - name: Discovery
-          tocHref: /windows/project-rome/iOS/api-reference/relay/discovery/
-          topicHref: /windows/project-rome/iOS/api-reference/relay/discovery/index
-        - name: Hosting
-          tocHref: /windows/project-rome/iOS/api-reference/relay/hosting/
-          topicHref: /windows/project-rome/iOS/api-reference/relay/hosting/index
-        - name: User Activities
-          tocHref: /windows/project-rome/iOS/api-reference/activities/useractivities/
-          topicHref: /windows/project-rome/iOS/api-reference/activities/useractivities/index
-        - name: User Notifications
-          tocHref: /windows/project-rome/iOS/api-reference/activities/usernotifications/
-          topicHref: /windows/project-rome/iOS/api-reference/activities/usernotifications/index
-  - name: Android
-    tocHref: /windows/project-rome/Android/
-    topicHref: /windows/project-rome/Android/index
-    items:
-    - name: How-to guides
-      tocHref: /windows/project-rome/Android/how-to-guides/
-      topicHref: /windows/project-rome/Android/how-to-guides/index
-  - name: MS Graph
-    tocHref: /windows/project-rome/MSGraph/
-    topicHref: /windows/project-rome/MSGraph/index
 
-  
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+  - name: Windows
+    tocHref: /windows/
+    topicHref: /windows/
+    items:
+    - name: Project Rome docs
+      tocHref: /windows/project-rome/
+      topicHref: /windows/project-rome/iOS/index
+      items:
+      - name: iOS
+        tocHref: /windows/project-rome/iOS/
+        topicHref: /windows/project-rome/iOS/index
+        items:
+        - name: How-to guides
+          tocHref: /windows/project-rome/iOS/how-to-guides/
+          topicHref: /windows/project-rome/iOS/how-to-guides/index
+        - name: Api reference
+          tocHref: /windows/project-rome/iOS/api-reference/
+          topicHref: /windows/project-rome/iOS/api-reference/index
+          items:
+            - name: Base
+              tocHref: /windows/project-rome/iOS/api-reference/relay/base/
+              topicHref: /windows/project-rome/iOS/api-reference/relay/base/index
+            - name: Commanding
+              tocHref: /windows/project-rome/iOS/api-reference/relay/commanding/
+              topicHref: /windows/project-rome/iOS/api-reference/relay/commanding/index
+            - name: Core
+              tocHref: /windows/project-rome/iOS/api-reference/relay/core/
+              topicHref: /windows/project-rome/iOS/api-reference/relay/core/index
+            - name: Discovery
+              tocHref: /windows/project-rome/iOS/api-reference/relay/discovery/
+              topicHref: /windows/project-rome/iOS/api-reference/relay/discovery/index
+            - name: Hosting
+              tocHref: /windows/project-rome/iOS/api-reference/relay/hosting/
+              topicHref: /windows/project-rome/iOS/api-reference/relay/hosting/index
+            - name: User Activities
+              tocHref: /windows/project-rome/iOS/api-reference/activities/useractivities/
+              topicHref: /windows/project-rome/iOS/api-reference/activities/useractivities/index
+            - name: User Notifications
+              tocHref: /windows/project-rome/iOS/api-reference/activities/usernotifications/
+              topicHref: /windows/project-rome/iOS/api-reference/activities/usernotifications/index
+      - name: Android
+        tocHref: /windows/project-rome/Android/
+        topicHref: /windows/project-rome/Android/index
+        items:
+        - name: How-to guides
+          tocHref: /windows/project-rome/Android/how-to-guides/
+          topicHref: /windows/project-rome/Android/how-to-guides/index
+      - name: MS Graph
+        tocHref: /windows/project-rome/MSGraph/
+        topicHref: /windows/project-rome/MSGraph/index
+
+      

@@ -1,4 +1,3 @@
-
 - name: Docs
   tocHref: /
   topicHref: /
@@ -7,7 +6,7 @@
     tocHref: /windows/
     topicHref: /windows/
     items:
-    - name: Project Rome docs
+    - name: Project Rome
       tocHref: /windows/project-rome/
       topicHref: /windows/project-rome/iOS/index
       items:
@@ -15,7 +14,7 @@
         tocHref: /windows/project-rome/iOS/
         topicHref: /windows/project-rome/iOS/index
         items:
-        - name: How-to guides
+        - name: How-to Guides
           tocHref: /windows/project-rome/iOS/how-to-guides/
           topicHref: /windows/project-rome/iOS/how-to-guides/index
         - name: Api reference
@@ -47,7 +46,7 @@
         tocHref: /windows/project-rome/Android/
         topicHref: /windows/project-rome/Android/index
         items:
-        - name: How-to guides
+        - name: How-to Guides
           tocHref: /windows/project-rome/Android/how-to-guides/
           topicHref: /windows/project-rome/Android/how-to-guides/index
       - name: MS Graph

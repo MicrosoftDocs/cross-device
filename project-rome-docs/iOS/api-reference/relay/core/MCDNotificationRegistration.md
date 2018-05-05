@@ -18,7 +18,7 @@ This class represents the app's registration with a push notification service (n
 ### type
 `@property(nonatomic, readonly) MCDNotificationType type;`
 
-A [NotificationType](NotificationType.md) value describing the platform type.
+A [MCDNotificationType](MCDNotificationType.md) value describing the platform type.
 
 > Note: Apps that use Google Cloud Messaging notifications (NotificationType value **GCM**) will not be able to send or receive push notifications for users in China.
 
@@ -48,7 +48,7 @@ The name of the app that was used for registration on the Microsoft dev portal.
 Creates a new instance of this class with the given notification type, token, app ID, and app name.
 
 #### Parameters
-* `notificationType` A [NotificationType](NotificationType.md) value describing the platform type.
+* `notificationType` A [MCDNotificationType](MCDNotificationType.md) value describing the platform type.
 * `token` The NSData that APN service sends to your app delegate's didRegisterForRemoteNotificationsWithDeviceToken: method. You must convert the NSData into a string by hex-encoding it.
 * `appId` The app's bundle identifier.
 * `appDisplayName` The name of the app that was used for registration on the Microsoft dev portal.
@@ -62,7 +62,7 @@ Creates a new instance of this class with the given notification type, token, ap
 Creates a new instance of this class with the given notification type, token, app ID, and app name.
 
 #### Parameters
-* `notificationType` A [NotificationType](NotificationType.md) value describing the platform type.
+* `notificationType` A [MCDNotificationType](MCDNotificationType.md) value describing the platform type.
 * `token` The NSData that APN service sends to your app delegate's didRegisterForRemoteNotificationsWithDeviceToken: method. You must convert the NSData into a string by hex-encoding it.
 * `appId` The app's bundle identifier.
 * `appDisplayName` The name of the app that was used for registration on the Microsoft dev portal.

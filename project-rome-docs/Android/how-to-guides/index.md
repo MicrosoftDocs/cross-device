@@ -1,10 +1,10 @@
 ---
-title: Project Rome for Android (preview release)
+title: Project Rome for Android how-to guides (preview release)
 description:  Using an Android device to expand your UWP app with Project Rome.
 keywords: microsoft, windows, project rome, Android api reference 
 ---
 
-# Project Rome for Android (preview release)
+# Project Rome for Android how-to guides (preview release)
 
 Here you will find how-to guides for developers who wish to implement Project Rome features in their Android apps. You will need an Android app development IDE and an Android device or emulator (Android 4.4.2 or later) to use these features.
 

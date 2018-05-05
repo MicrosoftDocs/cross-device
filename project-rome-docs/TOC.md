@@ -6,11 +6,13 @@
 
 ## [Microsoft Graph (preview)](MSGraph/index.md)
 
-## Android (preview)
+## [Android (preview)](Android/index.md)
+### [How-to guides](Android/how-to-guides/index.md)
 ### [API reference](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.base._async_operation.asyncoperation)
 
 
-## iOS (preview)
+## [iOS (preview)](iOS/index.md)
+### [How-to guides](iOS/how-to-guides/index.md)
 ### [API reference](iOS/api-reference/index.md)
 #### [Base](iOS/api-reference/relay/base/index.md)
 #### [Commanding](iOS/api-reference/relay/commanding/index.md)

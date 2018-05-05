@@ -1,10 +1,10 @@
 ---
-title: Project Rome for iOS (preview release)
+title: Project Rome for iOS how-to guides (preview release)
 description:  Using an iOS device to expand your UWP app with Project Rome.
 keywords: microsoft, windows, project rome, iOS, iOS api reference, iPhone 
 ---
 
-# Project Rome for iOS (preview release)
+# Project Rome for iOS how-to guides (preview release)
 
 Here you will find how-to guides for developers who wish to implement Project Rome features in their iOS apps. You will need an iOS app development IDE and an iOS device or emulator to use these features.
 * First, see the [Getting started](getting-started-rome-ios.md) guide for all the preliminary steps needed to set up the Rome SDK for iOS.

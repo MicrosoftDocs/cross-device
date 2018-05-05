@@ -1,0 +1,44 @@
+- name: iOS docs
+  tocHref: /../iOS/
+  topicHref: /..iOS/index
+  items:
+  - name: How-to guides
+    tocHref: /../iOS/how-to-guides/
+    topicHref: /..iOS/how-to-guides/index
+  - name: Api reference docs
+    tocHref: /../iOS/api-reference/
+    topicHref: /../iOS/api-reference/index
+    items:
+      - name: Base
+        tocHref: /../iOS/api-reference/relay/base/
+        topicHref: /../iOS/api-reference/relay/base/index
+      - name: Commanding
+        tocHref: /../iOS/api-reference/relay/commanding/
+        topicHref: /../iOS/api-reference/relay/commanding/index
+      - name: Core
+        tocHref: /../iOS/api-reference/relay/core/
+        topicHref: /../iOS/api-reference/relay/core/index
+      - name: Discovery
+        tocHref: /../iOS/api-reference/relay/discovery/
+        topicHref: /../iOS/api-reference/relay/discovery/index
+      - name: Hosting
+        tocHref: /../iOS/api-reference/relay/hosting/
+        topicHref: /../iOS/api-reference/relay/hosting/index
+      - name: User Activities
+        tocHref: /../iOS/api-reference/activities/useractivities/
+        topicHref: /../iOS/api-reference/activities/useractivities/index
+      - name: User Notifications
+        tocHref: /../iOS/api-reference/activities/usernotifications/
+        topicHref: /../iOS/api-reference/activities/usernotifications/index
+- name: Android docs
+  tocHref: /../Android/
+  topicHref: /..Android/index
+  items:
+  - name: How-to guides
+    tocHref: /../Android/how-to-guides/
+    topicHref: /../Android/how-to-guides/index
+- name: MS Graph docs
+  tocHref: /../MSGraph/
+  topicHref: /..MSGraph/index
+
+  

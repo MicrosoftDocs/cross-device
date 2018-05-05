@@ -7,14 +7,8 @@
 ## [Microsoft Graph (preview)](MSGraph/index.md)
 
 ## Android (preview)
-### [API reference](Android/api-reference/index.md)
-#### [Base](Android/api-reference/relay/base/index.md)
-#### [Commanding](Android/api-reference/relay/commanding/index.md)
-#### [Core](Android/api-reference/relay/core/index.md)
-#### [Discovery](Android/api-reference/relay/discovery/index.md)
-#### [Hosting](Android/api-reference/relay/hosting/index.md)
-#### [UserActivities](Android/api-reference/activities/useractivities/index.md)
-#### [UserNotifications](Android/api-reference/activities/usernotifications/index.md)
+### [API reference](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.base._async_operation.asyncoperation)
+
 
 ## iOS (preview)
 ### [API reference](iOS/api-reference/index.md)

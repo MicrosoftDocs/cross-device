@@ -11,4 +11,4 @@ Here you will find how-to guides for developers who wish to implement Project Ro
 * First, see the [Getting started](getting-started-rome-android.md) guide for all the preliminary steps needed to set up the Rome SDK for Android.
 * Then, see the [Commanding guide](command-remote-devices-and-apps-android.md), [Hosting guide](hosting-android.md), or [Activities guide](user-activities-android.md), depending on which scenarios you are targeting.
 * You can view the API reference documentation in the [api reference](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.base) section.
-* Take a look at the [Android sample app](tbdGH) to see a working example of Project Rome features.
+* Take a look at the [Android sample app](https://github.com/Microsoft/project-rome/tree/master/Android/samples) to see a working example of Project Rome features.

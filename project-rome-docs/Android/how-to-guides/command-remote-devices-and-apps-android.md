@@ -210,7 +210,7 @@ Use the returned **AsyncOperation** to handle the result of the launch attempt.
 }
 ```
 
-Depending on your use, you may need to cover the cases in which no apps on the targeted system can handle the URI, or multiple apps can handle it. The **[RemoteLauncher](../api-reference/relay/discovery/RemoteLauncher.md)** class and **[RemoteLauncherOptions](../api-reference/relay/discovery/RemoteLauncherOptions.md)** class describe how to do this.
+Depending on your use, you may need to cover the cases in which no apps on the targeted system can handle the URI, or multiple apps can handle it. The **[RemoteLauncher](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.commanding._remote_launcher)** class and **[RemoteLauncherOptions](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.commanding._remote_launcher_options)** class describe how to do this.
 
 ## B) Remote app services
 

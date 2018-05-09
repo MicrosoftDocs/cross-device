@@ -11,6 +11,7 @@
 #### [Getting started](Android/how-to-guides/getting-started-rome-android.md)
 #### [Commanding Guide](Android/how-to-guides/command-remote-devices-and-apps-android.md)
 #### [Hosting Guide](Android/how-to-guides/hosting-android.md)
+#### [User Activities Guide](Android/how-to-guides/user-activities-android.md)
 ### [API reference](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.base._async_operation.asyncoperation)
 
 
@@ -19,6 +20,7 @@
 #### [Getting started](iOS/how-to-guides/getting-started-rome-ios.md)
 #### [Commanding Guide](iOS/how-to-guides/command-remote-devices-and-apps-ios.md)
 #### [Hosting Guide](iOS/how-to-guides/hosting-ios.md)
+#### [User Activities Guide](Android/how-to-guides/user-activities-ios.md)
 ### [API reference](iOS/api-reference/index.md)
 #### [Base](iOS/api-reference/relay/base/index.md)
 #### [Commanding](iOS/api-reference/relay/commanding/index.md)

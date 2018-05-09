@@ -20,7 +20,7 @@
 #### [Getting started](iOS/how-to-guides/getting-started-rome-ios.md)
 #### [Commanding Guide](iOS/how-to-guides/command-remote-devices-and-apps-ios.md)
 #### [Hosting Guide](iOS/how-to-guides/hosting-ios.md)
-#### [User Activities Guide](Android/how-to-guides/user-activities-ios.md)
+#### [User Activities Guide](iOS/how-to-guides/user-activities-ios.md)
 ### [API reference](iOS/api-reference/index.md)
 #### [Base](iOS/api-reference/relay/base/index.md)
 #### [Commanding](iOS/api-reference/relay/commanding/index.md)

@@ -18,5 +18,5 @@ Contains the values that describe a connection to a remote app service.
 |UNKNOWN|4 |The connection could not be established for an unknown reason.|
 |REMOTE_SYSTEM_UNAVAILABLE |5 |The target remote device or application is no longer available for connection.|
 |REMOTE_SYSTEM_NOT_SUPPORTEDBYAPP |6 |The client app is not configured to support remote connectivity. |
-|NOT_AUTHORIZED |7 |The client device is not authorized to support remote connectivity. |
+|NOT_AUTHORIZED |7 |The client device is not authorized to support remote connectivity. This may occur because the AppServiceConnection was passed an invalid token. |
 

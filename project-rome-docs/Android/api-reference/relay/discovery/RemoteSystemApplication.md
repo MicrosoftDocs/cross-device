@@ -25,7 +25,7 @@ A unique String identifier.
 ### getDisplayName
 `public String getDisplayName()`
 
-Gets the display-friendly name for this application.
+Gets the display-friendly name for this application. This is the name used by the device for Bluetooth identification. If this hasn't been set or the device doesn't support Bluetooth, this field will be empty.
 
 #### Returns
 A String of the display name.

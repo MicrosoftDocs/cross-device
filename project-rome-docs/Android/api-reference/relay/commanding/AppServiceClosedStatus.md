@@ -12,6 +12,7 @@ public enum AppServiceClosedStatus
 
 Contains the values that describe the reason that an app service connection was closed.
 
+>**Important:** Currently, only a value of **UNKNOWN** will be encountered by Android apps.
 
 |Member   |Value   |Description   |
 |:--------|:-------|:-------------|

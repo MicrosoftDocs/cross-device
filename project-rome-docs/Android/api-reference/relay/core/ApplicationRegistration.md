@@ -17,7 +17,7 @@ This class represents an application that is registered for remote connectivity.
 ### getAttributes 
 `public Map<String, String> getAttributes()`
 
-Gets the attributes associated with this application.
+Gets the attributes associated with this application. For example, your app could define a unique ID attribute and share it with client devices. Then they can look for it in subsequent discoveries.
 
 #### Returns
 A Map of key/value pairs defining the attributes of this registration.

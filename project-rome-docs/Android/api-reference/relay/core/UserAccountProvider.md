@@ -30,7 +30,7 @@ This method gets an access token for a given user account.
 
 #### Parameters
 * `userAccountId` The identifier of the user account.
-* `scopes` The scopes of the access token.
+* `scopes` The scopes of the access token. The first element is expected to contain all of the scopes required by the Connected Devices Platform, each separated by whitespace.
 
 #### Returns
 An asynchronous operation with the access token result.

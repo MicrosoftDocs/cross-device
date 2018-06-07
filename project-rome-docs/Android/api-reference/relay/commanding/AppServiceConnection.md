@@ -33,6 +33,12 @@ Closes the connection to the remote app service. The client app should call this
 
 Opens the app service connection on the specified remote device or application. If the connection fails to open, an exception is thrown.
 
+>**Note:** This method will thrown an exception if any of the following are true:
+> * The connection is already open or is in the process of opening.
+> * The app service description has not been set or has been cleared.
+> * The platform has not been initialized.
+> * The app has subscribed a method to the connection's "request received" event but has not provided a **NotificationProvider** when initializing the platform. All hosting scenarios require a **NotificationProvider**.
+
 #### Parameters 
 * `connection` The connection request, which specifies the device or application to connect to. 
 
@@ -42,7 +48,7 @@ An asynchronous operation with an [AppServiceConnectionStatus](AppServiceConnect
 #### sendMessageAsync
 `public AsyncOperation<AppServiceResponse> sendMessageAsync(@NonNull Map<String, Object> messageMap)`
 
-Sends a message consisting of key/value pairs to the connected remote app service.
+Sends a message to the remote app service and begins listening for a response. This method should only be called after the connection was opened successfully.
 
 #### Parameters
 * `messageMap` a Map of the keys and values to send.
@@ -70,7 +76,7 @@ appServiceDescription - the description object for the app service.
 ### addRequestReceivedListener
 `public long addRequestReceivedListener(@NonNull EventListener<AppServiceConnection, AppServiceRequestReceivedEventArgs> listener)`
 
-Assigns an event listener to this AppServiceConnection, to handle the event in which a service request is received from a remote app.
+Assigns an event listener to this **AppServiceConnection**, to handle the event in which a service request is received from a remote app.
 
 #### Parameters
 * `listener` The event listener. This must be implemented by the developer.
@@ -81,7 +87,7 @@ A unique identifier for this event listener. This is needed to remove the listen
 ### removeRequestReceivedListener
 `public void removeRequestReceivedListener(long eventRegistrationToken)`
 
-Removes a previously assigned "request received" event listener from this AppServiceConnection.
+Removes a previously assigned "request received" event listener from this **AppServiceConnection**.
 
 #### Parameters
 * `eventRegistrationToken` The unique identifier of the "request received" event listener to be removed.
@@ -89,7 +95,9 @@ Removes a previously assigned "request received" event listener from this AppSer
 ### addServiceClosedListener
 `public long addServiceClosedListener(@NonNull EventListener<AppServiceConnection, AppServiceClosedStatus> listener)`
 
-Assigns an event listener to this AppServiceConnection, to handle the event in which the connection to the app service closes.
+Assigns an event listener to this **AppServiceConnection**, to handle the event in which the connection to the app service closes.
+
+> **Note:** On the client app, the "app service closed" event is only raised for unexpected connection interruptions; it is not raised when the `close` method is called by either the client or the host. On the host app, the event _is_ raised when the client calls `close`.
 
 #### Parameters
 * `listener` The event listener. This must be implemented by the developer.
@@ -98,7 +106,7 @@ Assigns an event listener to this AppServiceConnection, to handle the event in w
 A unique identifier for this event listener. This is needed to remove the listener from this event.
 
 ### removeServiceClosedListener
-Removes a previously assigned "service closed" event listener from this AppServiceConnection.
+Removes a previously assigned "service closed" event listener from this **AppServiceConnection**.
 
 `public void removeServiceClosedListener(long eventRegistrationToken)`
 

@@ -38,6 +38,7 @@ target 'iOSSample' do
   # Pods for iOSSample
 ```
 
+> **Note:** In order to consume CocoaPod, you must use the _.xcworkspace_ file in your project.
 
 ## Initialize the Connected Devices platform
 

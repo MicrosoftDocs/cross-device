@@ -56,6 +56,12 @@ The initialized [MCDAppServiceConnection](MCDAppServiceConnection.md) if success
 
 Opens the app service connection on the specified remote device or application. If the connection fails to open, an exception is thrown.
 
+>**Note:** This method will thrown an exception if any of the following are true:
+> * The connection is already open or is in the process of opening.
+> * The app service description has not been set or has been cleared.
+> * The platform has not been initialized.
+> * The app has subscribed a method to the connection's "request received" event but has not provided a **MCDNotificationProvider** when initializing the platform. All hosting scenarios require a **MCDNotificationProvider**.
+
 #### Parameters
 * `connectionRequest` The connection request indicating which remote app service to target.
 
@@ -75,7 +81,7 @@ Closes the connection to the remote app service. The client app should call this
 ### addRequestReceivedListener
 `- (NSUInteger)addRequestReceivedListener:(nonnull void (^)(MCDAppServiceConnection* _Nonnull, MCDAppServiceRequestReceivedEventArgs* _Nonnull))listener;`
 
-Adds a request received event listener.
+Assigns an event listener to this **MCDAppServiceConnection**, to handle the event in which a service request is received from a remote app.
 
 #### Parameters
 * `listener` The event listener. This must be implemented by the developer.
@@ -86,7 +92,7 @@ The event registration token, a unique ID for this event listener.
 ### removeRequestReceivedListener
 `- (void)removeRequestReceivedListener:(NSUInteger)eventRegistrationToken;`
 
-Removes a request received event listener.
+Removes a previously assigned "request received" event listener from this **MCDAppServiceConnection**.
 
 #### Parameters
 * `eventRegistrationToken` The ID token for the event listener to remove.
@@ -94,7 +100,9 @@ Removes a request received event listener.
 ### addServiceClosedListener
 `- (NSUInteger)addServiceClosedListener:(nonnull void (^)(MCDAppServiceConnection* _Nonnull, MCDAppServiceClosedStatus))listener;`
 
-Adds a service closed event listener.
+Assigns an event listener to this **MCDAppServiceConnection**, to handle the event in which the connection to the app service closes.
+
+> **Note:** On the client app, the "app service closed" event is only raised for unexpected connection interruptions; it is not raised when the `close` method is called by either the client or the host. On the host app, the event _is_ raised when the client calls `close`.
 
 #### Parameters
 * `listener` The event listener. This must be implemented by the developer.
@@ -105,7 +113,7 @@ The event registration token, a unique ID for this event listener.
 ### removeServiceClosedListener
 `- (void)removeServiceClosedListener:(NSUInteger)eventRegistrationToken;`
 
-Removes a service closed event listener.
+Removes a previously assigned "service closed" event listener from this **MCDAppServiceConnection**.
 
 #### Parameters
 * `eventRegistrationToken` The ID token for the event listener to remove.

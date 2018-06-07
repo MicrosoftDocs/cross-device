@@ -22,7 +22,7 @@ A unique identifier for this application.
 ### displayName
 `@property(nonatomic, readonly, nonnull) NSString* displayName;`
 
-The friendly display name for this application.
+The friendly display name for this application. This is the name used by the device for Bluetooth identification. If this hasn't been set or the device doesn't support Bluetooth, this field will be empty.
 
 ### availableByProximity
 `@property(nonatomic, readonly, getter=isAvailableByProximity) BOOL availableByProximity;`

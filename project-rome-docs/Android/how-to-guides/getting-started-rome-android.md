@@ -100,7 +100,7 @@ mSignInHelper.addUserAccountChangedListener(new EventListener<UserAccountProvide
 });
 ```
 
-The IApplicationRegistration is more simple. Create it just before initializing the Platform.
+The **IApplicationRegistration** is more simple. Create it just before initializing the Platform.
 
 ```Java
 protected void init()

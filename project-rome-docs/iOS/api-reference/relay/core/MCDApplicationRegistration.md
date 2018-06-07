@@ -17,7 +17,7 @@ This class represents an application that is registered for remote connectivity.
 ### attributes 
 `@property(nonatomic, readonly, nullable) NSDictionary<NSString*, NSString*>* attributes;`
 
-A dictionary of key/value pairs defining the attributes of this registration.
+A dictionary of key/value pairs defining the attributes of this registration. For example, your app could define a unique ID attribute and share it with client devices. Then they can look for it in subsequent discoveries.
 
 ### appServiceProviders
 `@property(nonatomic, readonly, nullable) NSArray<id<MCDAppServiceProvider>>* appServiceProviders;`

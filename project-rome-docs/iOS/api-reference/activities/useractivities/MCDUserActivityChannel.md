@@ -16,18 +16,25 @@ This class handles the adding and querying of user activities for the applicatio
 
 ## Constructors
 
-### userActivityChannelWithUserAccount
-`+ (nullable instancetype)userActivityChannelWithUserAccount:(nonnull MCDUserAccount*)userAccount
-                                         activitySourceHost:(nullable NSString*)activitySourceHost;`
+### userActivityChannelWithUserDataFeed
+`+ (nullable instancetype)userActivityChannelWithUserDataFeed:(nonnull MCDUserDataFeed*)userDataFeed;
+`
 
 #### Parameters
-* `userAccount` The user account associated with the activities on this channel.
-* `activitySourceHost` [optional] A string indicating the source of the activities on this channel.
+* `userDataFeed` The user data associated with the activities on this channel.
 
 #### Returns
 A new instance of this class.
 
 ## Methods
+
+### syncScope
+`+ (nonnull MCDSyncScope*)syncScope;`
+
+Gets the sync scope for this activity channel.
+
+#### Returns
+An **MCDSyncScope** instance.
 
 ### getOrCreateUserActivityAsync
 `- (void)getOrCreateUserActivityAsync:(nonnull NSString*)activityId
@@ -79,33 +86,26 @@ Gets the session history entries for a given activity.
 * `completionBlock` The code block to execute upon completion. This provides access to the activity history.
 
 ## Example
-The following sample code show how to create a MCDUserActivityChannel.
+The following sample code shows how to initialize an MCDUserActivityChannel.
 
-```Objective-C
-// An account provider is needed for this step.
-static id<MCDUserAccountProvider> s_accountProvider;
-
-@implementation UserActivityViewController
-
-// When the current view loads (or at any designated point in the application),
-// get a User Activity channel.
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    // You must be logged in to use UserActivities. IdentityViewController is defined
-    // elsewhere in the sample app.
-    s_accountProvider = [IdentityViewController accountProvider];
-    NSArray<MCDUserAccount*>* accounts = [s_accountProvider getUserAccounts];
-    if (accounts.count > 0)
-    {
-        // Get a UserActivity channel for the default account
-        self.channel = [MCDUserActivityChannel userActivityChannelWithUserAccount:accounts[0]];
-    }
-    else
-    {
-        // notify user that they must log in to use Activities
-        NSLog(@"Must have an active account to publish activities!");
-        self.createActivityStatusField.text = @"Need to be logged in!";
-    }
+```ObjectiveC
+// You must be logged in to use UserActivities
+NSArray<MCDUserAccount*>* accounts = [[AppDataSource sharedInstance].accountProvider getUserAccounts];
+if (accounts.count > 0)
+{
+    // Get a UserActivity channel, getting the default channel        
+    NSLog(@"Creating UserActivityChannel");
+    NSArray<MCDUserAccount*>* accounts = [[AppDataSource sharedInstance].accountProvider getUserAccounts];
+    MCDUserDataFeed* userDataFeed = [MCDUserDataFeed userDataFeedForAccount:accounts[0]
+        platform:[AppDataSource sharedInstance].platform
+        activitySourceHost:CROSS_PLATFORM_APP_ID];
+    NSArray<MCDSyncScope*>* syncScopes = @[ [MCDUserActivityChannel syncScope] ];
+    [userDataFeed addSyncScopes:syncScopes];
+    self.channel = [MCDUserActivityChannel userActivityChannelWithUserDataFeed:userDataFeed];
+}
+else
+{
+    NSLog(@"Must have an active account to publish activities!");
+    self.createActivityStatusField.text = @"Need to be logged in!";
 }
 ```

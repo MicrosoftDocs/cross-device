@@ -131,7 +131,7 @@ Sends a message to a specified remote app service and begins listening for a res
 ## Example
 The following sample code uses an MCDAppServiceConnection and related classes to connect to a remote app service and exchange a simple message to compare date information and get the total delivery time.
 
-```Objective-C
+```ObjectiveC
 MCDAppServiceConnection *_appServiceConnection;
 NSUInteger _requestReceivedRegistration;
 NSUInteger _serviceClosedRegistration;

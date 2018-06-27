@@ -154,7 +154,7 @@ Removes a listener from the "error occurred" event.
 ## Example
 The following sample code shows how to create and start a simple MCDRemoteSystemWatcher to discover RemoteSystem instances.
 
-```Objective-C
+```ObjectiveC
 // Create a RemoteSystemWatcher to discover devices
 MCDRemoteSystemWatcher* _watcher;
 

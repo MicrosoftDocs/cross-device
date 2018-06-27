@@ -78,7 +78,7 @@ Publishes the user activity. The MCDUserActivity must have an activation URI and
 
 The following sample code shows how to create and publish a User Activity.
 
-```Objective-C
+```ObjectiveC
 // In the context of the sample app, this method is called on a button click
 - (IBAction)createActivityButton:(id)sender {
     

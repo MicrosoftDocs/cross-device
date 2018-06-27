@@ -33,7 +33,7 @@ The time when the user stopped engaging in the associated activity.
 ## Example
 The following sample code shows how to use MCDUserActivitySessionHistoryItem instances to fetch and read the user's User Activities in your app.
 
-```Objective-C
+```ObjectiveC
 // In the context of the sample app, this method is called on a button click
 - (IBAction)readActivityButton:(id)sender {
     

@@ -44,42 +44,63 @@ target 'iOSSample' do
 
 Before any Connected Devices features can be used, the platform must be initialized. 
 
-The **MCDPlatform** `createWithNotificationProviderAsync:` method takes three parameters: a **MCDNotificationProvider**, a **MCDApplicationRegistration**, and a **MCDUserAccountProvider**. This section shows how to get these parameters. 
-
-The **MCDNotificationProvider** parameter is only needed for remote app hosting and User Activities, which are not covered in this guide. It can be left `null` for the scenarios here.
+The **MCDPlatform**'s `platformWithAccountProvider:` method takes two parameters: a **MCDUserAccountProvider** and a **MCDNotificationProvider**. The **MCDNotificationProvider** parameter is only needed for remote app hosting and User Activities, which are not covered in this guide. It can be left `null` for the scenarios here.
 
 
 The **MCDUserAccountProvider** is needed to deliver an ID for the current user to the Connected Devices Platform. It will be called the first time the app is run and upon the expiration of a platform-managed refresh token. This is where the class(es) in the [sample authentication provider](https://github.com/Microsoft/project-rome/tree/master/iOS/samples/account-provider-sample) can be used. It provides classes that implement the **MCDUserAccountProvider** interface and facilitate the account-fetching process.
 
-The following code from the sample app shows the initialization of the MCDPlatform.
+The final step of initialization involves registering the current application with the Connected Devices Platform cloud directory through the use of the **MCDRemoteSystemApplicationRegistration** class.
+
+The following code from the sample app shows the initialization of the platform.
 
 ```ObjectiveC
 - (void)initializePlatform
 {
-    AppDelegate* appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
-    // Rome is initialized asynchronously
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        MCDHostingApplicationRegistrationBuilder* builder = [MCDHostingApplicationRegistrationBuilder new];
-        [builder addAppServiceProvider:appDelegate.appServiceProvider];
-        [builder addAttribute:@"ExampleAttribute" forName:@"ExampleName"];
-        MCDApplicationRegistration* registration = [builder buildRegistration];
+    // Only register for APNs if this app is enabled for push notifications
+    NotificationProvider* notificationProvider;
+    if ([[UIApplication sharedApplication] isRegisteredForRemoteNotifications])
+    {
+        notificationProvider = [AppDataSource sharedInstance].notificationProvider;
+    }
+    else
+    {
+        NSLog(@"Initializing platform without a notification provider!");
+        notificationProvider = nil;
+    }
 
-#if TARGET_IPHONE_SIMULATOR
-        NotificationProvider* notificationProvider = nil;
-#else
-        NotificationProvider* notificationProvider = [NotificationProvider sharedInstance];
-#endif
-        // Initialize platform
-        [MCDPlatform createWithNotificationProviderAsync:notificationProvider
-          applicationRegistration:registration
-            accountProvider:[IdentityViewController accountProvider]
-                completion:^(MCDPlatformCreationResult* result, __unused NSError* error) {
-                    NSLog(@"Initialized platform callback");
-                }];
-        // Now the platform is initialized it's safe to enable button
-        [self.deviceRelayButton setEnabled:YES];
-        [self.activityFeedButton setEnabled:YES];
-    });
+    // Initialize platform
+    [AppDataSource sharedInstance].platform = [MCDPlatform platformWithAccountProvider:[AppDataSource sharedInstance].accountProvider notificationProvider:notificationProvider];
+
+    // App is registered asynchronously.
+    MCDHostingRemoteSystemApplicationRegistrationBuilder* builder = [MCDHostingRemoteSystemApplicationRegistrationBuilder new];
+    [builder setLaunchUriProvider:[[LaunchUriProvider alloc] initWithDelegate:[AppDataSource sharedInstance].inboundRequestLogger]];
+    [builder addAppServiceProvider:[[AppServiceProvider alloc] initWithDelegate:[AppDataSource sharedInstance].inboundRequestLogger]];
+    [builder addAttribute:@"ExampleAttribute" forName:@"ExampleName"];
+    MCDRemoteSystemApplicationRegistration* registration = [builder buildRegistration];
+    
+    [registration addCloudRegistrationStatusChangedListener:^(MCDUserAccount * _Nonnull account, MCDCloudRegistrationStatus status) {
+        NSLog(@"Cloud Registration Status Changed listener");
+        switch (status) {
+            case MCDCloudRegistrationStatusFailed:
+                NSLog(@"Cloud registration completed with status Failed");
+                break;
+            case MCDCloudRegistrationStatusInProgress:
+                NSLog(@"Cloud registration in progress");
+                break;
+            case MCDCloudRegistrationStatusNotStarted:
+                NSLog(@"Cloud registration not started");
+                break;
+            case MCDCloudRegistrationStatusSucceeded:
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    // The app has been registered.  It is safe to enable button.
+                    [self.deviceRelayButton setEnabled:YES];
+                    [self.activityFeedButton setEnabled:YES];
+                });
+                break;
+        }
+    }];
+    
+    [registration start];
 }
 ```
 

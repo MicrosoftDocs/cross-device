@@ -56,7 +56,7 @@ Sets a callback method to be called whenever a new listener is registered to thi
 ## Example
 The following sample code shows how to register, retrieve, and delete a new user account
 
-```Objective-C
+```ObjectiveC
 NSString* _accountId;
 
 // ...

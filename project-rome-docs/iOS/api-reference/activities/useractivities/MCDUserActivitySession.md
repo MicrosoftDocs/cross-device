@@ -11,7 +11,7 @@ keywords: microsoft, windows, user activities, how-to iOS, how-to iPhone
 @interface MCDUserActivitySession : NSObject
 ```
 
-This class tracks a user activity ([MCDUserActivity](MCDUserActivity.md) instance) while the user is engaged in that activity.
+This class tracks engagement for a specified user activity ([MCDUserActivity](MCDUserActivity.md) instance).
 
 A [MCDUserActivity](MCDUserActivity.md) is associated with an MCDUserActivitySession which tracks how long the user is engaged in that activity. For example, an activity such as watching a movie can occur on-and-off over the course of multiple days. When the user first starts the new activity of watching a movie, a MCDUserActivitySession must be created. It should be disposed when the user switches to a different activity. When the user resumes, the app should create another **MCDUserActivitySession** from the original [MCDUserActivity](MCDUserActivity.md) to track the activity as long as the user is watching the movie.
 
@@ -21,7 +21,7 @@ A [MCDUserActivity](MCDUserActivity.md) is associated with an MCDUserActivitySes
 ### activityId
 `@property(nonatomic, readonly, nonnull) NSString* activityId;`
 
-A unique ID for this MCDUserActivitySession.
+A unique ID for the MCDUserActivity associated with this MCDUserActivitySession.
 
 ## Methods
 
@@ -34,7 +34,7 @@ Closes this activity session. This should be called when the user is no longer e
 
 The following sample code uses a MCDUserActivitySession to start or stop an Activity session.
 
-```Objective-C
+```ObjectiveC
 // In the context of the sample app, this method is called on a button click
 - (IBAction)manageSessionButton:(id)sender {
     

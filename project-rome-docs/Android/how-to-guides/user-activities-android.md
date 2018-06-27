@@ -16,53 +16,73 @@ With the Project Rome SDK, your Android app can not only publish User Activities
 
 ## Initialize a User Activity channel
 
-To implement User Activity features in your app, you will first need to initialize the user activity feed by creating a **UserActivityChannel**. You should treat this like the Platform initialization step in the [Getting started guide](getting-started-rome-android.md): it should be checked and possibly re-done whenever the app comes to the foreground. The following methods initialize a **UserActivityChannel**.
+To implement User Activity features in your app, you will first need to initialize the user activity feed by creating a **UserActivityChannel**. You should treat this like the Platform initialization step in the [Getting started guide](getting-started-rome-android.md): it should be checked and possibly re-done whenever the app comes to the foreground (but not before Platform initialization). 
 
-Note that you will need a signed-in UserAccount. This guide will use the `mSignInHelper` instance created in the Getting started guide.
+Note that you will need a signed-in user account. This guide will use the `mSignInHelper` instance created in the Getting started guide. You will also need your cross-platform app ID, which was retrieved through the Microsoft Developer Dashboard registration in the [Hosting guide](hosting-android.md).
+
+The following methods initialize a **UserActivityChannel**.
 
 ```Java
 private UserActivityChannel mActivityChannel;
+private UserDataFeed mUserDataFeed;
 
 // ...
 
 /**
-* Initializes the UserActivityFeed.
-*/
-public void initializeUserActivityFeed()
-{
-    // check that the prerequisites are met
-    if (!mSignInHelper.isSignedIn() || !isPlatformInitialized()) {
-        Log.d("UserActivityFragment", "Must be signed in & platform initialized");
-        return;
-    }
+ * Initializes the UserActivityFeed.
+ */
+public void initializeUserActivityFeed() {
 
-    // this method is defined below
+    SyncScope[] scopes = { UserActivityChannel.getSyncScope(), UserNotificationChannel.getSyncScope() };
+    
+    // defined below
+    mUserDataFeed = getUserDataFeed(scopes, new EventListener<UserDataFeed, Void>() {
+        @Override
+        public void onEvent(UserDataFeed userDataFeed, Void aVoid) {
+            if (userDataFeed.getSyncStatus() == UserDataSyncStatus.SYNCHRONIZED) {
+                // log synchronized.
+            } else {
+                // log synchronization not completed.
+            }
+        }
+    });
+
     mActivityChannel = getUserActivityChannel();
-    Log.d("UserActivityFragment", "User Activity feed initialized");
 }
 
-@Nullable
-private UserActivityChannel getUserActivityChannel()
-{
-
-    UserAccount[] accounts = mSignInHelper.getUserAccounts();
+// define the 
+private UserDataFeed getUserDataFeed(SyncScope[] scopes, EventListener<UserDataFeed, Void> listener) {
+    UserAccount[] accounts = AccountProviderBroker.getSignInHelper().getUserAccounts();
     if (accounts.length <= 0) {
-        mActivityStatus.setText("Must be signed in and initialized for UserActivity");
+        // notify user that sign-in is required
         return null;
     }
 
-    // this is the value that will be returned.
+    // use the initialized Platform instance, along with the cross-device app ID.
+    UserDataFeed feed = UserDataFeed.getForAccount(accounts[0], PlatformBroker.getPlatform(), Secrets.APP_HOST_NAME);
+    feed.addSyncStatusChangedListener(listener);
+    feed.addSyncScopes(scopes);
+    // sync data with the server
+    feed.startSync();
+    return feed;
+}
+
+@Nullable
+private UserActivityChannel getUserActivityChannel() {
+
     UserActivityChannel channel = null;
-    
     try {
-        //create a UserActivityChannel for the signed in account
-        channel = new UserActivityChannel(accounts[0]);
+        // create a UserActivityChannel for the signed in account
+        channel = new UserActivityChannel(mUserDataFeed);
+
     } catch (Exception e) {
         e.printStackTrace();
-        Log.d("UserActivityFragment", "Failed to get user activity channel!");
+        // handle exception
     }
     return channel;
 }
+
+
 ```
 
 At this point, you should have a **UserActivityChannel** reference in `mActivityChannel`.

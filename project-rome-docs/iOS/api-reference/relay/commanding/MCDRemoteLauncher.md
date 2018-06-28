@@ -39,7 +39,7 @@ Launches a URI with options against the Remote System specified in an [MCDRemote
 ## Example
 The following sample code shows how to use a MCDRemoteLauncher to launch a URI on a remote application
 
-```Objective-C
+```ObjectiveC
 // Send a remote launch of a uri to RemoteSystemApplication
 // In the context of the sample app, this method is called with a Button click.
 - (IBAction)launchUriButton:(id)sender {

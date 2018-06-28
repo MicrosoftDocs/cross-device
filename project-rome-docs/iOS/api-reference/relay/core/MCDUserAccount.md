@@ -49,7 +49,7 @@ A new instance of this class.
 ## Example
 The following sample code shows how to register, retrieve, and delete a new user account
 
-```Objective-C
+```ObjectiveC
 NSString* _accountId;
 
 // ...

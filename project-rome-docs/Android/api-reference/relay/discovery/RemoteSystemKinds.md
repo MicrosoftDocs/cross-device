@@ -59,6 +59,8 @@ A String for the canonical name.
 
 Gets the canonical name for the laptop device type.
 
+> **Note:** All Microsoft Surface devices, including the Surface Book, are considered tablet devices.
+
 #### Returns
 A String for the canonical name.
 

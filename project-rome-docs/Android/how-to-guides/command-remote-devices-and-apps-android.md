@@ -398,7 +398,7 @@ On Android, the messages that you send to remote app services will be of the fol
 ```Java
 private Map<String, Object> mMessagePayload = null;
 ```
-> Note: When your app communicates with app services on other platforms, the Connected Devices Platform translates the **Map** into the equivalent construct on the receiving platform. For example, a **[Map](https://developer.android.com/reference/java/util/Map)** sent from this app to a Windows app service gets translated into a [**ValueSet**](https://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.valueset) object (of the .NET Framework), which can then be interpreted by the app service. Information passed in the other direction undergoes the reverse translation.
+> **Note:** When your app communicates with app services on other platforms, the Connected Devices Platform translates the **Map** into the equivalent construct on the receiving platform. For example, a **[Map](https://developer.android.com/reference/java/util/Map)** sent from this app to a Windows app service gets translated into a [**ValueSet**](https://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.valueset) object (of the .NET Framework), which can then be interpreted by the app service. Information passed in the other direction undergoes the reverse translation.
 
 The following method crafts a message that can be interpreted by the Roman Test App's app service for Windows.
 
@@ -420,6 +420,8 @@ private void onMessageButtonClicked()
     sendMessage(connection, mMessagePayload);
 }
 ```
+
+> **Note:** The **Map**s that are passed between apps and services in the remote app services scenario must adhere to the following format: Keys must be Strings, and the values may be: Strings, boxed numeric types (integers or floating points), boxed booleans, android.graphics.Point, android.graphics.Rect, java.util.Date, java.util.UUID, homogeneous arrays of any of these types, or other **Map** objects that meet this specification.
 
 ### Send messages to the app service
 

@@ -32,7 +32,7 @@ Gets the access token for a user account.
 
 #### Parameters
 * `accountId` The identifier of the user account.
-* `scopes` The scopes of the access token.
+* `scopes` The scopes of the access token. The first element is expected to contain all of the scopes required by the Connected Devices Platform, each separated by whitespace.
 * `completionBlock` The code block to execute upon completion. This provides access to the token result.
 
 ### getUserAccounts

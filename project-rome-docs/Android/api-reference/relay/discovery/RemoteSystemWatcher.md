@@ -58,6 +58,8 @@ Removes a listener from the "remote system added" event.
 
 Adds a listener for the "remote system updated" event.
 
+>**Note:** This event is raised when a remote system (device) that was previously discovered in this discovery session changes from proximally connected to cloud connected, or the reverse. It is also raised when a remote system changes one of its monitored properties (see the properties of the **RemoteSystem** class).
+
 #### Parameters
 * `listener` The event listener. This must be implemented by the developer.
 
@@ -77,6 +79,8 @@ Removes a listener from the "remote system updated" event.
 
 Adds a listener for the "remote system removed" event.
 
+> **Note:** The "remote system removed" event is raised only after a RemoteSystem has stopped being discoverable over all of the categories specified by the associated **RemoteSystemDiscoveryTypeFilter**.
+
 #### Parameters
 * `listener` The event listener. This must be implemented by the developer.
 
@@ -95,6 +99,8 @@ Removes a listener from the "remote system removed" event.
 `public long addEnumerationCompletedListener(@NonNull EventListener<RemoteSystemWatcher, Void> listener)`
 
 Adds a listener for the "enumeration completed" event.
+
+> The "enumeration completed" event is raised for different criteria depending on the discovery type(s), but in every case it is meant to signify the time when all available devices can be expected to have been discovered.
 
 #### Parameters
 * `listener` The event listener. This must be implemented by the developer.

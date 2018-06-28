@@ -55,7 +55,7 @@ You must deliver this registration in your implementation of **MCDNotificationPr
 
 The following is an implementation of **MCDNotificationProvider** from the sample app.
 
-```Objective-C
+```ObjectiveC
 @implementation NotificationProvider
 {
     MCDRegistrationUpdatedEvent* _registrationUpdated;

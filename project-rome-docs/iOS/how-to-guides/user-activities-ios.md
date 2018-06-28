@@ -16,28 +16,31 @@ With the Project Rome SDK, your iOS app can not only publish User Activities for
 
 ## Initialize a User Activity channel
 
-To implement User Activity features in your app, you will first need to initialize the user activity feed by creating a **MCDUserActivityChannel**. You should treat this like the Platform initialization step in the [Getting started guide](getting-started-rome-iOS.md): it should be checked and possibly re-done whenever the app comes to the foreground. 
+To implement User Activity features in your app, you will first need to initialize the user activity feed by creating a **MCDUserActivityChannel**. You should treat this like the Platform initialization step in the [Getting started guide](getting-started-rome-iOS.md): it should be checked and possibly re-done whenever the app comes to the foreground (but not before Platform initialization).
+
+You will need a signed-in user account for this step. As in the Getting started guide, you may use a class from the [authentication provider sample](https://github.com/Microsoft/project-rome/tree/master/iOS/samples/account-provider-sample) to easily acquire the MCDUserAccount(s). You will also need your cross-platform app ID, which was retrieved through the Microsoft Developer Dashboard registration in the [Hosting guide](hosting-ios.md).
 
 The following method from the sample app initializes a **MCDUserActivityChannel**.
 
-```Objective-C
-- (void)viewDidLoad
+```ObjectiveC
+// You must be logged in to use UserActivities
+NSArray<MCDUserAccount*>* accounts = [[AppDataSource sharedInstance].accountProvider getUserAccounts];
+if (accounts.count > 0)
 {
-    [super viewDidLoad];
-
-    // You must be logged in to use UserActivities
-    s_accountProvider = [IdentityViewController accountProvider];
-    NSArray<MCDUserAccount*>* accounts = [s_accountProvider getUserAccounts];
-    if (accounts.count > 0)
-    {
-        // Step #1: Get a UserActivity channel, getting the default channel
-        self.channel = [MCDUserActivityChannel userActivityChannelWithUserAccount:accounts[0]];
-    }
-    else
-    {
-        NSLog(@"Must have an active account to publish activities!");
-        self.createActivityStatusField.text = @"Need to be logged in!";
-    }
+    // Get a UserActivity channel, getting the default channel        
+    NSLog(@"Creating UserActivityChannel");
+    NSArray<MCDUserAccount*>* accounts = [[AppDataSource sharedInstance].accountProvider getUserAccounts];
+    MCDUserDataFeed* userDataFeed = [MCDUserDataFeed userDataFeedForAccount:accounts[0]
+        platform:[AppDataSource sharedInstance].platform
+        activitySourceHost:CROSS_PLATFORM_APP_ID];
+    NSArray<MCDSyncScope*>* syncScopes = @[ [MCDUserActivityChannel syncScope] ];
+    [userDataFeed addSyncScopes:syncScopes];
+    self.channel = [MCDUserActivityChannel userActivityChannelWithUserDataFeed:userDataFeed];
+}
+else
+{
+    NSLog(@"Must have an active account to publish activities!");
+    self.createActivityStatusField.text = @"Need to be logged in!";
 }
 ```
 
@@ -47,7 +50,7 @@ At this point, you should have a **UserActivityChannel** reference in `channel`.
 
 The following code shows how a new **MCDUserActivity** instance is created in the sample.
 
-```Objective-C
+```ObjectiveC
 - (IBAction)createActivityButton:(id)sender
 {
     // Step #2: Create a UserActivity
@@ -82,7 +85,7 @@ The following code shows how a new **MCDUserActivity** instance is created in th
 In the next method, the visual data of the **MCDUserActivity** is set before the Activity is published. The activationUri will determine what action is taken when the UserActivity is activated (when it is selected in Timeline, for example). The displayText will be shown on other devices when they view the Activity (in Windows Timeline, for example). The iconUri is a web link to an icon image.
 
 
-```Objective-C
+```ObjectiveC
 - (IBAction)publishActivityButton:(id)sender
 {
     self.createActivityStatusField.text = @"Saving";
@@ -95,7 +98,7 @@ In the next method, the visual data of the **MCDUserActivity** is set before the
 ```
 Once the MCDUserActivity is populated with this data, the publish operation takes place.
 
-```Objective-C
+```ObjectiveC
     // ...
 
     // Publish the Activity
@@ -132,7 +135,7 @@ Once you've created a session, your app can make any desired changes to the prop
 
 The following button method from the sample app toggles a session on and off.
 
-```Objective-C
+```ObjectiveC
 - (IBAction)manageSessionButton:(id)sender
 {
 
@@ -166,7 +169,7 @@ A **MCDUserActivitySession** can be viewed as a way to create a **MCDUserActivit
 
 Your app can read User Activities and present them to the user just as the Windows Timeline feature does. To set up User Activity reading, you use the same **MCDUserActivityChannel** as explained at the beginning of this guide. The app receives **MCDUserActivitySessionHistoryItem** instances, which represent a user's engagement in a particular Activity during a specific period of time.
 
-```Objective-C
+```ObjectiveC
 - (IBAction)readActivityButton:(id)sender
 {
 

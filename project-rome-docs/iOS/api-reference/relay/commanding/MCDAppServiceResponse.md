@@ -27,7 +27,7 @@ The status of the response received.
 ## Example
 The following sample code uses an [MCDAppServiceConnection](MCDAppServiceConnection.md) and related classes to connect to a remote app service and exchange a simple message to compare date information and get the total delivery time.
 
-```Objective-C
+```ObjectiveC
 MCDAppServiceConnection *_appServiceConnection;
 NSUInteger _requestReceivedRegistration;
 NSUInteger _serviceClosedRegistration;

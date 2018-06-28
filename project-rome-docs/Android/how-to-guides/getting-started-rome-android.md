@@ -25,7 +25,7 @@ Next, you must register your app with Microsoft by following the cross platform 
 
 Insert the following repository references into the *build.gradle* file at the root of your project.
 
-```java
+```Java
 allprojects {
     repositories {
         jcenter()
@@ -36,6 +36,7 @@ allprojects {
 ```
 Then, insert the following dependency into the _build.gradle_ file that is in your project folder.
 
+```Java
 dependencies { 
     ...
     implementation 'com.microsoft.connecteddevices:connecteddevices-sdk:0.11.0'
@@ -69,12 +70,11 @@ Depending on which scenarios you implement, you many not need all namespaces. Yo
 
 Before any Connected Devices features can be used, the platform must be initialized. 
 
-The **Platform.createInstanceAsync** method takes four parameters: the **Context** for the app, a **NotificationProvider**, a **IApplicationRegistration**, and a **UserAccountProvider**. This section shows how to get these parameters. It is recommended that you call this method from within the activity class' **onCreate** or **onResume** method.
+The **Platform** class' constructor takes three parameters: the **Context** for the app, a **NotificationProvider**, and a **UserAccountProvider**. This section shows how to get these parameters. These initialization steps should occur in your main class' **onCreate** or **onResume** method, because they are required before other Connected Devices scenarios can take place. 
 
 The **NotificationProvider** parameter is only needed for remote app hosting and User Activities, which are not covered in this guide. It can be left `null` for the scenarios here.
 
-
-The **UserAccountProvider** is needed to deliver an ID for the current user to the Connected Devices Platform. It will be called the first time the app is run and upon the expiration of a platform-managed refresh token. This is where the class(es) in the [sample authentication provider](https://github.com/Microsoft/project-rome/tree/master/Android/samples/account-provider-sample) can be used. In the code below, `getSignInHelper()` references an MSAAccountProvider, also initialized below; this provided class implements the UserAccountProvider interface, and it facilitates the account-fetching process.
+The **UserAccountProvider** is needed to deliver an ID for the current user to the Connected Devices Platform. It will be called the first time the app is run and upon the expiration of a platform-managed refresh token. This is where the class(es) in the [sample authentication provider](https://github.com/Microsoft/project-rome/tree/master/Android/samples/account-provider-sample) can be used. In the code below, `getSignInHelper()` references an **MSAAccountProvider**, also initialized below; this provided class implements the **UserAccountProvider** interface, and it facilitates the account-fetching process.
 
 ```Java
 private MSAAccountProvider mSignInHelper;
@@ -100,41 +100,43 @@ mSignInHelper.addUserAccountChangedListener(new EventListener<UserAccountProvide
 });
 ```
 
-The IApplicationRegistration is more simple. Create it just before initializing the Platform.
+Then, construct a **Platform** instance. You may wish to put the following code in a separate helper class. 
 
 ```Java
-protected void init()
-{
-    // create an ApplicationRegistration for this app
-    ApplicationRegistrationBuilder registrationBuilder = new ApplicationRegistrationBuilder();
-    // add app-specific attributes that will be visible to other apps
-    registrationBuilder.addAttribute("Companion", "");
+// Platform helper class:
 
-    ApplicationRegistration applicationRegistration = registrationBuilder.buildRegistration();
+private static Platform sPlatform;
 
-    
-    // Initialize Platform using the UserAccountProvider the sign in helper provides
-    AsyncOperation<PlatformCreationResult> resultOperation = Platform.createInstanceAsync(
-            this, null, applicationRegistration, mSignInHelper);
+//...
 
-    // Handle the outcome of the operation
-    resultOperation.whenCompleteAsync(new AsyncOperation.ResultBiConsumer<PlatformCreationResult, Throwable>()
-    {
-        @Override
-        public void accept(PlatformCreationResult platformCreationResult, Throwable throwable) throws Throwable
-        {
-            Log.d("accept", "Entered accept");
-            if (throwable != null)
-                return;
+// This is the main Platform-generating method
+public static synchronized Platform getOrCreatePlatform(Context context, UserAccountProvider accountProvider, NotificationProvider notificationProvider) {
+    Platform platform = getPlatform();
 
-            if (platformCreationResult.getStatus() == PlatformCreationStatus.FAILURE)
-                return;
-
-            // save the resulting Platform to a class variable
-            mPlatform = platformCreationResult.getPlatform();
-        }
-    });
+    if (platform == null) {
+        platform = createPlatform(context, accountProvider, notificationProvider);
+    }
+    return platform;
 }
+
+public static synchronized Platform getPlatform() {
+        return sPlatform;
+}
+
+public static synchronized Platform createPlatform(Context context, UserAccountProvider accountProvider, NotificationProvider notificationProvider) {
+    sPlatform = new Platform(context, accountProvider, notificationProvider);
+    return sPlatform;
+}
+
+```
+Then in your main class, in which you initialized `mSignInHelper`, fill in the following code.
+
+```Java
+private Platform mPlatform;
+
+//...
+
+mPlatform = PlatformHelperClass.getOrCreatePlatform(this, mSignInHelper, null);
 ```
 
 You should shut down the platform when your app exits the foreground.
@@ -143,7 +145,62 @@ You should shut down the platform when your app exits the foreground.
 mPlatform.shutdownAsync();
 ```
 
-> Important: As this is a preview release, there are some known bugs in the Project Rome platform. Currently, shutting down the Connected Devices Platform will cause the app to crash. This is trivial if it is only done when the app is exiting, but we are working on a timely fix. 
+> **Important:** As this is a preview release, there are some known bugs in the Project Rome platform. Currently, shutting down the Connected Devices Platform will cause the app to crash. This is trivial if it is only done when the app is exiting, but we are working on a timely fix. 
 
+Next, you must register the application with the Connected Devices Platform cloud directory. You may wish to put the following method in a separate helper class.
+
+```Java
+
+public static void register(Context context, ArrayList<AppServiceProvider> appServiceProviders, LaunchUriProvider launchUriProvider, EventListener<UserAccount, CloudRegistrationStatus> listener) {
+    
+    // initialize the ApplicationRegistration with all possible services
+    RemoteSystemApplicationRegistrationBuilder builder = new RemoteSystemApplicationRegistrationBuilder();
+    builder.addAttribute("SampleAttribute", "Value");
+
+    // Add the given AppService and LaunchUri Providers to the registration builder
+    if (appServiceProviders != null) {
+        for (AppServiceProvider provider : appServiceProviders) {
+            builder.addAppServiceProvider(provider);
+        }
+    }
+    if (launchUriProvider != null) {
+        builder.setLaunchUriProvider(launchUriProvider);
+    }
+
+    // Build the ApplicationRegistration instance
+    IRemoteSystemApplicationRegistration registration = builder.buildRegistration();
+
+    // Add the given EventListener to handle registration completion
+    registration.addCloudRegistrationStatusChangedListener(listener);
+    // start cloud registration
+    registration.start();
+}
+```
+
+In your main class, after **Platform** initialization, add the following code to register the application. Note that for the purpose of this simple example, app service providers and launch URI handler are not provided.
+
+```Java
+RegistrationHelperClass.register(this, null, null, new EventListener<UserAccount, CloudRegistrationStatus>() {
+    // define an event listener to handle the cloud registration operation:
+    @Override
+    public void onEvent(UserAccount account, CloudRegistrationStatus status) {
+        switch (status) {
+            case NOT_STARTED:
+                Log.d(TAG, "Registration has not started.");
+                break;
+            case IN_PROGRESS:
+                Log.d(TAG, "Registration in progress...");
+                break;
+            case SUCCEEDED:
+                Log.d(TAG, "Completed Rome registration");
+                // do other work now that registration has succeeded
+                break;
+            case FAILED:
+                Log.d(TAG, "Rome registration failed!");
+                break;
+        }
+    }
+});
+```
 
 At this point, your next actions will depend on which scenario(s) you intend to implement. For Device Relay scenarios, such as launching an app on a remote device or communicating with an app service on a remote device, see the [Command remote devices and apps](command-remote-devices-and-apps-android.md) guide (this also covers nearby sharing with other devices). For User Activities scenarios, such as creating, publishing, and reading Windows user activities, see the [Publish and read user activities](user-activities-android.md) guide. To make your app a host (able to be remotely launched or deliver app service resources to a remote device), see the [Host cross-device experiences](hosting-android.md) guide.

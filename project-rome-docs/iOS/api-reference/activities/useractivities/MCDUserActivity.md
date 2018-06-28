@@ -12,6 +12,8 @@ keywords: microsoft, windows, user activities, how-to iOS, how-to iPhone
 
 This class represents a single user activity instance. A user activity is created by an app during its execution to notify the system of a user work stream that can be continued on another device or at another time on the same device. It provides information about a task the user is engaged in.
 
+>**Note:** MCDUserActivity instances have a size limit of 100KB, above which they cannot be published.
+
 ## Properties
 
 ### activityId
@@ -76,7 +78,7 @@ Publishes the user activity. The MCDUserActivity must have an activation URI and
 
 The following sample code shows how to create and publish a User Activity.
 
-```Objective-C
+```ObjectiveC
 // In the context of the sample app, this method is called on a button click
 - (IBAction)createActivityButton:(id)sender {
     

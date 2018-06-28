@@ -53,6 +53,8 @@ Stops the active discovery.
 ### addRemoteSystemAddedListener
 `- (NSUInteger)addRemoteSystemAddedListener:(nonnull void (^)(MCDRemoteSystemWatcher* _Nonnull, MCDRemoteSystem* _Nonnull))listener;`
 
+Adds a listener for the "remote system added" event.
+
 #### Parameters
 * `listener` The event listener. This must be implemented by the developer.
 
@@ -62,11 +64,17 @@ The event registration ID.
 ### removeRemoteSystemAddedListener
 `- (void)removeRemoteSystemAddedListener:(NSUInteger)eventRegistrationToken;`
 
+Removes a listener from the "remote system added" event.
+
 #### Parameters 
 * `eventRegistrationToken` The ID of the event registration to remove.
 
 ### addRemoteSystemUpdatedListener
 `- (NSUInteger)addRemoteSystemUpdatedListener:(nonnull void (^)(MCDRemoteSystemWatcher* _Nonnull, MCDRemoteSystem* _Nonnull))listener;`
+
+Adds a listener for the "remote system updated" event.
+
+>**Note:** This event is raised when a remote system (device) that was previously discovered in this discovery session changes from proximally connected to cloud connected, or the reverse. It is also raised when a remote system changes one of its monitored properties (see the properties of the **MCDRemoteSystem** class).
 
 #### Parameters
 * `listener` The event listener. This must be implemented by the developer.
@@ -77,11 +85,17 @@ The event registration ID.
 ### removeRemoteSystemUpdatedListener
 `- (void)removeRemoteSystemUpdatedListener:(NSUInteger)eventRegistrationToken;`
 
+Removes a listener from the "remote system updated" event.
+
 #### Parameters 
 * `eventRegistrationToken` The ID of the event registration to remove.
 
 ### addRemoteSystemRemovedListener
 `- (NSUInteger)addRemoteSystemRemovedListener:(nonnull void (^)(MCDRemoteSystemWatcher* _Nonnull, MCDRemoteSystem* _Nonnull))listener;`
+
+Adds a listener for the "remote system removed" event.
+
+> **Note:** The "remote system removed" event is raised only after a RemoteSystem has stopped being discoverable over all of the categories specified by the associated **MCDRemoteSystemDiscoveryTypeFilter**.
 
 #### Parameters
 * `listener` The event listener. This must be implemented by the developer.
@@ -92,11 +106,17 @@ The event registration ID.
 ### removeRemoteSystemRemovedListener
 `- (void)removeRemoteSystemRemovedListener:(NSUInteger)eventRegistrationToken;`
 
+Removes a listener from the "remote system removed" event.
+
 #### Parameters 
 * `eventRegistrationToken` The ID of the event registration to remove.
 
 ### addEnumerationCompletedListener 
 `- (NSUInteger)addEnumerationCompletedListener:(nonnull void (^)(MCDRemoteSystemWatcher* _Nonnull))listener;`
+
+Adds a listener for the "enumeration completed" event.
+
+> The "enumeration completed" event is raised for different criteria depending on the discovery type(s), but in every case it is meant to signify the time when all available devices can be expected to have been discovered.
 
 #### Parameters
 * `listener` The event listener. This must be implemented by the developer.
@@ -107,11 +127,15 @@ The event registration ID.
 ### removeEnumerationCompletedListener
 `- (void)removeEnumerationCompletedListener:(NSUInteger)eventRegistrationToken;`
 
+Removes a listener from the "enumeration completed" event.
+
 #### Parameters 
 * `eventRegistrationToken` The ID of the event registration to remove.
 
 ### addErrorOccurredListener
 `- (NSUInteger)addErrorOccurredListener:(nonnull void (^)(MCDRemoteSystemWatcher* _Nonnull, MCDRemoteSystemWatcherError))listener;`
+
+Adds a listener for the "error occurred" event.
 
 #### Parameters
 * `listener` The event listener. This must be implemented by the developer.
@@ -122,13 +146,15 @@ The event registration ID.
 ### removeErrorOccurredListener
 `- (void)removeErrorOccurredListener:(NSUInteger)eventRegistrationToken;`
 
+Removes a listener from the "error occurred" event.
+
 #### Parameters 
 * `eventRegistrationToken` The ID of the event registration to remove.
 
 ## Example
 The following sample code shows how to create and start a simple MCDRemoteSystemWatcher to discover RemoteSystem instances.
 
-```Objective-C
+```ObjectiveC
 // Create a RemoteSystemWatcher to discover devices
 MCDRemoteSystemWatcher* _watcher;
 

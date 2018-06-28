@@ -6,4 +6,9 @@ Project Rome is an initiative conceived to rethink Windows as a platform as we s
 - A programming model delivered as APIs for Windows, Android, iOS, and Microsoft Graph, enabling client and cloud apps to build experiences using the Project Rome capabilities.
 - A device runtime for connecting and integrating Windows-based, cross-platform, and IoT devices to the Project Rome infrastructure services.
 
-On this site you will find developer documentation of the Project Rome SDKs. Select a platform on the left navigation bar to get started.
+On this site you will find developer documentation of the Project Rome SDKs. Select a platform on the left navigation bar to get started. Visit the [Project Rome landing page](https://developer.microsoft.com/windows/project-rome) for more general information about this feature.
+
+## Give feedback
+
+|[UserVoice](https://wpdev.uservoice.com/forums/110705-universal-windows-platform/category/183208-connected-apps-and-devices-project-rome)|[Feedback Hub](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app)|[Contact Us](mailto:projectrometeam@microsoft.com)|
+|-----|-----|-----|

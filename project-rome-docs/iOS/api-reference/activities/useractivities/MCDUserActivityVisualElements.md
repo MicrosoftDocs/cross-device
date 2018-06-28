@@ -49,7 +49,7 @@ The text that is shown in the top banner of the activity card.
 
 The following sample code shows how publish a User Activity. It uses a MCDUserActivityVisualElements instance to configure the Activity.
 
-```Objective-C
+```ObjectiveC
 // Attempt to publish the activity.
 // In the context of the sample app, this method is called on a button click
 - (IBAction)publishActivityButton:(id)sender {

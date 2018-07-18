@@ -42,7 +42,7 @@
         "feedback_github_repo": "MicrosoftDocs/project-rome",
         "uhfHeaderId": "MSDocsHeader-WinUWP",
         "breadcrumb_path":  "~/breadcrumb/toc.yml",
-        "extendBreadcrumb": false,
+        "extendBreadcrumb": true,
         "titleSuffix": "Universal Windows Platform",
         "ms.topic": "article",
         "ms.prod": "windows",

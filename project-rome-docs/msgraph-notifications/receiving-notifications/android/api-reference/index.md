@@ -1,0 +1,1 @@
+The UserNotifications namespace contains APIs that allow an app to send and receive push notifications with other apps on different devices and platforms.

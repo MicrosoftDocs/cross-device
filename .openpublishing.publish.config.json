@@ -1,29 +1,14 @@
 {
-  "need_generate_pdf": false,
-  "need_generate_intellisense": false,
-  "docsets_to_publish": [
-    {
-      "docset_name": "project-rome",
-      "build_source_folder": "project-rome-docs",
-      "build_output_subfolder": "project-rome",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    }
+  "docsets_to_publish": [],
+  "notification_subscribers": [
+    "pafarley@microsoft.com"
   ],
-  "notification_subscribers": [],
   "branches_to_filter": [],
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/project-rome/",
+  "git_repository_branch_open_to_public_contributors": "master",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": false,
+  "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
@@ -32,5 +17,6 @@
       "branch_mapping": {}
     }
   ],
+  "branch_target_mapping": {},
   "need_generate_pdf_url_template": false
 }

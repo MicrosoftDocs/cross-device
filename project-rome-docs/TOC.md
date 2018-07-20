@@ -1,4 +1,4 @@
-# [Project Rome](index.md)
+# [Project Rome docs](index.md)
 
 ## [Commanding](commanding/index.md)
 ### Windows

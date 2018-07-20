@@ -1,9 +1,12 @@
-# [Project Rome](https://developer.microsoft.com/en-us/windows/project-rome)
+# [Project Rome docs](https://developer.microsoft.com/en-us/windows/project-rome)
 
-Project Rome is an initiative conceived to rethink Windows as a platform as we seek to deliver a more personal operating system for the next generation of computing. Its focus is on delivering APIs and features to drive deeper engagement by bridging silos between devices, apps, people, and cloud services – democratizing our vision of mobility of experiences and people-centric, ubiquitous computing.
+Project Rome provides a set of cross-device and cross-platform features that developers can use to increase engagement in their apps and create experiences that center around people and their tasks rather than devices. The programming model comes in the form of API sets for Windows, Android, iOS, and Microsoft Graph. Both client and server-side applications can utilize Project Rome capabilities. 
 
-- A set of infrastructure services in the Microsoft cloud for Windows-based devices, as well as cross-platform and IoT.
-- A programming model delivered as APIs for Windows, Android, iOS, and Microsoft Graph, enabling client and cloud apps to build experiences using the Project Rome capabilities.
-- A device runtime for connecting and integrating Windows-based, cross-platform, and IoT devices to the Project Rome infrastructure services.
+On this site you will find developer documentation for the Project Rome SDKs. Select a feature on the left navigation pane to get started. Additionally, you can visit the [Project Rome landing page](https://developer.microsoft.com/windows/project-rome) for more general information, or see the [Project Rome samples repo](https://github.com/Microsoft/project-rome) for sample apps that showcase these features.
 
-On this site you will find developer documentation of the Project Rome SDKs. Select a platform on the left navigation bar to get started. Visit the [Project Rome landing page](https://developer.microsoft.com/windows/project-rome) for more general information about this feature.
+Some scenarios are available through both the native platform SDKs and through REST APIs (Microsoft Graph), which can be called from any device capable of making HTTP requests. In order to decide which implementation is right for your app, consider the following:
+
+* The platform SDKs provide an object model in the native language, local storage, and a publish-subscribe pattern to update the app when server-side information changes.
+* If your app runs on Windows (UWP or Win32 apps), the platform SDK provides a number of additional features, such as using the users' default account and automatically tracking user engagement. 
+*  If you plan to use other Project Rome features that are only available through the platform SDKs, you may wish to implement each of the features in the same way.
+* Use the Microsoft Graph REST APIs for a quicker and simpler implementation if you don't require the scenarios above.

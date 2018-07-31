@@ -8,7 +8,6 @@ keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone
 
 ```
 @interface MCDHostingRemoteSystemApplicationRegistrationBuilder : NSObject 
-
 ```
 
 A builder class for **MCDHostingRemoteSystemApplicationRegistration** instances.

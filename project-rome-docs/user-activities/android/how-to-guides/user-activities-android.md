@@ -48,7 +48,7 @@ public void initializeUserActivityFeed() {
 
     // define what scope of data this app needs
     SyncScope[] scopes = { UserActivityChannel.getSyncScope(), UserNotificationChannel.getSyncScope() };
-    
+
     // Get a reference to the UserDataFeed. This method is defined below
     mUserDataFeed = getUserDataFeed(scopes, new EventListener<UserDataFeed, Void>() {
         @Override
@@ -95,7 +95,6 @@ private UserActivityChannel getUserActivityChannel() {
     }
     return channel;
 }
-
 ```
 
 At this point, you should have a **UserActivityChannel** reference in `mActivityChannel`.
@@ -116,7 +115,6 @@ private String mActivationUri;
 mActivityId = UUID.randomUUID().toString();
 mDisplayText = "Created by OneSDK Sample App";
 mActivationUri = "http://contoso.com");
-
 ```
 
 Next, provide a method that creates a new **UserActivity** instance.

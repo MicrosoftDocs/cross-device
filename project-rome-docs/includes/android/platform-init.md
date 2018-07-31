@@ -136,7 +136,6 @@ public static synchronized Platform createPlatform(Context context, UserAccountP
     sPlatform = new Platform(context, accountProvider, notificationProvider);
     return sPlatform;
 }
-
 ```
 Then in your main class, in which you initialized `mSignInHelper`, fill in the following code.
 

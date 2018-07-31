@@ -1,0 +1,22 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/a/1/s/target_repo/project-rome-docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "incrementalPhase": "postProcessing"
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

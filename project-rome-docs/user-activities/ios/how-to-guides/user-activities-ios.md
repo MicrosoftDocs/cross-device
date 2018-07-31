@@ -136,7 +136,6 @@ Once the **MCDUserActivity** is populated with this data, the publish operation 
 mActivityId = UUID.randomUUID().toString();
 mDisplayText = "Created by OneSDK Sample App";
 mActivationUri = "http://contoso.com");
-
 ```
 
 

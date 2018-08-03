@@ -1,7 +1,7 @@
 ---
 title: MCDAccessTokenResult
 description: This class represents the result of the app fetching an access token.
-keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone 
+keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 
 # class `MCDAccessTokenResult`

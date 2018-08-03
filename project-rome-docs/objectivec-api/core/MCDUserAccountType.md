@@ -1,7 +1,7 @@
 ---
 title: MCDUserAccountType
 description: Contains values that describe the type of Microsoft-provided user account.
-keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone 
+keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 
 # enum `MCDUserAccountType`

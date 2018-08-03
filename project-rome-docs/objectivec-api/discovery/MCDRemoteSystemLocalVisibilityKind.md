@@ -1,7 +1,7 @@
 ---
 title: MCDRemoteSystemLocalVisibilityKind
 description: Contains values that describe the local application visibility preference when discovering remote systems.
-keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone
+keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 
 # enum `MCDRemoteSystemLocalVisibilityKind`

@@ -1,7 +1,7 @@
 ---
 title: MCDUserDataFeed
 description: This class is responsible for synchronizing user-specific data with the Connected Devices Platform backend.
-keywords: microsoft, windows, user activities, how-to iOS, how-to iPhone 
+keywords: microsoft, windows, user activities, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 
 # class `MCDUserDataFeed`

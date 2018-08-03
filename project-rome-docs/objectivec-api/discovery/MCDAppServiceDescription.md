@@ -1,7 +1,7 @@
 ---
 title: MCDAppServiceDescription
 description: This class describes an app service that belongs to a remote device or application.
-keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone 
+keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 
 # class `MCDAppServiceDescription`

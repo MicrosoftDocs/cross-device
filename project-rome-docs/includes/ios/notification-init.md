@@ -2,10 +2,11 @@
 title: include file
 description: include file
 ms.author: pafarley
+author: PatrickFarley
 ms.date: 07/17/2018
 ms.topic: include
 ms.prod: windows
-ms.technology: uwp
+ms.technology: connected-devices
 ms.assetid: 195e419e-ac8d-4e96-8faa-c3659570fa27
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,7 @@
 ---
 title: MCDLaunchUriProvider
 description: 
-keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone 
+keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 
 # protocol `MCDLaunchUriProvider`
@@ -30,6 +30,6 @@ This method is called when a remote device attempts to launch a URI on this devi
 
 #### Parameters 
 * `uri` The URI to launch.
-* `fallbackUri` The web-friendly URI to launch in the event that the primary URI fails.
+* `fallbackUri` The web-friendly URI to launch in the event that the primary URI fails. This should be a http or https web address or a file.
 * `preferredPackageIds` The list of IDs of preferred applications to handle this URI.
 * `completionBlock` The code block to execute upon completion.

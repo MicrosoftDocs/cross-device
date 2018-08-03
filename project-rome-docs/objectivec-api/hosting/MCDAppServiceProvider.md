@@ -1,7 +1,7 @@
 ---
 title: MCDAppServiceProvider
 description: This protocol contains methods for making a local app service accessible to remote devices.
-keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone 
+keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 
 # protocol `MCDAppServiceProvider`

@@ -1,7 +1,7 @@
 ---
 title: MCDRemoteSystemApplicationRegistration
 description: This class represents an application. A registered app can provide remote app services or be used to launch a URI.
-keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone 
+keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 
 # class `MCDRemoteSystemApplicationRegistration`

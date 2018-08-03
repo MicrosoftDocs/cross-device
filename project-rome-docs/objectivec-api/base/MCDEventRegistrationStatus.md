@@ -1,7 +1,7 @@
 ---
 title: MCDEventRegistrationStatus
 description:  Contains values describing the type of registration changed event that occurred (added or removed).
-keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone
+keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 
 # enum `MCDEventRegistrationStatus` 

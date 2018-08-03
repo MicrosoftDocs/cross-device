@@ -1,7 +1,7 @@
 ---
 title: MCDUserAccountChangedEvent
 description: An event indicating that a user account has been changed (added, removed, interrupted, fixed)
-keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone 
+keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 
 # class `MCDUserAccountChangedEvent`

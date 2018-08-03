@@ -1,7 +1,7 @@
 ---
 title: MCDUserActivityVisualElements
 description: This class contains the visual information, such as the description and icon, that can be shown in the "details" tile for a MCDUserActivity.
-keywords: microsoft, windows, user activities, how-to iOS, how-to iPhone 
+keywords: microsoft, windows, user activities, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 
 # class `MCDUserActivityVisualElements`

@@ -1,7 +1,7 @@
 ---
 title: MCDUserActivitySessionHistoryItem
 description: This class provides the start and end time that a user was engaged in a particular activity.
-keywords: microsoft, windows, user activities, how-to iOS, how-to iPhone 
+keywords: microsoft, windows, user activities, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 
 # class `MCDUserActivitySessionHistoryItem`

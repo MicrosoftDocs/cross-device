@@ -2,10 +2,11 @@
 title: include file
 description: include file
 ms.author: pafarley
+author: PatrickFarley
 ms.date: 07/17/2018
 ms.topic: include
 ms.prod: windows
-ms.technology: uwp
+ms.technology: connected-devices
 ms.assetid: 2241922a-83c4-4cf5-96d3-f3dc51f0a254
 ms.localizationpriority: medium
 ---
@@ -20,7 +21,7 @@ Microsoft Account (MSA) or Azure Active Directory (AAD) authentication is requir
 
 If you do not already have an MSA and wish to use one, register on [account.microsoft.com](https://account.microsoft.com/account).
 
-Next, you must register your app with Microsoft by following the cross platform instructions on the [Application Registration Portal](https://apps.dev.microsoft.com/) (if you do not have a Microsoft developer account, you must create one first). You should receive a client ID string for your app; save this for later. This will allow your app to access Microsoft's Connected Devices Platform resources. 
+Next, you must register your app with Microsoft by following the instructions on the [Application Registration Portal](https://apps.dev.microsoft.com/) (if you do not have a Microsoft developer account, you must create one first). You should receive a client ID string for your app; save this for later. This will allow your app to access Microsoft's Connected Devices Platform resources. If you're using AAD, see [Azure Active Directory Authentication Libraries](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) for instructions on getting the client ID string.
 
 ### Add the SDK
 
@@ -52,6 +53,8 @@ The **MCDUserAccountProvider** is needed to deliver an OAuth 2.0 access token fo
 
 In order to help developers onboard with the platform more easily, we have provided account provider implementations for Android and iOS. These implementations, found in the [authentication provider sample](https://github.com/Microsoft/project-rome/tree/master/iOS/samples/account-provider-sample), can be used to obtain the OAuth 2.0 access token and refresh token for your app.
 
+[!INCLUDE [auth-scopes](../auth-scopes.md)]
+
 The following code from the sample app shows the initialization of the platform.
 
 ```ObjectiveC
@@ -77,6 +80,3 @@ The following code from the sample app shows the initialization of the platform.
 ```
 
 You should shut down the platform when your app exits the foreground by calling the `shutdownAsync:` method.
-
-> [!IMPORTANT]
-> As this is a preview release, there are some known bugs in the Project Rome platform. Currently, shutting down the Connected Devices Platform will cause the app to crash. This is trivial if it is only done when the app is exiting, but we are working on a timely fix. 

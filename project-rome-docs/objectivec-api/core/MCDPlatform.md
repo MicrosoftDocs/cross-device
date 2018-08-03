@@ -1,7 +1,7 @@
 ---
 title: MCDPlatform
 description:  A class to represent the Connected Devices Platform and manage the app's connection to it.
-keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone
+keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 
 # class `MCDPlatform` 

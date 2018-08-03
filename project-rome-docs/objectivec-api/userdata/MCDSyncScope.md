@@ -1,7 +1,7 @@
 ---
 title: MCDSyncScope
 description: This class represents the user data that is synchronized with the Connected Devices Platform backend when the app uses certain user-specific Connected Devices functionality.
-keywords: microsoft, windows, user activities, how-to iOS, how-to iPhone 
+keywords: microsoft, windows, user activities, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 
 # class `MCDSyncScope`

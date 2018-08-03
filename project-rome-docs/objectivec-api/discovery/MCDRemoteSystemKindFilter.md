@@ -1,7 +1,7 @@
 ---
 title: MCDRemoteSystemKindFilter
 description: A class used to filter remote systems based upon device kind.
-keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone
+keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 
 # class `MCDRemoteSystemKindFilter` 

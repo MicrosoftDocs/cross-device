@@ -1,7 +1,7 @@
 ---
 title: MCDNotificationReceiver
 description: This class is responsible for receiving push notifications and relaying them into the app.
-keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone 
+keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 
 # class `MCDNotificationReceiver`

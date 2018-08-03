@@ -1,7 +1,7 @@
 ---
 title: MCDRemoteSystemPlatform
 description: Contains values that describe the OS platform that a remote system is running on.
-keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone 
+keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 
 # enum `MCDRemoteSystemPlatform`

@@ -1,7 +1,7 @@
 ---
 title: MCDRemoteSystemStatusType
 description: Contains values that categorize the availability type of a remote system.
-keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone
+keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 
 # enum `MCDRemoteSystemStatusType`

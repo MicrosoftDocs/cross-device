@@ -2,10 +2,11 @@
 title: Publishing and reading User Activities (iOS)
 description: This guide shows how to create, publish, and read Windows-based User Activities in your iOS app.
 ms.author: pafarley
+author: PatrickFarley
 ms.date: 07/17/2018
 ms.topic: article
 ms.prod: windows
-ms.technology: uwp
+ms.technology: connected-devices
 keywords: microsoft, windows, project rome, user activities, ios
 ms.assetid: 445f1dd4-f3c7-46e4-a7cd-42a1fb411172
 ms.localizationpriority: medium
@@ -136,7 +137,6 @@ Once the **MCDUserActivity** is populated with this data, the publish operation 
 mActivityId = UUID.randomUUID().toString();
 mDisplayText = "Created by OneSDK Sample App";
 mActivationUri = "http://contoso.com");
-
 ```
 
 

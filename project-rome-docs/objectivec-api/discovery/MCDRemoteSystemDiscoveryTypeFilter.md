@@ -1,7 +1,7 @@
 ---
 title: MCDRemoteSystemDiscoveryTypeFilter
 description: A class used to filter remote systems based upon discovery type.
-keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone
+keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 
 # class `MCDRemoteSystemDiscoveryTypeFilter` 

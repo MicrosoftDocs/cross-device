@@ -1,14 +1,13 @@
 ---
 title: MCDRemoteSystemApplicationRegistration
 description: This class represents an application that is registered for remote connectivity.
-keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone 
+keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 
 # class `MCDRemoteSystemApplicationRegistration`
 
 ```
 @interface MCDRemoteSystemApplicationRegistration : NSObject 
-
 ```
 
 This class represents an application that is registered for remote connectivity. It can provide remote app services or be used to launch a URI.

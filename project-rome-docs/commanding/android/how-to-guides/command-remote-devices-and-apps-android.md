@@ -2,10 +2,11 @@
 title: Command remote devices and apps (Android)
 description: This guide will show how to discover remote devices and apps and then launch apps or interact with app services.
 ms.author: pafarley
+author: PatrickFarley
 ms.date: 07/17/2018
 ms.topic: article
 ms.prod: windows
-ms.technology: uwp
+ms.technology: connected-devices
 keywords: microsoft, windows, project rome, commanding, android
 ms.assetid: 2fd14dd0-0f1f-49ee-83e3-468737810c81
 ms.localizationpriority: medium
@@ -69,7 +70,7 @@ private void onStartWatcherClicked() {
         AVAILABLE(1)
     */
     filters.add(new RemoteSystemStatusTypeFilter(RemoteSystemStatusType.AVAILABLE));
-    
+
 
     /*  RemoteSystemKindFilter can filter the types of devices you want to discover.
     Possible values are members of the RemoteSystemKinds class.
@@ -78,7 +79,7 @@ private void onStartWatcherClicked() {
 
     RemoteSystemKindFilter kindFilter = new RemoteSystemKindFilter(kinds);
     filters.add(kindFilter);
-    
+
     /*  RemoteSystemAuthorizationKind determines the category of user whose system(s) you want to discover.
     Possible values:
         SAME_USER(0),
@@ -92,7 +93,7 @@ At this point, the app can initialize the watcher object.
 
 ```Java
     // ...
-    
+
     // Create a RemoteSystemWatcher
     mWatcher = new RemoteSystemWatcher(filters.toArray(new RemoteSystemFilter[filters.size()]));
     }
@@ -197,12 +198,12 @@ private RemoteSystem target;
 private void launchUri(final String uri, final RemoteSystem target, final long messageId)
 {
     RemoteLauncher remoteLauncher = new RemoteLauncher();
-    
+
     AsyncOperation<RemoteLaunchUriStatus> resultOperation = remoteLauncher.launchUriAsync(new RemoteSystemConnectionRequest(target), uri);
     // ...
 ```
 Use the returned **AsyncOperation** to handle the result of the launch attempt.
-    
+
 ```Java
     // ...
     resultOperation.whenCompleteAsync(new AsyncOperation.ResultBiConsumer<RemoteLaunchUriStatus, Throwable>() {
@@ -245,7 +246,6 @@ Your Android app must acquire a reference to a remote device or application. Lik
 // must be defined somewhere in the application before the app service
 // connection is opened.
 private RemoteSystem target = null;
-
 ```
 Additionally, your app will need to identify its targeted app service using two strings: the *app service name* and *package identifier*. These are found in the source code of the app service provider (see [Create and consume an app service (UWP)](https://msdn.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service) for details on how to get this strings for Windows app services). Together these strings construct the **AppServiceDescription**, which is fed into an **AppServiceConnection** instance.
 
@@ -261,7 +261,7 @@ private AppServiceConnection connection = null;
 private void onNewConnectionButtonClicked()
 {
     connection = new AppServiceConnection();
-    
+
     // these hard-coded strings must be defined elsewhere in the app
     connection.setAppServiceDescription(new AppServiceDescription(mAppServiceName, mPackageIdentifier));
 
@@ -385,7 +385,7 @@ private void sendMessage(final AppServiceConnection connection, Map<String, Obje
             @Override
             public Void apply(Throwable throwable) throws Throwable {
                 // report the exception, referencing "throwable"
-                
+
                 return null;
             }
         });
@@ -410,7 +410,7 @@ private void handleAppServiceResponse(AppServiceResponse appServiceResponse, lon
         // in the Roman App case, the response contains the date it was created.
         String dateStr = (String)response.get("CreationDate");
         DateFormat df = new SimpleDateFormat(DATE_FORMAT, Locale.getDefault());
-        
+
         // in this very simple use case, we compare the dates to get the total
         // transit time of the message response.
         try {

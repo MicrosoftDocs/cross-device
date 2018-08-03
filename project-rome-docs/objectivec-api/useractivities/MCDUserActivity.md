@@ -1,7 +1,7 @@
 ---
 title: MCDUserActivity
 description: This class represents a single user activity instance.
-keywords: microsoft, windows, user activities, how-to iOS, how-to iPhone 
+keywords: microsoft, windows, user activities, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 
 # class `MCDUserActivity`

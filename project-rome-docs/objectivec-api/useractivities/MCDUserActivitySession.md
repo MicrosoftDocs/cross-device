@@ -2,7 +2,7 @@
 title: MCDUserActivitySession
 description: This class tracks a user activity ([MCDUserActivity](MCDUserActivity.md) instance) while the user is engaged in that activity.
 
-keywords: microsoft, windows, user activities, how-to iOS, how-to iPhone 
+keywords: microsoft, windows, user activities, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 
 # class `MCDUserActivitySession`

@@ -1,7 +1,7 @@
 ---
 title: MCDUserAccountChangedEvent
 description: An event indicating that a user account has been changed (added, removed, interrupted, fixed)
-keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone 
+keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 
 # class `MCDUserAccountChangedEvent`
@@ -68,7 +68,7 @@ NSString* _accountId;
         NSLog(@"Add a account with id");
         // use a unique ID string for account ID
         _accountId = [[NSUUID UUID] UUIDString];
-        
+
         // here it recommended to cache the refresh token
         // and raise the MCDUserAccountChangedEvent event.
     }
@@ -102,5 +102,4 @@ NSString* _accountId;
         }
     }
 }
-
 ```

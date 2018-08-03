@@ -1,7 +1,7 @@
 ---
 title: MCDRemoteSystemLocalVisibilityKindFilter
 description: A class used to set the local (calling) application visibility preference when discovering remote systems.
-keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone
+keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 
 # class `MCDRemoteSystemLocalVisibilityKindFilter` 

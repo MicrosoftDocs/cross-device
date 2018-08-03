@@ -2,10 +2,11 @@
 title: Hosting cross-device experiences (Android)
 description: This guide shows how to make your app available as a host app that can be remotely launched or provide app service resources to a remote client device.
 ms.author: pafarley
+author: PatrickFarley
 ms.date: 07/17/2018
 ms.topic: article
 ms.prod: windows
-ms.technology: uwp
+ms.technology: connected-devices
 keywords: microsoft, windows, project rome, hosting, android
 ms.assetid: e96b6e41-f2b2-48fd-906d-eed4b2fbb9a8
 ms.localizationpriority: medium

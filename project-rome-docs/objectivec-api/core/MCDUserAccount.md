@@ -1,7 +1,7 @@
 ---
 title: MCDUserAccount
 description: This class represents a signed-in user.
-keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone 
+keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 
 # class `MCDUserAccount`
@@ -61,7 +61,7 @@ NSString* _accountId;
         NSLog(@"Add a account with id");
         // use a unique ID string for account ID
         _accountId = [[NSUUID UUID] UUIDString];
-        
+
         // here it recommended to cache the refresh token
         // and raise the MCDUserAccountChangedEvent event.
     }
@@ -95,5 +95,4 @@ NSString* _accountId;
         }
     }
 }
-
 ```

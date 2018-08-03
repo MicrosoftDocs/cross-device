@@ -1,7 +1,7 @@
 ---
 title: MCDAppServiceRequest
 description:  Represents an incoming message from a remote app/device to this app service connection.
-keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone 
+keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 
 # class `MCDAppServiceRequest`

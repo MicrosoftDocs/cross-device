@@ -1,7 +1,7 @@
 ---
 title: MCDAppServiceResponse
 description:  A class that represents a response received from a connected remote app service.
-keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone 
+keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 
 # class `MCDAppServiceResponse`

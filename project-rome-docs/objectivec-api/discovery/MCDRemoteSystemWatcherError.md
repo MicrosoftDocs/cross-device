@@ -1,7 +1,7 @@
 ---
 title: MCDRemoteSystemWatcherError
 description: Contains values that the describe an error encountered by a remote system watcher object.
-keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone 
+keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 
 # enum `MCDRemoteSystemWatcherError`

@@ -1,7 +1,7 @@
 ---
 title: MCDCloudRegistrationStatus
 description:  Contains values that describe the status of a remote application's registration with the Connected Devices Platform backend.
-keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone
+keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 
 # enum `MCDCloudRegistrationStatus`

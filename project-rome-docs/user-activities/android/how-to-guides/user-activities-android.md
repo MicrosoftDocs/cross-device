@@ -2,10 +2,11 @@
 title: Publishing and reading User Activities (Android)
 description: This guide shows how to create, publish, and read Windows-based User Activities in your Android app.
 ms.author: pafarley
+author: PatrickFarley
 ms.date: 07/17/2018
 ms.topic: article
 ms.prod: windows
-ms.technology: uwp
+ms.technology: connected-devices
 keywords: microsoft, windows, project rome, user activities, android
 ms.assetid: 8cfb7544-913c-48c0-8528-52b93ba8b0c6
 ms.localizationpriority: medium
@@ -48,7 +49,7 @@ public void initializeUserActivityFeed() {
 
     // define what scope of data this app needs
     SyncScope[] scopes = { UserActivityChannel.getSyncScope(), UserNotificationChannel.getSyncScope() };
-    
+
     // Get a reference to the UserDataFeed. This method is defined below
     mUserDataFeed = getUserDataFeed(scopes, new EventListener<UserDataFeed, Void>() {
         @Override
@@ -95,7 +96,6 @@ private UserActivityChannel getUserActivityChannel() {
     }
     return channel;
 }
-
 ```
 
 At this point, you should have a **UserActivityChannel** reference in `mActivityChannel`.
@@ -116,7 +116,6 @@ private String mActivationUri;
 mActivityId = UUID.randomUUID().toString();
 mDisplayText = "Created by OneSDK Sample App";
 mActivationUri = "http://contoso.com");
-
 ```
 
 Next, provide a method that creates a new **UserActivity** instance.

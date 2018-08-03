@@ -1,7 +1,7 @@
 ---
 title: MCDUserActivityState
 description: Contains values that describe the state of a user activity.
-keywords: microsoft, windows, user activities, how-to iOS, how-to iPhone 
+keywords: microsoft, windows, user activities, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 
 # enum `MCDUserActivityState`

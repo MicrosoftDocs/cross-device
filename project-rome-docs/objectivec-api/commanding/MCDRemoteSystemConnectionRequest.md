@@ -1,7 +1,7 @@
 ---
 title: MCDRemoteSystemConnectionRequest
 description:  A class that represents an attempt to communicate with a specific remote device or application.
-keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone
+keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 
 # class `MCDRemoteSystemConnectionRequest` 

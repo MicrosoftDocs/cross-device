@@ -1,7 +1,7 @@
 ---
 title: MCDRemoteSystemAuthorizationKind
 description: Contains values that describe the potential authorization kinds (user-based authorization scopes) of remote systems.
-keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone 
+keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 
 # enum `MCDRemoteSystemAuthorizationKind`

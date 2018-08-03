@@ -2,10 +2,11 @@
 title: Hosting cross-device experiences (iOS)
 description: This guide shows how to make your app available as a host app that can be remotely launched or provide app service resources to a remote client device.
 ms.author: pafarley
+author: PatrickFarley
 ms.date: 07/17/2018
 ms.topic: article
 ms.prod: windows
-ms.technology: uwp
+ms.technology: connected-devices
 keywords: microsoft, windows, project rome, hosting, ios
 ms.assetid: cd4850df-8ee4-4c44-a26c-f04c29827516
 ms.localizationpriority: medium

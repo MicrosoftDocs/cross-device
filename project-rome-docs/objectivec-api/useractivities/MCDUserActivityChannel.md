@@ -1,7 +1,7 @@
 ---
 title: MCDUserActivityChannel
 description: This class handles the adding and querying of user activities for the application.
-keywords: microsoft, windows, user activities, how-to iOS, how-to iPhone 
+keywords: microsoft, windows, user activities, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 
 # class `MCDUserActivityChannel`

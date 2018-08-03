@@ -61,7 +61,7 @@ NSString* _accountId;
         NSLog(@"Add a account with id");
         // use a unique ID string for account ID
         _accountId = [[NSUUID UUID] UUIDString];
-        
+
         // here it recommended to cache the refresh token
         // and raise the MCDUserAccountChangedEvent event.
     }
@@ -95,5 +95,4 @@ NSString* _accountId;
         }
     }
 }
-
 ```

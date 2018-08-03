@@ -8,7 +8,6 @@ keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone
 
 ```
 typedef NS_ENUM(NSInteger, MCDUserAccountType)
-
 ```
 
 Contains values that describe the type of Microsoft-provided user account.

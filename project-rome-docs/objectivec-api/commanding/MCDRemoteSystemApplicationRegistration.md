@@ -8,7 +8,6 @@ keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone
 
 ```
 @interface MCDRemoteSystemApplicationRegistration : NSObject 
-
 ```
 
 This class represents an application that is registered for remote connectivity. It can provide remote app services or be used to launch a URI.

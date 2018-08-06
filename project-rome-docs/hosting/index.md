@@ -4,4 +4,4 @@ The Hosting scenarios include cases in which a local app receives and handles ac
 
 To get started with Hosting scenarios on your client device, select your preferred development platform on the left navigation pane.
 
-> [!video https://www.youtube.com/watch?v=7jn-kooKE8U]
+> [!video https://www.youtube.com/embed/7jn-kooKE8U]

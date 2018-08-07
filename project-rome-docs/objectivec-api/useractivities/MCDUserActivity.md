@@ -46,15 +46,29 @@ the MIME (Multipurpose Internet Mail Extensions) type of the content stored in *
 
 The URI to follow when this user activity is activated.
 
-### contentInfo
-`@property(nonatomic, strong, nonnull) MCDUserActivityContentInfo* contentInfo;`
+### contentInfoJson
+`@property(nonatomic, copy, nonnull) NSString* contentInfoJson;`
 
-The basic content info for this activity. For example, if your activity was reading an RSS feed, the content might include the name of the article and its author.
+The basic content info for this activity. For example, if your activity was reading an RSS feed, the content string might include the name of the article and its author.
 
 ### visualElements
 `@property(nonatomic, copy, nonnull) MCDUserActivityVisualElements* visualElements;`
 
 The visual elements for this activity (information that can be used for the "details" tile of the activity).
+
+### isRoamable
+`@property(nonatomic, assign) BOOL isRoamable;`
+
+Gets or sets whether this activity is roamed to other endpoints.
+
+## Constructors
+### userActivityWithActivityId
+`+ (nullable instancetype)userActivityWithActivityId:(nonnull NSString*)activityId;`
+
+Creates an instance of this class with a given ID
+
+#### Parameters
+* `activityId` The identifier for this Activity (should be a unique string).
 
 ## Methods
 

@@ -14,6 +14,11 @@ This class handles the adding and querying of user activities for the applicatio
 
 ## Properties
 
+### syncScope
+`@property(class, readonly, nonnull) MCDUserDataFeedSyncScope* syncScope;`
+
+Gets the user data sync scope value for User Activities.
+
 ## Constructors
 
 ### userActivityChannelWithUserDataFeed
@@ -27,14 +32,6 @@ This class handles the adding and querying of user activities for the applicatio
 A new instance of this class.
 
 ## Methods
-
-### syncScope
-`+ (nonnull MCDSyncScope*)syncScope;`
-
-Gets the sync scope for this activity channel.
-
-#### Returns
-An **MCDSyncScope** instance.
 
 ### getOrCreateUserActivityAsync
 `- (void)getOrCreateUserActivityAsync:(nonnull NSString*)activityId

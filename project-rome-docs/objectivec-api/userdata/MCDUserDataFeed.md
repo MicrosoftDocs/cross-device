@@ -10,7 +10,7 @@ keywords: microsoft, windows, user activities, iOS, iPhone, objectiveC, connecte
 @interface MCDUserDataFeed : NSObject
 ```
 
-This class is responsible for synchronizing user-specific data with the Connected Devices Platform backend. The data that is synchronized depends on which **[MCDSyncScope](MCDSyncScope.md)** instances are contained.
+This class is responsible for synchronizing user-specific data with the Connected Devices Platform backend. The data that is synchronized depends on which **[MCDUserDataFeedSyncScope](MCDUserDataFeedSyncScope.md)** instances are contained.
 
 ## Constructors
 

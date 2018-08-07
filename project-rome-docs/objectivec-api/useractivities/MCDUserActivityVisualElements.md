@@ -19,11 +19,6 @@ This class contains the visual information, such as the description and icon, th
 
 The display text for the "details" tile of the activity.
 
-### backgroundColor
-`@property(nonatomic, assign, nonnull) CGColorRef backgroundColor;`
-
-The background color.
-
 ### descriptionText
 `@property(nonatomic, copy, nonnull) NSString* descriptionText;`
 
@@ -34,8 +29,8 @@ The description text for the "details" tile of the activity.
 
 The graphical information about the activity.
 
-### content
-`@property(nonatomic, copy, nonnull) NSString* content;`
+### adaptiveCardJson
+`@property(nonatomic, copy, nonnull) NSString* adaptiveCardJson;`
 
 The content text for the "details" tile of the activity.
 

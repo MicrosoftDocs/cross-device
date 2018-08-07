@@ -30,4 +30,12 @@ The text that describes the icon image (for use with screen readers).
 
 Determines whether to allow Windows to append a query string to the image URI supplied from **IconUri** when retrieving the image. The query string includes information that can help select the ideal image based on the DPI of the user's display, the high contrast setting, and the user's language. This query string specifies scale, contrast setting, and language; for instance, an **IconUri** value of "www.website.com/images/hello.png" becomes "www.website.com/images/hello.png?ms-scale=100&ms-contrast=standard&ms-lang=en-us".
 
+## Constructors
+### userActivityAttributionWithIconUri
+`+ (nullable instancetype)userActivityAttributionWithIconUri:(nonnull NSString*)iconUri;`
+
+Creates an instance of this class with an Icon URI.
+
+#### Parameters
+* `iconUri` A string value of an Icon URI to belong to the created instance.
 

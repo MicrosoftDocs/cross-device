@@ -35,6 +35,11 @@
 #### [API reference](user-activities/ios/api-reference/index.md)
 ### [Microsoft Graph](user-activities/msgraph/index.md)
 
+## [Remote sessions](remote-sessions/index.md)
+### Windows
+#### [How-to guide](https://docs.microsoft.com/windows/uwp/launch-resume/remote-sessions)
+#### [API reference](https://docs.microsoft.com/uwp/api/windows.system.remotesystems.remotesystemsession)
+
 ## [Nearby sharing](nearby-sharing/index.md)
 ### Android
 #### [API reference](nearby-sharing/android/api-reference/index.md)

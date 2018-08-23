@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 # Publishing and reading User Activities (Android)
 
-User Activities are data constructs that represent a user's tasks within an application. They make it possible to save a snapshot of a task to be continued at a later time. The [Windows Timeline](https://blogs.windows.com/windowsexperience/2018/04/27/make-the-most-of-your-time-with-the-new-windows-10-update/) feature presents Windows users with a scrollable list of all their recent activities, represented as cards with text and graphics. For more information about User Activities in general, see [Continue user activity, even across devices](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities).
+User Activities are data constructs that represent a user's tasks within an application. They make it possible to save a snapshot of a task to be continued at a later time. The [Windows Timeline](https://blogs.windows.com/windowsexperience/2018/04/27/make-the-most-of-your-time-with-the-new-windows-10-update/) feature presents Windows users with a scrollable list of all their recent activities, represented as cards with text and graphics. For more information about User Activities in general, see [Continue user activity, even across devices](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities). For recommendations on when to create or update Activities, see the [User Activities best practices](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities-best-practices) guide.
 
 With the Project Rome SDK, your Android app can not only publish User Activities for use in Windows features such as Timeline, but can also act as an endpoint and read Activities back to the user just as Timeline does on Windows devices. This allows cross-device apps to transcend their platforms and provide experiences that follow users rather than devices.
 
@@ -152,8 +152,6 @@ mActivity.getVisualElements().setDisplayText(mDisplayText);
 mActivity.setActivationUri(mActivationUri);
 ```
 
-For more information on the different ways that a UserActivity can be customized, see the **[UserActivity](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.useractivities._user_activity)**, **[UserActivityVisualElements](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.useractivities._user_activity_visual_elements)**, and **[UserActivityAttribution](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.useractivities._user_activity_attribution)** classes.
-
 Finally, publish the Activity to the cloud. 
 
 ```Java
@@ -171,6 +169,9 @@ operation.whenCompleteAsync(new AsyncOperation.ResultBiConsumer<Void, Throwable>
     }
 });
 ```
+
+> [!TIP] 
+> In addition to the properties above, there are many other features that can be configured. For a complete look at the different ways that a UserActivity can be customized, see the **[UserActivity](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.useractivities._user_activity)**, **[UserActivityVisualElements](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.useractivities._user_activity_visual_elements)**, and **[UserActivityAttribution](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.useractivities._user_activity_attribution)** classes. See the [User Activities best practices](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities-best-practices) guide for detailed recommendations on how to design User Activities.
 
 ## Update an existing User Activity
 

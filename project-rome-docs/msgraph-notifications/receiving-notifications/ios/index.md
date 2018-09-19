@@ -2,7 +2,7 @@
 
 With the Project Rome client-side SDK on iOS, your iOS app can perform the necessary registration steps to become a receiving endpoint that receives notifications published from your app server targeted at a user. The SDK is then used to manage the notifications on the client side including accessing new notification payloads received by this client, manage the state of notifications, and retrieving notification history. For more information about Notifications and how it enables human-centric notification delivery, see [Microsoft Graph Notifications Overview](../../index.md)
 
-See the [API reference](../api-reference/index.md) page for links to the reference docs relevant to notification scenarios.
+See the [API reference](../ios/api-reference/index.md) page for links to the reference docs relevant to notification scenarios.
 
 ## Preliminary setup for accessing the Connected Devices Platform in order to use Graph Notifications 
 There are a few steps you must take to integrate with Graph Notifications
@@ -16,7 +16,7 @@ First, you must complete the MSA and/or AAD App Registration. If you've done thi
 Next, you must onboard with Microsoft Windows Dev Center to get access to the Connected Device Platform in order to integrate with cross-device experiences including use of Graph Notifications. If you've done this already, skip to the next section.
 [!INCLUDE [ios/notifications-dev-center-onboarding](../../../includes/ios/notifications-dev-center-onboarding.md)]
 Next, you must add the Project Rome SDK to your project and initialize the Connected Devices Platform. If you've done this already, skip to the next section.
-[!INCLUDE [ios/notifications-platform-init](../../../includes/ios/notifications-platfrom-init.md)]
+[!INCLUDE [ios/notifications-platform-init](../../../includes/ios/notifications-platform-init.md)]
 Lastly, you must enable your app to receive push notifications. If you've done this already, skip to the next section.
 [!INCLUDE [ios/notifications-notification-init](../../../includes/ios/notifications-notification-init.md)]
 

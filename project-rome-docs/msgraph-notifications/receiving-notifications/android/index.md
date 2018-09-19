@@ -2,7 +2,7 @@
 
 With the Project Rome client-side SDK on Android, your Android app can perform the necessary registration steps to become a receiving endpoint that receives notifications published from your app server targeted at a user. The SDK is then used to manage the notifications on the client side including accessing new notification payloads received by this client, manage the state of notifications, and retrieving notification history. For more information about Notifications and how it enables human-centric notification delivery, see [Microsoft Graph Notifications Overview](../../index.md)
 
-See the [API reference](../api-reference/index.md) page for links to the reference docs relevant to notification scenarios.
+See the [API reference](../android/api-reference/index.md) page for links to the reference docs relevant to notification scenarios.
 
 ## Preliminary setup for accessing the Connected Devices Platform in order to use Graph Notifications 
 There are a few steps you must take to integrate with Graph Notifications

@@ -35,18 +35,6 @@
 #### [API reference](user-activities/ios/api-reference/index.md)
 ### [Microsoft Graph](user-activities/msgraph/index.md)
 
-## [Notifications](msgraph-notifications/index.md)
-### Windows
-#### [How-to guide](msgraph-notifications/receiving-notifications/windows/index.md)
-#### [API reference](msgraph-notifications/receiving-notifications/windows/api-reference/index.md)
-### Android
-#### [how-to guide](msgraph-notifications/receiving-notifications/android/index.md)
-#### [API reference](msgraph-notifications/receiving-notifications/android/api-reference/index.md)
-### iOS
-#### [how-to guide](msgraph-notifications/receiving-notifications/ios/index.md)
-#### [API reference](msgraph-notifications/receiving-notifications/ios/api-reference/index.md)
-### [Microsoft Graph](msgraph-notifications/sending-notifications.md)
-
 ## [Remote sessions](remote-sessions/index.md)
 ### Windows
 #### [How-to guide](https://docs.microsoft.com/windows/uwp/launch-resume/remote-sessions)

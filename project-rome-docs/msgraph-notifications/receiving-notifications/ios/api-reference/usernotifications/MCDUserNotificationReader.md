@@ -10,25 +10,18 @@ keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone
 @interface MCDUserNotificationReader : NSObject
 ```
 
-This class provides new incoming user notifications and user notification updates. It also provides access to the collection of user notifications persisted in the Connected Device Platform. 	
-
+This class is used to get the results of a notification query.
 
 ## Methods
 
+// @brief Used to get the next batch of notifications from the current query, up to the limit set the by the caller. Set the limit to 0
+// to get all the rest of notifications.
 ### readBatchAsyncWithMaxSize
 `- (void)readBatchAsyncWithMaxSize:(NSUInteger)maxBatchSize
                        completion:(nonnull void (^)(NSArray<MCDUserNotification*>* _Nullable, NSError* _Nullable))completion;`
 
-Read notification changes including new incoming notifications and updates on existing notifications in batch.
+Gets the user notifications, up to the given batch size.
 
-### addDataChangedListener
-`(nonnull void (^)(MCDUserNotificationReader* _Nonnull))listener`
-
-Add a data change listener that gets triggered when there is incoming notifications or notification updates. 
-
-### removeDataChangedListener
-`(NSUInteger)eventRegistrationToken`
-
-Add a data change listener that gets triggered when there is incoming notifications or notification updates. 
-
-Remove the data change listener. 
+#### Parameters
+* `maxBatchSize` The maximum number of notifications to get. A value of 0 gets all available notifications.
+* `completion` The code block to execute upon completion. This contains the array of retrieved notifications.

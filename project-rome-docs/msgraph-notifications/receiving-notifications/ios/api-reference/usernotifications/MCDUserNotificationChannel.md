@@ -10,16 +10,18 @@ keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone
 @interface MCDUserNotificationChannel : NSObject
 ```
 
-This class provides the notification change reader which handles the receiving and management of user notifications for the application. 
+This class manages the life cycle of user notifications.
 
 ## Constructors
 
-### userNotificationChannelWithUserDataFeed
-`+ (nullable instancetype)userNotificationChannelWithUserDataFeed:(MCDUserDataFeed* _Nonnull)userDataFeed`
-
 ### userNotificationChannelWithAccount
-`+ (nullable instancetype)userNotificationChannelWithAccount:(nonnull MCDUserAccount*)userAccount;
+`+ (nullable instancetype)userNotificationChannelWithAccount:(nonnull MCDUserAccount*)userAccount;`
 
+#### Parameters 
+* `userAccount`
+
+#### Returns
+A new instance of this class.
 
 ## Methods
 
@@ -29,38 +31,58 @@ This class provides the notification change reader which handles the receiving a
 
 Adds a listener to the data changed event, which is raised whenever the user notification data changes.
 
+#### Parameters
+* `listener` The event listener. This must be implemented by the developer.
+
+#### Returns
+A unique identifier for this event registration.
+
+### removeDataChangedListener
+`- (void)removeDataChangedListener:(NSUInteger)eventRegistrationToken;`
+
+Removes a listener to the data changed event, which is raised whenever the user notification data changes.
+
+#### Parameters 
+* `eventRegistrationToken` The event registration ID of the listener to remove.
+
+### createReaderWithFilter
+`- (MCDUserNotificationReader* _Nullable)createReaderWithFilter:(nonnull MCDUserNotificationFilter*)filter;`
+
+#### Parameters
+* `filter` A filter to limit the set of notifications received by this reader.
+
+#### Returns
+The notification reader.
 
 
-### syncScope
-`+ (nonnull MCDUserDataFeedSyncScope*)`
+### createChangeReaderAsyncForState
+`- (void)createChangeReaderAsyncForState:(NSString* _Nullable)state
+                             completion:(nonnull void (^)(MCDUserNotificationChangeReader* _Nullable, NSError* _Nullable))completion;`
 
-Get the sync scope of this user notification channel'
+Gets a new MCDUserNotificationChangeReader to monitor notification changes.
+
+#### Parameters
+* `state` [optional] The state of the reader, to allow the reader to start from an advanced position and receive only the changes to notifications that have not already been accepted.
+* `completion` The code block to execute upon completion. This provides access to the new MCDUserNotificationChangeReader object.
+
 
 ### getUserNotificationAsync
-`- (void)getUserNotificationAsync:(NSString* _Nonnull)notificationId
-                      completion:(nonnull void (^)(MCDUserNotification* _Nullable, NSError* _Nullable))completion`
+`- (void)getUserNotificationAsync:(nonnull NSString*)notificationId
+                      completion:(nonnull void (^)(MCDUserNotification* _Nullable, NSError* _Nullable))completion;`
 
-Get a user notification based on its id.
+Obtains the UserNotification object associated with the given notification ID.
 
-### createReader
-`- (MCDUserNotificationReader* _Nullable)createReader`
+#### Parameters
+* `notificationId` The ID of the notification.
+* `completion` The code block to execute upon completion. This provides access to the new MCDUserNotification object.
 
-Create a user notification reader to receive and manage user notifications published by app server.
-
-### createReaderWithOptions
-`- (MCDUserNotificationReader* _Nullable)createReaderWithOptions:(MCDUserNotificationReaderOptions* _Nonnull)options`
-
-Create a user notification reader with options 
-
-### createReaderWithState
-`- (MCDUserNotificationReader* _Nullable)createReaderWithState:(NSString* _Nonnull)readerState`
-
-Create a user notification reader to receive and manage user notifications published by app server. 
-The reader will start at the provided tracking state.  
 
 ### deleteUserNotificationAsync
 `- (void)deleteUserNotificationAsync:(NSString* _Nonnull)notificationId
-                         completion:(nonnull void (^)(MCDUserNotificationUpdateResult* _Nullable, NSError* _Nullable))completion`
+                         completion:(nonnull void (^)(MCDUserNotificationUpdateStatus* _Nullable, NSError* _Nullable))completion;`
 
-Delete a user notification based on its id. 
+Deletes the UserNotification object associated with the given notification ID.
 
+#### Parameters
+* `notificationId` The ID of the notification.
+* `completion` The code block to execute upon completion.

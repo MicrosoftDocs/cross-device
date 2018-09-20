@@ -10,44 +10,47 @@ keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone
 @interface MCDUserNotification : NSObject
 ```
 
-This class represents a user notification created by the user's notification channel.
+This class represent a single user notification instance. A user notification is created and published by your app server targeted at a user, distributed to all device endpoints of the same logged in user.
+A user notification, once received by the app client, can result in experiences such as generating and showing a visual notification banner using local notification APIs of the corresponding platform.
 
 ## Properties
 
 ### notificationId
 `@property(nonatomic, readonly, nonnull) NSString* notificationId;`
-A unique identifier for the notification.
+Gets the developer specified unique id for this user notification.
 
 ### groupId
 `@property(nonatomic, readonly, nonnull) NSString* groupId;`
-The group ID.
+Gets the developer specified group id for this user notification.
 
 ### expirationTime
 `@property(nonatomic, readonly, nonnull) NSDate* expirationTime;`
-The notification's expiration time.
+Gets the expiration time for this user notification.
 
 ### priority
 `@property(nonatomic, readonly) MCDUserNotificationPriority priority;`
-The priority attribute of the notification.
+Gets the developer specified priority for this user notification.
 
 ### content
 `@property(nonatomic, readonly, nonnull) NSString* content;`
-The text content of the notification.
+Gets the content payload for this notification which is developer defined arbitrary data.
 
 ###  readState
 `@property(nonatomic, readwrite) MCDUserNotificationReadState readState;`
-The read state of the notification
+Gets the value of the read state for this user notification that indicates the notification is read or unread.
 
 ### userActionState
 `@property(nonatomic, readwrite) MCDUserNotificationUserActionState userActionState;`
-The user action state of the notification (what action the user has taken on it).
+Gets the value of the user action state for a user notification to determine whether the notification is 
+not interacted, dismissed, activated, or snoozed. 
 
 ## Methods
 
 ### saveAsync
 `- (void)saveAsync:(nonnull void (^)(MCDUserNotificationUpdateStatus* _Nullable, NSError* _Nullable))completion;`
 
-Attempts to save the notification.
+This should be called when publishing user notification changes. This method should be called whenever 
+the app modifies an updatable property of the UserNotification.
 
 #### Parameters
 * `completion` The code block to execute upon completion.

@@ -2,20 +2,21 @@
 ```
 usernotifications.h
 ```
-The UserNotifications namespace contains APIs that allow an app to receive and manage user-targeted notifications published by your app server via Microsoft Graph Notifications to enable human-centric, cross-device notification experiences. 
+> Important: This namespace is not yet available to 3rd-party app developers. If you'd like to be put on a waiting list to get early access, email us at [ProjectRomeTeam@microsoft.com](mailto:projectrometeam@microsoft.com).
 
-### Graph Notifications APIs
+The UserNotifications namespace contains APIs that allow an app to send and receive push notifications with other apps on different devices and platforms.
 
 #### [MCDUserNotification](MCDUserNotification.md)
+#### [MCDUserNotificationChange](MCDUserNotificationChange.md)
+#### [MCDUserNotificationChangeReader](MCDUserNotificationChangeReader.md)
+#### [MCDUserNotificationChangeType](MCDUserNotificationChangeType.md)
 #### [MCDUserNotificationChannel](MCDUserNotificationChannel.md)
+#### [MCDUserNotificationFilter](MCDUserNotificationFilter.md)
 #### [MCDUserNotificationPriority](MCDUserNotificationPriority.md)
 #### [MCDUserNotificationReader](MCDUserNotificationReader.md)
-#### [MCDUserNotificationReaderOptions](MCDUserNotificationReaderOptions.md)
-#### [MCDUserNotificationReaderStartPosition](MCDUserNotificationReaderStartPosition.md)
 #### [MCDUserNotificationReadState](MCDUserNotificationReadState.md)
 #### [MCDUserNotificationReadStateFilter](MCDUserNotificationReadStateFilter.md)
-#### [MCDUserNotificationStatus](MCDUserNotificationStatus.md)
-#### [MCDUserNotificationStatusFilter](MCDUserNotificationStatusFilter.md)
-#### [MCDUserNotificationUpdateResults](MCDUserNotificationUpdateResults.md)
+#### [MCDUserNotificationResult](MCDUserNotificationResult.md)
+#### [MCDUserNotificationUpdateStatus](MCDUserNotificationUpdateStatus.md)
 #### [MCDUserNotificationUserActionState](MCDUserNotificationUserActionState.md)
 #### [MCDUserNotificationUserActionStateFilter](MCDUserNotificationUserActionStateFilter.md)

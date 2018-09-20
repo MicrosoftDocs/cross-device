@@ -1,13 +1,13 @@
 ---
-title: MCDUserNotificationUpdateStatus
+title: MCDUserNotificationUpdateResults
 description: This class describes the status of an attempt to update a notification.
 keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone 
 ---
 
-# class `MCDUserNotificationUpdateStatus`
+# class `MCDUserNotificationUpdateResults`
 
 ```
-@interface MCDUserNotificationUpdateStatus : NSObject
+@interface MCDUserNotificationUpdateResults : NSObject
 ```
 
 This class describes the status of an attempt to update a notification.
@@ -19,7 +19,7 @@ This class describes the status of an attempt to update a notification.
 
 The ID of the notification.
 
-### result
-`@property(nonatomic, readonly) MCDUserNotificationResult result;`
+### succeeded
+`@property(nonatomic, readonly) Succeeded succeeded;`
 
-The result status of the operation.
+Whether the operation succeeded. 

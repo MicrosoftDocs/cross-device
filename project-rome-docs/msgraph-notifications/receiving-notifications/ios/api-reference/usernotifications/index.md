@@ -16,6 +16,6 @@ The UserNotifications namespace contains APIs that allow an app to receive and m
 #### [MCDUserNotificationReadStateFilter](MCDUserNotificationReadStateFilter.md)
 #### [MCDUserNotificationStatus](MCDUserNotificationStatus.md)
 #### [MCDUserNotificationStatusFilter](MCDUserNotificationStatusFilter.md)
-#### [MCDUserNotificationUpdateResult](MCDUserNotificationUpdateResult.md)
+#### [MCDUserNotificationUpdateResults](MCDUserNotificationUpdateResults.md)
 #### [MCDUserNotificationUserActionState](MCDUserNotificationUserActionState.md)
 #### [MCDUserNotificationUserActionStateFilter](MCDUserNotificationUserActionStateFilter.md)

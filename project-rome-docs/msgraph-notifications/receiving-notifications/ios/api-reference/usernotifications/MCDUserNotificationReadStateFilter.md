@@ -1,7 +1,7 @@
 ---
 title: MCDUserNotificationReadStateFilter
 description: Contains values that categorize notifications by read state (for filtered notification retrieval).
-keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone 
+keywords: microsoft, windows, Graph Notifications, how-to iOS, how-to iPhone 
 ---
 
 # enum `MCDUserNotificationReadStateFilter`

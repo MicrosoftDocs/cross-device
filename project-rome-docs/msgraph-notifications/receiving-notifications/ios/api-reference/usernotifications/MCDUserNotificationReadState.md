@@ -1,7 +1,7 @@
 ---
 title: MCDUserNotificationReadState
 description: Contains values that describe the read state of a notification.
-keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone 
+keywords: microsoft, windows, Graph Notifications, how-to iOS, how-to iPhone 
 ---
 
 # enum `MCDUserNotificationReadState`

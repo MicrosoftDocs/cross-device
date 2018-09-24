@@ -1,7 +1,7 @@
 ---
 title: MCDUserNotificationUserActionState
 description: Contains values describing the action a user has taken on a notification.
-keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone 
+keywords: microsoft, windows, Graph Notifications, how-to iOS, how-to iPhone 
 ---
 
 # enum `MCDUserNotificationUserActionState`

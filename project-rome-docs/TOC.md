@@ -28,12 +28,24 @@
 #### [How-to guide](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities)
 #### [API reference](https://docs.microsoft.com/uwp/api/windows.applicationmodel.useractivities)
 ### Android
-#### [how-to guide](user-activities/android/how-to-guides/user-activities-android.md)
+#### [How-to guide](user-activities/android/how-to-guides/user-activities-android.md)
 #### [API reference](user-activities/android/api-reference/index.md)
 ### iOS
-#### [how-to guide](user-activities/ios/how-to-guides/user-activities-ios.md)
+#### [How-to guide](user-activities/ios/how-to-guides/user-activities-ios.md)
 #### [API reference](user-activities/ios/api-reference/index.md)
 ### [Microsoft Graph](user-activities/msgraph/index.md)
+
+## [Notifications](msgraph-notifications/index.md)
+### Windows
+#### [How-to guide](msgraph-notifications/receiving-notifications/windows/index.md)
+#### [API reference](msgraph-notifications/receiving-notifications/windows/api-reference/index.md)
+### Android
+#### [How-to guide](msgraph-notifications/receiving-notifications/android/index.md)
+#### [API reference](msgraph-notifications/receiving-notifications/android/api-reference/index.md)
+### iOS
+#### [How-to guide](msgraph-notifications/receiving-notifications/ios/index.md)
+#### [API reference](msgraph-notifications/receiving-notifications/ios/api-reference/index.md)
+### [Microsoft Graph](msgraph-notifications/sending-notifications.md)
 
 ## [Remote sessions](remote-sessions/index.md)
 ### Windows

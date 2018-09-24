@@ -10,3 +10,5 @@ Some scenarios are available through both the native platform SDKs and through R
 * If your app runs on Windows (UWP or Win32 apps), the platform SDK provides a number of additional features, such as using the users' default account and automatically tracking user engagement. 
 *  If you plan to use other Project Rome features that are only available through the platform SDKs, you may wish to implement each of the features in the same way.
 * Use the Microsoft Graph REST APIs for a quicker and simpler implementation if you don't require the scenarios above.
+
+Some other scenarios are enabled by using a combination of Microsoft Graph APIs and client SDKs. An example of this is Notifications. In this case, MS Graph API is used to publish notifications from app server side, and the native-platform client SDKs are utilized to receive and manage notifications in each client-side native apps. 

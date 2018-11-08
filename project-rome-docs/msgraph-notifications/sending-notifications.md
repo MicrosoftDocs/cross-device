@@ -5,8 +5,6 @@ ms.author: lahugh
 author: laurenhughes
 ms.date: 09/21/2018
 ms.topic: include
-ms.prod: windows
-ms.technology: connected-devices
 ms.assetid: 8ff9cd93-a48e-4198-927f-3d7bd4b65f29
 ms.localizationpriority: medium
 ---

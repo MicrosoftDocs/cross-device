@@ -5,8 +5,6 @@ ms.author: pafarley
 author: PatrickFarley
 ms.date: 07/17/2018
 ms.topic: article
-ms.prod: windows
-ms.technology: connected-devices
 keywords: microsoft, windows, project rome, commanding, ios
 ms.assetid: b5d426db-a0ca-4888-b2cb-cb7fdb1c6c0d
 ms.localizationpriority: medium

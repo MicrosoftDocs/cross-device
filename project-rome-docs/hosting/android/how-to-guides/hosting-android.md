@@ -5,8 +5,6 @@ ms.author: pafarley
 author: PatrickFarley
 ms.date: 07/17/2018
 ms.topic: article
-ms.prod: windows
-ms.technology: connected-devices
 keywords: microsoft, windows, project rome, hosting, android
 ms.assetid: e96b6e41-f2b2-48fd-906d-eed4b2fbb9a8
 ms.localizationpriority: medium

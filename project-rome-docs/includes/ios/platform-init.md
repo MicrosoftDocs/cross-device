@@ -5,8 +5,6 @@ ms.author: pafarley
 author: PatrickFarley
 ms.date: 07/17/2018
 ms.topic: include
-ms.prod: windows
-ms.technology: connected-devices
 ms.assetid: 2241922a-83c4-4cf5-96d3-f3dc51f0a254
 ms.localizationpriority: medium
 ---

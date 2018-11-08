@@ -5,8 +5,6 @@ ms.author: pafarley
 author: PatrickFarley
 ms.date: 07/17/2018
 ms.topic: article
-ms.prod: windows
-ms.technology: connected-devices
 keywords: microsoft, windows, project rome, user activities, android
 ms.assetid: 8cfb7544-913c-48c0-8528-52b93ba8b0c6
 ms.localizationpriority: medium

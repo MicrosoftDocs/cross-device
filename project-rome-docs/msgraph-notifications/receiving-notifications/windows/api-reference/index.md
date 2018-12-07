@@ -10,5 +10,5 @@ The UserNotifications namespace contains APIs that allow an app to receive and m
 
 ### API groups
 
-#### [Graph Notification APIs](msgraph-notifications/receiving-notifications/windows/api-reference/usernotifications/index.md)
+#### [Graph Notification APIs](usernotifications/index.md)
 

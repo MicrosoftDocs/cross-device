@@ -45,7 +45,7 @@
 ### iOS
 #### [How-to guide](msgraph-notifications/receiving-notifications/ios/index.md)
 #### [API reference](msgraph-notifications/receiving-notifications/ios/api-reference/index.md)
-### [Microsoft Graph](msgraph-notifications/sending-notifications.md)
+### [Using Microsoft Graph APIs](msgraph-notifications/sending-notifications.md)
 
 ## [Remote sessions](remote-sessions/index.md)
 ### Windows

@@ -12,4 +12,4 @@ The UserNotifications namespace contains APIs that allow an app to receive and m
 
 #### [Base](https://docs.microsoft.com/en-us/windows/project-rome/objectivec-api/base/index)
 #### [Core](https://docs.microsoft.com/en-us/windows/project-rome/objectivec-api/core/index)
-#### [Graph Notification APIs](https://docs.microsoft.com/windows/project-rome/msgraph-notifications/receiving-notifications/ios/api-reference/usernotifications)
+#### [Graph Notification APIs](usernotifications/index.md)

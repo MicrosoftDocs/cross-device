@@ -36,16 +36,18 @@
 ### [Microsoft Graph](user-activities/msgraph/index.md)
 
 ## [Notifications](msgraph-notifications/index.md)
+### [Using Microsoft Graph APIs](msgraph-notifications/sending-notifications.md)
 ### Windows
 #### [How-to guide](msgraph-notifications/receiving-notifications/windows/index.md)
 #### [API reference](msgraph-notifications/receiving-notifications/windows/api-reference/index.md)
+##### [Graph Notification APIs](https://docs.microsoft.com/windows/project-rome/msgraph-notifications/receiving-notifications/windows/api-reference/usernotifications)
 ### Android
 #### [How-to guide](msgraph-notifications/receiving-notifications/android/index.md)
 #### [API reference](msgraph-notifications/receiving-notifications/android/api-reference/index.md)
 ### iOS
 #### [How-to guide](msgraph-notifications/receiving-notifications/ios/index.md)
 #### [API reference](msgraph-notifications/receiving-notifications/ios/api-reference/index.md)
-### [Using Microsoft Graph APIs](msgraph-notifications/sending-notifications.md)
+##### [Graph Notification APIs](https://docs.microsoft.com/windows/project-rome/msgraph-notifications/receiving-notifications/ios/api-reference/usernotifications)
 
 ## [Remote sessions](remote-sessions/index.md)
 ### Windows

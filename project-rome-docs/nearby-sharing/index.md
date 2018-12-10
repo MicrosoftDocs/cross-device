@@ -1,4 +1,12 @@
-# Nearby sharing
+---
+title: Send Files to Nearby Devices - Nearby Sharing
+description: Send files or websites to nearby devices using Bluetooth or WiFi.
+ms.localizationpriority: medium
+ms.topic: overview
+ms.custom: seodec2018
+---
+
+# Send files or websites to other devices with Nearby Sharing
 
 The [Nearby sharing](https://blogs.windows.com/windowsexperience/2018/06/18/windows-10-tip-how-to-start-using-nearby-sharing-with-the-windows-10-april-2018-update/#SpPj2lqAq22UdMVS.97) feature, powered by Project Rome, allows apps to easily send files or websites to nearby devices using Bluetooth or WiFi.
 

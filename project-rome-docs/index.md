@@ -1,6 +1,13 @@
-# Project Rome docs
+---
+title: Build Cross-Device Applications
+description: Learn about the cross-device and cross-platform features enables for Windows 10 applications using Project Rome.
+ms.topic: overview
+ms.custom: seodec2018
+---
 
-[Project Rome](https://developer.microsoft.com/en-us/windows/project-rome) provides a set of cross-device and cross-platform features that developers can use to increase engagement in their apps and create experiences that center around people and their tasks rather than devices. The programming model comes in the form of API sets for Windows, Android, iOS, and Microsoft Graph. Both client and server-side applications can utilize Project Rome capabilities. 
+# Build cross-device and cross-platform applications with Project Rome
+
+[Project Rome](https://developer.microsoft.com/en-us/windows/project-rome) provides a set of cross-device and cross-platform features that developers can use to increase engagement in their apps and create experiences that center around people and their tasks rather than devices. The programming model comes in the form of API sets for Windows, Android, iOS, and Microsoft Graph. Both client and server-side applications can utilize Project Rome capabilities.
 
 On this site you will find developer documentation for the Project Rome SDKs. Select a feature on the left navigation pane to get started. Additionally, you can visit the [Project Rome landing page](https://developer.microsoft.com/windows/project-rome) for more general information, or see the [Project Rome samples repo](https://github.com/Microsoft/project-rome) for sample apps that showcase these features.
 

@@ -1,15 +1,12 @@
 ---
-title: include file
-description: include file
-ms.author: lahugh
-author: laurenhughes
-ms.date: 09/21/2018
-ms.topic: include
-ms.assetid: 1d6295b8-f2ad-474d-9820-51cad94ef430
+title: Microsoft Graph Notifications
+description: Include Microsoft Graph notifications in your application to re-engage users in a human-centric way.
 ms.localizationpriority: medium
+ms.topic: overview
+ms.custom: seodec2018
 ---
 
-# Microsoft Graph Notifications Overview
+# Microsoft Graph Notifications
 Notifications are the most effective way to re-engage your users. They can catch your users' attention and bring the user back to your app. In a multi-device world, your users can access your apps and services from anywhere, across different platforms and devices where your apps have a presence.
 Your notification scenarios should be designed in a "human-centric" way, in which the primary goal is to notify the user, wherever they are. Existing notification solutions provided by major platforms are excellent at targeting devices. Microsoft Graph notifications improve on this by allowing you to target users. Microsoft Graph notifications will take care of the heavy lifting, including mapping between users and endpoints, syncing notification state across users' different endpoints, and more.
 

@@ -6,7 +6,7 @@ ms.topic: overview
 ms.custom: seodec2018
 ---
 
-# Create and publish user activities
+# User Activities
 
 The User Activities feature allows apps to create and publish Windows-style User Activities.
 

@@ -9,7 +9,7 @@ ms.custom: seodec2018
 
 Use hosting to handle remote action requests on a local device.
 
-Hosting scenarios include cases such as app launch requests or app service messages from apps on remote devices. Hosting is the necessary counterpart of the [Commanding](../commanding/index.md) scenarios.
+Hosting includes scenarios like app launch requests or app service messages from apps on remote devices. Hosting is the necessary counterpart of the [Commanding](../commanding/index.md) scenarios.
 
 To get started with Hosting scenarios on your client device, select your preferred development platform on the left navigation pane.
 

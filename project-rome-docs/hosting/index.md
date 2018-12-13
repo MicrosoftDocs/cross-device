@@ -7,7 +7,7 @@ ms.custom: seodec2018
 
 # Hosting
 
-Use hosting to handle remote action requests on a local device.
+Hosting allows apps to handle remote action requests on a local device.
 
 Hosting includes scenarios like app launch requests or app service messages from apps on remote devices. Hosting is the necessary counterpart of the [Commanding](../commanding/index.md) scenarios.
 

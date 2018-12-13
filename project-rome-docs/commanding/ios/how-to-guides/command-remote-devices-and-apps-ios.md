@@ -1,8 +1,6 @@
 ---
 title: Command remote devices and apps (iOS)
 description: This guide will show how to discover remote devices and apps and then launch apps or interact with app services.
-ms.author: pafarley
-author: PatrickFarley
 ms.date: 07/17/2018
 ms.topic: article
 keywords: microsoft, windows, project rome, commanding, ios

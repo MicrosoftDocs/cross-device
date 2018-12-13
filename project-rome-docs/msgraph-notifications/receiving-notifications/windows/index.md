@@ -1,3 +1,12 @@
+---
+title: Integrating UWP Apps with Graph Notifications
+description: How to perform the necessary registration steps to become a receiving endpoint for notifications published from your app server.
+ms.date: 09/21/2018
+ms.assetid: c973d534-08e9-4f6e-8b54-bcae97067961
+ms.localizationpriority: medium
+ms.custom: seodec18
+---
+
 # How-To Guide: Integrating with MS Graph Notifications (Windows UWP)
 
 With the Graph Notifications client-side SDK on Windows, your Windows UWP app can perform the necessary registration steps to become a receiving endpoint that receives notifications published from your app server targeted at a user. The SDK is then used to manage the notifications on the client side including receiving new notification payloads arrived on this client, managing the state of notifications, and retrieving notification history. For more information about MS Graph Notifications and how it enables human-centric notification delivery, see [Microsoft Graph Notifications Overview](../../index.md)

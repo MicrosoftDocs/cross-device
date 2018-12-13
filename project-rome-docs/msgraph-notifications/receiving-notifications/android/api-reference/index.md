@@ -1,8 +1,8 @@
-## Android User Notifications API reference
+# Android User Notifications API reference
 
 The following namespaces contain APIs that allow an app to receive and manage User Notifications that your app server publishes via Microsoft Graph targeted at users. 
 
-### Namespaces
+## Namespaces
 
 #### [Base](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.base)
 #### [Core](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.core)

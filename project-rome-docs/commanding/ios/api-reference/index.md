@@ -1,8 +1,8 @@
-## iOS Commanding API reference
+# iOS Commanding API reference
 
 The following APIs allow apps to discover and connect with remote devices and applications through remote app launching and remote messaging.
 
-### API groups
+## API groups
 
 #### [Base](../../../objectivec-api/base/index.md)
 #### [Commanding](../../../objectivec-api/commanding/index.md)

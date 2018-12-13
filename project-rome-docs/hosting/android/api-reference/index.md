@@ -1,8 +1,8 @@
-## Android Hosting API reference
+# Android Hosting API reference
 
 The following namespaces allow Android apps to implement hosting scenarios.
 
-### Namespaces
+## Namespaces
 
 #### [Base](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.base)
 #### [Core](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.core)

@@ -8,7 +8,7 @@ ms.custom: seodec2018
 
 # Remote Sessions
 
-The Remote sessions feature allows an app to connect to other devices through a session.
+The remote sessions feature allows an app to connect to other devices through a session.
 
 Remote sessions can be used for explicit app-to-app messaging or for brokered exchange of system-managed data.
 

@@ -4,8 +4,6 @@ description: Learn about the cross-device and cross-platform features enables fo
 ms.topic: overview
 ms.custom: "seodec2018, RS5"
 ---
-
-
 # Project Rome
 
 [Project Rome](https://developer.microsoft.com/en-us/windows/project-rome) is a platform for creating multi-device, multi-platform applications, with the goal of creating human-centric scenarios that move with the user regardless of form factor or platform.

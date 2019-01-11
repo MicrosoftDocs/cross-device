@@ -17,44 +17,33 @@ User Activities are data constructs that represent a user's tasks within an appl
 With the Project Rome SDK, your iOS app can not only publish User Activities for use in Windows features such as Timeline, but it can also act as an endpoint and read Activities back to the user just as Timeline does. This allows cross-device apps to completely transcend their platforms and present experiences that follow users rather than devices.
 
 See the [API reference](../api-reference/index.md) page for links to the reference docs relevant to these scenarios.
+First, initialize the Connected Devices Platform. If you have done this already, skip to the next section.
 
-First, you must initialize the Connected Devices Platform. If you've done this already, skip to the next section.
+[!INCLUDE [ios/create-platform](../../../includes/ios/create-platform.md)]
 
-[!INCLUDE [ios/platform-init](../../../includes/ios/platform-init.md)]
+Next, you must prepare the platform to be started.  Before starting the platform you'll need to subscribe to AccoutManager and NotificationRegistrationManager events​.
 
-Next, you must enable your app to receive push notifications. If you've done this already, skip to the next section.
+[!INCLUDE [ios/prepare-start-platform](../../../includes/ios/prepare-start-platform.md)]
 
-[!INCLUDE [ios/notification-init](../../../includes/ios/notification-init.md)]
+At this point, the platform has everything needed to properly start and is ready to start listening for events.
 
-## Initialize a User Activity channel
+[!INCLUDE [ios/start-platform](../../../includes/ios/start-platform.md)]
 
-To implement User Activity features in your app, you will first need to initialize the user activity feed by creating a **MCDUserActivityChannel**. You should treat this like the Platform initialization step above: it should be checked and possibly redone whenever the app comes to the foreground (but not before Platform initialization). 
+After platform started is to invoke GetAllAccounts on AccountManager to get a list of accounts that previously been added into CDP AccountManager.
 
-You will need a signed-in user account for this step. As above, you may use a class from the [authentication provider sample](https://github.com/Microsoft/project-rome/tree/master/iOS/samples/account-provider-sample) to easily acquire the **MCDUserAccount**(s). You will also need your cross-platform app ID, which was retrieved through the Microsoft Developer Dashboard registration.
+So App needs to make sure before Adding an account to AccoutManager, it shall remove any existing account from AccountManager. The SDK will throw InvalidState Exception if App tries to add an new account but AccountManager already contains one.
 
-The following method from the sample app initializes an **MCDUserActivityChannel**.
+<should something go here about the auth provider?>
 
-```ObjectiveC
-// You must be logged in to use UserActivities
-NSArray<MCDUserAccount*>* accounts = [[AppDataSource sharedInstance].accountProvider getUserAccounts];
-if (accounts.count > 0)
-{
-    // Get a UserActivity channel, getting the default channel        
-    NSLog(@"Creating UserActivityChannel");
-    NSArray<MCDUserAccount*>* accounts = [[AppDataSource sharedInstance].accountProvider getUserAccounts];
-    MCDUserDataFeed* userDataFeed = [MCDUserDataFeed userDataFeedForAccount:accounts[0]
-        platform:[AppDataSource sharedInstance].platform
-        activitySourceHost:CROSS_PLATFORM_APP_ID];
-    NSArray<MCDSyncScope*>* syncScopes = @[ [MCDUserActivityChannel syncScope] ];
-    [userDataFeed addSyncScopes:syncScopes];
-    self.channel = [MCDUserActivityChannel userActivityChannelWithUserDataFeed:userDataFeed];
-}
-else
-{
-    NSLog(@"Must have an active account to publish activities!");
-    self.createActivityStatusField.text = @"Need to be logged in!";
-}
-```
+[!INCLUDE [ios/prepare-account](../../../includes/ios/prepare-account.md)]
+
+If you're using a notificatoin provider, you'll need to retrieve the notification registration at this point.
+
+[!INCLUDE [ios/retrieve-notification-registration](../../../includes/ios/retrieve-notification-registration.md)]
+
+Now, you're ready to start using UserActivities.
+
+[!INCLUDE [ios/userdata-registration](../../../includes/ios/userdata-registration.md)]
 
 At this point, you should have an **MCDUserActivityChannel** reference in `channel`.
 

@@ -4,6 +4,5 @@ The following namespaces contain APIs that allow an Android app to implement the
 
 ## Namespaces
 
-#### [Base](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.base)
-#### [Core](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.core)
+#### [ConnectedDevices](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices)
 #### [NearShare](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.nearshare)

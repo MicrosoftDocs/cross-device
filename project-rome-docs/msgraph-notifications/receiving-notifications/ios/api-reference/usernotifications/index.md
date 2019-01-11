@@ -1,6 +1,6 @@
 # UserNotifications namespace
 ```
-usernotifications.h
+ConnectedDevicesUserDataUserNotifications.h
 ```
 The UserNotifications namespace contains APIs that allow an app to receive and manage user-targeted notifications published by your app server via Microsoft Graph Notifications to enable human-centric, cross-device notification experiences. 
 
@@ -16,6 +16,6 @@ The UserNotifications namespace contains APIs that allow an app to receive and m
 #### [MCDUserNotificationReadStateFilter](MCDUserNotificationReadStateFilter.md)
 #### [MCDUserNotificationStatus](MCDUserNotificationStatus.md)
 #### [MCDUserNotificationStatusFilter](MCDUserNotificationStatusFilter.md)
-#### [MCDUserNotificationUpdateResults](MCDUserNotificationUpdateResults.md)
+#### [MCDUserNotificationUpdateResult](MCDUserNotificationUpdateResult.md)
 #### [MCDUserNotificationUserActionState](MCDUserNotificationUserActionState.md)
 #### [MCDUserNotificationUserActionStateFilter](MCDUserNotificationUserActionStateFilter.md)

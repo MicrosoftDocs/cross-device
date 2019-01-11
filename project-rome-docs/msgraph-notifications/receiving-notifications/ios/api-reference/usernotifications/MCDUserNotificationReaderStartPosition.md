@@ -14,5 +14,5 @@ Contains values that determines the position where any new change in the reader 
 
 |Name | Value | Description |
 |:-- |:-- |:-- |
-|    MCDUserNotificationReaderStartPositionBeginning |0| Start position at the beginning of the notification store. |
+|   MCDUserNotificationReaderStartPositionBeginning |0| Start position at the beginning of the notification store. |
 |   MCDUserNotificationReaderStartPositionEnd | 1| Start position at the end of the notification store. |

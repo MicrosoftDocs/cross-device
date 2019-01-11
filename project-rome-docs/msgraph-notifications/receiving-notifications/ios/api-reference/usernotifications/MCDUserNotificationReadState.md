@@ -14,5 +14,5 @@ Contains values that describe the read state of a notification.
 
 |Name | Value | Description |
 |:-- |:-- |:-- |
-|    MCDUserNotificationReadStateUnread |0| The notification has not been read. |
+|   MCDUserNotificationReadStateUnread |0| The notification has not been read. |
 |   MCDUserNotificationReadStateRead | 1| The notification has been read.|

@@ -14,5 +14,5 @@ Contains values that determines whether the notification is deleted or not. Dele
 
 |Name | Value | Description |
 |:-- |:-- |:-- |
-|    MCDUserNotificationStatusActive |0| The notification is still active and persisted inside Connected Devices Platform store. |
+|   MCDUserNotificationStatusActive |0| The notification is still active and persisted inside Connected Devices Platform store. |
 |   MCDUserNotificationStatusDeleted | 1| The notification has been deleted.|

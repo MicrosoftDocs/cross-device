@@ -18,85 +18,35 @@ With the Project Rome SDK, your Android app can not only publish User Activities
 
 See the [API reference](../api-reference/index.md) page for links to the reference docs relevant to these scenarios.
 
-First, you must initialize the Connected Devices Platform. If you've done this already, skip to the next section.
+## TODO make sure all steps are covered.
 
-[!INCLUDE [android/platform-init](../../../includes/android/platform-init.md)]
+[!INCLUDE [android/preliminary-setup](../../../includes/android/preliminary-setup.md)]
 
-Next, you must enable your app to receive push notifications. If you've done this already, skip to the next section.
+First, initialize the Connected Devices Platform. If you have done this already, skip to the next section.
 
-[!INCLUDE [android/notification-init](../../../includes/android/notification-init.md)]
+[!INCLUDE [android/create-platform](../../../includes/android/create-platform.md)]
 
-## Initialize a User Activity channel
+Next, you must prepare the platform to be started.  Before starting the platform you'll need to subscribe to AccoutManager and NotificationRegistrationManager events​.
 
-To implement User Activity features in your app, you will first need to initialize the user activity feed by creating a **UserActivityChannel**. You should treat this like the Platform initialization step above: it should be checked and possibly redone whenever the app comes to the foreground (but not before Platform initialization). 
+[!INCLUDE [android/prepare-start-platform](../../../includes/android/prepare-start-platform.md)]
 
-Note that you will need a signed-in user account. This guide will use the `mSignInHelper` instance created in steps above. You will also need your cross-platform app ID, which was retrieved through the Microsoft Developer Dashboard registration.
+At this point, the platform has everything needed to properly start and is ready to start listening for events.
 
-The following methods initialize a **UserActivityChannel**.
+[!INCLUDE [android/start-platform](../../../includes/android/start-platform.md)]
 
-```Java
-private UserActivityChannel mActivityChannel;
-private UserDataFeed mUserDataFeed;
+After platform started is to invoke GetAllAccounts on AccountManager to get a list of accounts that previously been added into CDP AccountManager.
 
-// ...
+So App needs to make sure before Adding an account to AccoutManager, it shall remove any existing account from AccountManager. The SDK will throw InvalidState Exception if App tries to add an new account but AccountManager already contains one.
 
-/**
- * Initializes the UserActivityFeed.
- */
-public void initializeUserActivityFeed() {
+<should something go here about the auth provider?>
 
-    // define what scope of data this app needs
-    SyncScope[] scopes = { UserActivityChannel.getSyncScope(), UserNotificationChannel.getSyncScope() };
+[!INCLUDE [android/prepare-account](../../../includes/android/prepare-account.md)]
 
-    // Get a reference to the UserDataFeed. This method is defined below
-    mUserDataFeed = getUserDataFeed(scopes, new EventListener<UserDataFeed, Void>() {
-        @Override
-        public void onEvent(UserDataFeed userDataFeed, Void aVoid) {
-            if (userDataFeed.getSyncStatus() == UserDataSyncStatus.SYNCHRONIZED) {
-                // log synchronized.
-            } else {
-                // log synchronization not completed.
-            }
-        }
-    });
+If you're using a notificatoin provider, you'll need to retrieve the notification registration at this point.
 
-    // this method is defined below
-    mActivityChannel = getUserActivityChannel();
-}
+[!INCLUDE [android/retrieve-notification-registration](../../../includes/android/retrieve-notification-registration.md)]
 
-// instantiate the UserDataFeed
-private UserDataFeed getUserDataFeed(SyncScope[] scopes, EventListener<UserDataFeed, Void> listener) {
-    UserAccount[] accounts = AccountProviderBroker.getSignInHelper().getUserAccounts();
-    if (accounts.length <= 0) {
-        // notify the user that sign-in is required
-        return null;
-    }
-
-    // use the initialized Platform instance, along with the cross-device app ID.
-    UserDataFeed feed = UserDataFeed.getForAccount(accounts[0], PlatformBroker.getPlatform(), Secrets.APP_HOST_NAME);
-    feed.addSyncStatusChangedListener(listener);
-    feed.addSyncScopes(scopes);
-    // sync data with the server
-    feed.startSync();
-    return feed;
-}
-
-// use the UserDataFeed reference to create a UserActivityChannel
-@Nullable
-private UserActivityChannel getUserActivityChannel() {
-    UserActivityChannel channel = null;
-    try {
-        // create a UserActivityChannel for the signed in account
-        channel = new UserActivityChannel(mUserDataFeed);
-    } catch (Exception e) {
-        e.printStackTrace();
-        // handle exception
-    }
-    return channel;
-}
-```
-
-At this point, you should have a **UserActivityChannel** reference in `mActivityChannel`.
+Now, you're ready to start using UserActivities.
 
 ## Create and publish a User Activity
 

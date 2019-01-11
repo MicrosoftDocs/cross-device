@@ -12,35 +12,30 @@ keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone
 
 This class provides the notification change reader which handles the receiving and management of user notifications for the application. 
 
+## Properties
+
+### id
+`@property(class, readonly, nonnull) id<MCDUserDataFeedSyncScope> syncScope;`
+
+Id used to ensure UserNotifications are included in the feed.
+
 ## Constructors
 
-### userNotificationChannelWithUserDataFeed
-`+ (nullable instancetype)userNotificationChannelWithUserDataFeed:(MCDUserDataFeed* _Nonnull)userDataFeed`
+### channelWithUserDataFeed
+`+ (nullable instancetype)channelWithUserDataFeed:(nonnull MCDUserDataFeed*)userDataFeed;`
 
-### userNotificationChannelWithAccount
-`+ (nullable instancetype)userNotificationChannelWithAccount:(nonnull MCDUserAccount*)userAccount;
+#### Parameters
 
+### userDataFeed
+TODO
+
+### initWithUserDataFeed
+`- (nullable instancetype)initWithUserDataFeed:(nonnull MCDUserDataFeed*)userDataFeed;`
+
+### userDataFeed
+TODO
 
 ## Methods
-
-### addDataChangedListener
-`- (NSUInteger)addDataChangedListener:(nonnull void (^)(
-                                         MCDUserNotificationChannel* _Nonnull, MCDUserNotificationChangeReader* _Nonnull))listener;`
-
-Adds a listener to the data changed event, which is raised whenever the user notification data changes.
-
-
-
-### syncScope
-`+ (nonnull MCDUserDataFeedSyncScope*)`
-
-Get the sync scope of this user notification channel'
-
-### getUserNotificationAsync
-`- (void)getUserNotificationAsync:(NSString* _Nonnull)notificationId
-                      completion:(nonnull void (^)(MCDUserNotification* _Nullable, NSError* _Nullable))completion`
-
-Get a user notification based on its id.
 
 ### createReader
 `- (MCDUserNotificationReader* _Nullable)createReader`
@@ -50,7 +45,7 @@ Create a user notification reader to receive and manage user notifications publi
 ### createReaderWithOptions
 `- (MCDUserNotificationReader* _Nullable)createReaderWithOptions:(MCDUserNotificationReaderOptions* _Nonnull)options`
 
-Create a user notification reader with options 
+Create a user notification reader with options.
 
 ### createReaderWithState
 `- (MCDUserNotificationReader* _Nullable)createReaderWithState:(NSString* _Nonnull)readerState`
@@ -58,9 +53,16 @@ Create a user notification reader with options
 Create a user notification reader to receive and manage user notifications published by app server. 
 The reader will start at the provided tracking state.  
 
+### getUserNotificationAsync
+`- (void)getUserNotificationAsync:(NSString* _Nonnull)notificationId
+                      completion:(nonnull void (^)(MCDUserNotification* _Nullable, NSError* _Nullable))completion`
+
+Get a user notification based on its id.
+
 ### deleteUserNotificationAsync
-`- (void)deleteUserNotificationAsync:(NSString* _Nonnull)notificationId
-                         completion:(nonnull void (^)(MCDUserNotificationUpdateResult* _Nullable, NSError* _Nullable))completion`
+```
+- (void)deleteUserNotificationAsync:(NSString* _Nonnull)notificationId
+                         completion:(nonnull void (^)(MCDUserNotificationUpdateResult* _Nullable, NSError* _Nullable))completion
+```
 
 Delete a user notification based on its id. 
-

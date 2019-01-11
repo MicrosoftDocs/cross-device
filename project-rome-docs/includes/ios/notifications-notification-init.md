@@ -9,7 +9,7 @@ ms.assetid: 30df8538-1c1f-498f-af25-0be0aed687c8
 ms.localizationpriority: medium
 ---
 
-### Configure your app to be APNs notification-compatible
+### TODO Configure your app to be APNs notification-compatible
 
 After you complete the workflow on the Developer dashboard, you must modify the actual code of your app to make capable of receiving push notifications. First, make sure to add the "remote-notifications" **UIBackgroundMode** to your app's _Info.plist_ to allow the app to receive notifications while running in the background. 
 

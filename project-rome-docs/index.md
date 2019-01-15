@@ -5,13 +5,17 @@ ms.topic: overview
 ms.custom: "seodec2018, RS5"
 ---
 
-# Project Rome Documentation
+# Project Rome
 
-On this site you will find developer documentation for Microsoft's cross-device experiences platform, code-named Project Rome. Select a feature on the left navigation pane to get started. Additionally, you can visit the [Project Rome landing page](https://developer.microsoft.com/windows/project-rome) for more general information, or see the [Project Rome samples repo](https://github.com/Microsoft/project-rome) for sample apps that showcase these features.
+[Project Rome](https://developer.microsoft.com/en-us/windows/project-rome) is Microsoft's cross-device experiences platform for apps. On this site you will find developer documentation for Project Rome and links to other useful resources.
 
-## Project Rome
+For news, blog posts, and videos about Project Rome, visit the [Project Rome landing page](https://developer.microsoft.com/windows/project-rome).
 
-[Project Rome](https://developer.microsoft.com/en-us/windows/project-rome) is Microsoft's cross-device experiences platform for apps. Project Rome allows developers to write apps that can run on multiple devices and travel with the user as they switch between devices.
+For sample applications using Project Rome, check out the SDK table below, or visit the [Project Rome samples repo](https://github.com/Microsoft/project-rome).
+
+## About Project Rome
+
+Project Rome allows developers to write apps that can run on multiple devices and travel with the user as they switch between devices.
 
 Project Rome includes features exposed via Microsoft Graph and platform-specific native SDKs. These features enable multiple cross-device and connected-device capabilities, allowing your apps to be centralized around a logged-in user identity. Features associated with Project Rome include but are not limited to user activities, notifications, device relay, and nearby share.
 

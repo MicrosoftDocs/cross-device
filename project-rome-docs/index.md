@@ -11,9 +11,11 @@ On this site you will find developer documentation for Microsoft's cross-device 
 
 ## Project Rome
 
-[Project Rome](https://developer.microsoft.com/en-us/windows/project-rome) is Microsoft's cross-device experiences platform. Project Rome frees your app from running on a specific device, enabling a cross-device, user centric experience.
+[Project Rome](https://developer.microsoft.com/en-us/windows/project-rome) is Microsoft's cross-device experiences platform for apps. Project Rome allows developers to write apps that can run on multiple devices and travel with the user as they switch between devices.
 
-From a developer's perspective, Project Rome comprises a set of features exposed via Microsoft Graph and platform-specific native SDKs. These features allow your apps on client devices to interact with your apps and services backend. Further, these multi-device apps can be centralized around a logged in user identity, represented by Microsoft Account (MSA) or Azure Active Directiory (AAD) account. Features associated with Project Rome include but are not limited to user activities, notifications, device relay, and nearby share.
+Project Rome includes features exposed via Microsoft Graph and platform-specific native SDKs. These features enable multiple cross-device and connected-device capabilities, allowing your apps to be centralized around a logged-in user identity. Features associated with Project Rome include but are not limited to user activities, notifications, device relay, and nearby share.
+
+## Choosing between native APIs and Graph APIs
 
 Some scenarios are available through *both* the native platform SDKs and REST APIs via Microsoft Graph. In general, the REST APIs enable quick and simple implementation of the Project Rome features. However, there are some advantages to using platform-specific implementations:
 
@@ -34,7 +36,7 @@ Project Rome is currently implemented for the below platforms. Follow the links 
 
 [winredist-sdk]:           https://www.nuget.org/packages/Microsoft.ConnectedDevices.UserNotifications
 [winredist-sdk-badge]:     https://img.shields.io/nuget/v/Microsoft.ConnectedDevices.UserNotifications.svg
-[winredist-sample]:        Windows/samples
+[winredist-sample]:        https://github.com/Microsoft/project-rome/tree/release/0.13.7/Windows/samples
 
 [xamarin-sdk]:             https://www.nuget.org/packages/Microsoft.ConnectedDevices.Xamarin.Droid
 [xamarin-sdk-badge]:       https://img.shields.io/nuget/v/Microsoft.ConnectedDevices.Xamarin.Droid.svg
@@ -42,11 +44,11 @@ Project Rome is currently implemented for the below platforms. Follow the links 
 
 [ios-sdk]:                 https://cocoapods.org/pods/ProjectRomeSdk
 [ios-sdk-badge]:           https://img.shields.io/cocoapods/v/ProjectRomeSdk.svg
-[ios-sample]:              iOS/samples 
+[ios-sample]:              https://github.com/Microsoft/project-rome/tree/release/0.13.7/iOS/samples
 
 [android-sdk]:             https://bintray.com/projectrome/maven/com.microsoft.connecteddevices:connecteddevices-sdk/_latestVersion
 [android-sdk-badge]:       https://api.bintray.com/packages/projectrome/maven/com.microsoft.connecteddevices%3Aconnecteddevices-sdk/images/download.svg
-[android-sample]:          Android/samples
+[android-sample]:          https://github.com/Microsoft/project-rome/tree/release/0.13.7/Android/samples
 
 
 [graph-relay]:             https://developer.microsoft.com/graph/docs/api-reference/beta/resources/project_rome_overview

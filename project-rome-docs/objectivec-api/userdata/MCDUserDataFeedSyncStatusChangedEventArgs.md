@@ -1,6 +1,6 @@
 ---
 title: MCDUserDataFeedSyncStatusChangedEventArgs
-description: TODO
+description: EventArgs class for when the sync status changes for the **MCDUserDataFeed** instance.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 
@@ -10,4 +10,4 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 @interface MCDUserDataFeedSyncStatusChangedEventArgs : NSObject
 ```  
 
-# TODO Add description
+EventArgs class for when the sync status changes for the **MCDUserDataFeed** instance.

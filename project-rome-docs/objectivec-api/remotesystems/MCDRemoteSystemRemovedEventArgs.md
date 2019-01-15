@@ -1,20 +1,21 @@
 ---
 title: MCDRemoteSystemRemovedEventArgs
-description: TODO
+description: Event arguments for the RemoteSystemWatcher RemoteSystemRemoved event.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 
-# class `MCDRemoteSystemEnumerationCompletedEventArgs` 
+# class `MCDRemoteSystemRemovedEventArgs` 
 
 ```
 @interface MCDRemoteSystemRemovedEventArgs : NSObject
 ```  
 
-# TODO Add description
+Event arguments for the RemoteSystemWatcher RemoteSystemRemoved event.
 
 ## Properties
 
 ### remoteSystem
 `@property(nonatomic, readonly, nonnull) MCDRemoteSystem* remoteSystem;`
 
-# TODO Add description
+The MCDRemoteSystem remote system that was removed. This remote system should
+not be used after this event.

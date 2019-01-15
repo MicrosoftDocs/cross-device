@@ -10,6 +10,10 @@ ms.localizationpriority: medium
 ---
 
 ### Prepare account that will be used by the platform
+
+Purposeful why
+
+snippet from the sample
 ​
 after platform started is to invoke GetAllAccounts on AccountManager to get a list of accounts that previously been added into CDP AccountManager.
 

@@ -17,39 +17,47 @@ A class used to discover remote systems.
 ### remoteSystemAdded
 `@property(nonatomic, readonly, nonnull) MCDEvent<MCDRemoteSystemWatcher*, MCDRemoteSystemAddedEventArgs*>* remoteSystemAdded;`
 
-TODO
+Event for when a new remote system is discovered.
 
 ### remoteSystemUpdated
 `@property(nonatomic, readonly, nonnull) MCDEvent<MCDRemoteSystemWatcher*, MCDRemoteSystemUpdatedEventArgs*>* remoteSystemUpdated;`
 
-TODO
+Event for when a remote system that was previously discovered in this discovery session changes from proximally
+connected to cloud connected, or the reverse. 
 
 ### remoteSystemRemoved
 `@property(nonatomic, readonly, nonnull) MCDEvent<MCDRemoteSystemWatcher*, MCDRemoteSystemRemovedEventArgs*>* remoteSystemRemoved;`
 
-TODO
+Event for when a remote system is removed. 
 
 ### enumerationCompleted
 `@property(nonatomic, readonly, nonnull)
     MCDEvent<MCDRemoteSystemWatcher*, MCDRemoteSystemEnumerationCompletedEventArgs*>* enumerationCompleted;`
 
-TODO
+Event for when the initial discovery of currently-discoverable devices has finished.  The discovery process will continue to run
+and will raise additional events if the set of existing remote systems changes.
 
 ### errorOccurred
 `@property(nonatomic, readonly, nonnull) MCDEvent<MCDRemoteSystemWatcher*, MCDRemoteSystemWatcherErrorOccurredEventArgs*>* errorOccurred;`
 
-TODO
+Event for when an error occurs during discovery. The discovery process will continue if possible. For example, if the error
+occurs with a value of **MCDRemoteSystemWatcherError.MCDRemoteSystemWatcherErrorInternetNotAvailable**, proximal discovery
+may continue because the error applies only to cloud discovery (see **MCDRemoteSystemDiscoveryType**).
 
 ## Constructors
 
 ### watcher
 `+ (nullable instancetype)watcher;`
 
+Creates and initializes a new instance of this class.
+
 #### Returns 
 A new instance of this class.
 
 ### watcherWithFilters
 `+ (nullable instancetype)watcherWithFilters:(nonnull NSArray<NSObject<MCDRemoteSystemFilter>*>*)filters;`
+
+TODO
 
 #### Parameters 
 * `filters` An array of filters to use in the device discovery process.
@@ -59,6 +67,8 @@ A new instance of this class with the given discovery filters applied.
 
 ### initWithFilters
 `- (nullable instancetype)initWithFilters:(nonnull NSArray<NSObject<MCDRemoteSystemFilter>*>*)filters;`
+
+TODO
 
 #### Parameters 
 * `filters` An array of filters to use in the device discovery process.

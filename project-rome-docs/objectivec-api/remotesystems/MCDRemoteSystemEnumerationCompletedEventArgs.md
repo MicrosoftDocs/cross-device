@@ -10,4 +10,4 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 @interface MCDRemoteSystemEnumerationCompletedEventArgs : NSObject
 ```  
 
-# TODO Add description
+Event arguments for the MCDRemoteSystemWatcher.enumerationCompleted event.

@@ -47,4 +47,4 @@ An array of MCDAppServiceDescription instances describing the app services that 
 ### accounts
 `@property(nonatomic, readonly, nullable) NSArray<MCDConnectedDevicesAccount*>* accounts;`
 
-TODO
+The Account associated with the MCDRemoteSystemApp that you have permissions to know about. What determines permissions is if the MCDConnectedDevicesAccount exists in the MCDConnectedDevicesAccountManager when the MCDRemoteSystemWatcher is started.

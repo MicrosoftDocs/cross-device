@@ -9,7 +9,15 @@ ms.assetid:
 ms.localizationpriority: medium
 ---
 
-Before starting the platform you'll need to subscribe to AccoutManager and NotificationRegistrationManager events​.
+### Prepare platform​ to be started
+
+TODO:
+Statement of purpose for every step
+What are AccountManager and NotificationRegistrationManager - link 
+
+
+
+Before starting the platform you'll need to subscribe to AccountManager and NotificationRegistrationManager events​.
 
 AccountManager
 

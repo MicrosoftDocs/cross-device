@@ -1,6 +1,6 @@
 ---
 title: MCDConnectedDevicesAddAccountResult
-description: TODO
+description: Result of MCDConnectedDevicesAccountManager.addAccountAsync(). 
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 
@@ -9,11 +9,10 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 ```
 @interface MCDConnectedDevicesAddAccountResult : NSObject
 ```  
-TODO
+Result of MCDConnectedDevicesAccountManager.addAccountAsync().
 
 ## Properties
 
 ### status
-`## Constructors`
 
-TODO
+Add account operation status.

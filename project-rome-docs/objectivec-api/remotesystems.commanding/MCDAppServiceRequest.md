@@ -29,7 +29,11 @@ The message for the remote app service.
 Sends a response message to the remote app service that sent the request.
 
 #### Parameters
-* `message` The message for the remote app service.
+* `message` 
+
+The message for the remote app service.
 
 #### Parameters
-* `completion` TODO
+* `completion`     
+
+The completion of the asynchronous operation with an MCDAppServiceResponseStatus value indicating the status of the send operation.

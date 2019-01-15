@@ -33,4 +33,4 @@ The time when the user stopped engaging in the associated activity.
 ### remoteSystemId
 `@property(nonatomic, readonly, nullable) NSString* remoteSystemId;`
 
-TODO
+The string indicating the remote system id of the device the user engaged this activity on.

@@ -54,7 +54,7 @@ The basic content info for this activity. For example, if your activity was read
 ### appDisplayName
 `@property(nonatomic, readonly, nullable) NSString* appDisplayName;`
 
-TODO
+The app display name for this activity.
 
 ### visualElements
 `@property(nonatomic, retain, nonnull) MCDUserActivityVisualElements* visualElements`
@@ -71,24 +71,24 @@ Gets or sets whether this activity is roamed to other endpoints.
 ### activityWithActivityId
 `+ (nullable instancetype)activityWithActivityId:(nonnull NSString*)activityId;`
 
-TODO Creates an instance of this class with a given ID
+Creates an instance of this class with a given ID
 
 #### Parameters
 * `activityId` The identifier for this Activity (should be a unique string).
 
 #### Returns
-TODO
+An instance of this class.
 
 ### initWithActivityId
 `- (nullable instancetype)initWithActivityId:(nonnull NSString*)activityId;`
 
-TODO Creates an instance of this class with a given ID
+Creates an instance of this class with a given ID.
 
 #### Parameters
 * `activityId` The identifier for this Activity (should be a unique string).
 
 #### Returns
-TODO
+An instance of this class.
 
 ## Methods
 

@@ -1,6 +1,7 @@
 ---
 title: MCDRemoteSystemWatcherError
-description:  TODO
+description:   Contains values that the describe an error encountered by a remote system watcher object during
+ the discovery process.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 
@@ -9,12 +10,13 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 ```
 typedef NS_ENUM(NSInteger, MCDRemoteSystemWatcherError)
 ```  
-Contains values describing the TODO 
+ Contains values that the describe an error encountered by a remote system watcher object during
+ the discovery process.
 
 ## Fields
 
-| Name                              |        |
+| Name                              | Value | Description                    |
 |:----------------------------------|:------|:-------------------------------|
-| MCDRemoteSystemWatcherErrorUnknown | 
-| MCDRemoteSystemWatcherErrorInternetNotAvailable |
-| MCDRemoteSystemWatcherErrorAuthenticationError |
+| MCDRemoteSystemWatcherErrorUnknown | 0 | The watcher encountered an unknown error. |
+| MCDRemoteSystemWatcherErrorInternetNotAvailable | 1 | The error occurred because the Internet connection was lost. |
+| MCDRemoteSystemWatcherErrorAuthenticationError | 2 | The error occurred because a ConnectedDevicesAccount being used to run the discovery could not be authenticated. | 

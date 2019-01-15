@@ -21,12 +21,16 @@ Provides details about the target app service to connect to.
 ### requestReceived 
 `@property(nonatomic, readonly, nonnull) MCDEvent<MCDAppServiceConnection*, MCDAppServiceRequestReceivedEventArgs*>* requestReceived;`
 
-TODO
+Event for when a service request is received from a remote app.
 
 ### serviceClosed 
 `@property(nonatomic, readonly, nonnull) MCDEvent<MCDAppServiceConnection*, MCDAppServiceClosedEventArgs*>* serviceClosed;`
 
-TODO
+Event for when connection to the app service closes.
+
+**Note:** On the client app, the "app service closed" event is not raised when the `close` method is called (by either the
+client or the host); it is only raised on the client app for unexpected connection interruptions. On the host app, the event _is_
+raised when the client calls `close` (as well as for unexpected interruptions).
 
 ## Constructors
 

@@ -1,6 +1,6 @@
 ---
 title: MCDRemoteSystemPlatformFilter
-description: A class used to filter remote systems based upon device kind.
+description: A class used to filter remote systems based on the OS platform they are running.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 
@@ -10,14 +10,14 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 @interface MCDRemoteSystemPlatformFilter : NSObject<MCDRemoteSystemFilter> 
 ```  
 
-# TODO description
+A class used to filter remote systems based on the OS platform they are running.
 
 ## Properties
 
 ### platform
 `@property(nonatomic, readonly) MCDRemoteSystemPlatform platform;`
 
-TODO description
+A MCDRemoteSystemPlatform value indicating the platform to filter for.
 
 ## Constructors
 
@@ -25,7 +25,9 @@ TODO description
 `+ (nullable instancetype)filterWithPlatform:(MCDRemoteSystemPlatform)platform;`
 
 #### Parameters 
-* `platform` TODO
+* `platform` 
+
+A MCDRemoteSystemPlatform value indicating the platform to filter for.
 
 #### Returns
 TODO
@@ -34,7 +36,9 @@ TODO
 `- (nullable instancetype)initWithPlatform:(MCDRemoteSystemPlatform)platform;`
 
 #### Parameters 
-* `platform` TODO
+* `platform` 
+
+A MCDRemoteSystemPlatform value indicating the platform to filter for.
 
 #### Returns
 TODO

@@ -1,6 +1,7 @@
 ---
 title: MCDRemoteSystemAuthorizationKind
-description:  TODO
+description:  Contains values that describe the potential authorization kinds (user-account-based authorization scopes)
+for remote system discovery. 
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 
@@ -10,7 +11,8 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 typedef NS_ENUM(NSInteger, MCDRemoteSystemAuthorizationKind)
 ```  
 
-TODO 
+Contains values that describe the potential authorization kinds (user-account-based authorization scopes)
+for remote system discovery. 
 
 ## Fields
 

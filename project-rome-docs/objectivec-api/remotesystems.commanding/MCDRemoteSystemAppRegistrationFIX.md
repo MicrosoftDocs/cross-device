@@ -1,6 +1,6 @@
 ---
 title: MCDRemoteSystemAppRegistration
-description:  TODO
+description:  This class represents an application that is to be registered with the Connected Devices platform.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 
@@ -10,30 +10,31 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 @interface MCDRemoteSystemAppRegistration : NSObject
 ```  
 
-TODO
+This class represents an application that is to be registered with the Connected Devices platform.
+Registration is required (**saveAsync** must have successfully completed) to receive responses from commands as well as to allow other
+applications to discover this application and its attributes and capabilities.
 
 ## Properties
 
 ### account
 `@property(nonatomic, readonly, nullable) MCDConnectedDevicesAccount* account;`
 
-TODO
+The current MCDConnectedDevicesAccount account provided.
 
 ### attributes
 `@property(nonatomic, copy, nullable) NSDictionary<NSString*, NSString*>* attributes;`
 
-TODO
+A **Map** of attributes to set in the registration.
 
 ### appServiceProviders
 `@property(nonatomic, copy, nullable) NSArray<id<MCDAppServiceProvider>>* appServiceProviders;`
 
-TODO
+The app service providers associated with the registration. New values are made available to discovering apps and devices via the **saveAsync** call.
 
 ### launchUriProvider
 `@property(nonatomic, readwrite, nullable) id<MCDLaunchUriProvider> launchUriProvider;`
 
-TODO
-
+The app service providers associated with this application.
 
 ## Constructors
 
@@ -42,20 +43,26 @@ TODO
                               platform:(MCDConnectedDevicesPlatform* _Nonnull) platform;`
 
 #### Parameters
-* `account` TODO
-* `platform` TODO
+* `account` 
+
+The current MCDConnectedDevicesAccount account provided.
+
+* `platform` 
+
+The current MCDConnectedDevicesPlatform account provided.
 
 #### Returns
-The initialized TODO
+A new instance of this class TODO
 
 ## Methods
 
 ### saveAsync
 `- (void)saveAsync:(nonnull void (^)(BOOL, NSError* _Nullable))callback;`
 
-TODO
+Saves the registration so that other apps and devices can discover it.
 
 #### Parameters
 
 ### callback
-TODO
+
+The callback result indicates if the registration was saved or not. 

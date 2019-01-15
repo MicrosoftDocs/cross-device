@@ -1,6 +1,6 @@
 ---
 title: MCDConnectedDevicesProcessNotificationOperation
-description: TODO
+description: The result of giving a notification to the Rome platform for processing.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 
@@ -9,22 +9,23 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 ```
 @interface MCDConnectedDevicesProcessNotificationOperation : NSObject
 ```  
-TODO
+The result of giving a notification to the Rome platform for processing.
 
 ## Properties
 
 ### connectedDevicesNotification
 `@property(nonatomic, readonly, getter=isConnectedDevicesNotification) BOOL connectedDevicesNotification;`
-TODO
+
+The notification that will be handled by the Connected Devices Platform.
 
 ## Methods
 
 ### waitForCompletionAsync
 `- (void)waitForCompletionAsync:(nonnull void (^)(NSError* _Nullable error))callback;`
 
-TODO
+ Wait for the notification to finish being handled.
 
 #### Parameters 
 * `callback` 
 
-TODO
+The callback result for notification completion.

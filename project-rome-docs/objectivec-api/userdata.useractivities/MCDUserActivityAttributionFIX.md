@@ -42,15 +42,15 @@ Creates an instance of this class with an Icon URI.
 A string value of an Icon URI to belong to the created instance.
 
 #### Returns
-TODO
+An instance of this class.
 
 ### attributionWithIconUri
 `+ (nullable instancetype)attributionWithIconUri:(nonnull NSString*)iconUri;`
 
-TODO
+Creates an instance of this class with an TODO.
 
 #### Parameters
 * `iconUri` A string value of an Icon URI to belong to the created instance.
 
 #### Returns
-TODO
+An instance of this class.

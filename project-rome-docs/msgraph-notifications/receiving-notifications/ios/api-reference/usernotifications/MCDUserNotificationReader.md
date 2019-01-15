@@ -23,7 +23,7 @@ Based upon the last completed batch of notification changes (or initial state, i
 ### dataChanged
 `@property(nonatomic, readonly, nonnull) MCDEvent<MCDUserNotificationReader*, MCDUserNotificationReaderDataChangedEventArgs*>* dataChanged;`
 
-TODO
+Event subscription for MCDUserNotificationReader changed.
 
 ## Methods
 

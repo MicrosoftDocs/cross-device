@@ -1,6 +1,6 @@
 ---
 title: MCDRemoteSystemAddedEventArgs
-description: TODO
+description: Event arguments for the RemoteSystemWatcher RemoteSystemAdded event.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 
@@ -9,12 +9,11 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 ```
 @interface MCDRemoteSystemAddedEventArgs : NSObject
 ```  
-
-# TODO Add description
+Event arguments for the RemoteSystemWatcher RemoteSystemAdded event.
 
 ## Properties
 
 ### remoteSystem
 `@property(nonatomic, readonly, nonnull) MCDRemoteSystem* remoteSystem;`
 
-TODO
+The remote system that was added.

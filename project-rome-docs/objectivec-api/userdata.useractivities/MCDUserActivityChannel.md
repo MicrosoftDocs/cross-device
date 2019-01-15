@@ -22,7 +22,7 @@ Gets the user data sync scope value for User Activities.
 ### appDisplayName
 `@property(nonatomic, copy, nullable) NSString* appDisplayName;`
 
-TODO
+The display name of the app for all activities.
 
 ## Constructors
 

@@ -17,12 +17,12 @@ This class is responsible for synchronizing user-specific data with the Connecte
 ### syncStatus
 `@property(nonatomic, readonly) MCDUserDataSyncStatus syncStatus;`
 
-Describes the status of user data synchronization.
+Describes the current status of user data synchronization.
 
 ### syncStatusChanged
 `@property(nonatomic, readonly, nonnull) MCDEvent<MCDUserDataFeed*, MCDUserDataFeedSyncStatusChangedEventArgs*>* syncStatusChanged;`
 
-TODO
+Event for when the sync status of the UserDataFeed changes.
 
 ## Constructors
 
@@ -46,7 +46,7 @@ An instance of this class.
 ### subscribeToSyncScopesAsync
 `- (void)subscribeToSyncScopesAsync:(NSArray<id<MCDUserDataFeedSyncScope>>* _Nonnull) syncScopes callback:(nonnull void (^)(BOOL, NSError* _Nullable)) callback;`
 
-TODO
+Adds **MCDUserDataFeedSyncScope** instances to this MCDUserDataFeed.  This MCDUserDataFeed is synchronized according to the **MCDUserDataFeedSyncScope** instances specified.
 
 #### Parameters
 
@@ -54,7 +54,8 @@ TODO
 An array of **MCDSyncScope** instances.
 
 ### callback
-TODO
+
+The callback result indicates if subscription is successful, or not. 
 
 ### startSync
 `- (void)startSync;`

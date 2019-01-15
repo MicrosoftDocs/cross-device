@@ -1,6 +1,7 @@
 ---
 title: MCDAppServiceConnectionOpenedInfo
-description: TODO
+description: This class provides data for the MCDAppServiceProvider.connectionDidOpen event,
+which is raised when a remote device opens a connection to a local app service.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 
@@ -10,16 +11,17 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 @interface MCDAppServiceConnectionOpenedInfo : NSObject
 ```  
 
-# TODO Add description
+This class provides data for the MCDAppServiceProvider.connectionDidOpen event,
+which is raised when a remote device opens a connection to a local app service.
 
 ## Properties
 
 ### appServiceConnection
 `@property(nonatomic, readonly, nonnull) MCDAppServiceConnection* appServiceConnection;`
 
-TODO
+An MCDAppServiceConnection instance representing the connection between the local app service and the remote device.
 
 ### remoteSystemApp
 `@property(nonatomic, readonly, nullable) MCDRemoteSystemApp* remoteSystemApp;`
 
-TODO
+The MCDRemoteSystemApp remote application that initiated a connection to the local app service.

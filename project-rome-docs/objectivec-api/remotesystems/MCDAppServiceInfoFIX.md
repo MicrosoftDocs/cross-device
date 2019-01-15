@@ -1,6 +1,6 @@
 ---
 title: MCDAppServiceInfo
-description: A class to represent a TODO
+description: This class describes an app service that belongs to a remote device or application.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 
@@ -10,34 +10,34 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 @interface MCDAppServiceInfo : NSObject<NSCopying>
 ```  
 
-TODO
+This class describes an app service that belongs to a remote device or application.
 
 ## Properties
 
 ### name
 `@property(nonatomic, readonly, nullable) NSString* name;`
 
-TODO
+The name of the app service being described.
 
 ### packageId
 `@property(nonatomic, readonly, nullable) NSString* packageId;`
 
-TODO
+The package ID of the app service being described.
 
 ## Constructors
 
 ### infoWithName
 `+ (nullable instancetype)infoWithName:(nonnull NSString*)name;`
 
-TODO
+Initialize the class with the name of the app service.
 
 #### Parameters 
 * `name` 
 
-TODO
+The name of the app service being described.
 
 #### Returns
-TODO A new instance of this class with 
+A new instance of this class with app service name.
 
 ### infoWithName
 `- (nullable instancetype)infoWithName:(nonnull NSString*)name;`
@@ -55,19 +55,19 @@ TODO
 ### infoWithName
 `+ (nullable instancetype)infoWithName:(nonnull NSString*)name packageId:(nonnull NSString*)packageId;`
 
-TODO
+Initialize the class with the name of the app service.
 
 #### Parameters 
 * `name` 
 
-TODO
+The name of the app service being described.
 
 * `packageId` 
 
-TODO
+The package ID of the app service being described.
 
 #### Returns
-TODO
+A new instance of this class with app service name and packageId.
 
 ### infoWithName
 `- (nullable instancetype)infoWithName:(nonnull NSString*)name packageId:(nonnull NSString*)packageId;`

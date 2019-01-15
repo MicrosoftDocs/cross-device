@@ -1,6 +1,6 @@
 ---
 title: MCDAppServiceRequestReceivedEventArgs
-description: TODO
+description: Contains data associated with a "request received" event.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 
@@ -9,7 +9,7 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 ```
 @interface MCDAppServiceRequestReceivedEventArgs : NSObject
 ```  
-# TODO Add description
+Contains data associated with a "request received" event.
 
 ## Properties
 

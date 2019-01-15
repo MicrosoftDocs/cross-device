@@ -1,6 +1,6 @@
 ---
 title: MCDConnectedDevicesAccount
-description: TODO
+description: This class represents a single user account known by an app.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 
@@ -10,45 +10,49 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 @interface MCDConnectedDevicesAccount : NSObject
 ```  
 
-MCDConnectedDevicesAccount is the result of a successful user sign in.
+This class represents a single user account known by an app.
 
 ## Properties
 
 ### anonymousAccount
 `+ (nullable instancetype)anonymousAccount;`
 
-TODO
+The singleton instance of the Anonymous account.
 
 ### accountId
 `@property(nonatomic, readonly, copy, nonnull) NSString* accountId;`
 
-TODO
+The unique identifier for this user account.
 
 ### type
 `@property(nonatomic, readonly) MCDConnectedDevicesAccountType type;`
 
-TODO
+A MCDConnectedDevicesAccountType value describing the type of account.
 
 ## Constructors
 
 ### accountWithAccountId
 `+ (nullable instancetype)accountWithAccountId:(nullable NSString*)accountId type:(MCDConnectedDevicesAccountType)type;`
 
-TODO
+A new instance of this class with the unique identifier for this user account.
 
 #### Parameters 
-* `type` TODO
+* `type` 
+
+The MCDConnectedDevicesAccountType of the account (depends on which ID provider the account is from.
 
 #### Returns
-TODO
+A new instance of MCDConnectedDevicesAccount.
 
 ### initWithAccountId
 `- (nullable instancetype)initWithAccountId:(nullable NSString*)accountId type:(MCDConnectedDevicesAccountType)type;`
 
-TODO
+A new instance of this class with the unique identifier for this user account.
 
 #### Parameters 
-* `type` TODO
+* `type`
+
+The MCDConnectedDevicesAccountType of the account (depends on which ID provider the account is from.
 
 #### Returns
-TODO
+A new instance of MCDConnectedDevicesAccount.

@@ -1,6 +1,6 @@
 ---
 title: MCDConnectedDevicesNotificationRegistrationManager
-description: TODO
+description: Manages the registration for Rome cloud notification for all accounts.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 
@@ -9,38 +9,44 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 ```
 @interface MCDConnectedDevicesNotificationRegistrationManager : NSObject
 ```  
-TODO
+Manages the registration for Rome cloud notification for all accounts.
 
 ## Properties
 
 ### registrationStateChanged
 `@property(nonatomic, readonly, nonnull) MCDEvent<MCDConnectedDevicesNotificationRegistrationManager*, MCDConnectedDevicesNotificationRegistrationStateChangedEventArgs*>* registrationStateChanged;`
 
-TODO
+Event for when the registration state changes for a given account. (from **IN_PROGRESS** to **SUCCEEDED**, for example).
 
 ## Methods
 
 ### registerForAccountAsync
 `- (void) registerForAccountAsync:(MCDConnectedDevicesAccount* _Nonnull) account registration:(MCDConnectedDevicesNotificationRegistration* _Nonnull) notificationRegistration callback:(nonnull void (^)(BOOL, NSError* _Nullable)) callback;`
 
-TODO
+Register this application for this user with a push notification service so notification can be received by this user.
 
 #### Parameters 
-* `notificationRegistration callback` 
+* `account` 
 
-TODO
+The MCDConnectedDevicesAccount to perform the registration under.
+
+#### Parameters 
+* `notificationRegistration` 
+
+Contains the information required to perform the app's registration with a push notification service.
 
 * `callback` 
 
-TODO
+The callback result for if the registration completed successfully.
 
 ### getNotificationRegistrationStateForAccount
 `- (MCDConnectedDevicesNotificationRegistrationState) getNotificationRegistrationStateForAccount:(MCDConnectedDevicesAccount* _Nonnull)account;`
 
-TODO
-
 #### Parameters 
-* `account` TODO
+* `account`
+
+The MCDConnectedDevicesAccount to get the registration state for.
 
 #### Returns
-TODO
+
+Return MCDConnectedDevicesNotificationRegistrationState string what state registration is in.

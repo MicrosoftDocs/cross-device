@@ -10,13 +10,11 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 @interface MCDRemoteSystemWatcherErrorOccurredEventArgs : NSObject
 ```  
 
-# TODO Add description
+Event arguments for the RemoteSystemWatcher RemoteSystemErrorOccurred event.
 
 ## Properties
 
 ### error
 `@property(nonatomic, readonly) MCDRemoteSystemWatcherError error;`
 
-# TODO Add description
-
-
+A **MCDRemoteSystemWatcherError** instance.

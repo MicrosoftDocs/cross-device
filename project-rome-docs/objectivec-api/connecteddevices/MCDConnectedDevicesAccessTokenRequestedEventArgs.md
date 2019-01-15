@@ -1,6 +1,6 @@
 ---
 title: MCDConnectedDevicesAccessTokenRequestedEventArgs
-description: TODO
+description: Returned by MCDConnectedDevicesAccessTokenRequested, fired when there is a need to request a token. 
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 
@@ -10,13 +10,11 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 @interface MCDConnectedDevicesAccessTokenRequestedEventArgs : NSObject
 ```  
 
-TODO
+Returned by MCDConnectedDevicesAccessTokenRequested, fired when there is a need to request a token. 
 
 ## Properties
 
 ### request
 `@property (nonatomic, readonly, nonnull) MCDConnectedDevicesAccessTokenRequest* request;`
 
-TODO
-
-```
+The request associated with this MCDConnectedDevicesAccessTokenRequest.

@@ -1,29 +1,29 @@
 ---
-title: MCDConnectedDevicesNotificationRegistrationManager
-description: TODO
+title: ConnectedDevicesNotificationRegistrationStateChangedEventArgs
+description: Event Args class for the MCDConnectedDevicesNotificationRegistration State Changed event.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 
-# class `MCDConnectedDevicesNotificationRegistrationManager` 
+# class `ConnectedDevicesNotificationRegistrationStateChangedEventArgs` 
 
 ```
 @interface @interface MCDConnectedDevicesNotificationRegistrationStateChangedEventArgs : NSObject
 ```  
-TODO
+Event Args class for the MCDConnectedDevicesNotificationRegistration State Changed event. This is used to ensure that the application gets informed about new Connected Devices platform messages via the correct notification mechanism.
 
 ## Properties
 
 ### account
 `@property(nonatomic, readonly, nonnull) MCDConnectedDevicesAccount* account;`
 
-TODO
+The Account for which the notification registration state has changed for.
 
 ### registration
 `@property(nonatomic, readonly, nonnull) MCDConnectedDevicesNotificationRegistration* registration;`
 
-TODO
+The information for registration instance whose state has changed.
 
 ### state
 `@property(nonatomic, readonly) MCDConnectedDevicesNotificationRegistrationState state;`
 
-TODO
+The new registration state.

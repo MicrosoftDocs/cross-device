@@ -27,4 +27,6 @@ The descriptive information about this app service.
 This method is called when a remote app service connection is opened to this app service.
 
 #### Parameters 
-* `openedInfo` TODO:  The remote app service connection.
+* `openedInfo`
+
+A MDCAppServiceConnectionOpenedInfo instance containing information for remote messaging with the app service.

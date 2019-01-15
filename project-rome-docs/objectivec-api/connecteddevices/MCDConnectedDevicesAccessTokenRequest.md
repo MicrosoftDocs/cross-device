@@ -1,6 +1,6 @@
 ---
 title: MCDConnectedDevicesAccessTokenRequest
-description: TODO
+description: Request for an access token for the contained MCDConnectedDevicesAccount which satisfies the contained scopes.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 
@@ -9,35 +9,38 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 ```
 @interface MCDConnectedDevicesAccessTokenRequest : NSObject
 ```  
-
-TODO
+Request for an access token for the contained MCDConnectedDevicesAccount which satisfies the contained scopes.
 
 ## Properties
 
 ### account
 `@property (nonatomic, readonly, nonnull) MCDConnectedDevicesAccount* account;`
 
-TODO
+The Account associated with this MCDConnectedDevicesAccessTokenInvalidatedEventArgs.
 
 ### scopes
 `@property (nonatomic, readonly, nonnull) NSArray<NSString*>* scopes;`
 
-TODO
+The list of scopes for which the token must cover when generated.
 
 ## Methods
 
 ### completeWithAccessToken
 `- (void) completeWithAccessToken:(NSString* _Nonnull) token;`
 
-TODO
+If a token with the requested scopes was successfully generated, call this method with the token to complete the request.
 
 #### Parameters 
-* `token` TODO
+* `token` 
+
+Successfully generated token
 
 ### completeWithErrorMessage
 `- (void) completeWithErrorMessage:(NSString* _Nullable) errorMessage;`
 
-TODO
+If a token with the requested scopes was not successfully generated for any reason, call this method with a message to be used for logging.
 
 #### Parameters 
-* `errorMessage` TODO
+* `errorMessage`
+
+A message describing why the token was unsuccessful.

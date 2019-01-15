@@ -1,6 +1,6 @@
 ---
 title: MCDConnectedDevicesRemoveAccountResult
-description: TODO
+description: Result of MCDConnectedDevicesAccountManager.removeAccountAsync()
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 
@@ -9,6 +9,4 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 ```
 @interface MCDConnectedDevicesRemoveAccountResult : NSObject
 ```  
-TODO
-
-```
+Result of MCDConnectedDevicesAccountManager.removeAccountAsync()

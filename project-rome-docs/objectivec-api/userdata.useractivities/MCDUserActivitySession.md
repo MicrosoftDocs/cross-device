@@ -28,4 +28,4 @@ A unique ID for the MCDUserActivity associated with this MCDUserActivitySession.
 ### stop
 `- (void)stop;`
 
-TODO - Closes this activity session. This should be called when the user is no longer engaged in the activity associated with this session.
+Stops this activity session. This should be called when the user is no longer engaged in the activity associated with this session.

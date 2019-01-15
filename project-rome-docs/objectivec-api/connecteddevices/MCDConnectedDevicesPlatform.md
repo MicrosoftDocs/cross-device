@@ -1,6 +1,6 @@
 ---
 title: MCDConnectedDevicesPlatform
-description: TODO
+description: A class to represent the Connected Devices Platform and manage the app's connection to it.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 
@@ -9,26 +9,26 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 ```
 @interface MCDConnectedDevicesPlatform : NSObject
 ```  
-TODO
+TA class to represent the Connected Devices Platform and manage the app's connection to it.
 
 ## Properties
 
 ### accountManager
 `@property (nonatomic, readonly, nonnull) MCDConnectedDevicesAccountManager* accountManager;`
 
-TODO
+MCDConnectedDevicesAccountManager instance held by the platform.
 
 ### notificationRegistrationManager
 `@property (nonatomic, readonly, nonnull) MCDConnectedDevicesNotificationRegistrationManager* notificationRegistrationManager;`
 
-TODO
+MCDConnectedDevicesNotificationRegistrationManager instance held by platform.
 
 ## Constructors
 
 ### platformWithSettings
 `+ (nullable instancetype)platformWithSettings:(MCDConnectedDevicesPlatformSettings* _Nonnull)settings;`
 
-TODO
+TODO A new instance of this class with the platform settings.
 
 #### Parameters 
 * `settings` 
@@ -36,44 +36,50 @@ TODO
 TODO
 
 #### Returns
-TODO
 
-### processNotification
-`- (MCDConnectedDevicesProcessNotificationOperation* _Nonnull)processNotification:(NSString* _Nonnull)notification;`
+An instance of this class.
 
-TODO
+### initWithSettings
+`- (nullable instancetype)initWithSettings:(MCDConnectedDevicesPlatformSettings* _Nonnull)settings;`
 
-#### Parameters 
-* `notification` 
-
-TODO
-
-## Methods
-
-### start
-`- (void) start;`
-
-TODO
-
-### shutdownAsync
-`- (void)shutdownAsync:(void (^_Nonnull)(NSError* _Nullable))completionBlock;`
-
-TODO
+TODO A new instance of this class with the settings.
 
 #### Parameters 
-* `completionBlock` 
-
-TODO
-
-### processNotification
-`- (MCDConnectedDevicesProcessNotificationOperation* _Nonnull)processNotification:(NSString* _Nonnull)notification;`
-
-TODO
-
-#### Parameters 
-* `notification` 
+* `settings` 
 
 TODO
 
 #### Returns
-TODO
+
+An instance of this class.
+
+## Methods
+
+### processNotification
+`- (MCDConnectedDevicesProcessNotificationOperation* _Nonnull)processNotification:(NSString* _Nonnull)notification;`
+
+Process incoming APNs notification.
+
+#### Parameters 
+* `notification` 
+
+Contains the APNs notification to process.
+
+#### Returns
+
+An instance of the MCDConnectedDevicesProcessNotificationOperation class.
+
+### start
+`- (void) start;`
+
+Start the platform.
+
+### shutdownAsync
+`- (void)shutdownAsync:(void (^_Nonnull)(NSError* _Nullable))completionBlock;`
+
+Shuts down the Connected Devices Platform.
+
+#### Parameters 
+* `completionBlock` 
+
+The block to invoke upon completion.

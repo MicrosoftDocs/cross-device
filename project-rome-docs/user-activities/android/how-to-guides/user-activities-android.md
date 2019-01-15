@@ -48,6 +48,8 @@ If you're using a notificatoin provider, you'll need to retrieve the notificatio
 
 Now, you're ready to start using UserActivities.
 
+[!INCLUDE [android/userdata-registration](../../../includes/android/userdata-registration.md)]
+
 ## Create and publish a User Activity
 
 Next, set the ID, DisplayText and ActivationURI data of what will be a new **UserActivity**. The ID should be a unique String. The DisplayText will be shown on other devices when they view the Activity (in Windows Timeline, for example), so it should be a concise description of the activity. The ActivationUri will determine what action is taken when the **UserActivity** is activated (when it is selected in Timeline, for example). The following code fills in sample data for these fields.

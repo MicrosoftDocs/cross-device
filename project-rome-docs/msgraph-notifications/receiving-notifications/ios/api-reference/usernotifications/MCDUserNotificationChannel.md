@@ -27,13 +27,13 @@ Id used to ensure UserNotifications are included in the feed.
 #### Parameters
 
 ### userDataFeed
-TODO
+The MCDUserDataFeed used to initialize this class.
 
 ### initWithUserDataFeed
 `- (nullable instancetype)initWithUserDataFeed:(nonnull MCDUserDataFeed*)userDataFeed;`
 
 ### userDataFeed
-TODO
+The MCDUserDataFeed used to initialize this class.
 
 ## Methods
 

@@ -30,7 +30,7 @@ Creates and initializes an instance of this class.
 * `localVisibilityKind` An MCDRemoteSystemLocalVisibilityKind value indicating the local app visibility setting to filter with.
 
 #### Returns
-TODO
+A new instance of this class TODO
 
 ### initWithKind
 `- (nullable instancetype)initWithKind:(MCDRemoteSystemLocalVisibilityKind)localVisibilityKind;`

@@ -1,6 +1,6 @@
 ---
 title: MCDConnectedDevicesNotificationType
-description:  TODO
+description:  Contains values that describe the type (service) of a notification.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 
@@ -9,15 +9,15 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 ```
 typedef NS_ENUM(NSInteger, MCDConnectedDevicesNotificationType)
 ```  
-Contains values describing the TODO 
+Contains values that describe the type (service) of a notification.
 
 ## Fields
 
-| Name                              |    Description    |
+| Name                              |   Value     | Description |
 |:----------------------------------|:------|:-------------------------------|
-| MCDNotificationTypeUnknown | Unknown |
-| MCDNotificationTypeWNS | Windows Notification |
-| MCDNotificationTypeGCM | Google Cloud Messaging |
-| MCDNotificationTypeFCM | Firebase Cloud Messaging |
-| MCDNotificationTypeAPN | Apple Push Notification |
-| MCDNotificationTypePolling | Polling will occur TODO |
+| MCDNotificationTypeUnknown | 0 | ConnectedDevicesNotificationType is unknown (consistent with core). |
+| MCDNotificationTypeWNS | 1 | Windows Push Notification Services. |
+| MCDNotificationTypeGCM | 2 | Google Cloud Messaging. |
+| MCDNotificationTypeFCM | 3 | Firebase Cloud Messaging.|
+| MCDNotificationTypeAPN | 4 | Apple Push Notification Service. |
+| MCDNotificationTypePolling | 5 | No cloud notification service; instead poll for incoming responses. |

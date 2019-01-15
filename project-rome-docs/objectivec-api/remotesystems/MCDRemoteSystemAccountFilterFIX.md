@@ -1,6 +1,6 @@
 ---
 title: MCDRemoteSystemAccountFilter
-description: A class to represent a TODO
+description: Filter for the accounts to discover remote systems with.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 
@@ -10,39 +10,39 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 @interface MCDRemoteSystemAccountFilter : NSObject<MCDRemoteSystemFilter>
 ```  
 
-TODO
+Filter for the accounts to discover remote systems with.
 
 ## Properties
 
 ### account
 `@property(nonatomic, readonly, strong, nonnull) MCDConnectedDevicesAccount* account;`
 
-TODO
+The Account associated with this MCDRemoteSystemAccountFilter.
 
 ## Constructors
 
 ### filterWithAccount
 `+ (nullable instancetype)filterWithAccount:(nonnull MCDConnectedDevicesAccount*)account;`
 
-TODO
+Initialize the class with the MCDConnectedDevicesAccount account.
 
 #### Parameters 
 * `account` 
 
-TODO
+The MCDConnectedDevicesAccount account being used.
 
 #### Returns
-TODO
+A new instance of this class filter with the Account.
 
 ### initWithAccount
 - (nullable instancetype)initWithAccount:(nonnull MCDConnectedDevicesAccount*)account;
 
-TODO
+Initialize the class with the MCDConnectedDevicesAccount account.
 
 #### Parameters 
 * `account` 
 
-TODO
+The MCDConnectedDevicesAccount account being used.
 
 #### Returns
-TODO
+A new instance of this class filter with the Account.

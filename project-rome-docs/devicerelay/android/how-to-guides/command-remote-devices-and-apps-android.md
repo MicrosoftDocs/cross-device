@@ -18,6 +18,8 @@ See the [API reference](../api-reference/index.md) page for links to the referen
 
 The commanding scenarios, featured in the Device Relay namespaces, use a watcher pattern in which available devices are detected over time through various types of network connections and corresponding events are raised. This guide will show how to discover remote devices and apps and then launch apps or interact with app services.
 
+[!INCLUDE [android/create-platform](../../../includes/android/dev-center-onboarindg.md)]
+
 First, initialize the Connected Devices Platform. If you have done this already, skip to the next section.
 
 [!INCLUDE [android/create-platform](../../../includes/android/create-platform.md)]

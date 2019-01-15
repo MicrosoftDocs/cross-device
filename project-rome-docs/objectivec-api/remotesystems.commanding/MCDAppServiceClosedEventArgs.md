@@ -1,6 +1,6 @@
 ---
 title: MCDAppServiceClosedEventArgs
-description: TODO
+description: Returned by MCDAppServiceConnection.serviceClosed to inform that the MCDAppServiceConnection has been closed and provide a reason behind the close event.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 
@@ -10,11 +10,11 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 @interface MCDAppServiceClosedEventArgs : NSObject
 ```  
 
-# TODO Add description
+Returned by MCDAppServiceConnection.serviceClosed to inform that the MCDAppServiceConnection has been closed and provide a reason behind the close event.
 
 ## Properties
 
 ### status
 `@property(nonatomic, readonly) MCDAppServiceClosedStatus status;`
 
-# TODO Add description
+The status of how the app service closed.

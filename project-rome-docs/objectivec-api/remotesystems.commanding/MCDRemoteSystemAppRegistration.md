@@ -52,7 +52,7 @@ The current MCDConnectedDevicesAccount account provided.
 The current MCDConnectedDevicesPlatform account provided.
 
 #### Returns
-A new instance of this class TODO
+Returns an MCDRemoteSystemAppRegistration object for the provided Account.
 
 ## Methods
 

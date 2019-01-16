@@ -28,7 +28,7 @@ The authorization type to filter for.
 * `authorizationKind` The authorization type to filter for.
 
 #### Returns
-A new instance of this class with the given authorization filter.
+Returns an MCDRemoteSystemAuthorizationKindFilter object with the provided authorization filter.
 
 ### initWithKind
 `- (nullable instancetype)initWithKind:(MCDRemoteSystemAuthorizationKind)authorizationKind;`
@@ -37,4 +37,4 @@ A new instance of this class with the given authorization filter.
 * `authorizationKind` The authorization type to filter for.
 
 #### Returns
-A new instance of this class with the given authorization filter.
+Returns an MCDRemoteSystemAuthorizationKindFilter object initialized with the authorizationKind.

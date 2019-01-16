@@ -9,11 +9,11 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 ```
 @interface MCDConnectedDevicesPlatformSettings : NSObject
 ```  
-TODO
+An interface to allow Connected Devices Platform settings to be stored in a particular location.  
 
 ## Properties
 
 ### storagePath
 `@property (nonatomic, readwrite, nonnull) NSString* storagePath;`
 
-TODO
+The path to the storage location of the Connected Devices Platform settings.

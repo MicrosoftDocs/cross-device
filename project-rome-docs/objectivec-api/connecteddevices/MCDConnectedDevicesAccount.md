@@ -39,10 +39,10 @@ A new instance of this class with the unique identifier for this user account.
 #### Parameters 
 * `type` 
 
-The MCDConnectedDevicesAccountType of the account (depends on which ID provider the account is from.
+The MCDConnectedDevicesAccountType of the account (depends on which ID provider the account is from).
 
 #### Returns
-A new instance of MCDConnectedDevicesAccount.
+Returns an MCDConnectedDevicesAccount object with the account identifier.
 
 ### initWithAccountId
 `- (nullable instancetype)initWithAccountId:(nullable NSString*)accountId type:(MCDConnectedDevicesAccountType)type;`
@@ -52,7 +52,7 @@ A new instance of this class with the unique identifier for this user account.
 #### Parameters 
 * `type`
 
-The MCDConnectedDevicesAccountType of the account (depends on which ID provider the account is from.
+The MCDConnectedDevicesAccountType of the account (depends on which ID provider the account is from).
 
 #### Returns
-A new instance of MCDConnectedDevicesAccount.
+Returns an MCDConnectedDevicesAccount object initialized with the account identifier.

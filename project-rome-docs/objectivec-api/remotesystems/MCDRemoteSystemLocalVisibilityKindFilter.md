@@ -30,7 +30,7 @@ Creates and initializes an instance of this class.
 * `localVisibilityKind` An MCDRemoteSystemLocalVisibilityKind value indicating the local app visibility setting to filter with.
 
 #### Returns
-A new instance of this class TODO
+Returns an MCDRemoteSystemLocalVisibilityKind object filtered by kind.
 
 ### initWithKind
 `- (nullable instancetype)initWithKind:(MCDRemoteSystemLocalVisibilityKind)localVisibilityKind;`
@@ -41,4 +41,4 @@ Creates and initializes an instance of this class.
 * `localVisibilityKind` An MCDRemoteSystemLocalVisibilityKind value indicating the local app visibility setting to filter with.
 
 #### Returns
-TODO
+Returns an MCDRemoteSystemLocalVisibilityKind object initialized with kind.

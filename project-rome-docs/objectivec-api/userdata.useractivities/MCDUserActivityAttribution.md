@@ -42,15 +42,17 @@ Creates an instance of this class with an Icon URI.
 A string value of an Icon URI to belong to the created instance.
 
 #### Returns
-An instance of this class.
+Returns an MCDUserActivityAttribution object initialized with an icon uri.
 
 ### attributionWithIconUri
 `+ (nullable instancetype)attributionWithIconUri:(nonnull NSString*)iconUri;`
 
-Creates an instance of this class with an TODO.
+Creates an instance of this class with attribution to a icon uri.
 
 #### Parameters
-* `iconUri` A string value of an Icon URI to belong to the created instance.
+* `iconUri` 
+
+A string value of an Icon URI to belong to the created instance.
 
 #### Returns
-An instance of this class.
+Returns an MCDUserActivityAttribution object attributing with an icon uri.

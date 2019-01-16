@@ -32,10 +32,10 @@ Initialize the class with the MCDConnectedDevicesAccount account.
 The MCDConnectedDevicesAccount account being used.
 
 #### Returns
-A new instance of this class filter with the Account.
+Returns a MCDRemoteSystemAccountFilter object filtered with the Account.
 
 ### initWithAccount
-- (nullable instancetype)initWithAccount:(nonnull MCDConnectedDevicesAccount*)account;
+`- (nullable instancetype)initWithAccount:(nonnull MCDConnectedDevicesAccount*)account;`
 
 Initialize the class with the MCDConnectedDevicesAccount account.
 
@@ -45,4 +45,4 @@ Initialize the class with the MCDConnectedDevicesAccount account.
 The MCDConnectedDevicesAccount account being used.
 
 #### Returns
-A new instance of this class filter with the Account.
+Returns an MCDRemoteSystemAccountFilter object initialized filtered with the Account.

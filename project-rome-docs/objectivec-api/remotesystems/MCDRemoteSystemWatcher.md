@@ -57,7 +57,7 @@ A new instance of this class.
 ### watcherWithFilters
 `+ (nullable instancetype)watcherWithFilters:(nonnull NSArray<NSObject<MCDRemoteSystemFilter>*>*)filters;`
 
-TODO
+Returns an MCDRemoteSystemWatcher object with filters.
 
 #### Parameters 
 * `filters` An array of filters to use in the device discovery process.
@@ -68,10 +68,12 @@ A new instance of this class with the given discovery filters applied.
 ### initWithFilters
 `- (nullable instancetype)initWithFilters:(nonnull NSArray<NSObject<MCDRemoteSystemFilter>*>*)filters;`
 
-TODO
+Returns an MCDRemoteSystemWatcher object initialized with filters.
 
 #### Parameters 
-* `filters` An array of filters to use in the device discovery process.
+* `filters` 
+
+An array of filters to use in the device discovery process.
 
 #### Returns 
 A new instance of this class with the given discovery filters applied.

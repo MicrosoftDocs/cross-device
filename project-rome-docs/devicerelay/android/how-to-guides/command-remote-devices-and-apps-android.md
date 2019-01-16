@@ -20,29 +20,9 @@ The commanding scenarios, featured in the Device Relay namespaces, use a watcher
 
 [!INCLUDE [android/notifications-dev-center-onboarding](../../../includes/android/notifications-dev-center-onboarding.md)]
 
-First, initialize the Connected Devices Platform. If you have done this already, skip to the next section.
 
-[!INCLUDE [android/create-platform](../../../includes/android/create-platform.md)]
 
-Next, you must prepare the platform to be started.  Before starting the platform you'll need to subscribe to AccoutManager and NotificationRegistrationManager events​.
-
-[!INCLUDE [android/prepare-start-platform](../../../includes/android/prepare-start-platform.md)]
-
-At this point, the platform has everything needed to properly start and is ready to start listening for events.
-
-[!INCLUDE [android/start-platform](../../../includes/android/start-platform.md)]
-
-After platform started is to invoke GetAllAccounts on AccountManager to get a list of accounts that previously been added into CDP AccountManager.
-
-So App needs to make sure before Adding an account to AccoutManager, it shall remove any existing account from AccountManager. The SDK will throw InvalidState Exception if App tries to add an new account but AccountManager already contains one.
-
-<should something go here about the auth provider?>
-
-[!INCLUDE [android/prepare-account](../../../includes/android/prepare-account.md)]
-
-If you're using a notificatoin provider, you'll need to retrieve the notification registration at this point.
-
-[!INCLUDE [android/retrieve-notification-registration](../../../includes/android/retrieve-notification-registration.md)]
+[!INCLUDE [android/create-setup-events-start-platform](../../../includes/android/create-setup-events-start-platform.md)]
 
 Now, you're ready to start using RemoteSystems.
 

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ---
 
 ### Begin RemoteSystem registration
-Account is ready to be used!  
+ 
 
 `
 struct IRemoteSystemAppRegistration : IBase<UUID<0xA0274713, 0x7FB6, 0x414F, 0xA9, 0x46, 0xCD, 0x47, 0x9F, 0xDE, 0x2D, 0x15>>​

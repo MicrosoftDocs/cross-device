@@ -30,7 +30,7 @@ A MCDRemoteSystemPlatform value indicating the platform to filter for.
 A MCDRemoteSystemPlatform value indicating the platform to filter for.
 
 #### Returns
-TODO
+Returns an MCDRemoteSystemPlatformFilter object filtered by platform.
 
 ### initWithPlatform
 `- (nullable instancetype)initWithPlatform:(MCDRemoteSystemPlatform)platform;`
@@ -41,4 +41,4 @@ TODO
 A MCDRemoteSystemPlatform value indicating the platform to filter for.
 
 #### Returns
-TODO
+Returns an MCDRemoteSystemPlatformFilter object initialized with a filter by platform.

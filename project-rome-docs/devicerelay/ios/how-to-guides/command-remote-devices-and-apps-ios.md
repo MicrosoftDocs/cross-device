@@ -12,43 +12,23 @@ ms.localizationpriority: medium
 
 Here you will find guidance on how to implement commanding scenarios in your iOS apps.  
 
-See the [API reference](../api-reference/index.md) page for links to the reference docs relevant to these scenarios. See the [iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) for a working example of Project Rome features.
+See the [API reference](../api-reference/index.md) page for links to the reference docs relevant to these scenarios. This guide is intended to provide the necessary steps to onboard with the Connected Devices Platform, the underlying platform of the Project Rome features.  See the [iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) for a working example of these features.  
 
 [!INCLUDE [ios/preliminary-setup](../../../includes/ios/preliminary-setup.md)]
 
-The commanding scenarios, featured in the Device Relay namespaces, use a watcher pattern in which available devices are detected over time through various types of network connections and corresponding events are raised. This guide will show how to discover remote devices and apps and then launch apps or interact with app services.
+The commanding scenarios, featured in the Device Relay namespaces, use a watcher pattern in which available devices are detected over time through various types of network connections and corresponding events are raised. This guide will show how to discover remote devices and apps and then launch apps or interact with app services.  Depending on the scenario, there is an additional step required to command an iOS device.  For sending commands *to* iOS the platform requires that you onboard your app with the Microsoft Windows Dev Center so notification can be sent to the device.  If this is not a scenario requirement, simply skip the 'Register your app in Microsoft Windows Dev Center for cross-device experiences' as this is not needed.
 
 [!INCLUDE [ios/notifications-dev-center-onboarding](../../../includes/ios/notifications-dev-center-onboarding.md)]
 
-First, initialize the Connected Devices Platform. If you have done this already, skip to the next section.
+Now you are ready to start working with the platform.  It is important to follow the steps identified below to ensure a seamless onboarding experience.
 
-[!INCLUDE [ios/create-platform](../../../includes/ios/create-platform.md)]
+[!INCLUDE [ios/create-setup-events-start-platform](../../../includes/ios/create-setup-events-start-platform.md)]
 
-Next, you must prepare the platform to be started.  Before starting the platform you'll need to subscribe to AccoutManager and NotificationRegistrationManager events​.
-
-[!INCLUDE [ios/prepare-start-platform](../../../includes/ios/prepare-start-platform.md)]
-
-At this point, the platform has everything needed to properly start and is ready to start listening for events.
-
-[!INCLUDE [ios/start-platform](../../../includes/ios/start-platform.md)]
-
-After platform started is to invoke GetAllAccounts on AccountManager to get a list of accounts that previously been added into CDP AccountManager.
-
-So App needs to make sure before Adding an account to AccoutManager, it shall remove any existing account from AccountManager. The SDK will throw InvalidState Exception if App tries to add an new account but AccountManager already contains one.
-
-<should something go here about the auth provider?>
-
-[!INCLUDE [ios/prepare-account](../../../includes/ios/prepare-account.md)]
-
-If you're using a notificatoin provider, you'll need to retrieve the notification registration at this point.
-
-[!INCLUDE [ios/retrieve-notification-registration](../../../includes/ios/retrieve-notification-registration.md)]
 
 Now, you're ready to start using RemoteSystems.
 
 [!INCLUDE [ios/remote-system-registration](../../../includes/ios/remote-system-registration.md)]
 
-OLD FROM HERE DOWN
 
 ## Discover remote devices and apps
 

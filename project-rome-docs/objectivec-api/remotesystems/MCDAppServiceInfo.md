@@ -29,6 +29,19 @@ The package ID of the app service being described.
 ### infoWithName
 `+ (nullable instancetype)infoWithName:(nonnull NSString*)name;`
 
+Initialize the class with information and name of the app service.
+
+#### Parameters 
+* `name` 
+
+The name of the app service being described.
+
+#### Returns
+Returns an MCDAppServiceInfo object containing the provided name.
+
+### initWithName
+`- (nullable instancetype)initWithName:(nonnull NSString*)name;`
+
 Initialize the class with the name of the app service.
 
 #### Parameters 
@@ -37,23 +50,27 @@ Initialize the class with the name of the app service.
 The name of the app service being described.
 
 #### Returns
-A new instance of this class with app service name.
+Returns an MCDAppServiceInfo object initialized with the provided name.
 
 ### infoWithName
-`- (nullable instancetype)infoWithName:(nonnull NSString*)name;`
+`+ (nullable instancetype)infoWithName:(nonnull NSString*)name packageId:(nonnull NSString*)packageId;`
 
-TODO
+Initialize the class with information and name of the app service.
 
 #### Parameters 
 * `name` 
 
-TODO
+The name of the app service being described.
+
+* `packageId` 
+
+The package ID of the app service being described.
 
 #### Returns
-TODO
+Returns an MCDAppServiceInfo object containing the provided name.
 
-### infoWithName
-`+ (nullable instancetype)infoWithName:(nonnull NSString*)name packageId:(nonnull NSString*)packageId;`
+### initWithName
+`- (nullable instancetype)initWithName:(nonnull NSString*)name packageId:(nonnull NSString*)packageId;`
 
 Initialize the class with the name of the app service.
 
@@ -67,21 +84,4 @@ The name of the app service being described.
 The package ID of the app service being described.
 
 #### Returns
-A new instance of this class with app service name and packageId.
-
-### infoWithName
-`- (nullable instancetype)infoWithName:(nonnull NSString*)name packageId:(nonnull NSString*)packageId;`
-
-TODO
-
-#### Parameters 
-* `name` 
-
-TODO
-
-* `packageId` 
-
-TODO
-
-#### Returns
-TODO
+Returns an MCDAppServiceInfo object initialized with the provided name.

@@ -23,10 +23,13 @@ Displays whether the associated connection is a proximal connection (**YES**) or
 
 ### tryCreateFromAppServiceConnection
 `+ (nullable instancetype)tryCreateFromAppServiceConnection:(nonnull MCDAppServiceConnection*)appServiceConnection;`
+
 Creates an instance of this class from the given app service connection.
 
 #### Parameters
-* `appServiceConnection` An **MCDAppServiceConnection** instance.
+* `appServiceConnection` 
+
+An **MCDAppServiceConnection** instance.
 
 #### Returns
-An instance of this class corresponding to the app service connection.
+Returns an instance of this class corresponding to the app service connection.

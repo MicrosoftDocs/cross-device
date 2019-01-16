@@ -27,13 +27,15 @@ The remote system status type of this filter instance.
 * `statusType` A value indicating the availability status type to filter for.
 
 #### Returns
-A new instance of this class with the given type filter.
+Returns an MCDRemoteSystemStatusTypeFilter object filtered by type.
 
 ### initWithType
 `- (nullable instancetype)initWithType:(MCDRemoteSystemStatusType)statusType;`
 
 #### Parameters 
-* `statusType` A value indicating the availability status type to filter for.
+* `statusType` 
+
+A value indicating the availability status type to filter for.
 
 #### Returns
-A new instance of this class with the given type filter.
+Returns an MCDRemoteSystemStatusTypeFilter object initialized with the type.

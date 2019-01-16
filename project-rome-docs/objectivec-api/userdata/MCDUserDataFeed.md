@@ -34,12 +34,20 @@ Event for when the sync status of the UserDataFeed changes.
 Creates and initializes a new instance of this class with a user account, platform instance, and the cross-platform app ID.
 
 #### Parameters
-* `userAccount` The user accound that this data will be associated with.
-* `platform` The **MCDPlatform** instance that has been initialized for this app's Connected Devices functionality.
-* `activitySourceHost` The cross-platform app ID. This is retrieved through the Microsoft Developer Dashboard registration (see [Hosting cross-device experiences (iOS)](../../hosting/ios/how-to-guides/hosting-ios.md)).
+* `userAccount` 
+
+The user accound that this data will be associated with.
+
+* `platform` 
+
+The **MCDPlatform** instance that has been initialized for this app's Connected Devices functionality.
+
+* `activitySourceHost` 
+
+The cross-platform app ID. This is retrieved through the Microsoft Developer Dashboard registration (see [Hosting cross-device experiences (iOS)](../../hosting/ios/how-to-guides/hosting-ios.md)).
 
 #### Returns
-An instance of this class.
+Returns an instance of this class.
 
 ## Methods
 
@@ -61,4 +69,3 @@ The callback result indicates if subscription is successful, or not.
 `- (void)startSync;`
 
 Starts the synchronization process with the Connected Devices Platform. During this operation, the **syncStatus** property will be updated and change events will be raised.
-

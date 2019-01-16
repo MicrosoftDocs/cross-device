@@ -24,17 +24,25 @@ An array of strings indicating the kinds of device to filter for.
 ### filterWithKinds
 `+ (nullable instancetype)filterWithKinds:(nonnull NSArray<NSString*>*)kinds;`
 
+A new instance of this class filtered on kinds.
+
 #### Parameters 
-* `kinds` An array of strings indicating the device kinds to filter for.
+* `kinds`
+
+ An array of strings indicating the device kinds to filter for.
 
 #### Returns
-A new instance of this class with the given type filter.
+Returns an MCDRemoteSystemKindFilter object filtered with kinds.
 
 ### initWithKinds
 `- (nullable instancetype)initWithKinds:(nonnull NSArray<NSString*>*)kinds;`
 
+A new instance of this class filtered on kinds.
+
 #### Parameters 
-* `kinds` An array of strings indicating the device kinds to filter for.
+* `kinds` 
+
+An array of strings indicating the device kinds to filter for.
 
 #### Returns
-A new instance of this class with the given type filter.
+Returns an MCDRemoteSystemKindFilter object initialized with kinds.

@@ -1,6 +1,6 @@
 ---
 title: MCDConnectedDevicesPlatformSettings
-description: TODO
+description: An interface to allow Connected Devices Platform settings to be stored in a particular location.  
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 

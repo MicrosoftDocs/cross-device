@@ -29,19 +29,33 @@ A list of **NSString** objects representing IDs of the apps that should be able 
 ### optionsWithFallbackUri
 `+ (nullable instancetype)optionsWithFallbackUri: (nullable NSString*)fallbackUri  preferredPackageIds: (nullable NSArray<NSString*>*)preferredPackageIds;`
 
+Creates and initializes a new instance of this class.
+
 #### Parameters
-* `fallbackUri` The fallback URI to launch on the web in case the app launch URI fails.
-* `preferredPackageIds` A list of **NSString** objects representing IDs of the apps that should be able to launch with this URI. For Windows apps, the ID will be the app's package family name.
+* `fallbackUri` 
+
+The fallback URI to launch on the web in case the app launch URI fails.
+
+* `preferredPackageIds` 
+
+A list of **NSString** objects representing IDs of the apps that should be able to launch with this URI. For Windows apps, the ID will be the app's package family name.
 
 #### Returns
-The initialized [MCDRemoteLauncherOptions](MCDRemoteLauncherOptions.md) if successful, otherwise nil.
+Returns the initialized [MCDRemoteLauncherOptions](MCDRemoteLauncherOptions.md) if successful, otherwise nil.
 
 ### initWithFallbackUri
 `- (nullable instancetype)initWithFallbackUri:(nullable NSString*)fallbackUri preferredPackageIds:(nullable NSArray<NSString*>*)preferredPackageIds;`
 
+Creates and initializes a new instance of this class.
+
 #### Parameters
-* `fallbackUri` The fallback URI to launch on the web in case the app launch URI fails.
-* `preferredPackageIds` A list of **NSString** objects representing IDs of the apps that should be able to launch with this URI. For Windows apps, the ID will be the app's package family name.
+* `fallbackUri` 
+
+The fallback URI to launch on the web in case the app launch URI fails.
+
+* `preferredPackageIds` 
+
+A list of **NSString** objects representing IDs of the apps that should be able to launch with this URI. For Windows apps, the ID will be the app's package family name.
 
 #### Returns
-The initialized [MCDRemoteLauncherOptions](MCDRemoteLauncherOptions.md) if successful, otherwise nil.
+Returns the initialized [MCDRemoteLauncherOptions](MCDRemoteLauncherOptions.md) if successful, otherwise nil.

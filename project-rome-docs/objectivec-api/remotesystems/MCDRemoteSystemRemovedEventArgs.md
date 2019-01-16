@@ -10,7 +10,7 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 @interface MCDRemoteSystemRemovedEventArgs : NSObject
 ```  
 
-Event arguments for the RemoteSystemWatcher RemoteSystemRemoved event.
+Event arguments for the MCDRemoteSystemWatcher.remoteSystemRemoved event.
 
 ## Properties
 

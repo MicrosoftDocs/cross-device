@@ -31,11 +31,11 @@ connected to cloud connected, or the reverse.
 Event for when a remote system is removed. 
 
 ### enumerationCompleted
-`@property(nonatomic, readonly, nonnull)
-    MCDEvent<MCDRemoteSystemWatcher*, MCDRemoteSystemEnumerationCompletedEventArgs*>* enumerationCompleted;`
+```@property(nonatomic, readonly, nonnull)
+    MCDEvent<MCDRemoteSystemWatcher*, MCDRemoteSystemEnumerationCompletedEventArgs*>* enumerationCompleted;
+```
 
-Event for when the initial discovery of currently-discoverable devices has finished.  The discovery process will continue to run
-and will raise additional events if the set of existing remote systems changes.
+Event for when the initial discovery of currently-discoverable devices has finished.  The discovery process will continue to run and will raise additional events if the set of existing remote systems changes.
 
 ### errorOccurred
 `@property(nonatomic, readonly, nonnull) MCDEvent<MCDRemoteSystemWatcher*, MCDRemoteSystemWatcherErrorOccurredEventArgs*>* errorOccurred;`
@@ -52,23 +52,12 @@ may continue because the error applies only to cloud discovery (see **MCDRemoteS
 Creates and initializes a new instance of this class.
 
 #### Returns 
-A new instance of this class.
+Returns a new instance of this class.
 
 ### watcherWithFilters
 `+ (nullable instancetype)watcherWithFilters:(nonnull NSArray<NSObject<MCDRemoteSystemFilter>*>*)filters;`
 
-Returns an MCDRemoteSystemWatcher object with filters.
-
-#### Parameters 
-* `filters` An array of filters to use in the device discovery process.
-
-#### Returns 
-A new instance of this class with the given discovery filters applied.
-
-### initWithFilters
-`- (nullable instancetype)initWithFilters:(nonnull NSArray<NSObject<MCDRemoteSystemFilter>*>*)filters;`
-
-Returns an MCDRemoteSystemWatcher object initialized with filters.
+Creates and initializes a new instance of this class with filters.
 
 #### Parameters 
 * `filters` 
@@ -76,7 +65,20 @@ Returns an MCDRemoteSystemWatcher object initialized with filters.
 An array of filters to use in the device discovery process.
 
 #### Returns 
-A new instance of this class with the given discovery filters applied.
+Returns an MCDRemoteSystemWatcher object with filters.
+
+### initWithFilters
+`- (nullable instancetype)initWithFilters:(nonnull NSArray<NSObject<MCDRemoteSystemFilter>*>*)filters;`
+
+Creates and initializes a new instance of this class with filters.
+
+#### Parameters 
+* `filters` 
+
+An array of filters to use in the device discovery process.
+
+#### Returns 
+Returns an MCDRemoteSystemWatcher object initialized with filters.
 
 ## Methods
 

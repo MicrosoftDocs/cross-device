@@ -11,8 +11,7 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 ```  
 
 This class represents an application that is to be registered with the Connected Devices platform.
-Registration is required (**saveAsync** must have successfully completed) to receive responses from commands as well as to allow other
-applications to discover this application and its attributes and capabilities.
+Registration is required (**saveAsync** must have successfully completed) to receive responses from commands as well as to allow other apps to discover this application and its attributes and capabilities.
 
 ## Properties
 
@@ -42,6 +41,8 @@ The app service providers associated with this application.
 `+(nullable instancetype) getForAccount:(MCDConnectedDevicesAccount* _Nonnull) account
                               platform:(MCDConnectedDevicesPlatform* _Nonnull) platform;`
 
+Creates and initializes a new instance of this class.
+
 #### Parameters
 * `account` 
 
@@ -63,6 +64,6 @@ Saves the registration so that other apps and devices can discover it.
 
 #### Parameters
 
-### callback
+* `callback`
 
 The callback result indicates if the registration was saved or not. 

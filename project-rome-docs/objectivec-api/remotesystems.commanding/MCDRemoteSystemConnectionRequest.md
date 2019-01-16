@@ -20,19 +20,25 @@ A class that represents an attempt to communicate with a specific remote device 
 Initializes the [MCDRemoteSystemConnectionRequest](MCDRemoteSystemConnectionRequest.md) with a [MCDRemoteSystem](../discovery/MCDRemoteSystem.md) instance. This constructor is not recommended, as it does not specify an app to target and therefore may result in an unexpected app being selected to service requests sent to the system.
 
 #### Parameters
-* `remoteSystem` The remote system to be targeted in this connection request.
+* `remoteSystem` 
+
+The remote system to be targeted in this connection request.
 
 #### Returns
-The initialized [MCDRemoteSystemConnectionRequest](MCDRemoteSystemConnectionRequest.md) if successful, otherwise nil.
+Returns the initialized [MCDRemoteSystemConnectionRequest](MCDRemoteSystemConnectionRequest.md) if successful, otherwise nil.
 
 ### requestWithRemoteSystemApp
 `+ (instancetype)requestWithRemoteSystemApp:(nonnull MCDRemoteSystemApp*)remoteSystemApp;`
 
+Creates and initializes a new instance of this class.
+
 #### Parameters
-* `remoteSystemApp` The remote app to be targeted in this connection request.
+* `remoteSystemApp` 
+
+The remote app to be targeted in this connection request.
 
 #### Returns
-The initialized [MCDRemoteSystemConnectionRequest](MCDRemoteSystemConnectionRequest.md) if successful, otherwise nil.
+Returns the initialized [MCDRemoteSystemConnectionRequest](MCDRemoteSystemConnectionRequest.md) if successful, otherwise nil.
 
 ### initWithRemoteSystem
 `- (nullable instancetype)initWithRemoteSystem:(nonnull MCDRemoteSystem*)remoteSystem;`
@@ -43,13 +49,17 @@ Initializes the [MCDRemoteSystemConnectionRequest](MCDRemoteSystemConnectionRequ
 * `remoteSystem` The remote system to be targeted in this connection request.
 
 #### Returns
-The initialized [MCDRemoteSystemConnectionRequest](MCDRemoteSystemConnectionRequest.md) if successful, otherwise nil.
+Returns the initialized [MCDRemoteSystemConnectionRequest](MCDRemoteSystemConnectionRequest.md) if successful, otherwise nil.
 
 ### initWithRemoteSystemApp
 `- (nullable instancetype)initWithRemoteSystemApp:(nonnull MCDRemoteSystemApp*)remoteSystemApp;`
 
+Creates and initializes a new instance of this class.
+
 #### Parameters
-* `remoteSystemApp` The remote app to be targeted in this connection request.
+* `remoteSystemApp` 
+
+The remote app to be targeted in this connection request.
 
 #### Returns
-The initialized [MCDRemoteSystemConnectionRequest](MCDRemoteSystemConnectionRequest.md) if successful, otherwise nil.
+Returns the initialized [MCDRemoteSystemConnectionRequest](MCDRemoteSystemConnectionRequest.md) if successful, otherwise nil.

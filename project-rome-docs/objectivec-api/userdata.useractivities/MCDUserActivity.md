@@ -71,13 +71,15 @@ Gets or sets whether this activity is roamed to other endpoints.
 ### activityWithActivityId
 `+ (nullable instancetype)activityWithActivityId:(nonnull NSString*)activityId;`
 
-Creates an instance of this class with a given ID
+Creates an instance of this class with a given ID.
 
 #### Parameters
-* `activityId` The identifier for this Activity (should be a unique string).
+* `activityId` 
+
+The identifier for this Activity (should be a unique string).
 
 #### Returns
-An instance of this class.
+Returns an instance of this class.
 
 ### initWithActivityId
 `- (nullable instancetype)initWithActivityId:(nonnull NSString*)activityId;`
@@ -85,10 +87,12 @@ An instance of this class.
 Creates an instance of this class with a given ID.
 
 #### Parameters
-* `activityId` The identifier for this Activity (should be a unique string).
+* `activityId`
+
+The identifier for this Activity (should be a unique string).
 
 #### Returns
-An instance of this class.
+Returns an instance of this class.
 
 ## Methods
 

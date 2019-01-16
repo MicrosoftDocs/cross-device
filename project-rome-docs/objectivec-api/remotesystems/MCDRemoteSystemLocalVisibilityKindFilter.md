@@ -27,7 +27,9 @@ The visibility setting to filter with.
 Creates and initializes an instance of this class.
 
 #### Parameters
-* `localVisibilityKind` An MCDRemoteSystemLocalVisibilityKind value indicating the local app visibility setting to filter with.
+* `localVisibilityKind` 
+
+An MCDRemoteSystemLocalVisibilityKind value indicating the local app visibility setting to filter with.
 
 #### Returns
 Returns an MCDRemoteSystemLocalVisibilityKind object filtered by kind.
@@ -38,7 +40,9 @@ Returns an MCDRemoteSystemLocalVisibilityKind object filtered by kind.
 Creates and initializes an instance of this class.
 
 #### Parameters
-* `localVisibilityKind` An MCDRemoteSystemLocalVisibilityKind value indicating the local app visibility setting to filter with.
+* `localVisibilityKind` 
+
+An MCDRemoteSystemLocalVisibilityKind value indicating the local app visibility setting to filter with.
 
 #### Returns
 Returns an MCDRemoteSystemLocalVisibilityKind object initialized with kind.

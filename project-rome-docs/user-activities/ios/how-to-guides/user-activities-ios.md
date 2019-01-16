@@ -17,35 +17,6 @@ User Activities are data constructs that represent a user's tasks within an appl
 With the Project Rome SDK, your iOS app can not only publish User Activities for use in Windows features such as Timeline, but it can also act as an endpoint and read Activities back to the user just as Timeline does. This allows cross-device apps to completely transcend their platforms and present experiences that follow users rather than devices.
 
 See the [API reference](../api-reference/index.md) page for links to the reference docs relevant to these scenarios.
-First, initialize the Connected Devices Platform. If you have done this already, skip to the next section.
-
-[!INCLUDE [ios/create-platform](../../../includes/ios/create-platform.md)]
-
-Next, you must prepare the platform to be started.  Before starting the platform you'll need to subscribe to AccoutManager and NotificationRegistrationManager events​.
-
-[!INCLUDE [ios/prepare-start-platform](../../../includes/ios/prepare-start-platform.md)]
-
-At this point, the platform has everything needed to properly start and is ready to start listening for events.
-
-[!INCLUDE [ios/start-platform](../../../includes/ios/start-platform.md)]
-
-After platform started is to invoke GetAllAccounts on AccountManager to get a list of accounts that previously been added into CDP AccountManager.
-
-So App needs to make sure before Adding an account to AccoutManager, it shall remove any existing account from AccountManager. The SDK will throw InvalidState Exception if App tries to add an new account but AccountManager already contains one.
-
-<should something go here about the auth provider?>
-
-[!INCLUDE [ios/prepare-account](../../../includes/ios/prepare-account.md)]
-
-If you're using a notificatoin provider, you'll need to retrieve the notification registration at this point.
-
-[!INCLUDE [ios/retrieve-notification-registration](../../../includes/ios/retrieve-notification-registration.md)]
-
-Now, you're ready to start using UserActivities.
-
-[!INCLUDE [ios/userdata-registration](../../../includes/ios/userdata-registration.md)]
-
-At this point, you should have an **MCDUserActivityChannel** reference in `channel`.
 
 ## Create and publish a User Activity
 

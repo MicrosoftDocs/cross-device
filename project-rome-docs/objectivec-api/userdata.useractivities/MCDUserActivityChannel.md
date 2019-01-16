@@ -29,11 +29,14 @@ The display name of the app for all activities.
 ### channelWithUserDataFeed
 `+ (nullable instancetype)channelWithUserDataFeed:(nonnull MCDUserDataFeed*)userDataFeed;`
 
+Creates an instance of this class with the user data feed.
+
 #### Parameters
-* `userDataFeed` The user data associated with the activities on this channel.
+* `userDataFeed` 
+The user data associated with the activities on this channel.
 
 #### Returns
-A new instance of this class.
+Returns a new instance of this class.
 
 ## Methods
 

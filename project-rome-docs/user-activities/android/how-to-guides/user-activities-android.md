@@ -18,38 +18,6 @@ With the Project Rome SDK, your Android app can not only publish User Activities
 
 See the [API reference](../api-reference/index.md) page for links to the reference docs relevant to these scenarios.
 
-## TODO make sure all steps are covered.
-
-[!INCLUDE [android/preliminary-setup](../../../includes/android/preliminary-setup.md)]
-
-First, initialize the Connected Devices Platform. If you have done this already, skip to the next section.
-
-[!INCLUDE [android/create-platform](../../../includes/android/create-platform.md)]
-
-Next, you must prepare the platform to be started.  Before starting the platform you'll need to subscribe to AccoutManager and NotificationRegistrationManager events​.
-
-[!INCLUDE [android/prepare-start-platform](../../../includes/android/prepare-start-platform.md)]
-
-At this point, the platform has everything needed to properly start and is ready to start listening for events.
-
-[!INCLUDE [android/start-platform](../../../includes/android/start-platform.md)]
-
-After platform started is to invoke GetAllAccounts on AccountManager to get a list of accounts that previously been added into CDP AccountManager.
-
-So App needs to make sure before Adding an account to AccoutManager, it shall remove any existing account from AccountManager. The SDK will throw InvalidState Exception if App tries to add an new account but AccountManager already contains one.
-
-<should something go here about the auth provider?>
-
-[!INCLUDE [android/prepare-account](../../../includes/android/prepare-account.md)]
-
-If you're using a notificatoin provider, you'll need to retrieve the notification registration at this point.
-
-[!INCLUDE [android/retrieve-notification-registration](../../../includes/android/retrieve-notification-registration.md)]
-
-Now, you're ready to start using UserActivities.
-
-[!INCLUDE [android/userdata-registration](../../../includes/android/userdata-registration.md)]
-
 ## Create and publish a User Activity
 
 Next, set the ID, DisplayText and ActivationURI data of what will be a new **UserActivity**. The ID should be a unique String. The DisplayText will be shown on other devices when they view the Activity (in Windows Timeline, for example), so it should be a concise description of the activity. The ActivationUri will determine what action is taken when the **UserActivity** is activated (when it is selected in Timeline, for example). The following code fills in sample data for these fields.

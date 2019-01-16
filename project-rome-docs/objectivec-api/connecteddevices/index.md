@@ -5,6 +5,8 @@ ConnectedDevices.h
 
 The ConnectedDevices namespace contains TODO
 
+The RemoteSystems namespace contains APIs that enable a client app to register with the platform. 
+
 ##### [MCDConnectedDevicesAccessTokenInvalidatedEventArgs](MCDConnectedDevicesAccessTokenInvalidatedEventArgs.md)
 ##### [MCDConnectedDevicesAccessTokenRequest](MCDConnectedDevicesAccessTokenRequest.md)
 ##### [MCDConnectedDevicesAccessTokenRequestedEventArgs](MCDConnectedDevicesAccessTokenRequestedEventArgs.md)

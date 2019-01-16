@@ -104,25 +104,7 @@ At this point, the app can initialize the watcher object.
 Immediately following initialization, you should register event handlers for the watcher's events, which determine how your app will parse and interact with devices that are discovered. It is recommended that your app maintain a set of discovered devices (represented by **RemoteSystem** instances) and display information about available devices and their apps (such as display name and device type) on the UI. Once the event handlers are set up, you can start the watcher.
 
 ```Java
-    // ...
 
-    //Use these events to keep the list of Remote Systems up to date (class definitions below)
-    mWatcher.addRemoteSystemAddedListener(new RemoteSystemAddedListener());
-    mWatcher.addRemoteSystemUpdatedListener(new RemoteSystemUpdatedListener());
-    mWatcher.addRemoteSystemRemovedListener(new RemoteSystemRemovedListener());
-    mWatcher.addErrorOccurredListener(new RemoteSystemWatcherErrorOccurredListener());
-
-    // here it is recommended that you clear any old RemoteSystem information from the UI and app memory.
-    // ...
-
-    try {
-        mWatcher.start();
-    } catch (Exception e) { 
-        WriteApiException("RemoteSystemWatcher.start", e); 
-    }
-}
-
-// do not call the above method without defining the watcher's event handlers (below).
 ```
 
 The following class stubs can be used as event listeners for the watcher instance.

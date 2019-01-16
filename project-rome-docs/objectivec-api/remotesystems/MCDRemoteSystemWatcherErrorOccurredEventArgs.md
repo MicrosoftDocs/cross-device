@@ -1,6 +1,6 @@
 ---
 title: MCDRemoteSystemWatcherErrorOccurredEventArgs
-description: TODO
+description: Event arguments for the RemoteSystemWatcher RemoteSystemErrorOccurred event.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 

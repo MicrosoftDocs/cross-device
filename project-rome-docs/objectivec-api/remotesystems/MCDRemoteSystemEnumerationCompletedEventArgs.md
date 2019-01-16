@@ -1,6 +1,6 @@
 ---
 title: MCDRemoteSystemEnumerationCompletedEventArgs
-description: TODO
+description: Event arguments for the MCDRemoteSystemWatcher.enumerationCompleted event.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 

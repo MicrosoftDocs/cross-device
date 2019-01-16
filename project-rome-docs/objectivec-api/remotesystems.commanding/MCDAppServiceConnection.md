@@ -37,6 +37,8 @@ raised when the client calls `close` (as well as for unexpected interruptions).
 ### init
 `- (nullable instancetype)init;`
 
+Creates and initializes a new instance of this class.
+
 #### Returns
 The initialized [MCDAppServiceConnection](MCDAppServiceConnection.md) if successful, otherwise nil.
 
@@ -47,16 +49,20 @@ The initialized [MCDAppServiceConnection](MCDAppServiceConnection.md) if success
 * `appServiceInfo` The app service description.
 
 #### Returns
-The initialized [MCDAppServiceConnection](MCDAppServiceConnection.md) if successful, otherwise nil.
+Returns the initialized [MCDAppServiceConnection](MCDAppServiceConnection.md) if successful, otherwise nil.
 
 ### appServiceConnectionWithAppServiceInfo
 `+ (nullable instancetype)appServiceConnectionWithAppServiceInfo:(nonnull MCDAppServiceInfo*) appServiceInfo;`
 
+Creates and initializes a new instance of this class with app service information.
+
 #### Parameters
-* `appServiceInfo` The app service description.
+* `appServiceInfo` 
+
+The app service description.
 
 #### Returns
-The initialized [MCDAppServiceConnection](MCDAppServiceConnection.md) if successful, otherwise nil.
+Returns the initialized [MCDAppServiceConnection](MCDAppServiceConnection.md) if successful, otherwise nil.
 
 ## Methods
 
@@ -72,7 +78,9 @@ Opens the app service connection on the specified remote device or application. 
 > * The app has subscribed a method to the connection's "request received" event but has not provided a **MCDNotificationProvider** when initializing the platform. All hosting scenarios require a **MCDNotificationProvider**.
 
 #### Parameters
-* `connectionRequest` The connection request indicating which remote app service to target.
+* `connectionRequest` 
+
+The connection request indicating which remote app service to target.
 
 ### sendMessageAsync
 `- (void)sendMessageAsync:(nonnull NSDictionary*)message completion:(nonnull void (^)(MCDAppServiceResponse* _Nonnull, NSError* _Nullable))completion;`
@@ -80,7 +88,9 @@ Opens the app service connection on the specified remote device or application. 
 Sends a message to the remote app service and begins listening for a response. This method should only be called after the connection was opened successfully.
 
 #### Parameters
-* `message` The key-value set of data to be sent to the app service.
+* `message` 
+
+The key-value set of data to be sent to the app service.
 
 ### close
 `- (void)close;`

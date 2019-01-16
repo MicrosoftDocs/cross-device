@@ -28,30 +28,30 @@ MCDConnectedDevicesNotificationRegistrationManager instance held by platform.
 ### platformWithSettings
 `+ (nullable instancetype)platformWithSettings:(MCDConnectedDevicesPlatformSettings* _Nonnull)settings;`
 
-TODO A new instance of this class with the platform settings.
+A new instance of this class with specified platform settings.
 
 #### Parameters 
 * `settings` 
 
-TODO
+The MCDConnectedDevicesPlatformSettings object which stores the app's settings of the platform.
 
 #### Returns
 
-An instance of this class.
+Returns an MCDConnectedDevicesPlatformSettings object containing the app's platform settings.
 
 ### initWithSettings
 `- (nullable instancetype)initWithSettings:(MCDConnectedDevicesPlatformSettings* _Nonnull)settings;`
 
-TODO A new instance of this class with the settings.
+A new instance of this class with the platform settings.
 
 #### Parameters 
 * `settings` 
 
-TODO
+The MCDConnectedDevicesPlatformSettings object which stores the app's settings of the platform.
 
 #### Returns
 
-An instance of this class.
+Returns an MCDConnectedDevicesPlatform object initialized with the app's platform settings.
 
 ## Methods
 

@@ -16,15 +16,17 @@ See the [API reference](../api-reference/index.md) page for links to the referen
 
 [!INCLUDE [ios/preliminary-setup](../../../includes/ios/preliminary-setup.md)]
 
-The commanding scenarios, featured in the Device Relay namespaces, use a watcher pattern in which available devices are detected over time through various types of network connections and corresponding events are raised. This guide will show how to discover remote devices and apps and then launch apps or interact with app services.  Depending on the scenario, there is an additional step required to command an iOS device.  For sending commands *to* iOS the platform requires that you onboard your app with the Microsoft Windows Dev Center so notification can be sent to the device.  If this is not a scenario requirement, simply skip the 'Register your app in Microsoft Windows Dev Center for cross-device experiences' as this is not needed.
+The Connected Devices Platform requires a valid OAuth token to be used in the registration process.  You may use your preferred method of genarating and managing the OAuth tokens.  However, to help developers get started using the platform, we've included an authentication provider as a part of the [iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) that generates and manages refresh tokens for your convenience.
 
-[!INCLUDE [ios/notifications-dev-center-onboarding](../../../includes/ios/notifications-dev-center-onboarding.md)]
+[!INCLUDE [ios/auth-scopesiOS](../../../includes/ios/auth-scopesiOS.md)]
+
+The commanding scenarios, featured in the Device Relay namespaces, use a watcher pattern in which available devices are detected over time through various types of network connections and corresponding events are raised. This guide will show how to discover remote devices and apps and then launch apps or interact with app services.  Depending on the scenario, there is an additional step required to command an iOS device.  For sending commands *to* iOS the platform requires that you onboard your app with the Microsoft Windows Dev Center so notification can be sent to the device.  In the [iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) this is referred to as 'Hosting' functionality.  If this is not a scenario requirement, simply skip the 'Register your app in Microsoft Windows Dev Center for cross-device experiences' as this is not needed.
+
+[!INCLUDE [ios/dev-center-onboarding](../../../includes/ios/notifications-dev-center-onboarding.md)]
 
 Now you are ready to start working with the platform.  It is important to follow the steps identified below to ensure a seamless onboarding experience.
 
 [!INCLUDE [ios/create-setup-events-start-platform](../../../includes/ios/create-setup-events-start-platform.md)]
-
-Now, you're ready to start using RemoteSystems.
 
 [!INCLUDE [ios/remote-system-registration](../../../includes/ios/remote-system-registration.md)]
 
@@ -32,10 +34,7 @@ Now, you're ready to start using RemoteSystems.
 
 An **MCDRemoteSystemWatcher** instance will handle the core functionality of this section. Declare it in the class which is to discover remote systems.
 
-```ObjectiveC
-// Create a RemoteSystemWatcher to discover devices
-MCDRemoteSystemWatcher* _watcher;
-```
+`MCDRemoteSystemWatcher* _watcher;`
 
 Before you create a watcher and start discovering devices, you may wish to add discovery filters to determine which kinds of devices your app will target. These can be determined by user input or hard-coded into the app, depending on your use case.
 
@@ -137,7 +136,7 @@ The following code shows how to select one of these objects (ideally this is don
 It's important to note that a remote launch can target a remote device (in which case the host device will launch the given URI with its default app for that URI scheme) _or_ a specific remote application on that device. 
 
 
-As the previous section demonstrated, discovery happens at the device level first (an **MCDRemoteSystem** represents a device), but you can call the `getApplications` method on an **MCDRemoteSystem** instance to get an array of **MCDRemoteSystemApplication** objects, which represent apps on the remote device that have been registered to use the Connected Devices Platform (just as you registered your own app in the preliminary steps above). Both **MCDRemoteSystem** and **MCDRemoteSystemApplication** can be used to construct a **MCDRemoteSystemConnectionRequest**, which is what is needed to launch a URI.
+As the previous section demonstrated, discovery happens at the device level first (an **MCDRemoteSystem** represents a device), but you can call the `getApplications` method on an **MCDRemoteSystem** instance to get an array of **MCDRemoteSystemApp** objects, which represent apps on the remote device that have been registered to use the Connected Devices Platform (just as you registered your own app in the preliminary steps above). Both **MCDRemoteSystem** and **MCDRemoteSystemApp** can be used to construct a **MCDRemoteSystemConnectionRequest**, which is what is needed to launch a URI.
 
 The following code from the sample shows the remote launching of a URI over a connection request.
 
@@ -185,7 +184,7 @@ For instructions on how to write your own UWP app service, see [Create and consu
 For instructions on how to set up a host app service on iOS, see the [Hosting guide](../../../hosting/ios/how-to-guides/hosting-ios.md).
 
 #### Open an app service connection on the client device
-Your iOS app must acquire a reference to a remote device or application. Like the launch section, this scenario requires the use of a **MCDRemoteSystemConnectionRequest**, which can be constructed from either a **MCDRemoteSystem** or a **MCDRemoteSystemApplication** representing an available app on the system.
+Your iOS app must acquire a reference to a remote device or application. Like the launch section, this scenario requires the use of a **MCDRemoteSystemConnectionRequest**, which can be constructed from either a **MCDRemoteSystem** or a **MCDRemoteSystemApp** representing an available app on the system.
 
 Additionally, your app will need to identify its targeted app service by two strings: the *app service name* and *package identifier*. These are found in the source code of the app service provider (see [Create and consume an app service (UWP)](https://msdn.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service) for details). Together these strings construct the **MCDAppServiceDescription**, which is fed into an **MCDAppServiceConnection** instance.
 

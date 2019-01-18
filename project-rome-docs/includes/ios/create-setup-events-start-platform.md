@@ -11,62 +11,78 @@ ms.localizationpriority: medium
 
 ## Create the platform
 
-To get started simply instantiate the platform and hook the event handlers before calling <TODO>ConnectedDevicesPlatform.Start(). After <TODO>Start() is called events may begin to fire.
+To get started simply instantiate the platform.
 
-m_platform = new ConnectedDevicesPlatform(); - INITIALIZE PLATFORM
+`MCDConnectedDevicesPlatform* platform = [MCDConnectedDevicesPlatform new];`
 
-## Setup event handlers for AccountManager and NotificationRegistartionManager
+## Subscribe to MCDConnectedDevicesAccountManager events to handle the user account 
 
-The platform requires an authenicated user to access the platform.  The  class is used to <TODO>.  We need to make sure the event handlers are in place for the AccountManager before using the platform.   Likewise, the platform uses notifications to deliver commands between devices.  The NotficationRegistrationManager class is used to mange all notifications.  The NotificationManger events NotificationManagerChanged must be setup during this step as well.
-
-m_platform.AccountManager.AccessTokenRequested += AccountManager_AccessTokenRequestedAsync; - SETUP EVENT HANDLERS FOR ACCOUNTMANAGER
-m_platform.AccountManager.AccessTokenInvalidated += AccountManager_AccessTokenInvalidated;
-m_platform.NotificationRegistrationManager.NotificationRegistrationStateChanged += NotificationRegistrationManager_NotificationRegistrationStateChanged; - SETUP EVENT HANDLERS FOR MOTIFICATIONMANAGER
-
-## Start the platform
-We are ready to start discovering remote system devices by calling start() on the MCDConnectedDevicesPlatform class.
-
-m_platform.Start(); - START THE PLATFORM
-
-# Retrieve accounts
-
-It is important to ensure that the list of accounts known to the app are properly synchronized with the MCDConnectedDevicesPlatform.AccountManager.
-
-Accounts can be in 3 different scenarios:
-    1: cached account in good standing (initialized in the SDK and our token cache).
-    2: account missing from the SDK but present in our cache: Add and initialize account.
-    3: account missing from our cache but present in the SDK. Log the account out async
-
-    Project Rome features (e.g. subcomponents), such as Device Relay, can only be initialized when an account is in both the app cache and the SDK cache.
-    For scenario 1, immediately initialize our subcomponents.
-    For scenario 2, subcomponents will be initialized after <TODO>InitializeAccountAsync registers the account with the SDK.
-    For scenario 3, InitializeAccountAsync will unregister the account and subcomponents will never be initialized.
-
-<TODO>
-    // Add all our cached accounts.
-            var sdkCachedAccounts = m_platform.AccountManager.Accounts.ToList();
-            var appCachedAccounts = ApplicationData.Current.LocalSettings.Values[AccountsKey] as string;
-            if (!String.IsNullOrEmpty(appCachedAccounts))
-            {
-                DeserializeAppCachedAccounts(appCachedAccounts, sdkCachedAccounts);
-            }
-
-            // Add the remaining SDK only accounts (these need to be removed from the SDK)
-            foreach (var sdkCachedAccount in sdkCachedAccounts)
-            {
-                m_accounts.Add(new Account(m_platform, sdkCachedAccount.Id, sdkCachedAccount.Type, null, AccountRegistrationState.InSdkCacheOnly));
-            }
-
-# Initialize the account list
-
-Finally initialize the accounts. This will refresh registrations when needed, add missing accounts, and remove stale accounts from the <TODO>ConnectedDevicesPlatform.AccountManager.
-
-            // All accounts which can be in a good state should be. Remove any accounts which aren't
-            m_accounts.RemoveAll((x) => x.RegistrationState != AccountRegistrationState.InAppCacheAndSdkCache);
-            AccountListChanged();
-
-The following code from the sample app shows the how to get started using the platform. 
+The platform requires an authenicated user to access the platform.  You'll need to subscribe to **MCDConnectedDevicesAccountManager** events to ensure a valid account is being used. 
 
 ```ObjectiveC
+[MCDConnectedDevicesPlatform* platform.accountManager.accessTokenRequested
+     subscribe:^(MCDConnectedDevicesAccountManager* _Nonnull manager __unused,
+                 MCDConnectedDevicesAccessTokenRequestedEventArgs* _Nonnull request __unused) {
+
+                    // Get access token
+                 
+                 }
+```
+
+```ObjectiveC
+[MCDConnectedDevicesPlatform* platform.platform.accountManager.accessTokenInvalidated
+     subscribe:^(MCDConnectedDevicesAccountManager* _Nonnull manager __unused,
+                 MCDConnectedDevicesAccessTokenInvalidatedEventArgs* _Nonnull request) {
+
+                      // Refresh and renew existing access token
+
+                 }
+```
+
+## Subscribe to MCDConnectedDevicesNotificationRegistrationManager events
+
+Similarly, the platform uses notifications to deliver commands between devices.  Therefore, you must subscribe to the **MCDConnectedDevicesNotificationRegistrationManager** events to ensure the cloud registration states are valid for the account being used.  Verify the the state using **MCDConnectedDevicesNotificationRegistrationState**
+
+```ObjectiveC
+[MCDConnectedDevicesPlatform* platform.notificationRegistrationManager.notificationRegistrationStateChanged
+     subscribe:^(MCDConnectedDevicesNotificationRegistrationManager* manager __unused,
+                 MCDConnectedDevicesNotificationRegistrationStateChangedEventArgs* args __unused) {
+
+                     // Check state using **MCDConnectedDevicesNotificationRegistrationState** enum
+
+                 }
+
+```
+## Start the platform
+Now that the platform is initialized and event handlers are in place, you are ready to start discovering remote system devices.  
+
+`[MCDConnectedDevicesPlatform* platform start];`
+
+# Retrieve user accounts known to the app
+
+It is important to ensure that the list of user accounts known to the app are properly synchronized with the **MCDConnectedDevicesAccountManager**.
+
+Use **MCDConnectedDevicesAccountManager.addAccountAsync** to add a new user account.
+
+```ObjectiveC
+[MCDConnectedDevicesPlatform* platform.accountManager
+     addAccountAsync:self.mcdAccount
+     callback:^(MCDConnectedDevicesAddAccountResult* _Nonnull result, NSError* _Nullable error) {
+
+                    // Check state using **MCDConnectedDevicesAccountAddedStatus** enum
+
+     }
+```
+
+To remove an invalid account you can use **MCDConnectedDevicesAccountManager.removeAccountAsync**
+
+```ObjectiveC
+ [MCDConnectedDevicesPlatform* platform.accountManager
+     removeAccountAsync:existingAccount
+     callback:^(MCDConnectedDevicesRemoveAccountResult* _Nonnull result __unused, NSError* _Nullable error) {
+
+                    // Remove invalid user account
+
+     }
 
 ```

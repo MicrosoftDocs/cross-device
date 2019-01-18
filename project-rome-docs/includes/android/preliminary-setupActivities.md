@@ -62,6 +62,6 @@ Next, go to the activity class(es) where you would like the Connected Devices fu
 
 ```java
 import com.microsoft.connecteddevices;
-import com.microsoft.connecteddevices.remotesystems;
-import com.microsoft.connecteddevices.remotesystems.commanding;
+import com.microsoft.connecteddevices.useractivities;
+import com.microsoft.connecteddevices.userdata;
 ```

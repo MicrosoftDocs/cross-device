@@ -9,7 +9,7 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 ```
 @interface MCDConnectedDevicesNotificationRegistrationManager : NSObject
 ```  
-Manages the registration for Rome cloud notification for all accounts.
+Manages the registration for the Connected Devices platform cloud notification for all accounts.
 
 ## Properties
 

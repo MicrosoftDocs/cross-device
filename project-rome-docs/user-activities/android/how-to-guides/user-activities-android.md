@@ -14,9 +14,95 @@ ms.localizationpriority: medium
 
 User Activities are data constructs that represent a user's tasks within an application. They make it possible to save a snapshot of a task to be continued at a later time. The [Windows Timeline](https://blogs.windows.com/windowsexperience/2018/04/27/make-the-most-of-your-time-with-the-new-windows-10-update/) feature presents Windows users with a scrollable list of all their recent activities, represented as cards with text and graphics. For more information about User Activities in general, see [Continue user activity, even across devices](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities). For recommendations on when to create or update Activities, see the [User Activities best practices](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities-best-practices) guide.
 
-With the Project Rome SDK, your Android app can not only publish User Activities for use in Windows features such as Timeline, but can also act as an endpoint and read Activities back to the user just as Timeline does on Windows devices. This allows cross-device apps to transcend their platforms and provide experiences that follow users rather than devices.
+With the Project Rome SDK, your Android app can not only publish User Activities for use in Windows features such as Timeline, but can also act as an endpoint and read Activities back to the user just as Timeline does on Windows devices. This allows cross-device apps to transcend their platforms and provide experiences that follow users rather than devices.  
 
 See the [API reference](../api-reference/index.md) page for links to the reference docs relevant to these scenarios.
+
+[!INCLUDE [android/preliminary-setupActivities](../../../includes/android/preliminary-setupActivities.md)]
+
+The Connected Devices Platform requires a valid OAuth token to be used in the registration process.  You may use your preferred method of genarating and managing the OAuth tokens.  However, to help developers get started using the platform, we've included an authentication provider as a part of the [Android sample app](https://github.com/Microsoft/project-rome/tree/master/Android/samples) that generates and manages refresh tokens for your convenience.
+
+[!INCLUDE [android/auth-scopes](../../../includes/auth-scopes.md)]
+
+User Activities are published by your app to provide a rich experience of the user's activity.  Similarly, you have the ability to read user Activities and present them to the user jas as the Windows Timeline feature does.  This guide will show how to publish, update, and read User Activities in your app.  If your scenario requires reading of User Activities, there is an additional step required to command an Android device.  For sending commands *to* Android, the platform requires that you onboard your app with the Microsoft Windows Dev Center so notification can be sent to the device.  In the [Android sample app](https://github.com/Microsoft/project-rome/tree/master/android/samples) this is referred to as 'Hosting' functionality.  If this is not a scenario requirement, simply skip the 'Register your app in Microsoft Windows Dev Center for cross-device experiences' as this is not needed.
+
+[!INCLUDE [android/dev-center-onboarding](../../../includes/android/notifications-dev-center-onboarding.md)]
+
+Now you are ready to start working with the platform.  It is important to follow the steps identified below to ensure a seamless onboarding experience.
+
+[!INCLUDE [android/create-setup-events-platform](../../../includes/android/create-setup-events-platform.md)]
+
+## Initialize a User Activity channel
+
+To implement User Activity features in your app, you will first need to initialize the user activity feed by creating a UserActivityChannel. You should treat this like the Platform initialization step above: it should be checked and possibly redone whenever the app comes to the foreground (but not before Platform initialization).
+
+You will also need your cross-platform app ID, which was retrieved through the Microsoft Developer Dashboard registration.
+The following methods initialize a UserActivityChannel.
+
+```Java
+private UserActivityChannel mActivityChannel;
+private UserDataFeed mUserDataFeed;
+
+// ...
+
+/**
+ * Initializes the UserActivityFeed.
+ */
+public void initializeUserActivityFeed() {
+
+    // define what scope of data this app needs
+    SyncScope[] scopes = { UserActivityChannel.getSyncScope(), UserNotificationChannel.getSyncScope() };
+
+    // Get a reference to the UserDataFeed. This method is defined below
+    mUserDataFeed = getUserDataFeed(scopes, new EventListener<UserDataFeed, Void>() {
+        @Override
+        public void onEvent(UserDataFeed userDataFeed, Void aVoid) {
+            if (userDataFeed.getSyncStatus() == UserDataSyncStatus.SYNCHRONIZED) {
+                // log synchronized.
+            } else {
+                // log synchronization not completed.
+            }
+        }
+    });
+
+    // this method is defined below
+    mActivityChannel = getUserActivityChannel();
+}
+
+// instantiate the UserDataFeed
+private UserDataFeed getUserDataFeed(SyncScope[] scopes, EventListener<UserDataFeed, Void> listener) {
+    UserAccount[] accounts = AccountProviderBroker.getSignInHelper().getUserAccounts();
+    if (accounts.length <= 0) {
+        // notify the user that sign-in is required
+        return null;
+    }
+
+    // use the initialized Platform instance, along with the cross-device app ID.
+    UserDataFeed feed = UserDataFeed.getForAccount(accounts[0], PlatformBroker.getPlatform(), Secrets.APP_HOST_NAME);
+    feed.addSyncStatusChangedListener(listener);
+    feed.addSyncScopes(scopes);
+    // sync data with the server
+    feed.startSync();
+    return feed;
+}
+
+// use the UserDataFeed reference to create a UserActivityChannel
+@Nullable
+private UserActivityChannel getUserActivityChannel() {
+    UserActivityChannel channel = null;
+    try {
+        // create a UserActivityChannel for the signed in account
+        channel = new UserActivityChannel(mUserDataFeed);
+    } catch (Exception e) {
+        e.printStackTrace();
+        // handle exception
+    }
+    return channel;
+}
+```
+
+At this point, you should have a UserActivityChannel reference in mActivityChannel.
+
 
 ## Create and publish a User Activity
 

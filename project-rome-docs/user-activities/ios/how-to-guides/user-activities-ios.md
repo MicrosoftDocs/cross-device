@@ -18,6 +18,49 @@ With the Project Rome SDK, your iOS app can not only publish User Activities for
 
 See the [API reference](../api-reference/index.md) page for links to the reference docs relevant to these scenarios.
 
+[!INCLUDE [android/preliminary-setup](../../../includes/android/preliminary-setup.md)]
+
+The Connected Devices Platform requires a valid OAuth token to be used in the registration process.  You may use your preferred method of genarating and managing the OAuth tokens.  However, to help developers get started using the platform, we've included an authentication provider as a part of the [iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) that generates and manages refresh tokens for your convenience.
+
+[!INCLUDE [ios/auth-scopesiOS](../../../includes/ios/auth-scopesiOS.md)]
+
+User Activities are published by your app to provide a rich experience of the user's activity.  Similarly, you have the ability to read user Activities and present them to the user jas as the Windows Timeline feature does.  This guide will show how to publish, update, and read User Activities in your app.  If your scenario requires reading of User Activities, there is an additional step required to command an iOS device.  For sending commands *to* iOS, the platform requires that you onboard your app with the Microsoft Windows Dev Center so notification can be sent to the device.  In the [iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) this is referred to as 'Hosting' functionality.  If this is not a scenario requirement, simply skip the 'Register your app in Microsoft Windows Dev Center for cross-device experiences' as this is not needed.
+
+[!INCLUDE [ios/dev-center-onboarding](../../../includes/ios/notifications-dev-center-onboarding.md)]
+
+Now you are ready to start working with the platform.  It is important to follow the steps identified below to ensure a seamless onboarding experience.
+
+[!INCLUDE [ios/create-setup-events-start-platform](../../../includes/ios/create-setup-events-start-platform.md)]
+
+## Initialize a User Activity channel
+
+To implement User Activity features in your app, you will first need to initialize the user activity feed by creating a MCDUserActivityChannel. You should treat this like the Platform initialization step above: it should be checked and possibly redone whenever the app comes to the foreground (but not before Platform initialization).
+
+You will need a signed-in user account for this step. As above, you may use a class from the authentication provider sample to easily acquire the MCDUserAccount(s). You will also need your cross-platform app ID, which was retrieved through the Microsoft Developer Dashboard registration.
+The following method from the sample app initializes an MCDUserActivityChannel.
+
+The following method from the sample app initializes an MCDUserActivityChannel.
+
+```ObjectiveC
+
+    // Get a UserActivity channel, getting the default channel        
+    NSLog(@"Creating UserActivityChannel");
+    NSArray<MCDUserAccount*>* accounts = [[AppDataSource sharedInstance].accountProvider getUserAccounts];
+    MCDUserDataFeed* userDataFeed = [MCDUserDataFeed userDataFeedForAccount:accounts[0]
+        platform:[AppDataSource sharedInstance].platform
+        activitySourceHost:CROSS_PLATFORM_APP_ID];
+    NSArray<MCDSyncScope*>* syncScopes = @[ [MCDUserActivityChannel syncScope] ];
+    [userDataFeed addSyncScopes:syncScopes];
+    self.channel = [MCDUserActivityChannel userActivityChannelWithUserDataFeed:userDataFeed];
+}
+else
+{
+    NSLog(@"Must have an active account to publish activities!");
+    self.createActivityStatusField.text = @"Need to be logged in!";
+}
+```
+At this point, you should have an MCDUserActivityChannel reference in channel.
+
 ## Create and publish a User Activity
 
 The following sample code shows how a new **MCDUserActivity** instance is created.

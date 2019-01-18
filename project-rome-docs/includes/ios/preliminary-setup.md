@@ -40,5 +40,3 @@ target 'iOSSample' do
 
 > [!NOTE]
 > In order to consume CocoaPod, you must use the _.xcworkspace_ file in your project.
-
-Depending on which scenarios you implement, you many not need all of the namespaces. You may also need to add other iOS-native namespaces as you progress.

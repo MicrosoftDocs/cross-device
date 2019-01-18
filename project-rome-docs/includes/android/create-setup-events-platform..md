@@ -45,27 +45,3 @@ ConnectedDevicesPlatform sPlatform.getNotificationRegistrationManager().notifica
 
 }
 ```
-## Start the platform
-Now that the platform is initialized and event handlers are in place, you are ready to start discovering remote system devices.  
-
-`ConnectedDevicesPlatform sPlatform.start();`
-
-# Retrieve user accounts known to the app
-
-It is important to ensure that the list of user accounts known to the app are properly synchronized with the **ConnectedDevicesAccountManager**.
-
-Use **ConnectedDevicesAccountManager.addAccountAsync** to add a new user account.
-
-```Java
- public synchronized AsyncOperation<ConnectedDevicesAddAccountResult> addAccountToAccountManagerAsync(ConnectedDevicesAccount account) {
-        return ConnectedDevicesPlatform sPlatform.getAccountManager().addAccountAsync(account);
-    }
-```
-
-To remove an invalid account you can use **MCDConnectedDevicesAccountManager.removeAccountAsync**
-
-```Java
- public synchronized AsyncOperation<ConnectedDevicesAddAccountResult> removeAccountToAccountManagerAsync(ConnectedDevicesAccount account) {
-        return ConnectedDevicesPlatform sPlatform.getAccountManager().removeAccountAsync(account);
-    }
-```

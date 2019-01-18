@@ -14,20 +14,25 @@ ms.localizationpriority: medium
 
 Here you will find guidance on how to implement commanding scenarios in your Android apps. [!INCLUDE [android/dev-reqs](../../../includes/android/dev-reqs.md)]
 
-See the [API reference](../api-reference/index.md) page for links to the reference docs relevant to these scenarios. See the [Android sample app](https://github.com/Microsoft/project-rome/tree/master/Android/samples) for a working example of Project Rome features.
+See the [API reference](../api-reference/index.md) page for links to the reference docs relevant to these scenarios. This guide is intended to provide the necessary steps to onboard with the Connected Devices Platform, the underlying platform of the Project Rome features.  See the [Android sample app](https://github.com/Microsoft/project-rome/tree/master/Android/samples) for a working example of Project Rome features.
 
-The commanding scenarios, featured in the Device Relay namespaces, use a watcher pattern in which available devices are detected over time through various types of network connections and corresponding events are raised. This guide will show how to discover remote devices and apps and then launch apps or interact with app services.
+[!INCLUDE [android/preliminary-setup](../../../includes/android/preliminary-setup.md)]
 
-[!INCLUDE [android/notifications-dev-center-onboarding](../../../includes/android/notifications-dev-center-onboarding.md)]
+The Connected Devices Platform requires a valid OAuth token to be used in the registration process.  You may use your preferred method of genarating and managing the OAuth tokens.  However, to help developers get started using the platform, we've included an authentication provider as a part of the [Android sample app](https://github.com/Microsoft/project-rome/tree/master/Android/samples) that generates and manages refresh tokens for your convenience.
 
+[!INCLUDE [android/auth-scopes](../../../includes/android/auth-scopes.md)]
 
+The commanding scenarios, featured in the Device Relay namespaces, use a watcher pattern in which available devices are detected over time through various types of network connections and corresponding events are raised. This guide will show how to discover remote devices and apps and then launch apps or interact with app services.  Depending on the scenario, there is an additional step required to command an iOS device.  For sending commands *to* iOS the platform requires that you onboard your app with the Microsoft Windows Dev Center so notification can be sent to the device.  In the [Android sample app](https://github.com/Microsoft/project-rome/tree/master/Android/samples) this is referred to as 'Hosting' functionality.  If this is not a scenario requirement, simply skip the 'Register your app in Microsoft Windows Dev Center for cross-device experiences' as this is not needed.
+
+[!INCLUDE [android/dev-center-onboarding](../../../includes/android/notifications-dev-center-onboarding.md)]
+
+Now you are ready to start working with the platform.  It is important to follow the steps identified below to ensure a seamless onboarding experience.
 
 [!INCLUDE [android/create-setup-events-start-platform](../../../includes/android/create-setup-events-start-platform.md)]
 
 Now, you're ready to start using RemoteSystems.
 
 [!INCLUDE [android/remote-system-registration](../../../includes/android/remote-system-registration.md)]
-
 
 ## Discover remote devices and apps
 
@@ -161,10 +166,10 @@ The following code shows how to select one of these devices (ideally this is don
 
 It's important to note that a remote launch can target a remote device (in which case the host device will launch the given URI with its default app for that URI scheme) _or_ a specific remote application on that device. 
 
-As the previous section demonstrated, discovery happens at the device level first (a **RemoteSystem** represents a device), but you can call the `getApplications` method on a **RemoteSystem** instance to get an array of **RemoteSystemApplication** objects, which represent apps on the remote device that have been registered to use the Connected Devices Platform (just as you registered your own app in the preliminary steps above). Both **RemoteSystem** and **RemoteSystemApplication** can be used to construct a **RemoteSystemConnectionRequest**, which is what is needed to launch a URI.
+As the previous section demonstrated, discovery happens at the device level first (a **RemoteSystem** represents a device), but you can call the `getApplications` method on a **RemoteSystem** instance to get an array of **RemoteSystemApp** objects, which represent apps on the remote device that have been registered to use the Connected Devices Platform (just as you registered your own app in the preliminary steps above). Both **RemoteSystem** and **RemoteSystemApp** can be used to construct a **RemoteSystemConnectionRequest**, which is what is needed to launch a URI.
 
 ```java
-// this could be a RemoteSystemApplication instead. Either way, it 
+// this could be a RemoteSystemApp instead. Either way, it 
 // must be defined somewhere in the application before the launch operation
 // is called.
 private RemoteSystem target; 
@@ -220,11 +225,11 @@ For instructions on how to write your own UWP app service, see [Create and consu
 For instructions on how to set up a host app service on Android, see the [Hosting guide](../../../hosting/android/how-to-guides/hosting-android.md).
 
 #### Open an app service connection on the client device
-Your Android app must acquire a reference to a remote device or application. Like the launch section, this scenario requires the use of a **RemoteSystemConnectionRequest**, which can be constructed from either a **RemoteSystem** or a **RemoteSystemApplication** representing an available app on the system.
+Your Android app must acquire a reference to a remote device or application. Like the launch section, this scenario requires the use of a **RemoteSystemConnectionRequest**, which can be constructed from either a **RemoteSystem** or a **RemoteSystemApp** representing an available app on the system.
 
 
 ```Java
-// this could be a RemoteSystemApplication instead. Either way, it 
+// this could be a RemoteSystemApp instead. Either way, it 
 // must be defined somewhere in the application before the app service
 // connection is opened.
 private RemoteSystem target = null;

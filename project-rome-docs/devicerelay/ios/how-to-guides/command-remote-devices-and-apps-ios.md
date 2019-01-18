@@ -28,8 +28,6 @@ Now you are ready to start working with the platform.  It is important to follow
 
 [!INCLUDE [ios/create-setup-events-start-platform](../../../includes/ios/create-setup-events-start-platform.md)]
 
-[!INCLUDE [ios/remote-system-registration](../../../includes/ios/remote-system-registration.md)]
-
 ## Discover remote devices and apps
 
 An **MCDRemoteSystemWatcher** instance will handle the core functionality of this section. Declare it in the class which is to discover remote systems.

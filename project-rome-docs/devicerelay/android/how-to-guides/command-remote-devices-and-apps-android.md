@@ -32,8 +32,6 @@ Now you are ready to start working with the platform.  It is important to follow
 
 Now, you're ready to start using RemoteSystems.
 
-[!INCLUDE [android/remote-system-registration](../../../includes/android/remote-system-registration.md)]
-
 ## Discover remote devices and apps
 
 A **RemoteSystemWatcher** instance will handle the core functionality of this section. Declare it in the class which is to discover remote systems.

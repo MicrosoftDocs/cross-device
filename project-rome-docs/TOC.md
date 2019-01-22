@@ -1,16 +1,16 @@
 # [Project Rome docs](index.md)
 
-## [Device Relay](commanding/index.md)
+## [Device Relay](devicerelay/index.md)
 ### Windows
 #### [How-to guides](https://docs.microsoft.com/windows/uwp/launch-resume/connected-apps-and-devices)
 #### [API reference](https://docs.microsoft.com/uwp/api/Windows.System.RemoteSystems)
 ### Android
-#### [How-to guide](commanding/android/how-to-guides/command-remote-devices-and-apps-android.md)
-#### [API reference](commanding/android/api-reference/index.md)
+#### [How-to guide](devicerelay/android/how-to-guides/command-remote-devices-and-apps-android.md)
+#### [API reference](devicerelay/android/api-reference/index.md)
 ### iOS
-#### [How-to guide](commanding/ios/how-to-guides/command-remote-devices-and-apps-ios.md)
-#### [API reference](commanding/ios/api-reference/index.md)
-### [Microsoft Graph](commanding/msgraph/index.md)
+#### [How-to guide](devicerelay/ios/how-to-guides/command-remote-devices-and-apps-ios.md)
+#### [API reference](devicerelay/ios/api-reference/index.md)
+### [Microsoft Graph](devicerelay/msgraph/index.md)
 
 ## [User Activities](user-activities/index.md)
 ### Windows

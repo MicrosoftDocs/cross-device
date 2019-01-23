@@ -8,7 +8,7 @@ The RemoteSystems namespace contains APIs that enable a client app to send comma
 #### [MCDAppServiceInfo](MCDAppServiceInfo.md)
 #### [MCDRemoteSystem](MCDRemoteSystem.md)
 #### [MCDRemoteSystemAccountFilter](MCDRemoteSystemAccountFilter.md)
-#### [MCDRemoteSystemsAddedEventArgs](MCDRemoteSystemsAddedEventArgs.md)
+#### [MCDRemoteSystemAddedEventArgs](MCDRemoteSystemAddedEventArgs.md)
 #### [MCDRemoteSystemApp](MCDRemoteSystemApp.md)
 #### [MCDRemoteSystemAuthorizationKind](MCDRemoteSystemAuthorizationKind.md)
 #### [MCDRemoteSystemAuthorizationKindFilter](MCDRemoteSystemAuthorizationKindFilter.md)

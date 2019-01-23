@@ -44,7 +44,7 @@ The **MCDPlatform** instance that has been initialized for this app's Connected 
 
 * `activitySourceHost` 
 
-The cross-platform app ID. This is retrieved through the Microsoft Developer Dashboard registration (see [Hosting cross-device experiences (iOS)](../../hosting/ios/how-to-guides/hosting-ios.md)).
+The cross-platform app ID. This is retrieved through the Microsoft Developer Dashboard registration.
 
 #### Returns
 Returns an instance of this class.

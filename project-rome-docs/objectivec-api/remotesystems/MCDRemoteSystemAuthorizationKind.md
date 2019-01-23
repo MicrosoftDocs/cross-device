@@ -1,7 +1,6 @@
 ---
 title: MCDRemoteSystemAuthorizationKind
-description:  Contains values that describe the potential authorization kinds (user-account-based authorization scopes)
-for remote system discovery. 
+description:  Contains values that describe the potential authorization kinds (user-account-based authorization scopes) for remote system discovery. 
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 

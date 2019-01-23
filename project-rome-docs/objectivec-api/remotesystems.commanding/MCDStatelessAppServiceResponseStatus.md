@@ -2,7 +2,7 @@
 title: MCDStatelessAppServiceResponseStatus
 description:  Contains values that describe the status of a message sent from one app service to another
  (whether the message data was successfully delivered).
-keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
+keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 
 # enum `MCDStatelessAppServiceResponseStatus`

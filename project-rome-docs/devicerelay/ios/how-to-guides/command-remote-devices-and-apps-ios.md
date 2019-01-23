@@ -1,5 +1,5 @@
 ---
-title: Command remote devices and apps (iOS)
+title: Implementing device relay features for iOS
 description: This guide will show how to discover remote devices and apps and then launch apps or interact with app services.
 ms.date: 07/17/2018
 ms.topic: article
@@ -8,23 +8,29 @@ ms.assetid: b5d426db-a0ca-4888-b2cb-cb7fdb1c6c0d
 ms.localizationpriority: medium
 ---
 
-# Command remote devices and apps (iOS)
+# Implementing device relay for iOS
 
-Here you will find guidance on how to implement commanding scenarios in your iOS apps.  
+The features of Project Rome are supported by an underlying platform called the Connected Devices Platform. This guide provides the necessary steps to get started using the Connected Devices Platform in your app, and then explains how to use the platform to implement device relay related features.
 
-See the [API reference](../api-reference/index.md) page for links to the reference docs relevant to these scenarios. This guide is intended to provide the necessary steps to onboard with the Connected Devices Platform, the underlying platform of the Project Rome features.  See the [iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) for a working example of these features.  
+This guide will reference code from the [Project Rome iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) that is available on GitHub.  
+
+## Setting up the Connected Deviced Platform in your app
 
 [!INCLUDE [ios/preliminary-setup](../../../includes/ios/preliminary-setup.md)]
 
-The Connected Devices Platform requires a valid OAuth token to be used in the registration process.  You may use your preferred method of genarating and managing the OAuth tokens.  However, to help developers get started using the platform, we've included an authentication provider as a part of the [iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) that generates and manages refresh tokens for your convenience.
-
 [!INCLUDE [auth-scopesiOS](../../../includes/auth-scopesiOS.md)]
 
-The commanding scenarios, featured in the Device Relay namespaces, use a watcher pattern in which available devices are detected over time through various types of network connections and corresponding events are raised. This guide will show how to discover remote devices and apps and then launch apps or interact with app services.  Depending on the scenario, there is an additional step required to command an iOS device.  For sending commands *to* iOS the platform requires that you onboard your app with the Microsoft Windows Dev Center so notification can be sent to the device.  In the [iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) this is referred to as 'Hosting' functionality.  If this is not a scenario requirement, simply skip the 'Register your app in Microsoft Windows Dev Center for cross-device experiences' as this is not needed.
+### Preliminary setup for push notifications
+
+nichola - is it that big of an issue if the dev does this setup anyways? I think that this "warning" here is too long of a tangent and takes away from the setup experience.
+
+Some device relay features use a watcher pattern in which available devices are detected over time through various types of network connections, and corresponding events are raised. This guide will show how to discover remote devices and apps and then launch apps or interact with app services.  Depending on the scenario, there is an additional step required to command an iOS device.  For sending commands *to* iOS the platform requires that you onboard your app with the Microsoft Windows Dev Center so notification can be sent to the device.  In the [iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) this is referred to as 'Hosting' functionality.  If this is not a scenario requirement, simply skip the 'Register your app in Microsoft Windows Dev Center for cross-device experiences' as this is not needed.
 
 [!INCLUDE [ios/dev-center-onboarding](../../../includes/ios/notifications-dev-center-onboarding.md)]
 
-Now you are ready to start working with the platform.  It is important to follow the steps identified below to ensure a seamless onboarding experience.
+Now you are ready to start working with the platform.
+
+## Using the platform
 
 [!INCLUDE [ios/create-setup-events-start-platform](../../../includes/ios/create-setup-events-start-platform.md)]
 

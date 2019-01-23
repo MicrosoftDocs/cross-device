@@ -9,13 +9,9 @@ ms.assetid:
 ms.localizationpriority: medium
 ---
 
-## Preliminary setup for Connected Devices functionality
+### Register your app
 
-Before implementing remote connectivity, there are a few steps you'll need to take to give your iOS app the capability to connect to other remote devices.
-
-### Sign-in
-
-Microsoft Account (MSA) or Azure Active Directory (AAD) authentication is required for all features of the SDK, except for the Nearby sharing APIs. 
+Microsoft Account (MSA) or Azure Active Directory (AAD) authentication is required for all features of the Project Rome SDK, except for the Nearby sharing APIs.
 
 If you do not already have an MSA and wish to use one, register on [account.microsoft.com](https://account.microsoft.com/account).
 

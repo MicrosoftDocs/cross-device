@@ -1,7 +1,6 @@
 ---
 title: MCDStatelessAppServiceResponse
-description:  Represents a message passed from a remote app service to the client app in response to a
-previous call to MCDAppServiceConnection.sendStatelessMessageAsync.
+description:  Represents a message passed from a remote app service to the client app in response to a previous call to MCDAppServiceConnection.sendStatelessMessageAsync.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 

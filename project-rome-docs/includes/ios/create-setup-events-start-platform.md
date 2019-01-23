@@ -58,7 +58,7 @@ Now that the platform is initialized and event handlers are in place, you are re
 
 `[MCDConnectedDevicesPlatform* platform start];`
 
-# Retrieve user accounts known to the app
+## Retrieve user accounts known to the app
 
 It is important to ensure that the list of user accounts known to the app are properly synchronized with the **MCDConnectedDevicesAccountManager**.
 

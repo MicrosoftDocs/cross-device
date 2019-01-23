@@ -27,22 +27,24 @@ The identifier for this remote system.
 ### displayName
 `@property(nonatomic, readonly, nonnull) NSString* displayName;`
 
-The friendly display name of this remote system.
+The name of the given remote system.
 
 ### status
 `@property(nonatomic, readonly) MCDRemoteSystemStatus status;`
 
-The availability status of the remote system.
+The status of this remote system's availability.
+
+> [!NOTE] WNS presence is used for reporting availability for Windows devices and apps which use WNS as notification type.  RemoteSystem will be marked as "available" when the device is considered available (Windows) or when one of the underlying apps reports their presence as available (iOS and Android) 
 
 ### manufacturerDisplayName
 `@property(nonatomic, readonly, nonnull) NSString* manufacturerDisplayName;`
 
-The display name of the remote system manufacturer.
+The manufacturer name of the given remote system.
 
 ### modelDisplayName
 `@property(nonatomic, readonly, nonnull) NSString* modelDisplayName;`
 
-The display name of the remote system model.
+The model name of the given remote system.
 
 ### apps
 `@property(nonatomic, readonly, nonnull) NSArray<MCDRemoteSystemApp*>* apps;`

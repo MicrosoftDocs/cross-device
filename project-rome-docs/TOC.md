@@ -33,4 +33,4 @@
 ### [API reference for Windows](https://docs.microsoft.com/uwp/api/windows.system.remotesystems.remotesystemsession)
 
 ## [Nearby sharing](nearby-sharing/index.md)
-## [API reference for Android](nearby-sharing/android/api-reference/index.md)
+### [API reference for Android](nearby-sharing/android/api-reference/index.md)

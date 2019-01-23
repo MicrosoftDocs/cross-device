@@ -18,7 +18,7 @@ See the [API reference](../api-reference/index.md) page for links to the referen
 
 The Connected Devices Platform requires a valid OAuth token to be used in the registration process.  You may use your preferred method of genarating and managing the OAuth tokens.  However, to help developers get started using the platform, we've included an authentication provider as a part of the [iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) that generates and manages refresh tokens for your convenience.
 
-[!INCLUDE [ios/auth-scopesiOS](../../../includes/auth-scopesiOS.md)]
+[!INCLUDE [auth-scopesiOS](../../../includes/auth-scopesiOS.md)]
 
 The commanding scenarios, featured in the Device Relay namespaces, use a watcher pattern in which available devices are detected over time through various types of network connections and corresponding events are raised. This guide will show how to discover remote devices and apps and then launch apps or interact with app services.  Depending on the scenario, there is an additional step required to command an iOS device.  For sending commands *to* iOS the platform requires that you onboard your app with the Microsoft Windows Dev Center so notification can be sent to the device.  In the [iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) this is referred to as 'Hosting' functionality.  If this is not a scenario requirement, simply skip the 'Register your app in Microsoft Windows Dev Center for cross-device experiences' as this is not needed.
 
@@ -168,7 +168,7 @@ The following code from the sample shows the remote launching of a URI over a co
 ```
 Depending on the URI that is sent, you can launch an app in a specific state or configuration on a remote device. This allows for the ability to continue a user task, like watching a movie, on a different device without interruption. 
 
-Depending on your use, you may need to cover the cases in which no apps on the targeted system can handle the URI, or multiple apps can handle it. The **[MCDRemoteLauncher](../../../objectivec-api/commanding/MCDRemoteLauncher.md)** class and **[MCDRemoteLauncherOptions](../../../objectivec-api/commanding/MCDRemoteLauncherOptions.md)** class describe how to do this.
+Depending on your use, you may need to cover the cases in which no apps on the targeted system can handle the URI, or multiple apps can handle it. The **[MCDRemoteLauncher](../../../objectivec-api/remotesystems.commanding/MCDRemoteLauncher.md)** class and **[MCDRemoteLauncherOptions](../../../objectivec-api/remotesystems.commanding/MCDRemoteLauncherOptions.md)** class describe how to do this.
 
 ### B) Remote app services
 
@@ -178,8 +178,6 @@ Your iOS app can use the Connected Devices Portal interact with app services on 
 This guide will use the [Roman Test App for Windows](http://aka.ms/romeapp) as its target app service. Therefore, the code below will cause an iOS app to look for that specific app service on the given remote system. If you wish to test this scenario, download the Roman Test App on a Windows device and make sure you are signed in with the same MSA or AAD that you used in the preliminary steps above. 
 
 For instructions on how to write your own UWP app service, see [Create and consume an app service (UWP)](https://docs.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service). You will need to make a few changes in order to make the service compatible with Connected Devices. See the [UWP guide for remote app services](https://docs.microsoft.com/windows/uwp/launch-resume/communicate-with-a-remote-app-service) for instructions on how to do this. 
-
-For instructions on how to set up a host app service on iOS, see the [Hosting guide](../../../hosting/ios/how-to-guides/hosting-ios.md).
 
 #### Open an app service connection on the client device
 Your iOS app must acquire a reference to a remote device or application. Like the launch section, this scenario requires the use of a **MCDRemoteSystemConnectionRequest**, which can be constructed from either a **MCDRemoteSystem** or a **MCDRemoteSystemApp** representing an available app on the system.

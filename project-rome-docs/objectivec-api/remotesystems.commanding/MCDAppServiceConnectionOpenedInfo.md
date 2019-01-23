@@ -1,7 +1,6 @@
 ---
 title: MCDAppServiceConnectionOpenedInfo
-description: This class provides data for the MCDAppServiceProvider.connectionDidOpen event,
-which is raised when a remote device opens a connection to a local app service.
+description: This class provides data for the MCDAppServiceProvider.connectionDidOpen event, which is raised when a remote device opens a connection to a local app service.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 

@@ -7,9 +7,9 @@ The RemoteSystems.Commanding namespace contains APIs that allow
 
 #### [MCDAppServiceClosedEventArgs](MCDAppServiceClosedEventArgs.md)
 #### [MCDAppServiceClosedStatus](MCDAppServiceClosedStatus.md)
-#### [MCDAppServiceConnection](MCDNotificationProvider.md)
+#### [MCDAppServiceConnection](MCDAppServiceConnection.md)
 #### [MCDAppServiceConnectionOpenedInfo](MCDAppServiceConnectionOpenedInfo.md)
-#### [MCDConnectionStatus](MCDConnectionStatus.md)
+#### [MCDAppServiceConnectionStatus](MCDAppServiceConnectionStatus.md)
 #### [MCDAppServiceProvider](MCDAppServiceProvider.md)
 #### [MCDAppServiceRequest](MCDAppServiceRequest.md)
 #### [MCDAppServiceRequestReceivedEventArgs](MCDAppServiceRequestReceivedEventArgs.md)

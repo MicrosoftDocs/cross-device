@@ -10,5 +10,4 @@ The UserActivities namespace contains APIs that allow applications to create and
 #### [MCDUserActivityChannel](MCDUserActivityChannel.md)
 #### [MCDUserActivitySession](MCDUserActivitySession.md)
 #### [MCDUserActivitySessionHistoryItem](MCDUserActivitySessionHistoryItem.md)
-#### [MCDUserActivityState](MCDUserActivityState.md)
 #### [MCDUserActivityVisualElements](MCDUserActivityVisualElements.md)

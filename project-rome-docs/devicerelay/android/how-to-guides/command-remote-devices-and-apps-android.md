@@ -220,8 +220,6 @@ This guide will use the [Roman Test App for Windows](http://aka.ms/romeapp) as i
 
 For instructions on how to write your own UWP app service, see [Create and consume an app service (UWP)](https://docs.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service). You will need to make a few changes in order to make the service compatible with Connected Devices. See the [UWP guide for remote app services](https://docs.microsoft.com/windows/uwp/launch-resume/communicate-with-a-remote-app-service) for instructions on how to do this. 
 
-For instructions on how to set up a host app service on Android, see the [Hosting guide](../../../hosting/android/how-to-guides/hosting-android.md).
-
 #### Open an app service connection on the client device
 Your Android app must acquire a reference to a remote device or application. Like the launch section, this scenario requires the use of a **RemoteSystemConnectionRequest**, which can be constructed from either a **RemoteSystem** or a **RemoteSystemApp** representing an available app on the system.
 

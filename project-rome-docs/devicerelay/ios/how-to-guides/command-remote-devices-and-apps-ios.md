@@ -10,17 +10,17 @@ ms.localizationpriority: medium
 
 # Implementing device relay for iOS
 
-The features of Project Rome are supported by an underlying platform called the Connected Devices Platform. This guide provides the necessary steps to get started using the Connected Devices Platform in your app, and then explains how to use the platform to implement device relay related features.
+The features of Project Rome are supported by an underlying platform called the Connected Devices Platform. This guide provides the necessary steps to get started using the Connected Devices Platform for device relay in your app, and then explains how to use the platform to implement device relay related features.
 
 This guide will reference code from the [Project Rome iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) that is available on GitHub.  
 
-## Prepare to use the platform
+## Setting up the Connected Devices Platform
 
 [!INCLUDE [ios/preliminary-setup](../../../includes/ios/preliminary-setup.md)]
 
 [!INCLUDE [auth-scopesiOS](../../../includes/auth-scopesiOS.md)]
 
-### Preliminary setup for push notifications
+### Set up push notifications
 
 nichola - is it that big of an issue if the dev does this setup anyways? I think that this "warning" here is too long of a tangent and takes away from the setup experience.
 
@@ -128,7 +128,7 @@ We recommend that your app maintain a set of discovered devices (represented by 
 
 Once `[_watcher start]` is called, it will begin watching for remote system activity and will raise events when connected devices are discovered, updated, or removed from the set of detected devices. It will scan continuously in the background, so it is recommended that you stop the watcher (with `[_watcher stop]`) when you no longer need it to avoid unnecessary network communication and battery drain.
 
-## Implement a commanding scenario
+## Implementing a commanding scenario
 At this point in your code, you should have a working list of **MCDRemoteSystem** objects that refer to available devices. What you do with these devices will depend on the function of your app. The main types of interaction are remote launching and remote app services. They are explained in the following sections.
 
 ### A) Remote launching

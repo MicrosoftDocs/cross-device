@@ -14,7 +14,7 @@ The features of Project Rome are supported by an underlying platform called the 
 
 This guide will reference code from the [Project Rome iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) that is available on GitHub.  
 
-## Setting up the Connected Deviced Platform in your app
+## Prepare to use the platform
 
 [!INCLUDE [ios/preliminary-setup](../../../includes/ios/preliminary-setup.md)]
 
@@ -28,13 +28,11 @@ Some device relay features use a watcher pattern in which available devices are 
 
 [!INCLUDE [ios/dev-center-onboarding](../../../includes/ios/notifications-dev-center-onboarding.md)]
 
-Now you are ready to start working with the platform.
-
 ## Using the platform
 
 [!INCLUDE [ios/create-setup-events-start-platform](../../../includes/ios/create-setup-events-start-platform.md)]
 
-## Discover remote devices and apps
+### Discover remote devices and apps
 
 An **MCDRemoteSystemWatcher** instance will handle the core functionality of this section. Declare it in the class which is to discover remote systems.
 

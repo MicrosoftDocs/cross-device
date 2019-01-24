@@ -9,8 +9,6 @@ ms.assetid: 0741073e-62de-4e31-8e3b-cd1a55027c1c
 ms.localizationpriority: medium
 ---
 
-## Preliminary setup for push notifications
-
 ### Register your app for push notifications
 
 Register your application with Apple for [Apple Push Notification](https://developer.apple.com/notifications/) support. Be sure to make note of the sender ID and server key that you receive; you'll need them later. 

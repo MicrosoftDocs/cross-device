@@ -10,9 +10,9 @@ ms.localizationpriority: medium
 
 # Implementing device relay for iOS
 
-The features of Project Rome are supported by an underlying platform called the Connected Devices Platform. This guide provides the necessary steps to get started using the Connected Devices Platform for device relay in your app, and then explains how to use the platform to implement device relay related features.
+The features of Project Rome are supported by an underlying platform called the Connected Devices Platform. This guide provides the necessary steps to get started using the Connected Devices Platform, and then explains how to use the platform to implement device relay related features.
 
-This guide will reference code from the [Project Rome iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) that is available on GitHub.  
+This steps below will reference code from the [Project Rome iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) that is available on GitHub.  
 
 ## Setting up the Connected Devices Platform
 
@@ -23,6 +23,8 @@ This guide will reference code from the [Project Rome iOS sample app](https://gi
 ### Set up push notifications
 
 nichola - is it that big of an issue if the dev does this setup anyways? I think that this "warning" here is too long of a tangent and takes away from the setup experience.
+
+nichola - need an introductory sentence or two here
 
 Some device relay features use a watcher pattern in which available devices are detected over time through various types of network connections, and corresponding events are raised. This guide will show how to discover remote devices and apps and then launch apps or interact with app services.  Depending on the scenario, there is an additional step required to command an iOS device.  For sending commands *to* iOS the platform requires that you onboard your app with the Microsoft Windows Dev Center so notification can be sent to the device.  In the [iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) this is referred to as 'Hosting' functionality.  If this is not a scenario requirement, simply skip the 'Register your app in Microsoft Windows Dev Center for cross-device experiences' as this is not needed.
 

@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 ### Register your app for push notifications
 
-Register your application with Apple for [Apple Push Notification](https://developer.apple.com/notifications/) support. Be sure to make note of the sender ID and server key that you receive; you'll need them later. 
+Register your application with Apple for [Apple Push Notification](https://developer.apple.com/notifications/) support. Be sure to make note of the sender ID and server key that you receive as you'll need them later.
 
 Once registered, you must associate push notification functionality with the Connected Devices Platform in your app.
 

@@ -10,7 +10,7 @@ ms.assetid: 8cfb7544-913c-48c0-8528-52b93ba8b0c6
 ms.localizationpriority: medium
 ---
 
-# Publishing and reading User Activities (Android)
+# Publishing and reading User Activities
 
 User Activities are data constructs that represent a user's tasks within an application. They make it possible to save a snapshot of a task to be continued at a later time. The [Windows Timeline](https://blogs.windows.com/windowsexperience/2018/04/27/make-the-most-of-your-time-with-the-new-windows-10-update/) feature presents Windows users with a scrollable list of all their recent activities, represented as cards with text and graphics. For more information about User Activities in general, see [Continue user activity, even across devices](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities). For recommendations on when to create or update Activities, see the [User Activities best practices](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities-best-practices) guide.
 
@@ -24,11 +24,19 @@ The Connected Devices Platform requires a valid OAuth token to be used in the re
 
 [!INCLUDE [android/auth-scopes](../../../includes/auth-scopes.md)]
 
-User Activities are published by your app to provide a rich experience of the user's activity.  Similarly, you have the ability to read user Activities and present them to the user jas as the Windows Timeline feature does.  This guide will show how to publish, update, and read User Activities in your app.  If your scenario requires reading of User Activities, there is an additional step required to command an Android device.  For sending commands *to* Android, the platform requires that you onboard your app with the Microsoft Windows Dev Center so notification can be sent to the device.  In the [Android sample app](https://github.com/Microsoft/project-rome/tree/master/android/samples) this is referred to as 'Hosting' functionality.  If this is not a scenario requirement, simply skip the 'Register your app in Microsoft Windows Dev Center for cross-device experiences' as this is not needed.
+User Activities are published by your app to provide a rich experience of the user's activity.  Similarly, you have the ability to read user Activities and present them to the user jas as the Windows Timeline feature does.  This guide will show how to publish, update, and read User Activities in your app.  
+
+> [!NOTE] If your scenario requires reading of User Activities, there is an additional step required to command an Android device.  For sending commands *to* Android, the platform requires that you onboard your app with the Microsoft Windows Dev Center so notification can be sent to the device.  In the [Android sample app](https://github.com/Microsoft/project-rome/tree/master/android/samples) this is referred to as 'Hosting' functionality. If this is not a scenario requirement, simply skip the next section, 'Preliminary setup for push notifications', as this is not needed.
 
 [!INCLUDE [android/dev-center-onboarding](../../../includes/android/notifications-dev-center-onboarding.md)]
 
-Now you are ready to start working with the platform.  It is important to follow the steps identified below to ensure a seamless onboarding experience.
+Now you are ready to start working with the platform.  It is important to follow the 5 steps below to ensure a seamless onboarding experience with initializing the platform.
+
+1.  Setup the platform
+2.  Subscribe to ConnectedDevicesAccountManager events to handle the user account 
+3.  Subscribe to ConnectedDevicesNotificationRegistrationManager events
+4.  Start the platform
+5.  Retrieve user accounts known to the app
 
 [!INCLUDE [android/create-setup-events-platform](../../../includes/android/create-setup-events-platform.md)]
 

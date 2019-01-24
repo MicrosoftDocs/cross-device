@@ -9,13 +9,13 @@ ms.assetid:
 ms.localizationpriority: medium
 ---
 
-## Create the platform
+### Setup the platform
 
 To get started simply instantiate the platform.
 
 `MCDConnectedDevicesPlatform* platform = [MCDConnectedDevicesPlatform new];`
 
-## Subscribe to MCDConnectedDevicesAccountManager events to handle the user account 
+### Subscribe to MCDConnectedDevicesAccountManager events to handle the user account 
 
 The platform requires an authenicated user to access the platform.  You'll need to subscribe to **MCDConnectedDevicesAccountManager** events to ensure a valid account is being used. 
 
@@ -39,7 +39,7 @@ The platform requires an authenicated user to access the platform.  You'll need 
                  }
 ```
 
-## Subscribe to MCDConnectedDevicesNotificationRegistrationManager events
+### Subscribe to MCDConnectedDevicesNotificationRegistrationManager events
 
 Similarly, the platform uses notifications to deliver commands between devices.  Therefore, you must subscribe to the **MCDConnectedDevicesNotificationRegistrationManager** events to ensure the cloud registration states are valid for the account being used.  Verify the the state using **MCDConnectedDevicesNotificationRegistrationState**
 
@@ -53,12 +53,12 @@ Similarly, the platform uses notifications to deliver commands between devices. 
                  }
 
 ```
-## Start the platform
+### Start the platform
 Now that the platform is initialized and event handlers are in place, you are ready to start discovering remote system devices.  
 
 `[MCDConnectedDevicesPlatform* platform start];`
 
-## Retrieve user accounts known to the app
+### Retrieve user accounts known to the app
 
 It is important to ensure that the list of user accounts known to the app are properly synchronized with the **MCDConnectedDevicesAccountManager**.
 
@@ -69,7 +69,7 @@ Use **MCDConnectedDevicesAccountManager.addAccountAsync** to add a new user acco
      addAccountAsync:self.mcdAccount
      callback:^(MCDConnectedDevicesAddAccountResult* _Nonnull result, NSError* _Nullable error) {
 
-                    // Check state using **MCDConnectedDevicesAccountAddedStatus** enum
+     // Check state using **MCDConnectedDevicesAccountAddedStatus** enum
 
      }
 ```
@@ -84,5 +84,4 @@ To remove an invalid account you can use **MCDConnectedDevicesAccountManager.rem
                     // Remove invalid user account
 
      }
-
 ```

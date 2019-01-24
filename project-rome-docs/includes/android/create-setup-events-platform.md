@@ -9,7 +9,7 @@ ms.assetid:
 ms.localizationpriority: medium
 ---
 
-## Create the platform
+### Create the platform
 
 To get started simply instantiate the platform.
 
@@ -31,17 +31,19 @@ The platform requires an authenicated user to access the platform.  You'll need 
  ConnectedDevicesPlatform sPlatform.getAccountManager().accessTokenInvalidated().subscribe((accountManager, args) -> {
 
     // Refresh and renew existing access token
+    
 }
 ```
 
 
-## Subscribe to ConnectedDevicesNotificationRegistrationManager events
+### Subscribe to ConnectedDevicesNotificationRegistrationManager events
 
 Similarly, the platform uses notifications to deliver commands between devices.  Therefore, you must subscribe to the **ConnectedDevicesNotificationRegistrationManager** events to ensure the cloud registration states are valid for the account being used.  Verify the the state using **ConnectedDevicesNotificationRegistrationState**
 
 ```Java
 ConnectedDevicesPlatform sPlatform.getNotificationRegistrationManager().notificationRegistrationStateChanged().subscribe((notificationRegistrationManager, args) -> {
-                    // Check state using **ConnectedDevicesNotificationRegistrationState** enum
+    
+    // Check state using **ConnectedDevicesNotificationRegistrationState** enum
 
 }
 ```

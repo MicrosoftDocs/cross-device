@@ -56,3 +56,13 @@ The Dev Center on-boarding process requires the following steps:
 
 * The last step is to verify your cross-device app domain, which serves as a verification process to prove that your app has the ownership of this domain which acts like a cross-device app identity for the app you registered.
 ![Cross-Device Experiences – Domain Verification](../../msgraph-notifications/media/dev_center_portal/dev_center_portal_6_domain_verification.png)
+
+### Process notifications as they are received by the app
+
+Once the Cross-Device experience within the Microsoft Windows Dev Center has been validated, make sure your app can process the notifications as they come in. 
+
+```Java
+    ensurePlatformInitialized().thenAccept((ConnectedDevicesPlatform platform) -> {
+            ConnectedDevicesProcessNotificationOperation operation = platform.processNotification(data);
+        });
+```

@@ -10,7 +10,7 @@ ms.assetid: 445f1dd4-f3c7-46e4-a7cd-42a1fb411172
 ms.localizationpriority: medium
 ---
 
-# Publishing and reading User Activities (iOS)
+# Publishing and reading User Activities
 
 User Activities are data constructs that represent a user's tasks within an application. They make it possible to save a snapshot of a current task to be continued at a later time. The [Windows Timeline](https://blogs.windows.com/windowsexperience/2018/04/27/make-the-most-of-your-time-with-the-new-windows-10-update/) feature presents Windows users with a scrollable list of all their recent activities, represented as cards with text and graphics. For more information about User Activities in general, see [Continue user activity, even across devices](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities). For recommendations on when to create or update Activities, see the [User Activities best practices](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities-best-practices) guide.
 
@@ -18,17 +18,25 @@ With the Project Rome SDK, your iOS app can not only publish User Activities for
 
 See the [API reference](../api-reference/index.md) page for links to the reference docs relevant to these scenarios.
 
-[!INCLUDE [android/preliminary-setup](../../../includes/android/preliminary-setup.md)]
+[!INCLUDE [ios/preliminary-setup](../../../includes/ios/preliminary-setup.md)]
 
 The Connected Devices Platform requires a valid OAuth token to be used in the registration process.  You may use your preferred method of genarating and managing the OAuth tokens.  However, to help developers get started using the platform, we've included an authentication provider as a part of the [iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) that generates and manages refresh tokens for your convenience.
 
 [!INCLUDE [auth-scopesiOS](../../../includes/auth-scopesiOS.md)]
 
-User Activities are published by your app to provide a rich experience of the user's activity.  Similarly, you have the ability to read user Activities and present them to the user jas as the Windows Timeline feature does.  This guide will show how to publish, update, and read User Activities in your app.  If your scenario requires reading of User Activities, there is an additional step required to command an iOS device.  For sending commands *to* iOS, the platform requires that you onboard your app with the Microsoft Windows Dev Center so notification can be sent to the device.  In the [iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) this is referred to as 'Hosting' functionality.  If this is not a scenario requirement, simply skip the 'Register your app in Microsoft Windows Dev Center for cross-device experiences' as this is not needed.
+User Activities are published by your app to provide a rich experience of the user's activity.  Similarly, you have the ability to read user Activities and present them to the user jas as the Windows Timeline feature does.  This guide will show how to publish, update, and read User Activities in your app.  
+
+> [!NOTE] If your scenario requires reading of User Activities, there is an additional step required to command an iOS device.  For sending commands *to* iOS, the platform requires that you onboard your app with the Microsoft Windows Dev Center so notification can be sent to the device.  In the [iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) this is referred to as 'Hosting' functionality. If this is not a scenario requirement, simply skip the next section, 'Preliminary setup for push notifications', as this is not needed.
 
 [!INCLUDE [ios/dev-center-onboarding](../../../includes/ios/notifications-dev-center-onboarding.md)]
 
-Now you are ready to start working with the platform.  It is important to follow the steps identified below to ensure a seamless onboarding experience.
+Now you are ready to start working with the platform.  It is important to follow the 5 steps below to ensure a seamless onboarding experience with initializing the platform.
+
+1.  Setup the platform
+2.  Subscribe to ConnectedDevicesAccountManager events to handle the user account 
+3.  Subscribe to ConnectedDevicesNotificationRegistrationManager events
+4.  Start the platform
+5.  Retrieve user accounts known to the app
 
 [!INCLUDE [ios/create-setup-events-start-platform](../../../includes/ios/create-setup-events-start-platform.md)]
 

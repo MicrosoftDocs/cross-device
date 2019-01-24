@@ -57,3 +57,12 @@ The Dev Center on-boarding process require the following steps:
 > For iOS, enabling APNS is a prerequisite to communication to an iOS device. See [APNs Overview](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW1) for more details. Once you complete the onboarding, you can then provide the push credentials via Windows Dev Center to the Connected Device Platform. 
 * The last step is to verify your cross-device app domain, which serves as a verification process to prove that your app has the ownership of this domain which acts like a cross-device app identity for the app you registered.
 ![Cross-Device Experiences – Domain Verification](../../msgraph-notifications/media/dev_center_portal/dev_center_portal_6_domain_verification.png)
+
+### Process notifications as they are received by the app
+
+Once the Cross-Device experience within the Microsoft Windows Dev Center has been validated, make sure your app can process the notifications as they come in. 
+
+```ObjectiveC
+MCDConnectedDevicesProcessNotificationOperation* result = [appDataSource.platform processNotification:byteString];
+                return result.connectedDevicesNotification;
+```

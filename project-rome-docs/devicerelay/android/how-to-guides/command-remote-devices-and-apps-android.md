@@ -22,11 +22,19 @@ The Connected Devices Platform requires a valid OAuth token to be used in the re
 
 [!INCLUDE [android/auth-scopes](../../../includes/auth-scopes.md)]
 
-The commanding scenarios, featured in the Device Relay namespaces, use a watcher pattern in which available devices are detected over time through various types of network connections and corresponding events are raised. This guide will show how to discover remote devices and apps and then launch apps or interact with app services.  Depending on the scenario, there is an additional step required to command an iOS device.  For sending commands *to* iOS the platform requires that you onboard your app with the Microsoft Windows Dev Center so notification can be sent to the device.  In the [Android sample app](https://github.com/Microsoft/project-rome/tree/master/Android/samples) this is referred to as 'Hosting' functionality.  If this is not a scenario requirement, simply skip the 'Register your app in Microsoft Windows Dev Center for cross-device experiences' as this is not needed.
+The commanding scenarios, featured in the Device Relay namespaces, use a watcher pattern in which available devices are detected over time through various types of network connections and corresponding events are raised. This guide will show how to discover remote devices and apps and then launch apps or interact with app services.  
+
+> [!NOTE] Depending on the scenario, there is an additional step required to command an Android device.  For sending commands *to* Android the platform requires that you onboard your app with the Microsoft Windows Dev Center so notification can be sent to the device.  In the [Android sample app](https://github.com/Microsoft/project-rome/tree/master/Android/samples) this is referred to as 'Hosting' functionality.  If this is not a scenario requirement, simply skip the next section, 'Preliminary setup for push notifications', as this is not needed.
 
 [!INCLUDE [android/dev-center-onboarding](../../../includes/android/notifications-dev-center-onboarding.md)]
 
-Now you are ready to start working with the platform.  It is important to follow the steps identified below to ensure a seamless onboarding experience.
+Now you are ready to start working with the platform.  It is important to follow the 5 steps below to ensure a seamless onboarding experience with initializing the platform.
+
+1.  Setup the platform
+2.  Subscribe to ConnectedDevicesAccountManager events to handle the user account 
+3.  Subscribe to ConnectedDevicesNotificationRegistrationManager events
+4.  Start the platform
+5.  Retrieve user accounts known to the app
 
 [!INCLUDE [android/create-setup-events-start-platform](../../../includes/android/create-setup-events-start-platform.md)]
 

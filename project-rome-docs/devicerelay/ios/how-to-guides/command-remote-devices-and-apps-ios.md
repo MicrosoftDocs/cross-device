@@ -20,12 +20,6 @@ This guide will reference code from the [Project Rome iOS sample app](https://gi
 
 [!INCLUDE [auth-scopesiOS](../../../includes/auth-scopesiOS.md)]
 
-### Set up push notifications
-
-nichola - is it that big of an issue if the dev does this setup anyways? I think that this "warning" here is too long of a tangent and takes away from the setup experience.
-
-Some device relay features use a watcher pattern in which available devices are detected over time through various types of network connections, and corresponding events are raised. This guide will show how to discover remote devices and apps and then launch apps or interact with app services.  Depending on the scenario, there is an additional step required to command an iOS device.  For sending commands *to* iOS the platform requires that you onboard your app with the Microsoft Windows Dev Center so notification can be sent to the device.  In the [iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) this is referred to as 'Hosting' functionality.  If this is not a scenario requirement, simply skip the 'Register your app in Microsoft Windows Dev Center for cross-device experiences' as this is not needed.
-
 [!INCLUDE [ios/dev-center-onboarding](../../../includes/ios/notifications-dev-center-onboarding.md)]
 
 ## Using the platform

@@ -32,7 +32,11 @@ self.notificationRegistration = [[MCDConnectedDevicesNotificationRegistration al
 ```
 
 ### Register your app in Microsoft Windows Dev Center for cross-device experiences
-If you require communication to your iOS device, you'll need to register with the Microsoft Windows Dev Center.  Next, you need to register your app for the [cross-device experiences feature of the Microsoft Developer Dashboard](https://developer.microsoft.com/dashboard/crossplatform/web). This is a different procedure from MSA and AAD app registration above. The main goal for this process is to map the platform specific app identities with a cross-platform app identity that is recognized by Connected Devices Platform, and at the same time authorizes Microsoft Graph Notifications to send notifications using the native push notification services corresponding to each mobile platform. In this case, it enables Graph Notifications to send notifications to iOS app endpoints via APNS – Apple Push Notification Service. 
+
+Next, register your app for the [cross-device experiences feature of the Microsoft Developer Dashboard](https://developer.microsoft.com/dashboard/crossplatform/web). This step is only required if you want to send commands (e.g. launch URIs, establishing messaging pipelines) to devices that are *not* Windows devices.
+
+ This is a different procedure from MSA and AAD app registration above. The main goal for this process is to map the platform specific app identities with a cross-platform app identity that is recognized by Connected Devices Platform, and at the same time authorizes Microsoft Graph Notifications to send notifications using the native push notification services corresponding to each mobile platform. In this case, it enables Graph Notifications to send notifications to iOS app endpoints via APNS – Apple Push Notification Service. 
+
 Go to Dev Center Dashboard, navigate to Cross-Device Experiences from the left side navigation pane, and select configuring a new cross-device app.
 ![Dev Center Dashboard – Cross-Device Experiences](../../msgraph-notifications/media/dev_center_portal/dev_center_portal_1_overview.png)
 

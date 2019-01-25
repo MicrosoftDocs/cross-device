@@ -33,7 +33,8 @@ self.notificationRegistration = [[MCDConnectedDevicesNotificationRegistration al
 
 ### Register your app in Microsoft Windows Dev Center for cross-device experiences
 
-This step is only required if you want to send commands to or host from devices that are *not* Windows devices. nichola - do we need to clear this up?
+> [!WARNING]
+> This step is only required if you want to use Project Rome features to access data from or make requests of non-Windows devices. If you only target Windows devices, you do not need to complete this step.
 
 Register your app for the [cross-device experiences feature of the Microsoft Developer Dashboard](https://developer.microsoft.com/dashboard/crossplatform/web). This is a different procedure from MSA and AAD app registration above. The main goal for this process is to map the platform specific app identities with a cross-platform app identity that is recognized by Connected Devices Platform. This step will also enable sending notifications using the native push notification services corresponding to the mobile platform(s) your app utilizes. For iOS, it enables notifications to be sent to iOS app endpoints via APNS – Apple Push Notification Service.
 

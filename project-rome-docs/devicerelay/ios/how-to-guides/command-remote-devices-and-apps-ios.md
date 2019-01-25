@@ -34,7 +34,7 @@ An **MCDRemoteSystemWatcher** instance will handle the core functionality of thi
 
 Before you create a watcher and start discovering devices, you may wish to add discovery filters to determine which kinds of devices your app will target. These can be determined by user input or hard-coded into the app, depending on your use case.
 
-The following code from the sample app demonstrates the creation and starting of the watcher instance. Note that event handlers are registered just before; these will allow your app to parse and interact with the devices that are discovered. 
+The following code from the sample app demonstrates how to create and start a watcher instance. Note that event handlers are registered just before; these will allow your app to parse and interact with the devices that are discovered.
 
 ```ObjectiveC
 // Start watcher with filter for transport types, form factors
@@ -59,7 +59,7 @@ The following code from the sample app demonstrates the creation and starting of
 
     [_watcher addRemoteSystemRemovedListener:^(
         __unused MCDRemoteSystemWatcher* watcher, MCDRemoteSystem* system) { [weakSelf _onRemoteSystemRemoved:system]; }];
-    
+
     // start watcher
     [_watcher start];
 }
@@ -122,15 +122,14 @@ We recommend that your app maintain a set of discovered devices (represented by 
 
 Once `[_watcher start]` is called, it will begin watching for remote system activity and will raise events when connected devices are discovered, updated, or removed from the set of detected devices. It will scan continuously in the background, so it is recommended that you stop the watcher (with `[_watcher stop]`) when you no longer need it to avoid unnecessary network communication and battery drain.
 
-## Implementing a commanding scenario
+## Example use case: implementing remote launching and remote app services
 At this point in your code, you should have a working list of **MCDRemoteSystem** objects that refer to available devices. What you do with these devices will depend on the function of your app. The main types of interaction are remote launching and remote app services. They are explained in the following sections.
 
 ### A) Remote launching
 
-The following code shows how to select one of these objects (ideally this is done through a UI control) and then use **MCDRemoteLauncher** to launch an app on it by passing an app-compatible URI. 
+The following code shows how to select one of the **MCDRemoteSystem** objects (ideally this is done through a UI control) and then use **MCDRemoteLauncher** to launch an app on it by passing an app-compatible URI.
 
-It's important to note that a remote launch can target a remote device (in which case the host device will launch the given URI with its default app for that URI scheme) _or_ a specific remote application on that device. 
-
+It's important to note that a remote launch can target a remote device (in which case the host device will launch the given URI with its default app for that URI scheme) _or_ a specific remote application on that device.
 
 As the previous section demonstrated, discovery happens at the device level first (an **MCDRemoteSystem** represents a device), but you can call the `getApplications` method on an **MCDRemoteSystem** instance to get an array of **MCDRemoteSystemApp** objects, which represent apps on the remote device that have been registered to use the Connected Devices Platform (just as you registered your own app in the preliminary steps above). Both **MCDRemoteSystem** and **MCDRemoteSystemApp** can be used to construct a **MCDRemoteSystemConnectionRequest**, which is what is needed to launch a URI.
 
@@ -164,16 +163,17 @@ The following code from the sample shows the remote launching of a URI over a co
             }];
 }
 ```
-Depending on the URI that is sent, you can launch an app in a specific state or configuration on a remote device. This allows for the ability to continue a user task, like watching a movie, on a different device without interruption. 
+
+Depending on the URI that is sent, you can launch an app in a specific state or configuration on a remote device. This allows for the ability to continue a user task, like watching a movie, on a different device without interruption.
 
 Depending on your use, you may need to cover the cases in which no apps on the targeted system can handle the URI, or multiple apps can handle it. The **[MCDRemoteLauncher](../../../objectivec-api/remotesystems.commanding/MCDRemoteLauncher.md)** class and **[MCDRemoteLauncherOptions](../../../objectivec-api/remotesystems.commanding/MCDRemoteLauncherOptions.md)** class describe how to do this.
 
 ### B) Remote app services
 
-Your iOS app can use the Connected Devices Portal interact with app services on other devices. This provides many ways to communicate with other devices&mdash;all without needing to bring an app to the foreground of the host device. 
+Your iOS app can use the Connected Devices Portal to interact with app services on other devices. This provides many ways to communicate with other devices&mdash;all without needing to bring an app to the foreground of the host device.
 
 #### Set up the app service on the target device
-This guide will use the [Roman Test App for Windows](http://aka.ms/romeapp) as its target app service. Therefore, the code below will cause an iOS app to look for that specific app service on the given remote system. If you wish to test this scenario, download the Roman Test App on a Windows device and make sure you are signed in with the same MSA or AAD that you used in the preliminary steps above. 
+This guide will use the [Roman Test App for Windows](http://aka.ms/romeapp) as its target app service. Therefore, the code below will cause an iOS app to look for that specific app service on the given remote system. If you wish to test this scenario, download the Roman Test App on a Windows device and make sure you are signed in with the same MSA or AAD that you used in the preliminary steps above.
 
 For instructions on how to write your own UWP app service, see [Create and consume an app service (UWP)](https://docs.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service). You will need to make a few changes in order to make the service compatible with Connected Devices. See the [UWP guide for remote app services](https://docs.microsoft.com/windows/uwp/launch-resume/communicate-with-a-remote-app-service) for instructions on how to do this. 
 
@@ -306,6 +306,7 @@ The following code from the sample shows the sending of a message to an app serv
     }
 }
 ```
+
 In the Roman App case, the response contains the date it was created, so in this very simple use case, we can compare the dates to get the total transit time of the message response.
 
 That concludes a single message exchange with a remote app service.

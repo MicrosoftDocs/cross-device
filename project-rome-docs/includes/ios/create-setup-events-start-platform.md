@@ -15,9 +15,9 @@ To get started simply instantiate the platform.
 
 `MCDConnectedDevicesPlatform* platform = [MCDConnectedDevicesPlatform new];`
 
-### Subscribe to MCDConnectedDevicesAccountManager events to handle the user account 
+### Subscribe to MCDConnectedDevicesAccountManager
 
-The platform requires an authenicated user to access the platform.  You'll need to subscribe to **MCDConnectedDevicesAccountManager** events to ensure a valid account is being used. 
+The platform requires an authenticated user to access the platform.  You'll need to subscribe to **MCDConnectedDevicesAccountManager** events to ensure a valid account is being used.
 
 ```ObjectiveC
 [MCDConnectedDevicesPlatform* platform.accountManager.accessTokenRequested
@@ -25,7 +25,7 @@ The platform requires an authenicated user to access the platform.  You'll need 
                  MCDConnectedDevicesAccessTokenRequestedEventArgs* _Nonnull request __unused) {
 
                     // Get access token
-                 
+
                  }
 ```
 
@@ -39,7 +39,7 @@ The platform requires an authenicated user to access the platform.  You'll need 
                  }
 ```
 
-### Subscribe to MCDConnectedDevicesNotificationRegistrationManager events
+### Subscribe to MCDConnectedDevicesNotificationRegistrationManager
 
 Similarly, the platform uses notifications to deliver commands between devices.  Therefore, you must subscribe to the **MCDConnectedDevicesNotificationRegistrationManager** events to ensure the cloud registration states are valid for the account being used.  Verify the the state using **MCDConnectedDevicesNotificationRegistrationState**
 
@@ -53,6 +53,7 @@ Similarly, the platform uses notifications to deliver commands between devices. 
                  }
 
 ```
+
 ### Start the platform
 Now that the platform is initialized and event handlers are in place, you are ready to start discovering remote system devices.  
 

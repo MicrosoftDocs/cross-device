@@ -33,9 +33,9 @@ self.notificationRegistration = [[MCDConnectedDevicesNotificationRegistration al
 
 ### Register your app in Microsoft Windows Dev Center for cross-device experiences
 
-Next, register your app for the [cross-device experiences feature of the Microsoft Developer Dashboard](https://developer.microsoft.com/dashboard/crossplatform/web). This step is only required if you want to send commands (e.g. launch URIs, establishing messaging pipelines) to devices that are *not* Windows devices.
+This step is only required if you want to send commands (e.g. launch URIs) to devices that are *not* Windows devices.
 
- This is a different procedure from MSA and AAD app registration above. The main goal for this process is to map the platform specific app identities with a cross-platform app identity that is recognized by Connected Devices Platform, and at the same time authorizes Microsoft Graph Notifications to send notifications using the native push notification services corresponding to each mobile platform. In this case, it enables Graph Notifications to send notifications to iOS app endpoints via APNS – Apple Push Notification Service. 
+Register your app for the [cross-device experiences feature of the Microsoft Developer Dashboard](https://developer.microsoft.com/dashboard/crossplatform/web). This is a different procedure from MSA and AAD app registration above. The main goal for this process is to map the platform specific app identities with a cross-platform app identity that is recognized by Connected Devices Platform. This step will also enable sending notifications using the native push notification services corresponding to the mobile platform(s) your app utilizes. For iOS, it enables notifications to be sent to iOS app endpoints via APNS – Apple Push Notification Service.
 
 Go to Dev Center Dashboard, navigate to Cross-Device Experiences from the left side navigation pane, and select configuring a new cross-device app.
 ![Dev Center Dashboard – Cross-Device Experiences](../../msgraph-notifications/media/dev_center_portal/dev_center_portal_1_overview.png)
@@ -44,10 +44,7 @@ The Dev Center on-boarding process require the following steps:
 
 * Select supported platforms – select the platforms where your app will have a presence and be enabled for cross-device experiences. In the case of Graph Notifications integration, you can select from Windows, Android, and/or iOS, depending on what platforms you are using. ![Cross-Device Experiences – Supported Platforms](../../msgraph-notifications/media/dev_center_portal/dev_center_portal_2_supported_platforms.png)
 
-* Provide app IDs – provide app IDs for each platform you are using. For iOS apps, this is the Package Name you assigned to your app when you created the project. 
-> [!TIP] 
-> You may add different IDs (up to ten) per platform – this is in case you have multiple version of the same app, or even different apps, that want to be able to receive the same notifications sent by your app server targeted at the same user. 
-![Cross-Device Experiences – App IDs](../../msgraph-notifications/media/dev_center_portal/dev_center_portal_3_app_ids.png)
+* Provide app IDs – provide app IDs for each platform you are using. For iOS apps, this is the package name you assigned to your app when you created the project. Note that you may add different IDs (up to ten) per platform – this is in case you have multiple version of the same app, or even different apps, that want to be able to receive the same notifications sent by your app server targeted at the same user. ![Cross-Device Experiences – App IDs](../../msgraph-notifications/media/dev_center_portal/dev_center_portal_3_app_ids.png)
 
 * Provide or select the app IDs from MSA and/or AAD app registrations obtained in the previous MSA/AAD app registration steps above. ![Cross-Device Experiences – MSA and AAD App Registrations](../../msgraph-notifications/media/dev_center_portal/dev_center_portal_4_msa_aad_connections.png)
 

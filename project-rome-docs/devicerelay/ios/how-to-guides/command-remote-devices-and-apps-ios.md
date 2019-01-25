@@ -10,6 +10,8 @@ ms.localizationpriority: medium
 
 # Implementing device relay for iOS
 
+nichola - add a blurb about device relay
+
 The features of Project Rome are supported by an underlying platform called the Connected Devices Platform. This guide provides the necessary steps to get started using the Connected Devices Platform, and then explains how to use the platform to implement device relay related features.
 
 This steps below will reference code from the [Project Rome iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) that is available on GitHub.  

@@ -18,21 +18,19 @@ With the Project Rome SDK, your iOS app can not only publish User Activities for
 
 See the [API reference](../api-reference/index.md) page for links to the reference docs relevant to these scenarios.
 
+## Setting up the Connected Devices Platform
+
 [!INCLUDE [ios/preliminary-setup](../../../includes/ios/preliminary-setup.md)]
 
 [!INCLUDE [auth-scopesiOS](../../../includes/auth-scopesiOS.md)]
 
-## Preliminary setup for push notifications
-
-User Activities are published by your app to provide a rich experience of the user's activity.  Similarly, you have the ability to read user Activities and present them to the user jas as the Windows Timeline feature does.  This guide will show how to publish, update, and read User Activities in your app.  If your scenario requires reading of User Activities, there is an additional step required to command an iOS device.  For sending commands *to* iOS, the platform requires that you onboard your app with the Microsoft Windows Dev Center so notification can be sent to the device.  In the [iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) this is referred to as 'Hosting' functionality.  If this is not a scenario requirement, simply skip the 'Register your app in Microsoft Windows Dev Center for cross-device experiences' as this is not needed.
-
 [!INCLUDE [ios/dev-center-onboarding](../../../includes/ios/notifications-dev-center-onboarding.md)]
 
-Now you are ready to start working with the platform.  It is important to follow the steps identified below to ensure a seamless onboarding experience.
+## Using the platform
 
 [!INCLUDE [ios/create-setup-events-start-platform](../../../includes/ios/create-setup-events-start-platform.md)]
 
-## Initialize a User Activity channel
+### Initialize a User Activity channel
 
 To implement User Activity features in your app, you will first need to initialize the user activity feed by creating a MCDUserActivityChannel. You should treat this like the Platform initialization step above: it should be checked and possibly redone whenever the app comes to the foreground (but not before Platform initialization).
 
@@ -61,7 +59,7 @@ else
 ```
 At this point, you should have an MCDUserActivityChannel reference in channel.
 
-## Create and publish a User Activity
+### Create and publish a User Activity
 
 The following sample code shows how a new **MCDUserActivity** instance is created.
 

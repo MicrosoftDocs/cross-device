@@ -16,31 +16,25 @@ User Activities are data constructs that represent a user's tasks within an appl
 
 With the Project Rome SDK, your iOS app can not only publish User Activities for use in Windows features such as Timeline, but it can also act as an endpoint and read Activities back to the user just as Timeline does. This allows cross-device apps to completely transcend their platforms and present experiences that follow users rather than devices.
 
+The features of Project Rome are supported by an underlying platform called the Connected Devices Platform. This guide provides the necessary steps to get started using the Connected Devices Platform, and then explains how to use the platform to implement user activities related features.
+
+This steps below will reference code from the [Project Rome iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) that is available on GitHub.  
+
 See the [API reference](../api-reference/index.md) page for links to the reference docs relevant to these scenarios.
+
+## Setting up the Connected Devices Platform and Notifications
 
 [!INCLUDE [ios/preliminary-setup](../../../includes/ios/preliminary-setup.md)]
 
-The Connected Devices Platform requires a valid OAuth token to be used in the registration process.  You may use your preferred method of genarating and managing the OAuth tokens.  However, to help developers get started using the platform, we've included an authentication provider as a part of the [iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) that generates and manages refresh tokens for your convenience.
-
 [!INCLUDE [auth-scopesiOS](../../../includes/auth-scopesiOS.md)]
-
-User Activities are published by your app to provide a rich experience of the user's activity.  Similarly, you have the ability to read user Activities and present them to the user jas as the Windows Timeline feature does.  This guide will show how to publish, update, and read User Activities in your app.  
-
-> [!NOTE] If your scenario requires reading of User Activities, there is an additional step required to command an iOS device.  For sending commands *to* iOS, the platform requires that you onboard your app with the Microsoft Windows Dev Center so notification can be sent to the device.  In the [iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) this is referred to as 'Hosting' functionality. If this is not a scenario requirement, simply skip the next section, 'Preliminary setup for push notifications', as this is not needed.
 
 [!INCLUDE [ios/dev-center-onboarding](../../../includes/ios/notifications-dev-center-onboarding.md)]
 
-Now you are ready to start working with the platform.  It is important to follow the 5 steps below to ensure a seamless onboarding experience with initializing the platform.
-
-1.  Setup the platform
-2.  Subscribe to ConnectedDevicesAccountManager events to handle the user account 
-3.  Subscribe to ConnectedDevicesNotificationRegistrationManager events
-4.  Start the platform
-5.  Retrieve user accounts known to the app
+## Using the platform
 
 [!INCLUDE [ios/create-setup-events-start-platform](../../../includes/ios/create-setup-events-start-platform.md)]
 
-## Initialize a User Activity channel
+### Initialize a User Activity channel
 
 To implement User Activity features in your app, you will first need to initialize the user activity feed by creating a MCDUserActivityChannel. You should treat this like the Platform initialization step above: it should be checked and possibly redone whenever the app comes to the foreground (but not before Platform initialization).
 
@@ -69,7 +63,7 @@ else
 ```
 At this point, you should have an MCDUserActivityChannel reference in channel.
 
-## Create and publish a User Activity
+### Create and publish a User Activity
 
 The following sample code shows how a new **MCDUserActivity** instance is created.
 

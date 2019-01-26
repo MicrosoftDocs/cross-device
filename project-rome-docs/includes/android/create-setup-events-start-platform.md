@@ -9,7 +9,8 @@ ms.assetid:
 ms.localizationpriority: medium
 ---
 
-### Setup the platform
+### Create the platform
+
 
 To get started simply instantiate the platform.
 

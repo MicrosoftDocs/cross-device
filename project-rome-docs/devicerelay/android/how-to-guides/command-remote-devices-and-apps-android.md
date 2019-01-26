@@ -10,37 +10,31 @@ ms.assetid: 2fd14dd0-0f1f-49ee-83e3-468737810c81
 ms.localizationpriority: medium
 ---
 
-# Command remote devices and apps (Android)
+# Implementing device relay for Android
 
-Here you will find guidance on how to implement commanding scenarios in your Android apps. [!INCLUDE [android/dev-reqs](../../../includes/android/dev-reqs.md)]
+The Device Relay functionality of Project Rome consists of a set of APIs that support two main features: remote launching (also known as commanding) and app services.
 
-See the [API reference](../api-reference/index.md) page for links to the reference docs relevant to these scenarios. This guide is intended to provide the necessary steps to onboard with the Connected Devices Platform, the underlying platform of the Project Rome features.  See the [Android sample app](https://github.com/Microsoft/project-rome/tree/master/Android/samples) for a working example of Project Rome features.
+Remote Launching APIs support scenarios where a process on a remote device is started from a local device. For example, a user might be listening to the radio on their phone in the car, but when they get home they use their phone to transfer playback to their Xbox which is hooked up to the home stereo.
+
+App Services APIs allow an application to establish a persistent pipeline between two devices through which messages containing any arbitrary content can be sent. For example, a photo sharing app running on a mobile device could establish a connection with the user's PC in order to retrieve photos.
+
+The features of Project Rome are supported by an underlying platform called the Connected Devices Platform. This guide provides the necessary steps to get started using the Connected Devices Platform, and then explains how to use the platform to implement Device Relay related features.
+
+This steps below will reference code from the [Project Rome Android sample app](https://github.com/Microsoft/project-rome/tree/master/Android/samples).
+
+[!INCLUDE [android/dev-reqs](../../../includes/android/dev-reqs.md)]
 
 [!INCLUDE [android/preliminary-setup](../../../includes/android/preliminary-setup.md)]
 
-The Connected Devices Platform requires a valid OAuth token to be used in the registration process.  You may use your preferred method of genarating and managing the OAuth tokens.  However, to help developers get started using the platform, we've included an authentication provider as a part of the [Android sample app](https://github.com/Microsoft/project-rome/tree/master/Android/samples) that generates and manages refresh tokens for your convenience.
-
 [!INCLUDE [android/auth-scopes](../../../includes/auth-scopes.md)]
-
-The commanding scenarios, featured in the Device Relay namespaces, use a watcher pattern in which available devices are detected over time through various types of network connections and corresponding events are raised. This guide will show how to discover remote devices and apps and then launch apps or interact with app services.  
-
-> [!NOTE] Depending on the scenario, there is an additional step required to command an Android device.  For sending commands *to* Android the platform requires that you onboard your app with the Microsoft Windows Dev Center so notification can be sent to the device.  In the [Android sample app](https://github.com/Microsoft/project-rome/tree/master/Android/samples) this is referred to as 'Hosting' functionality.  If this is not a scenario requirement, simply skip the next section, 'Preliminary setup for push notifications', as this is not needed.
 
 [!INCLUDE [android/dev-center-onboarding](../../../includes/android/notifications-dev-center-onboarding.md)]
 
-Now you are ready to start working with the platform.  It is important to follow the 5 steps below to ensure a seamless onboarding experience with initializing the platform.
-
-1.  Setup the platform
-2.  Subscribe to ConnectedDevicesAccountManager events to handle the user account 
-3.  Subscribe to ConnectedDevicesNotificationRegistrationManager events
-4.  Start the platform
-5.  Retrieve user accounts known to the app
+## Using the platform
 
 [!INCLUDE [android/create-setup-events-start-platform](../../../includes/android/create-setup-events-start-platform.md)]
 
-Now, you're ready to start using RemoteSystems.
-
-## Discover remote devices and apps
+### Discover remote devices and apps
 
 A **RemoteSystemWatcher** instance will handle the core functionality of this section. Declare it in the class which is to discover remote systems.
 
@@ -162,7 +156,7 @@ public void stopWatcher() {
     mWatcher.stop();
 }
 ```
-## Implement a commanding scenario
+## Example use case: implementing remote launching and remote app services
 
 At this point in your code, you should have a working list of **RemoteSystem** objects that refer to available devices. What you do with these devices will depend on the function of your app. The main types of interaction are remote launching and remote app services. They are explained in the following sections.
 

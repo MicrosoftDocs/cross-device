@@ -33,7 +33,8 @@ self.notificationRegistration = [[MCDConnectedDevicesNotificationRegistration al
 
 ### Register your app in Microsoft Windows Dev Center for cross-device experiences
 
-This step is only required if you want to send commands to or host from devices that are *not* Windows devices. nichola - do we need to clear this up?
+> [!WARNING]
+> This step is only required if you want to use Project Rome features to access data from or make requests of non-Windows devices. If you only target Windows devices, you do not need to complete this step.
 
 Register your app for the [cross-device experiences feature of the Microsoft Developer Dashboard](https://developer.microsoft.com/dashboard/crossplatform/web). This is a different procedure from MSA and AAD app registration above. The main goal for this process is to map the platform specific app identities with a cross-platform app identity that is recognized by Connected Devices Platform. This step will also enable sending notifications using the native push notification services corresponding to the mobile platform(s) your app utilizes. For iOS, it enables notifications to be sent to iOS app endpoints via APNS – Apple Push Notification Service.
 
@@ -48,8 +49,6 @@ The Dev Center on-boarding process require the following steps:
 
 * Provide or select the app IDs from MSA and/or AAD app registrations obtained in the previous MSA/AAD app registration steps above. ![Cross-Device Experiences – MSA and AAD App Registrations](../../msgraph-notifications/media/dev_center_portal/dev_center_portal_4_msa_aad_connections.png)
 
-* Provide your credentials for the native notification platforms relevant to your app (i.e. WNS for Windows, GCM for Android, and/or APNS for iOS) to enable delivery of notifications from your app server when you publish user-targeted notifications. ![Cross-Device Experiences – Push Credentials](../../msgraph-notifications/media/dev_center_portal/dev_center_portal_5_push_credentials.png)
-> [!NOTE] 
-> Nichola - how does this note tie in to the preceding bullet? Can we just delete this? For iOS, enabling APNS is a prerequisite to use Microsoft Graph Notifications. See [APNs Overview](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW1) for more details. Once you complete the onboarding, you can then provide the push credentials via Windows Dev Center to the Connected Device Platform.
+* Provide your credentials for the native notification platforms relevant to your app (i.e. WNS for Windows, FCM for Android, and/or APNS for iOS) to enable delivery of notifications from your app server when you publish user-targeted notifications. ![Cross-Device Experiences – Push Credentials](../../msgraph-notifications/media/dev_center_portal/dev_center_portal_5_push_credentials.png)
 
 * Finally, verify your cross-device app domain to make sure your app has the ownership of the domain and can use it as a cross-device identity for your app. ![Cross-Device Experiences – Domain Verification](../../msgraph-notifications/media/dev_center_portal/dev_center_portal_6_domain_verification.png)

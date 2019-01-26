@@ -11,6 +11,10 @@ ms.custom: seodec18
 
 With the Project Rome client-side SDK on iOS, your iOS app can perform the necessary registration steps to become a receiving endpoint that receives notifications published from your app server targeted at a user. The SDK is then used to manage the notifications on the client side including accessing new notification payloads received by this client, manage the state of notifications, and retrieving notification history. For more information about Notifications and how it enables human-centric notification delivery, see [Microsoft Graph Notifications Overview](../../index.md)
 
+The features of Project Rome are supported by an underlying platform called the Connected Devices Platform. This guide provides the necessary steps to get started using the Connected Devices Platform, and then explains how to use the platform to implement notification related features.
+
+This steps below will reference code from the [Project Rome iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) that is available on GitHub.  
+
 See the [API reference](../ios/api-reference/index.md) page for links to the reference docs relevant to notification scenarios.
 
 ## Preliminary setup for accessing the Connected Devices Platform in order to use Graph Notifications

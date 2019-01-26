@@ -9,11 +9,9 @@ ms.assetid: dc4d7bbd-bc87-42b1-9924-52c7bfcd5b5f
 ms.localizationpriority: medium
 ---
 
-## Preliminary setup for push notifications
-
 ### Register your app for push notifications
 
-Register your application with Google for [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging/android/client) support. Be sure to make note of the sender ID and server key that you receive; you'll need them later. 
+Register your application with Google for [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging/android/client) support. Be sure to make note of the sender ID and server key that you receive; you'll need them later.
 
 Once registered, you must associate push notification functionality with the Connected Devices Platform in your app.
 
@@ -26,7 +24,9 @@ mNotificationRegistration = new ConnectedDevicesNotificationRegistration();
 ```
 
 ### Register your app in Microsoft Windows Dev Center for cross-device experiences
-If you require communication to your Android device, you need to register your app for the [cross-device experiences feature of the Microsoft Developer Dashboard](https://developer.microsoft.com/dashboard/crossplatform/web). This is a different procedure from MSA and AAD app registration above.  The main goal for this process is to map the platform specific app identities with a cross-platform app identity that is recognized by Connected Devices Platform, and at the same time authorizes Microsoft Graph Notifications to send notifications using the native push notification services corresponding to each mobile platform. In this case, it enables Graph Notifications to send notifications to Android app endpoints via Google Cloud Messaging.
+
+> [!IMPORTANT]
+> This step is only required if you want to use Project Rome features to access data from or make requests of non-Windows devices. If you only target Windows devices, you do not need to complete this step.
 
 Go to Dev Center Dashboard, navigate to Cross-Device Experiences from the left side navigation pane, and select configuring a new cross-device app, shown as below.
 ![Dev Center Dashboard – Cross-Device Experiences](../../msgraph-notifications/media/dev_center_portal/dev_center_portal_1_overview.png)

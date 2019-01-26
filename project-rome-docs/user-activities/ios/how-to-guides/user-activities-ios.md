@@ -22,7 +22,7 @@ This steps below will reference code from the [Project Rome iOS sample app](http
 
 See the [API reference](../api-reference/index.md) page for links to the reference docs relevant to these scenarios.
 
-## Setting up the Connected Devices Platform
+## Setting up the Connected Devices Platform and Notifications
 
 [!INCLUDE [ios/preliminary-setup](../../../includes/ios/preliminary-setup.md)]
 

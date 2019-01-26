@@ -20,7 +20,7 @@ The features of Project Rome are supported by an underlying platform called the 
 
 This steps below will reference code from the [Project Rome iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) that is available on GitHub.  
 
-## Setting up the Connected Devices Platform
+## Setting up the Connected Devices Platform and Notifications
 
 [!INCLUDE [ios/preliminary-setup](../../../includes/ios/preliminary-setup.md)]
 

@@ -10,7 +10,7 @@ ms.assetid: 445f1dd4-f3c7-46e4-a7cd-42a1fb411172
 ms.localizationpriority: medium
 ---
 
-# Publishing and reading User Activities (iOS)
+# Publishing and reading User Activities
 
 User Activities are data constructs that represent a user's tasks within an application. They make it possible to save a snapshot of a current task to be continued at a later time. The [Windows Timeline](https://blogs.windows.com/windowsexperience/2018/04/27/make-the-most-of-your-time-with-the-new-windows-10-update/) feature presents Windows users with a scrollable list of all their recent activities, represented as cards with text and graphics. For more information about User Activities in general, see [Continue user activity, even across devices](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities). For recommendations on when to create or update Activities, see the [User Activities best practices](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities-best-practices) guide.
 

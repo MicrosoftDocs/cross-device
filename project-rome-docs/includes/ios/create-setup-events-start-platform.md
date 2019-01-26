@@ -70,7 +70,7 @@ Use **MCDConnectedDevicesAccountManager.addAccountAsync** to add a new user acco
      addAccountAsync:self.mcdAccount
      callback:^(MCDConnectedDevicesAddAccountResult* _Nonnull result, NSError* _Nullable error) {
 
-                    // Check state using **MCDConnectedDevicesAccountAddedStatus** enum
+     // Check state using **MCDConnectedDevicesAccountAddedStatus** enum
 
      }
 ```
@@ -85,5 +85,4 @@ To remove an invalid account you can use **MCDConnectedDevicesAccountManager.rem
                     // Remove invalid user account
 
      }
-
 ```

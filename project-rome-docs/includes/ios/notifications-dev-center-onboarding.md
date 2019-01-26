@@ -49,8 +49,6 @@ The Dev Center on-boarding process require the following steps:
 
 * Provide or select the app IDs from MSA and/or AAD app registrations obtained in the previous MSA/AAD app registration steps above. ![Cross-Device Experiences – MSA and AAD App Registrations](../../msgraph-notifications/media/dev_center_portal/dev_center_portal_4_msa_aad_connections.png)
 
-* Provide your credentials for the native notification platforms relevant to your app (i.e. WNS for Windows, GCM for Android, and/or APNS for iOS) to enable delivery of notifications from your app server when you publish user-targeted notifications. ![Cross-Device Experiences – Push Credentials](../../msgraph-notifications/media/dev_center_portal/dev_center_portal_5_push_credentials.png)
-> [!NOTE] 
-> Nichola - how does this note tie in to the preceding bullet? Can we just delete this? For iOS, enabling APNS is a prerequisite to use Microsoft Graph Notifications. See [APNs Overview](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW1) for more details. Once you complete the onboarding, you can then provide the push credentials via Windows Dev Center to the Connected Device Platform.
+* Provide your credentials for the native notification platforms relevant to your app (i.e. WNS for Windows, FCM for Android, and/or APNS for iOS) to enable delivery of notifications from your app server when you publish user-targeted notifications. ![Cross-Device Experiences – Push Credentials](../../msgraph-notifications/media/dev_center_portal/dev_center_portal_5_push_credentials.png)
 
 * Finally, verify your cross-device app domain to make sure your app has the ownership of the domain and can use it as a cross-device identity for your app. ![Cross-Device Experiences – Domain Verification](../../msgraph-notifications/media/dev_center_portal/dev_center_portal_6_domain_verification.png)

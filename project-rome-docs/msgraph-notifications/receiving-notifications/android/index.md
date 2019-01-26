@@ -9,7 +9,9 @@ ms.custom: seodec18
 
 # How-To Guide: Integrating with Graph Notifications (Android)
 
-With the Project Rome client-side SDK on Android, your Android app can perform the necessary registration steps to become a receiving endpoint that receives notifications published from your app server targeted at a user. The SDK is then used to manage the notifications on the client side including accessing new notification payloads received by this client, manage the state of notifications, and retrieving notification history. For more information about Notifications and how it enables human-centric notification delivery, see [Microsoft Graph Notifications Overview](../../index.md)
+With the Project Rome client-side SDK on Android, your Android app can perform the necessary registration steps to become a receiving endpoint for notifications published from your app server targeted at a user. The SDK manages the notifications on the client side including accessing new notification payloads received by this client, managing the state of notifications, and retrieving notification history. For more information about Notifications and how it enables human-centric notification delivery, see [Microsoft Graph Notifications Overview](../../index.md)
+
+The features of Project Rome are supported by an underlying platform called the Connected Devices Platform. This guide provides the necessary steps to get started using the Connected Devices Platform, and then explains how to use the platform to implement notification related features.
 
 See the [API reference](../android/api-reference/index.md) page for links to the reference docs relevant to notification scenarios.
 
@@ -20,17 +22,19 @@ There are a few steps you must take to integrate with Graph Notifications
 * Adding the SDK and Initializing the Connected Devices Platform
 * Associate the Notification Service with Connected Devices Platform
 
-First, you must complete the MSA and/or AAD App Registration. If you've done this already, skip to the next section.
+If you have completed any of these steps already for your app it is not necessary to redo them.
+
+First, you must complete the MSA and/or AAD App Registration.
 [!INCLUDE [android/platform-init](../../../includes/android/notifications-app-registration-onboarding.md)]
-Next, you must onboard with Microsoft Windows Dev Center to get access to the Connected Device Platform in order to integrate with cross-device experiences including use of Graph Notifications. If you've done this already, skip to the next section.
+Next, you must onboard with Microsoft Windows Dev Center to get access to the Connected Device Platform in order to integrate with cross-device experiences including use of Graph Notifications.
 [!INCLUDE [android/notification-init](../../../includes/android/notifications-dev-center-onboarding.md)]
-Next, you must add the Project Rome SDK to your project and initialize the Connected Devices Platform. If you've done this already, skip to the next section.
+Next, you must add the Project Rome SDK to your project and initialize the Connected Devices Platform.
 [!INCLUDE [android/notification-init](../../../includes/android/notifications-platfrom-init.md)]
-Lastly, you must enable your app to receive push notifications. If you've done this already, skip to the next section.
+Lastly, you must enable your app to receive push notifications.
 [!INCLUDE [android/notification-init](../../../includes/android/notifications-notification-init.md)]
 
 ## Initialize a Graph Notification channel
-At a high level, the SDK allows your app to subscribe to different channels in order to receive and manage different types of User Data – including Graph Notifications, User Activities, and more. These are all stored and synced in **UserDataFeed**. **UserNotification** is the class and data type corresponding to a user-targeted notification sent via Graph Notifications. 
+The Project Rome SDK allows your app to subscribe to different channels in order to receive and manage various types of user data – including Graph Notifications, User Activities, and more. These are all stored and synced in **UserDataFeed**. **UserNotification** is the class and data type corresponding to a user-targeted notification sent via Graph Notifications. 
 To integrate with Graph Notification and start receiving UserNotification published by your app server, you will first need to initialize the user data feed by creating a **UserNotificationChannel**. You should treat this like the platform initialization step above: it should be checked and possibly redone whenever the app comes to the foreground (but not before platform initialization). 
 
 The following methods initialize a **UserNotificationChannel**.

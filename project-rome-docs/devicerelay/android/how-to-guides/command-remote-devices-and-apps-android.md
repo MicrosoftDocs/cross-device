@@ -10,7 +10,7 @@ ms.assetid: 2fd14dd0-0f1f-49ee-83e3-468737810c81
 ms.localizationpriority: medium
 ---
 
-# Command remote devices and apps (Android)
+# Implementing device relay for Android
 
 Here you will find guidance on how to implement commanding scenarios in your Android apps. [!INCLUDE [android/dev-reqs](../../../includes/android/dev-reqs.md)]
 

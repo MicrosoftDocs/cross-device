@@ -19,7 +19,7 @@ See the [API reference](../ios/api-reference/index.md) page for links to the ref
 
 ## Preliminary setup for accessing the Connected Devices Platform in order to use Graph Notifications
 
-Project Rome is supported by an underlying platform called the Connected Devices Platform. There are a few steps you must take to set this up and integrate Graph Notifications in your app
+There are a few steps you must take to set this up and integrate Graph Notifications in your app
 * MSA or AAD App Registration
 * Dev Center Onboarding to Provide Cross-Platform App Identity and Push Notification Credentials
 * Adding the SDK and Initializing the Connected Devices Platform

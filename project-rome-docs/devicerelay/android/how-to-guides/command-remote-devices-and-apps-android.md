@@ -18,7 +18,7 @@ Remote Launching APIs support scenarios where a process on a remote device is st
 
 App Services APIs allow an application to establish a persistent pipeline between two devices through which messages containing any arbitrary content can be sent. For example, a photo sharing app running on a mobile device could establish a connection with the user's PC in order to retrieve photos.
 
-The features of Project Rome are supported by an underlying platform called the Connected Devices Platform. This guide provides the necessary steps to get started using the Connected Devices Platform, and then explains how to use the platform to implement device relay related features.
+The features of Project Rome are supported by an underlying platform called the Connected Devices Platform. This guide provides the necessary steps to get started using the Connected Devices Platform, and then explains how to use the platform to implement Device Relay related features.
 
 This steps below will reference code from the [Project Rome Android sample app](https://github.com/Microsoft/project-rome/tree/master/Android/samples).
 

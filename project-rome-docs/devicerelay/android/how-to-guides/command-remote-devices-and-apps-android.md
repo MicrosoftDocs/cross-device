@@ -94,7 +94,7 @@ private void onStartWatcherClicked() {
     // ...
 ```
 
-At this point, the app can initialize the watcher object.
+At this point, the app can initialize the watcher object which determine how your app will parse and interact with devices that are discovered.
 
 ```Java
     // ...
@@ -106,11 +106,7 @@ At this point, the app can initialize the watcher object.
     // ...
 ```
 
-Immediately following initialization, you should register event handlers for the watcher's events, which determine how your app will parse and interact with devices that are discovered. It is recommended that your app maintain a set of discovered devices (represented by **RemoteSystem** instances) and display information about available devices and their apps (such as display name and device type) on the UI. Once the event handlers are set up, you can start the watcher.
-
-```Java
-
-```
+It is recommended that your app maintain a set of discovered devices (represented by **RemoteSystem** instances) and display information about available devices and their apps (such as display name and device type) on the UI. 
 
 The following class stubs can be used as event listeners for the watcher instance.
 

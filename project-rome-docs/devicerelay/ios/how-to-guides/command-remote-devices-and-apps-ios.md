@@ -40,7 +40,7 @@ An **MCDRemoteSystemWatcher** instance will handle the core functionality of thi
 
 Before you create a watcher and start discovering devices, you may wish to add discovery filters to determine which kinds of devices your app will target. These can be determined by user input or hard-coded into the app, depending on your use case.
 
-The following code from the sample app demonstrates how to create and start a watcher instance. Note that event handlers are registered just before; these will allow your app to parse and interact with the devices that are discovered.
+The following code from the sample app demonstrates how to create and start a watcher instance allowing your app to parse and interact with the devices that are discovered.
 
 ```ObjectiveC
 // Start watcher with filter for transport types, form factors

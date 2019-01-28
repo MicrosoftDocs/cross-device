@@ -19,10 +19,10 @@ Once registered, you must associate push notification functionality with the Con
 
 ```Java
 mNotificationRegistration = new ConnectedDevicesNotificationRegistration();
-            mNotificationRegistration.setType(ConnectedDevicesNotificationType.FCM);
-            mNotificationRegistration.setToken(token);
-            mNotificationRegistration.setAppId(Secrets.FCM_SENDER_ID);
-            mNotificationRegistration.setAppDisplayName("SampleApp");
+mNotificationRegistration.setType(ConnectedDevicesNotificationType.FCM);
+mNotificationRegistration.setToken(token);
+mNotificationRegistration.setAppId(Secrets.FCM_SENDER_ID);
+mNotificationRegistration.setAppDisplayName("SampleApp");
 ```
 
 ### Register your app in Microsoft Windows Dev Center for cross-device experiences

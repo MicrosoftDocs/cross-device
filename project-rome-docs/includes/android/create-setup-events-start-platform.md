@@ -18,7 +18,7 @@ To get started simply instantiate the platform.
 
 ### Subscribe to ConnectedDevicesAccountManager events to handle the user account 
 
-The platform requires an authenicated user to access the platform.  You'll need to subscribe to **ConnectedDevicesAccountManager** events to ensure a valid account is being used. 
+The platform requires an authenticated user to access the platform.  You'll need to subscribe to **ConnectedDevicesAccountManager** events to ensure a valid account is being used. 
 
 ```Java
  ConnectedDevicesPlatform sPlatform.getAccountManager().accessTokenRequested().subscribe((accountManager, args) -> {
@@ -64,7 +64,7 @@ Use **ConnectedDevicesAccountManager.addAccountAsync** to add a new user account
     }
 ```
 
-To remove an invalid account you can use **MCDConnectedDevicesAccountManager.removeAccountAsync**
+To remove an invalid account you can use **ConnectedDevicesAccountManager.removeAccountAsync**
 
 ```Java
  public synchronized AsyncOperation<ConnectedDevicesAddAccountResult> removeAccountToAccountManagerAsync(ConnectedDevicesAccount account) {

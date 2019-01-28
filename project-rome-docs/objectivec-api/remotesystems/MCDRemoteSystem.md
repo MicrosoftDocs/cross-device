@@ -34,7 +34,8 @@ The name of the given remote system.
 
 The status of this remote system's availability.
 
-> [!NOTE] WNS presence is used for reporting availability for Windows devices and apps which use WNS as notification type.  RemoteSystem will be marked as "available" when the device is considered available (Windows) or when one of the underlying apps reports their presence as available (iOS and Android) 
+> [!NOTE]
+WNS presence is used for reporting availability for Windows devices and apps which use WNS as notification type.  RemoteSystem will be marked as "available" when the device is considered available (Windows) or when one of the underlying apps reports their presence as available (iOS and Android). 
 
 ### manufacturerDisplayName
 `@property(nonatomic, readonly, nonnull) NSString* manufacturerDisplayName;`

@@ -27,8 +27,8 @@ Event for when the sync status of the UserDataFeed changes.
 ## Constructors
 
 ### getForAccount
-`+ (nullable instancetype)getForAccount:(nonnull MCDUserAccount*)userAccount
-                                   platform:(nonnull MCDPlatform*)platform
+`+ (nullable instancetype)getForAccount:(nonnull MCDConnectedDevicesAccount*)userAccount
+                                   platform:(nonnull MCDConnectedDevicesPlatform*)platform
                          activitySourceHost:(nonnull NSString*)activitySourceHost;`
 
 Creates and initializes a new instance of this class with a user account, platform instance, and the cross-platform app ID.
@@ -36,7 +36,7 @@ Creates and initializes a new instance of this class with a user account, platfo
 #### Parameters
 * `userAccount` 
 
-The user accound that this data will be associated with.
+The user account that this data will be associated with.
 
 * `platform` 
 

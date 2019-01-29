@@ -28,6 +28,14 @@ Gets the developer specified group id for this user notification.
 `@property(nonatomic, readonly, nonnull) NSDate* expirationTime;`
 Gets the expiration time for this user notification.
 
+### status
+`@property(nonatomic, readonly) MCDUserNotificationStatus status;`
+Gets the status of the user notification.
+
+### changeTime
+`@property(nonatomic, readonly, nonnull) NSDate* changeTime;`
+Gets the time the change was made.
+
 ### priority
 `@property(nonatomic, readonly) MCDUserNotificationPriority priority;`
 Gets the developer specified priority for this user notification.
@@ -37,11 +45,11 @@ Gets the developer specified priority for this user notification.
 Gets the content payload for this notification which is developer defined arbitrary data.
 
 ###  readState
-`@property(nonatomic, readwrite) MCDUserNotificationReadState readState;`
+`@property(nonatomic, assign, readwrite) MCDUserNotificationReadState readState;`
 Gets the value of the read state for this user notification that indicates the notification is read or unread.
 
 ### userActionState
-`@property(nonatomic, readwrite) MCDUserNotificationUserActionState userActionState;`
+`@property(nonatomic, assign, readwrite) MCDUserNotificationUserActionState userActionState;`
 Gets the value of the user action state for a user notification to determine whether the notification is 
 not interacted, dismissed, activated, or snoozed. 
 

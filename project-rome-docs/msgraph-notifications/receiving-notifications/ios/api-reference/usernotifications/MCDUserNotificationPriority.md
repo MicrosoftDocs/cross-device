@@ -14,7 +14,6 @@ Contains values that describe the priority of a user notification.
 
 |Name | Value | Description |
 |:-- |:-- |:-- |
-|MCDUserNotificationPriorityUnknown |0| The priority is unknown.|
+|   MCDUserNotificationPriorityNone |0| The priority is unknown.|
 |   MCDUserNotificationPriorityHigh |1| The priority is high.|
-|   MCDUserNotificationPriorityMedium |2| The priority is medium.|
-|   MCDUserNotificationPriorityLow|3| The priority is low.|
+|   MCDUserNotificationPriorityLow|2| The priority is low.|

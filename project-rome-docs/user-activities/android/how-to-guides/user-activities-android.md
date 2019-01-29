@@ -10,29 +10,34 @@ ms.assetid: 8cfb7544-913c-48c0-8528-52b93ba8b0c6
 ms.localizationpriority: medium
 ---
 
-# Publishing and reading User Activities (Android)
+# Publishing and reading User Activities
 
 User Activities are data constructs that represent a user's tasks within an application. They make it possible to save a snapshot of a task to be continued at a later time. The [Windows Timeline](https://blogs.windows.com/windowsexperience/2018/04/27/make-the-most-of-your-time-with-the-new-windows-10-update/) feature presents Windows users with a scrollable list of all their recent activities, represented as cards with text and graphics. For more information about User Activities in general, see [Continue user activity, even across devices](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities). For recommendations on when to create or update Activities, see the [User Activities best practices](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities-best-practices) guide.
 
-With the Project Rome SDK, your Android app can not only publish User Activities for use in Windows features such as Timeline, but can also act as an endpoint and read Activities back to the user just as Timeline does on Windows devices. This allows cross-device apps to transcend their platforms and provide experiences that follow users rather than devices.
+With the Project Rome SDK, your Android app can not only publish User Activities for use in Windows features such as Timeline, but can also act as an endpoint and read Activities back to the user just as Timeline does on Windows devices. This allows cross-device apps to transcend their platforms and provide experiences that follow users rather than devices.  
 
 See the [API reference](../api-reference/index.md) page for links to the reference docs relevant to these scenarios.
 
-First, you must initialize the Connected Devices Platform. If you've done this already, skip to the next section.
+This steps below will reference code from the [Project Rome Android sample app](https://github.com/Microsoft/project-rome/tree/master/Android/samples).
 
-[!INCLUDE [android/platform-init](../../../includes/android/platform-init.md)]
+[!INCLUDE [android/dev-reqs](../../../includes/android/dev-reqs.md)]
 
-Next, you must enable your app to receive push notifications. If you've done this already, skip to the next section.
+[!INCLUDE [android/preliminary-setup](../../../includes/android/preliminary-setup.md)]
 
-[!INCLUDE [android/notification-init](../../../includes/android/notification-init.md)]
+[!INCLUDE [android/auth-scopes](../../../includes/auth-scopes.md)]
 
-## Initialize a User Activity channel
+[!INCLUDE [android/dev-center-onboarding](../../../includes/android/notifications-dev-center-onboarding.md)]
 
-To implement User Activity features in your app, you will first need to initialize the user activity feed by creating a **UserActivityChannel**. You should treat this like the Platform initialization step above: it should be checked and possibly redone whenever the app comes to the foreground (but not before Platform initialization). 
+## Using the platform
 
-Note that you will need a signed-in user account. This guide will use the `mSignInHelper` instance created in steps above. You will also need your cross-platform app ID, which was retrieved through the Microsoft Developer Dashboard registration.
+[!INCLUDE [android/create-setup-events-start-platform](../../../includes/android/create-setup-events-start-platform.md)]
 
-The following methods initialize a **UserActivityChannel**.
+### Initialize a User Activity channel
+
+To implement User Activity features in your app, you will first need to initialize the user activity feed by creating a UserActivityChannel. You should treat this like the Platform initialization step above: it should be checked and possibly redone whenever the app comes to the foreground (but not before Platform initialization).
+
+You will also need your cross-platform app ID, which was retrieved through the Microsoft Developer Dashboard registration.
+The following methods initialize a UserActivityChannel.
 
 ```Java
 private UserActivityChannel mActivityChannel;
@@ -96,9 +101,10 @@ private UserActivityChannel getUserActivityChannel() {
 }
 ```
 
-At this point, you should have a **UserActivityChannel** reference in `mActivityChannel`.
+At this point, you should have a UserActivityChannel reference in mActivityChannel.
 
-## Create and publish a User Activity
+
+### Create and publish a User Activity
 
 Next, set the ID, DisplayText and ActivationURI data of what will be a new **UserActivity**. The ID should be a unique String. The DisplayText will be shown on other devices when they view the Activity (in Windows Timeline, for example), so it should be a concise description of the activity. The ActivationUri will determine what action is taken when the **UserActivity** is activated (when it is selected in Timeline, for example). The following code fills in sample data for these fields.
 
@@ -171,7 +177,7 @@ operation.whenCompleteAsync(new AsyncOperation.ResultBiConsumer<Void, Throwable>
 > [!TIP] 
 > In addition to the properties above, there are many other features that can be configured. For a complete look at the different ways that a UserActivity can be customized, see the **[UserActivity](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.useractivities._user_activity)**, **[UserActivityVisualElements](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.useractivities._user_activity_visual_elements)**, and **[UserActivityAttribution](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.useractivities._user_activity_attribution)** classes. See the [User Activities best practices](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities-best-practices) guide for detailed recommendations on how to design User Activities.
 
-## Update an existing User Activity
+### Update an existing User Activity
 
 If you have an existing Activity and wish to update its information (in the event of a new engagement, changed page, and so on), you can do so by using a **UserActivitySession**.
 
@@ -198,7 +204,7 @@ Log.d("UserActivityFragment", "Stopping");
 
 A **UserActivitySession** can be thought of as a way to create a **UserActivitySessionHistoryItem** (covered in the next section). Rather than create a new **UserActivity** every time a user moves to a new page, you can simply create a new session for each page. This will make for a more intuitive and organized activity reading experience.
 
-## Read User Activities
+### Read User Activities
 
 Your app can read User Activities and present them to the user just as the Windows Timeline feature does. To set up User Activity reading, use the same **UserActivityChannel** instance from earlier. This instance can expose **UserActivitySessionHistoryItem** instances, which represent a user's engagement in a particular Activity during a specific period of time.
 

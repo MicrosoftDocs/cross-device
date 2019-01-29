@@ -14,5 +14,5 @@ Contains values that describe the state of a **[MCDUserDataFeed](MCDUserDataFeed
 
 |Name | Value | Description |
 |:-- |:-- |:-- |
-|  Queued |0| The data is not yet synchronized. |
-| Synchronized |1| The data has been synchronized.|
+|  MCDUserDataFeedSyncStatusQueued |0| The data is not yet synchronized. |
+| MCDUserDataFeedSyncStatusSynchronized |1| The data has been synchronized.|

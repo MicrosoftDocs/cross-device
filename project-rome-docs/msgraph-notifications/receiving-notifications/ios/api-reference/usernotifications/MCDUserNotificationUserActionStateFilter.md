@@ -14,8 +14,8 @@ Contains values that categorize notifications by user action state (for filtered
 
 |Name | Value | Description |
 |:-- |:-- |:-- |
-|MCDUserNotificationUserActionStateFilterNone |0| Include notifications that have not been acted on by the user.|
-|    MCDUserNotificationUserActionStateFilterActivated|1| Include notifications that have been activated by the user.|
-|    MCDUserNotificationUserActionStateFilterSnoozed|2| Include notifications that have been snoozed by the user.|
+|   MCDUserNotificationUserActionStateFilterAny|0| Include notifications regardless of user action state.|
+|   MCDUserNotificationUserActionStateFilterNoInteraction |1| Include notifications that have not been acted on by the user.|
+|   MCDUserNotificationUserActionStateFilterActivated|2| Include notifications that have been activated by the user.|
 |   MCDUserNotificationUserActionStateFilterDismissed|3| Include notifications that have been dismissed by the user.|
-|   MCDUserNotificationUserActionStateFilterAny|4| Include notifications regardless of user action state.|
+|   MCDUserNotificationUserActionStateFilterSnoozed|4| Include notifications that have been snoozed by the user.|

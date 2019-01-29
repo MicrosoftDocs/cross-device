@@ -14,6 +14,6 @@ Contains values that indicates a read state filter when creating a notification 
 
 |Name | Value | Description |
 |:-- |:-- |:-- |
-|    MCDUserNotificationStatusFilterActive |0| Include notifications that are active and persisted in Connected Devices Platform notification store. |
-|   MCDUserNotificationStatusFilterAny | 1| Include all notifications regardless of status value. |
+|   MCDUserNotificationStatusFilterAny | 0| Include all notifications regardless of status value. |
+|   MCDUserNotificationStatusFilterActive |1| Include notifications that are active and persisted in Connected Devices Platform notification store. |
 |   MCDUserNotificationStatusFilterDeleted | 2| Include deleted notifications only.|

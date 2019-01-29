@@ -10,35 +10,41 @@ ms.assetid: 445f1dd4-f3c7-46e4-a7cd-42a1fb411172
 ms.localizationpriority: medium
 ---
 
-# Publishing and reading User Activities (iOS)
+# Publishing and reading User Activities
 
 User Activities are data constructs that represent a user's tasks within an application. They make it possible to save a snapshot of a current task to be continued at a later time. The [Windows Timeline](https://blogs.windows.com/windowsexperience/2018/04/27/make-the-most-of-your-time-with-the-new-windows-10-update/) feature presents Windows users with a scrollable list of all their recent activities, represented as cards with text and graphics. For more information about User Activities in general, see [Continue user activity, even across devices](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities). For recommendations on when to create or update Activities, see the [User Activities best practices](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities-best-practices) guide.
 
 With the Project Rome SDK, your iOS app can not only publish User Activities for use in Windows features such as Timeline, but it can also act as an endpoint and read Activities back to the user just as Timeline does. This allows cross-device apps to completely transcend their platforms and present experiences that follow users rather than devices.
 
+The features of Project Rome are supported by an underlying platform called the Connected Devices Platform. This guide provides the necessary steps to get started using the Connected Devices Platform, and then explains how to use the platform to implement user activities related features.
+
+This steps below will reference code from the [Project Rome iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) that is available on GitHub.  
+
 See the [API reference](../api-reference/index.md) page for links to the reference docs relevant to these scenarios.
 
-First, you must initialize the Connected Devices Platform. If you've done this already, skip to the next section.
+## Setting up the Connected Devices Platform and Notifications
 
-[!INCLUDE [ios/platform-init](../../../includes/ios/platform-init.md)]
+[!INCLUDE [ios/preliminary-setup](../../../includes/ios/preliminary-setup.md)]
 
-Next, you must enable your app to receive push notifications. If you've done this already, skip to the next section.
+[!INCLUDE [auth-scopesiOS](../../../includes/auth-scopesiOS.md)]
 
-[!INCLUDE [ios/notification-init](../../../includes/ios/notification-init.md)]
+[!INCLUDE [ios/dev-center-onboarding](../../../includes/ios/notifications-dev-center-onboarding.md)]
 
-## Initialize a User Activity channel
+## Using the platform
 
-To implement User Activity features in your app, you will first need to initialize the user activity feed by creating a **MCDUserActivityChannel**. You should treat this like the Platform initialization step above: it should be checked and possibly redone whenever the app comes to the foreground (but not before Platform initialization). 
+[!INCLUDE [ios/create-setup-events-start-platform](../../../includes/ios/create-setup-events-start-platform.md)]
 
-You will need a signed-in user account for this step. As above, you may use a class from the [authentication provider sample](https://github.com/Microsoft/project-rome/tree/master/iOS/samples/account-provider-sample) to easily acquire the **MCDUserAccount**(s). You will also need your cross-platform app ID, which was retrieved through the Microsoft Developer Dashboard registration.
+### Initialize a User Activity channel
 
-The following method from the sample app initializes an **MCDUserActivityChannel**.
+To implement User Activity features in your app, you will first need to initialize the user activity feed by creating a MCDUserActivityChannel. You should treat this like the Platform initialization step above: it should be checked and possibly redone whenever the app comes to the foreground (but not before Platform initialization).
+
+You will need a signed-in user account for this step. As above, you may use a class from the authentication provider sample to easily acquire the MCDUserAccount(s). You will also need your cross-platform app ID, which was retrieved through the Microsoft Developer Dashboard registration.
+The following method from the sample app initializes an MCDUserActivityChannel.
+
+The following method from the sample app initializes an MCDUserActivityChannel.
 
 ```ObjectiveC
-// You must be logged in to use UserActivities
-NSArray<MCDUserAccount*>* accounts = [[AppDataSource sharedInstance].accountProvider getUserAccounts];
-if (accounts.count > 0)
-{
+
     // Get a UserActivity channel, getting the default channel        
     NSLog(@"Creating UserActivityChannel");
     NSArray<MCDUserAccount*>* accounts = [[AppDataSource sharedInstance].accountProvider getUserAccounts];
@@ -55,10 +61,9 @@ else
     self.createActivityStatusField.text = @"Need to be logged in!";
 }
 ```
+At this point, you should have an MCDUserActivityChannel reference in channel.
 
-At this point, you should have an **MCDUserActivityChannel** reference in `channel`.
-
-## Create and publish a User Activity
+### Create and publish a User Activity
 
 The following sample code shows how a new **MCDUserActivity** instance is created.
 
@@ -136,7 +141,7 @@ mDisplayText = "Created by OneSDK Sample App";
 mActivationUri = "http://contoso.com");
 ```
 > [!TIP] 
-> In addition to the properties above, there are many other features that can be configured. For a complete look at the different ways that a UserActivity can be customized, see the **[MCDUserActivity](../../../objectivec-api/useractivities/MCDUserActivity.md)**, **[MCDUserActivityVisualElements](../../../objectivec-api/useractivities/MCDUserActivityVisualElements.md)**, and **[MCDUserActivityAttribution](../../../objectivec-api/useractivities/MCDUserActivityAttribution.md)** classes. See the [User Activities best practices](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities-best-practices) guide for detailed recommendations on how to design User Activities.
+> In addition to the properties above, there are many other features that can be configured. For a complete look at the different ways that a UserActivity can be customized, see the **[MCDUserActivity](../../../objectivec-api/userdata.useractivities/MCDUserActivity.md)**, **[MCDUserActivityVisualElements](../../../objectivec-api/userdata.useractivities/MCDUserActivityVisualElements.md)**, and **[MCDUserActivityAttribution](../../../objectivec-api/userdata.useractivities/MCDUserActivityAttribution.md)** classes. See the [User Activities best practices](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities-best-practices) guide for detailed recommendations on how to design User Activities.
 
 ## Update an existing User Activity
 
@@ -208,4 +213,4 @@ Your app can read User Activities and present them to the user just as the Windo
 }
 ```
 
-Now your app should have a populated list of **MCDUserActivitySessionHistoryItem**s. Each of these can deliver the underlying **MCDUserActivity** (see **[MCDUserActivitySessionHistoryItem](../../../objectivec-api/useractivities/MCDUserActivitySessionHistoryItem.md)** for details), which you can then display to the user.
+Now your app should have a populated list of **MCDUserActivitySessionHistoryItem**s. Each of these can deliver the underlying **MCDUserActivity** (see **[MCDUserActivitySessionHistoryItem](../../../objectivec-api/userdata.useractivities/MCDUserActivitySessionHistoryItem.md)** for details), which you can then display to the user.

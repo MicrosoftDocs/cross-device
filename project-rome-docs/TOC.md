@@ -1,61 +1,36 @@
 # [Project Rome docs](index.md)
 
-## [Commanding](commanding/index.md)
-### Windows
-#### [How-to guides](https://docs.microsoft.com/windows/uwp/launch-resume/connected-apps-and-devices)
-#### [API reference](https://docs.microsoft.com/uwp/api/Windows.System.RemoteSystems)
-### Android
-#### [How-to guide](commanding/android/how-to-guides/command-remote-devices-and-apps-android.md)
-#### [API reference](commanding/android/api-reference/index.md)
-### iOS
-#### [How-to guide](commanding/ios/how-to-guides/command-remote-devices-and-apps-ios.md)
-#### [API reference](commanding/ios/api-reference/index.md)
-### [Microsoft Graph](commanding/msgraph/index.md)
-
-## [Hosting](hosting/index.md)
-### Windows
-#### [How-to guides](https://docs.microsoft.com/windows/uwp/launch-resume/connected-apps-and-devices)
-#### [API reference](https://docs.microsoft.com/uwp/api/Windows.System.RemoteSystems)
-### Android
-#### [How-to guide](hosting/android/how-to-guides/hosting-android.md)
-#### [API reference](hosting/android/api-reference/index.md)
-### iOS
-#### [How-to guide](hosting/ios/how-to-guides/hosting-ios.md)
-#### [API reference](hosting/ios/api-reference/index.md)
+## [Device Relay](devicerelay/index.md)
+### [How to guide for Windows](https://docs.microsoft.com/windows/uwp/launch-resume/connected-apps-and-devices)
+### [API reference for Windows](https://docs.microsoft.com/uwp/api/Windows.System.RemoteSystems)
+### [How to guide for Android](devicerelay/android/how-to-guides/command-remote-devices-and-apps-android.md)
+### [API reference for Android](devicerelay/android/api-reference/index.md)
+### [How to guide for iOS](devicerelay/ios/how-to-guides/command-remote-devices-and-apps-ios.md)
+### [API reference for iOS](devicerelay/ios/api-reference/index.md)
+### [How to guide for Microsoft Graph](devicerelay/msgraph/index.md)
 
 ## [User Activities](user-activities/index.md)
-### Windows
-#### [How-to guide](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities)
-#### [API reference](https://docs.microsoft.com/uwp/api/windows.applicationmodel.useractivities)
-### Android
-#### [How-to guide](user-activities/android/how-to-guides/user-activities-android.md)
-#### [API reference](user-activities/android/api-reference/index.md)
-### iOS
-#### [How-to guide](user-activities/ios/how-to-guides/user-activities-ios.md)
-#### [API reference](user-activities/ios/api-reference/index.md)
-### [Microsoft Graph](user-activities/msgraph/index.md)
+### [How to guide for Windows](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities)
+### [API reference for Windows](https://docs.microsoft.com/uwp/api/windows.applicationmodel.useractivities)
+### [How to guide for Android](user-activities/android/how-to-guides/user-activities-android.md)
+### [API reference for Android](user-activities/android/api-reference/index.md)
+### [How to guide for iOS](user-activities/ios/how-to-guides/user-activities-ios.md)
+### [API reference for iOS](user-activities/ios/api-reference/index.md)
+### [How to guide for Microsoft Graph](user-activities/msgraph/index.md)
 
 ## [Notifications](msgraph-notifications/index.md)
-### [Using Microsoft Graph APIs](msgraph-notifications/sending-notifications.md)
-### Windows
-#### [How-to guide](msgraph-notifications/receiving-notifications/windows/index.md)
-#### [API reference](msgraph-notifications/receiving-notifications/windows/api-reference/index.md)
-##### [Graph Notification APIs](msgraph-notifications/receiving-notifications/windows/api-reference/usernotifications/index.md)
-### Android
-#### [How-to guide](msgraph-notifications/receiving-notifications/android/index.md)
-#### [API reference](msgraph-notifications/receiving-notifications/android/api-reference/index.md)
-### iOS
-#### [How-to guide](msgraph-notifications/receiving-notifications/ios/index.md)
-#### [API reference](msgraph-notifications/receiving-notifications/ios/api-reference/index.md)
-##### [Graph Notification APIs](msgraph-notifications/receiving-notifications/ios/api-reference/usernotifications/index.md)
+### [How to guide for Windows](msgraph-notifications/receiving-notifications/windows/index.md)
+### [API reference for Windows](msgraph-notifications/receiving-notifications/windows/api-reference/index.md)
+### [How to guide for Android](msgraph-notifications/receiving-notifications/android/index.md)
+### [API reference for Android](msgraph-notifications/receiving-notifications/android/api-reference/index.md)
+### [How to guide for iOS](msgraph-notifications/receiving-notifications/ios/index.md)
+### [API reference for iOS](msgraph-notifications/receiving-notifications/ios/api-reference/index.md)
+### [How to guide for Microsoft Graph](msgraph-notifications/sending-notifications.md)
+### [API reference for Microsoft Graph](msgraph-notifications/receiving-notifications/windows/api-reference/usernotifications/index.md)
 
 ## [Remote sessions](remote-sessions/index.md)
-### Windows
-#### [How-to guide](https://docs.microsoft.com/windows/uwp/launch-resume/remote-sessions)
-#### [API reference](https://docs.microsoft.com/uwp/api/windows.system.remotesystems.remotesystemsession)
+### [How to guide for Windows](https://docs.microsoft.com/windows/uwp/launch-resume/remote-sessions)
+### [API reference for Windows](https://docs.microsoft.com/uwp/api/windows.system.remotesystems.remotesystemsession)
 
 ## [Nearby sharing](nearby-sharing/index.md)
-### Android
-#### [API reference](nearby-sharing/android/api-reference/index.md)
-
-
+### [API reference for Android](nearby-sharing/android/api-reference/index.md)

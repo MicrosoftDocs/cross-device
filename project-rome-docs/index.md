@@ -7,7 +7,9 @@ ms.custom: "seodec2018, RS5"
 
 # Project Rome
 
-[Project Rome](https://developer.microsoft.com/en-us/windows/project-rome) is Microsoft's cross-device experiences platform for apps. On this site you will find developer documentation for Project Rome and links to other useful resources.
+[Project Rome](https://developer.microsoft.com/en-us/windows/project-rome) is Microsoft's cross-device experiences platform for apps. 
+
+On this site you will find developer documentation for Project Rome and links to other useful resources.
 
 For news, blog posts, and videos about Project Rome, visit the [Project Rome landing page](https://developer.microsoft.com/windows/project-rome).
 

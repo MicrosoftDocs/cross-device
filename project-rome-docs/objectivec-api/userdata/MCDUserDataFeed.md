@@ -58,10 +58,10 @@ Adds **MCDUserDataFeedSyncScope** instances to this MCDUserDataFeed.  This MCDUs
 
 #### Parameters
 
-### syncScopes
+* `syncScopes`
 An array of **MCDSyncScope** instances.
 
-### callback
+* `callback`
 
 The callback result indicates if subscription is successful, or not. 
 

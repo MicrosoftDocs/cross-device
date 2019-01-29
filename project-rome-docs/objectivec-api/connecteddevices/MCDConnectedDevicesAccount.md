@@ -38,7 +38,7 @@ A new instance of this class with the unique identifier for this user account.
 
 #### Parameters 
 
-`accountId` 
+* `accountId` 
 
 A unique identifier string for this user account.
 

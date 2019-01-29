@@ -188,8 +188,6 @@ Your iOS app must acquire a reference to a remote device or application. Like th
 
 Additionally, your app will need to identify its targeted app service by two strings: the *app service name* and *package identifier*. These are found in the source code of the app service provider (see [Create and consume an app service (UWP)](https://msdn.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service) for details). Together these strings construct the **MCDAppServiceDescription**, which is fed into an **MCDAppServiceConnection** instance.
 
-The **MCDAppServiceConnection** uses a **MCDRemoteSystemConnectionRequest** to determine which remote system or app to target, and it uses its internal **MCDAppServiceDescription** to determine the app service. This is necessary because a single app could provide multiple app services. The method below creates an **MCDRemoteSystemConnectionRequest** and then opens the app service connection.
-
 ```ObjectiveC
 // Step #1:  Establish an app service connection
 - (IBAction)connectAppServiceButton:(id)sender

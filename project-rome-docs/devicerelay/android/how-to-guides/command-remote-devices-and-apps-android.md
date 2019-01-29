@@ -250,9 +250,6 @@ private void onNewConnectionButtonClicked()
     openAppServiceConnection();
 }
 ```
-
-The **AppServiceConnection** instance it uses a **RemoteSystemConnectionRequest** to determine which remote system or app to target, and it uses its internal **AppServiceDescription** to determine the app service. This is necessary because a single app could provide multiple app services. The method below creates a **RemoteSystemConnectionRequest** and then opens the app service connection.
-
 ```Java
 /**
 * Establish an app service connection.

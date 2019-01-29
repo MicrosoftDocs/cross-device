@@ -9,7 +9,7 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 ```
 @interface MCDConnectedDevicesPlatform : NSObject
 ```  
-TA class to represent the Connected Devices Platform and manage the app's connection to it.
+This class to represent the Connected Devices Platform and manage the app's connection to it.
 
 ## Properties
 
@@ -37,7 +37,7 @@ The MCDConnectedDevicesPlatformSettings object which stores the app's settings o
 
 #### Returns
 
-Returns an MCDConnectedDevicesPlatformSettings object containing the app's platform settings.
+Returns an MCDConnectedDevicesPlatform object containing the app's platform settings.
 
 ### initWithSettings
 `- (nullable instancetype)initWithSettings:(MCDConnectedDevicesPlatformSettings* _Nonnull)settings;`
@@ -56,7 +56,7 @@ Returns an MCDConnectedDevicesPlatform object initialized with the app's platfor
 ## Methods
 
 ### processNotification
-`- (MCDConnectedDevicesProcessNotificationOperation* _Nonnull)processNotification:(NSString* _Nonnull)notification;`
+`- (MCDConnectedDevicesProcessNotificationOperation* _Nonnull)processNotification:(NSDictionary* _Nonnull)notification;`
 
 Process incoming APNs notification.
 

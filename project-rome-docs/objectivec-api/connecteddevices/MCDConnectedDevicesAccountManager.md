@@ -43,7 +43,7 @@ The callback result indicates if Account addition is successful or not.
 ### removeAccountAsync
 `- (void) removeAccountAsync:(MCDConnectedDevicesAccount* _Nonnull)account callback:(nonnull void (^)(MCDConnectedDevicesRemoveAccountResult* _Nonnull, NSError* _Nullable))callback;`
 
-Remove an account to account manager, callback will be invoked when it completes.
+Remove an account from account manager, callback will be invoked when it completes.
 
 #### Parameters 
 * `callback` 

@@ -37,7 +37,12 @@ A MCDConnectedDevicesAccountType value describing the type of account.
 A new instance of this class with the unique identifier for this user account.
 
 #### Parameters 
-* `type` 
+
+`accountId` 
+
+A unique identifier string for this user account.
+
+`type` 
 
 The MCDConnectedDevicesAccountType of the account (depends on which ID provider the account is from).
 

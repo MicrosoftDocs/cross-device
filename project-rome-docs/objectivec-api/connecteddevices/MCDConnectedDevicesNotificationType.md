@@ -15,7 +15,7 @@ Contains values that describe the type (service) of a notification.
 
 | Name                              |   Value     | Description |
 |:----------------------------------|:------|:-------------------------------|
-| MCDNotificationTypeUnknown | 0 | ConnectedDevicesNotificationType is unknown (consistent with core). |
+| MCDNotificationTypeUnknown | 0 | ConnectedDevicesNotificationType is unknown. |
 | MCDNotificationTypeWNS | 1 | Windows Push Notification Services. |
 | MCDNotificationTypeGCM | 2 | Google Cloud Messaging. |
 | MCDNotificationTypeFCM | 3 | Firebase Cloud Messaging.|

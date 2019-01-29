@@ -28,10 +28,6 @@ Event for when a service request is received from a remote app.
 
 Event for when connection to the app service closes.
 
-**Note:** On the client app, the "app service closed" event is not raised when the `close` method is called (by either the
-client or the host); it is only raised on the client app for unexpected connection interruptions. On the host app, the event _is_
-raised when the client calls `close` (as well as for unexpected interruptions).
-
 ## Constructors
 
 ### init
@@ -80,12 +76,12 @@ Opens the app service connection on the specified remote device or application. 
 #### Parameters
 * `connectionRequest` 
 
-The connection request indicating which remote app service to target.
+The connection request indicating which remote system or remote app to target.
 
 ### sendMessageAsync
 `- (void)sendMessageAsync:(nonnull NSDictionary*)message completion:(nonnull void (^)(MCDAppServiceResponse* _Nonnull, NSError* _Nullable))completion;`
 
-Sends a message to the remote app service and begins listening for a response. This method should only be called after the connection was opened successfully.
+Sends a message to the remote app service and begins listening for a response.  This method performs a single message/response and does not establish a persistent connection.  It should only be called after the connection was opened successfully.
 
 #### Parameters
 * `message` 
@@ -111,4 +107,4 @@ Sends a message to a specified remote app service and begins listening for a res
 * `message` The key-value set of data to be sent to the app service.
 * `appServiceInfo` The descriptive info for the target app service.
 * `connectionRequest` The connection request specifying the app service to connect to.
-* `completion` The connection request specifying the app service to connect to.
+* `completion` The async completion callback.

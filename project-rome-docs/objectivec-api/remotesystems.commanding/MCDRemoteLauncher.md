@@ -25,7 +25,8 @@ A class used to launch an app on a remote device using a URI.
 Launches a URI against the Remote System specified in an [MCDRemoteSystemConnectionRequest](MCDRemoteSystemConnectionRequest.md).
 
 #### Parameters
-* `uri` The URI which will cause the launching of an app, according to its scheme.
+* `uri` The URI which will cause the launching of an app.  If the target is Windows, the target app will be chosen based on scheme. If the target is non-Windows, the target app will be chosen based on the MCDRemoteSystemConnectionRequest.
+
 * `connection` Specifies which remote system or application to connect to.
 * `completionBlock` The block to invoke upon completion.
 

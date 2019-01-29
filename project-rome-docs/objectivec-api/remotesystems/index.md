@@ -3,7 +3,7 @@
 ConnectedDevicesRemoteSystems.h
 ```
 
-The RemoteSystems namespace contains APIs that enable a client app to send commands to remote devices and applications.
+The RemoteSystems namespace contains APIs that that allow a client app to discover information about remote devices and applications.
 
 #### [MCDAppServiceInfo](MCDAppServiceInfo.md)
 #### [MCDRemoteSystem](MCDRemoteSystem.md)

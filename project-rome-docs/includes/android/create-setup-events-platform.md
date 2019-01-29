@@ -43,7 +43,7 @@ Similarly, the platform uses notifications to deliver commands between devices. 
 ```Java
 ConnectedDevicesPlatform sPlatform.getNotificationRegistrationManager().notificationRegistrationStateChanged().subscribe((notificationRegistrationManager, args) -> {
     
-    // Check state using **ConnectedDevicesNotificationRegistrationState** enum
+    // Check state using ConnectedDevicesNotificationRegistrationState enum
 
 }
 ```

@@ -1,13 +1,13 @@
 ---
-title: ConnectedDevicesNotificationRegistrationStateChangedEventArgs
+title: MCDConnectedDevicesNotificationRegistrationStateChangedEventArgs
 description: Event Args class for the MCDConnectedDevicesNotificationRegistration State Changed event.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 
-# class `ConnectedDevicesNotificationRegistrationStateChangedEventArgs` 
+# class `MCDConnectedDevicesNotificationRegistrationStateChangedEventArgs` 
 
 ```
-@interface @interface MCDConnectedDevicesNotificationRegistrationStateChangedEventArgs : NSObject
+@interface MCDConnectedDevicesNotificationRegistrationStateChangedEventArgs : NSObject
 ```  
 Event Args class for the MCDConnectedDevicesNotificationRegistration State Changed event. This is used to ensure that the application gets informed about new Connected Devices platform messages via the correct notification mechanism.
 

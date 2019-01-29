@@ -48,7 +48,7 @@ Similarly, the platform uses notifications to deliver commands between devices. 
      subscribe:^(MCDConnectedDevicesNotificationRegistrationManager* manager __unused,
                  MCDConnectedDevicesNotificationRegistrationStateChangedEventArgs* args __unused) {
 
-                     // Check state using **MCDConnectedDevicesNotificationRegistrationState** enum
+                     // Check state using MCDConnectedDevicesNotificationRegistrationState enum
 
                  }
 

@@ -15,4 +15,6 @@ Result of MCDConnectedDevicesAccountManager.addAccountAsync().
 
 ### status
 
+`@property(nonatomic, readonly) MCDConnectedDevicesAccountAddedStatus status;`
+
 Add account operation status.

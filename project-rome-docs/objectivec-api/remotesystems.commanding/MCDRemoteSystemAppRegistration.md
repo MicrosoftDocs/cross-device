@@ -33,7 +33,7 @@ The app service providers associated with the registration. New values are made 
 ### launchUriProvider
 `@property(nonatomic, readwrite, nullable) id<MCDLaunchUriProvider> launchUriProvider;`
 
-The app service providers associated with this application.
+The launch uri provider associated with this application.
 
 ## Constructors
 

@@ -31,7 +31,7 @@ Determines whether to allow Windows to append a query string to the image URI su
 
 ## Constructors
 
-### iconUri
+### userActivityAttributionWithIconUri
 `+ (nullable instancetype)userActivityAttributionWithIconUri:(nonnull NSString*)iconUri;`
 
 Creates an instance of this class with an Icon URI.

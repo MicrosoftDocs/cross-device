@@ -16,4 +16,4 @@ Contains data associated with a "request received" event.
 ### request
 `@property(nonatomic, readonly, nonnull) MCDAppServiceRequest* request;`
 
-The connection request associated with the target device.
+The request sent by the remote device.

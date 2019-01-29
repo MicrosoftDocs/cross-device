@@ -16,7 +16,7 @@ Manages the registration for the Connected Devices platform cloud notification f
 ### registrationStateChanged
 `@property(nonatomic, readonly, nonnull) MCDEvent<MCDConnectedDevicesNotificationRegistrationManager*, MCDConnectedDevicesNotificationRegistrationStateChangedEventArgs*>* registrationStateChanged;`
 
-Event for when the registration state changes for a given account. (from **IN_PROGRESS** to **SUCCEEDED**, for example).
+Event for when the registration state changes for a given account. (from **in_progress** to **succeeded**, for example).
 
 ## Methods
 
@@ -30,7 +30,6 @@ Register this application for this user with a push notification service so noti
 
 The MCDConnectedDevicesAccount to perform the registration under.
 
-#### Parameters 
 * `notificationRegistration` 
 
 Contains the information required to perform the app's registration with a push notification service.
@@ -49,4 +48,4 @@ The MCDConnectedDevicesAccount to get the registration state for.
 
 #### Returns
 
-Return MCDConnectedDevicesNotificationRegistrationState string what state registration is in.
+Return MCDConnectedDevicesNotificationRegistrationState for the registration state.

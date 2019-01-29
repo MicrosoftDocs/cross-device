@@ -16,7 +16,7 @@ The result of giving a notification to the Rome platform for processing.
 ### connectedDevicesNotification
 `@property(nonatomic, readonly, getter=isConnectedDevicesNotification) BOOL connectedDevicesNotification;`
 
-The notification that will be handled by the Connected Devices Platform.
+This is a flag indicating whether the notification was intended for the Connected Devices platform.
 
 ## Methods
 

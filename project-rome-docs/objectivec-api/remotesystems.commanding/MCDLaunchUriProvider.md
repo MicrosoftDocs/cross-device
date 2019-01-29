@@ -31,5 +31,5 @@ This method is called when a remote device attempts to launch a URI on this devi
 
 #### Parameters 
 * `uri` The URI to launch.
-* `options` The web-friendly URI to launch in the event that the primary URI fails. This should be a http or https web address or a file.
+* `options` A set of options for launching the URI. The fallback URI is only one of the possible options that can be set.
 * `completionBlock` The code block to execute upon completion.

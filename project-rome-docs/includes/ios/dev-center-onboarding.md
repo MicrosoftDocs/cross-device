@@ -63,6 +63,5 @@ The Dev Center on-boarding process require the following steps:
 Once the Cross-Device experience within the Microsoft Windows Dev Center has been validated, make sure your app can process the notifications as they come in. 
 
 ```ObjectiveC
-MCDConnectedDevicesProcessNotificationOperation* result = [appDataSource.platform processNotification:byteString];
-                return result.connectedDevicesNotification;
+`MCDConnectedDevicesProcessNotificationOperation* processOperation = [_platformManager.platform processNotification:notificationInfo];`
 ```

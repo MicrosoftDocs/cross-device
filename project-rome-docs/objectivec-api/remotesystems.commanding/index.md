@@ -3,7 +3,7 @@
 ConnectedDevicesRemoteSystemsCommanding.h
 ```
 
-The RemoteSystems.Commanding namespace contains APIs that allow 
+The RemoteSystems namespace contains APIs that that allow a client app to send commands to a remote device.  Actions can include remote app launching, remote messaging.
 
 #### [MCDAppServiceClosedEventArgs](MCDAppServiceClosedEventArgs.md)
 #### [MCDAppServiceClosedStatus](MCDAppServiceClosedStatus.md)

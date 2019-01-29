@@ -14,7 +14,7 @@ This class handles the adding and querying of user activities for the applicatio
 
 ## Properties
 
-### id
+### syncScope
 `@property(class, readonly, nonnull) id<MCDUserDataFeedSyncScope> syncScope;`
 
 Gets the user data sync scope value for User Activities.

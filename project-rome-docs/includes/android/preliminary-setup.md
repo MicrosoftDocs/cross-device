@@ -39,7 +39,7 @@ Then, insert the following dependency into the _build.gradle_ file that is in yo
 ```Java
 dependencies { 
     ...
-    implementation 'com.microsoft.connecteddevices:connecteddevices-sdk:0.11.0'
+    implementation 'com.microsoft.connecteddevices:connecteddevices-sdk:+'
 }
 ```
 

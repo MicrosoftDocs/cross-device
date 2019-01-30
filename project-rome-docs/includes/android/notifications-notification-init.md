@@ -1,9 +1,6 @@
 ---
 title: include file
 description: include file
-ms.author: lahugh
-author: laurenhughes
-ms.date: 09/21/2018
 ms.topic: include
 ms.assetid: 9fb27596-e9a3-443a-9c12-9e02a893e32c
 ms.localizationpriority: medium

@@ -1,9 +1,6 @@
 ---
 title: include file
 description: include file
-ms.author: carmenf
-author: carmenforsmann
-ms.date: 01/18/2019
 ms.topic: include
 ms.assetid: 0741073e-62de-4e31-8e3b-cd1a55027c1c
 ms.localizationpriority: medium

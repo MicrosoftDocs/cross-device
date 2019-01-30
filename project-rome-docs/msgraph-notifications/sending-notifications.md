@@ -1,7 +1,6 @@
 ---
 title: Sending notifications using Microsoft Graph APIs
 description: Integrate your apps with Microsoft Graph notifications in a few simple steps.
-ms.date: 09/21/2018
 ms.assetid: 8ff9cd93-a48e-4198-927f-3d7bd4b65f29
 ms.localizationpriority: medium
 ms.custom: seodec18

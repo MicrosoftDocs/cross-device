@@ -1,7 +1,6 @@
 ---
 title: Integrating Android apps with Graph Notifications
 description: How to perform the necessary registration steps to become a receiving endpoint for notifications published from your app server.
-ms.date: 09/21/2018
 ms.assetid: c973d534-08e9-4f6e-8b54-bcae97067961
 ms.localizationpriority: medium
 ms.custom: seodec18

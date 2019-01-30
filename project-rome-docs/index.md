@@ -52,7 +52,8 @@ Project Rome is currently implemented for the below platforms. Follow the links 
 [ios-sdk-badge]:           https://img.shields.io/cocoapods/v/ProjectRomeSdk.svg
 [ios-sample]:              https://github.com/Microsoft/project-rome/tree/release/1.0.0/iOS/samples
 
-[android-sdk]:             https://bintray.com/projectrome/maven/com.microsoft.connecteddevices:connecteddevices-sdk/_latestVersion
+[android-sdk]:             
+https://bintray.com/connecteddevices/maven/com.microsoft.connecteddevices:connecteddevices-sdk/_latestVersion
 [android-sdk-badge]:       https://api.bintray.com/packages/projectrome/maven/com.microsoft.connecteddevices%3Aconnecteddevices-sdk/images/download.svg
 [android-sample]:          https://github.com/Microsoft/project-rome/tree/release/1.0.0/Android/samples
 

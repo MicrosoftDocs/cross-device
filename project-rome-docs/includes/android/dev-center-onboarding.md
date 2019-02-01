@@ -15,11 +15,15 @@ Register your application with Google for [Firebase Cloud Messaging](https://fir
 Once registered, you must associate push notification functionality with the Connected Devices Platform in your app.
 
 ```Java
-mNotificationRegistration = new ConnectedDevicesNotificationRegistration();
-mNotificationRegistration.setType(ConnectedDevicesNotificationType.FCM);
-mNotificationRegistration.setToken(token);
-mNotificationRegistration.setAppId(Secrets.FCM_SENDER_ID);
-mNotificationRegistration.setAppDisplayName("SampleApp");
+notificationRegistration = new ConnectedDevicesNotificationRegistration();
+notificationRegistration.setType(ConnectedDevicesNotificationType.FCM);
+notificationRegistration.setToken(token);
+notificationRegistration.setAppId(Secrets.FCM_SENDER_ID);
+notificationRegistration.setAppDisplayName("SampleApp");
+
+mConnectedDevicesPlatform.getNotificationRegistrationManager().registerForAccountAsync(mConnectedDevicesAccount).whenComplete(() -> {
+  // Now that notifications are registered, this account can receive replies to commands and incoming commands.
+});
 ```
 
 ### Register your app in Microsoft Windows Dev Center for cross-device experiences

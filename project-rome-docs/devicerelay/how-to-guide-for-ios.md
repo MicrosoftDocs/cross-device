@@ -21,15 +21,15 @@ This steps below will reference code from the [Project Rome iOS sample app](http
 
 ## Setting up the Connected Devices Platform and Notifications
 
-[!INCLUDE [ios/preliminary-setup](../../../includes/ios/preliminary-setup.md)]
+[!INCLUDE [ios/preliminary-setup](../includes/ios/preliminary-setup.md)]
 
-[!INCLUDE [auth-scopesiOS](../../../includes/auth-scopesiOS.md)]
+[!INCLUDE [auth-scopesiOS](../includes/auth-scopesiOS.md)]
 
-[!INCLUDE [ios/dev-center-onboarding](../../../includes/ios/notifications-dev-center-onboarding.md)]
+[!INCLUDE [ios/dev-center-onboarding](../includes/ios/notifications-dev-center-onboarding.md)]
 
 ## Using the platform
 
-[!INCLUDE [ios/create-setup-events-start-platform](../../../includes/ios/create-setup-events-start-platform.md)]
+[!INCLUDE [ios/create-setup-events-start-platform](../includes/ios/create-setup-events-start-platform.md)]
 
 ### Discover remote devices and apps
 

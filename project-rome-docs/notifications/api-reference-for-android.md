@@ -19,13 +19,13 @@ See the [API reference](../android/api-reference/index.md) page for links to the
 
 This steps below will reference code from the [Project Rome Android sample app](https://github.com/Microsoft/project-rome/tree/master/Android/samples).
 
-[!INCLUDE [android/dev-reqs](../../../includes/android/dev-reqs.md)]
+[!INCLUDE [android/dev-reqs](../includes/android/dev-reqs.md)]
 
-[!INCLUDE [android/preliminary-setup](../../../includes/android/preliminary-setup.md)]
+[!INCLUDE [android/preliminary-setup](../includes/android/preliminary-setup.md)]
 
-[!INCLUDE [android/auth-scopes](../../../includes/auth-scopes.md)]
+[!INCLUDE [android/auth-scopes](../includes/auth-scopes.md)]
 
-[!INCLUDE [android/dev-center-onboarding](../../../includes/android/notifications-dev-center-onboarding.md)]
+[!INCLUDE [android/dev-center-onboarding](../includes/android/notifications-dev-center-onboarding.md)]
 
 
 ## Initialize a Graph Notification channel

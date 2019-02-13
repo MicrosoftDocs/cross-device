@@ -20,13 +20,13 @@ There are a few steps you must take to integrate with Graph Notifications
 * Associate the Notification Service with Connected Devices Platform
 
 First, you must complete the MSA and/or AAD App Registration. If you've done this already, skip to the next section.
-[!INCLUDE [windows/platform-init](../../../includes/windows/notifications-app-registration-onboarding.md)]
+[!INCLUDE [windows/platform-init](../includes/windows/notifications-app-registration-onboarding.md)]
 Next, you must onboard with Microsoft Windows Dev Center to get access to the Connected Device Platform in order to integrate with cross-device experiences including use of Graph Notifications. If you've done this already, skip to the next section.
-[!INCLUDE [windows/notification-init](../../../includes/windows/notifications-dev-center-onboarding.md)]
+[!INCLUDE [windows/notification-init](../includes/windows/notifications-dev-center-onboarding.md)]
 Next, you must add the Project Rome SDK to your project and initialize the Connected Devices Platform. If you've done this already, skip to the next section.
-[!INCLUDE [android/notification-init](../../../includes/android/notifications-platfrom-init.md)]
+[!INCLUDE [android/notification-init](../includes/android/notifications-platfrom-init.md)]
 Lastly, you must enable your app to receive push notifications. If you've done this already, skip to the next section.
-[!INCLUDE [android/notification-init](../../../includes/android/notifications-notification-init.md)]
+[!INCLUDE [android/notification-init](../includes/android/notifications-notification-init.md)]
 
 ## Initialize a Graph Notification channel
 At a high level, the SDK allows your app to subscribe to different channels in order to receive and manage different types of User Data – including Graph Notifications, User Activities, and more. These are all stored and synced in **UserDataFeed**. **UserNotification** is the class and data type corresponding to a user-targeted notification sent via Graph Notifications. 

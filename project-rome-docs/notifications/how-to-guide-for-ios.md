@@ -20,15 +20,15 @@ See the [API reference](../ios/api-reference/index.md) page for links to the ref
 
 ## Setting up the Connected Devices Platform and Notifications
 
-[!INCLUDE [ios/preliminary-setup](../../../includes/ios/preliminary-setup.md)]
+[!INCLUDE [ios/preliminary-setup](../includes/ios/preliminary-setup.md)]
 
-[!INCLUDE [auth-scopesiOS](../../../includes/auth-scopesiOS.md)]
+[!INCLUDE [auth-scopesiOS](../includes/auth-scopesiOS.md)]
 
-[!INCLUDE [ios/dev-center-onboarding](../../../includes/ios/notifications-dev-center-onboarding.md)]
+[!INCLUDE [ios/dev-center-onboarding](../includes/ios/notifications-dev-center-onboarding.md)]
 
 ## Using the platform
 
-[!INCLUDE [ios/create-setup-events-start-platform](../../../includes/ios/create-setup-events-start-platform.md)]
+[!INCLUDE [ios/create-setup-events-start-platform](../includes/ios/create-setup-events-start-platform.md)]
 
 ## Initialize a Graph Notification channel
 The Project Rome SDK allows your app to subscribe to different channels in order to receive and manage various types of user data – including Graph Notifications, User Activities, and more. These are all stored and synced in **MCDUserDataFeed**. **MCDUserNotification** is the class and data type corresponding to a user-targeted notification sent via Graph Notifications.

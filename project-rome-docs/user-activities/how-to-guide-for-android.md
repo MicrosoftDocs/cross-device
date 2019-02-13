@@ -13,21 +13,21 @@ User Activities are data constructs that represent a user's tasks within an appl
 
 With the Project Rome SDK, your Android app can not only publish User Activities for use in Windows features such as Timeline, but can also act as an endpoint and read Activities back to the user just as Timeline does on Windows devices. This allows cross-device apps to transcend their platforms and provide experiences that follow users rather than devices.  
 
-See the [API reference](../api-reference/index.md) page for links to the reference docs relevant to these scenarios.
+See the [API reference](api-reference-for-android.md) page for links to the reference docs relevant to these scenarios.
 
 This steps below will reference code from the [Project Rome Android sample app](https://github.com/Microsoft/project-rome/tree/master/Android/samples).
 
-[!INCLUDE [android/dev-reqs](../../../includes/android/dev-reqs.md)]
+[!INCLUDE [android/dev-reqs](../includes/android/dev-reqs.md)]
 
-[!INCLUDE [android/preliminary-setup](../../../includes/android/preliminary-setup.md)]
+[!INCLUDE [android/preliminary-setup](../includes/android/preliminary-setup.md)]
 
-[!INCLUDE [android/auth-scopes](../../../includes/auth-scopes.md)]
+[!INCLUDE [android/auth-scopes](../includes/auth-scopes.md)]
 
-[!INCLUDE [android/dev-center-onboarding](../../../includes/android/notifications-dev-center-onboarding.md)]
+[!INCLUDE [android/dev-center-onboarding](../includes/android/notifications-dev-center-onboarding.md)]
 
 ## Using the platform
 
-[!INCLUDE [android/create-setup-events-start-platform](../../../includes/android/create-setup-events-start-platform.md)]
+[!INCLUDE [android/create-setup-events-start-platform](../includes/android/create-setup-events-start-platform.md)]
 
 ### Initialize a User Activity channel
 

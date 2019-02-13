@@ -24,7 +24,7 @@ You can use the notifications API to retrieve notification history based on an e
 ## Integrating with Microsoft Graph Notifications
 
 ### Onboarding
-Take a look at the How-To Guide under each platform node (Windows, Android, and iOS) for step-by-step guidance on how to use Graph Notifications as the mobile push notification solution for your apps and services. 
+Take a look at the How-To Guide under each platform node (Windows, Android, and iOS) for step-by-step guidance on how to use Graph Notifications as the mobile push notification solution for your apps and services. Note that the how to guides here focus on recieving notifications. You can find information about sending notifications on the [Sending notifications using MS Graph APIs](sending-notifications.md) page.
 
 The guide includes specific steps for using Graph Notifications – including registering cross-platform app identities and mobile push credentials. If you are new to using Microsoft Graph, steps are included for registering your app for Microsoft Account (MSA), for consumer-facing apps) or Azure Active Directory (AAD) for work and school accounts. MSA and AAD are user identities that enable you to take advantage of workloads on Microsoft Graph beyond just notifications, to enable richer business scenarios. 
 
@@ -35,4 +35,4 @@ When using Graph notifications, the app server is expected to use Microsoft Grap
 To get started with client-side Graph Notifications integration and start receiving and managing notifications using the native SDKs, select your preferred development platform on the left navigation pane. 
 
 * [Sending notifications using MS Graph APIs](sending-notifications.md)
-* [Receiving notifications using the Project Rome SDK](receiving-notifications/index.md)
+* [Receiving notifications using the Project Rome SDK](receiving-notifications.md)

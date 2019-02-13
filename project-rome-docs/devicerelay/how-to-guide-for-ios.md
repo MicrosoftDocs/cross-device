@@ -21,15 +21,15 @@ This steps below will reference code from the [Project Rome iOS sample app](http
 
 ## Setting up the Connected Devices Platform and Notifications
 
-[!INCLUDE [ios/preliminary-setup](../../../includes/ios/preliminary-setup.md)]
+[!INCLUDE [ios/preliminary-setup](../includes/ios/preliminary-setup.md)]
 
-[!INCLUDE [auth-scopesiOS](../../../includes/auth-scopesiOS.md)]
+[!INCLUDE [auth-scopesiOS](../includes/auth-scopesiOS.md)]
 
-[!INCLUDE [ios/dev-center-onboarding](../../../includes/ios/notifications-dev-center-onboarding.md)]
+[!INCLUDE [ios/dev-center-onboarding](../includes/ios/notifications-dev-center-onboarding.md)]
 
 ## Using the platform
 
-[!INCLUDE [ios/create-setup-events-start-platform](../../../includes/ios/create-setup-events-start-platform.md)]
+[!INCLUDE [ios/create-setup-events-start-platform](../includes/ios/create-setup-events-start-platform.md)]
 
 ### Discover remote devices and apps
 
@@ -171,7 +171,7 @@ The following code from the sample shows the remote launching of a URI over a co
 
 Depending on the URI that is sent, you can launch an app in a specific state or configuration on a remote device. This allows for the ability to continue a user task, like watching a movie, on a different device without interruption.
 
-Depending on your use, you may need to cover the cases in which no apps on the targeted system can handle the URI, or multiple apps can handle it. The **[MCDRemoteLauncher](../../../objectivec-api/remotesystems.commanding/MCDRemoteLauncher.md)** class and **[MCDRemoteLauncherOptions](../../../objectivec-api/remotesystems.commanding/MCDRemoteLauncherOptions.md)** class describe how to do this.
+Depending on your use, you may need to cover the cases in which no apps on the targeted system can handle the URI, or multiple apps can handle it. The **[MCDRemoteLauncher](../objectivec-api/remotesystems.commanding/MCDRemoteLauncher.md)** class and **[MCDRemoteLauncherOptions](../objectivec-api/remotesystems.commanding/MCDRemoteLauncherOptions.md)** class describe how to do this.
 
 ### B) Remote app services
 
@@ -328,7 +328,7 @@ When your app is finished interacting with the target device's app service, clos
 ```
 
 ## Related topics
-* [API reference page](../api-reference/index.md) 
+* [API reference page](api-reference-for-ios.md) 
 * [iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) 
 * [Communicate with a remote app service (UWP)](https://docs.microsoft.com/windows/uwp/launch-resume/communicate-with-a-remote-app-service)
 * [Create and consume an app service (UWP)](https://docs.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service).

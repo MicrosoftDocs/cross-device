@@ -26,8 +26,6 @@ Insert the following repository references into the *build.gradle* file at the r
 allprojects {
     repositories {
         jcenter()
-        maven { url 'https://maven.google.com' }
-        maven { url 'https://projectrome.bintray.com/maven/' }
     }
 }
 ```
@@ -39,8 +37,6 @@ dependencies {
     implementation 'com.microsoft.connecteddevices:connecteddevices-sdk:+'
 }
 ```
-
-If you wish to use ProGuard in your app, add the ProGuard Rules for these new APIs. Create a file called *proguard-rules.txt* in the *App* folder of your project, and paste in the contents of [ProGuard_Rules_for_Android_Rome_SDK.txt](https://github.com/Microsoft/project-rome/blob/master/Android/ProGuard_Rules_for_Android_Rome_SDK.txt).
 
 In your project's *AndroidManifest.xml* file, add the following permissions inside the `<manifest>` element (if they are not already present). This gives your app permission to connect to the Internet and to enable Bluetooth discovery on your device.
 
@@ -55,7 +51,7 @@ Note that the Bluetooth-related permissions are only necessary for using Bluetoo
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 ```
 
-Next, go to the activity class(es) where you would like the Connected Devices functionality to live. Import the the following namespaces.
+Next, go to the activity class(es) where you would like the Connected Devices functionality to live. Import the the following packages.
 
 ```java
 import com.microsoft.connecteddevices;

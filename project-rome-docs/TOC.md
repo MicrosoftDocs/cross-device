@@ -27,6 +27,7 @@
 ### [API reference for iOS](notifications/api-reference-for-ios/index.md)
 ### [How to guide for Microsoft Graph](notifications/sending-notifications.md)
 ### [API reference for Microsoft Graph](notifications/api-reference-for-windows/usernotifications/index.md)
+### [Sending notifications using MS Graph APIs](notifications/sending-notifications.md)
 
 ## [Remote sessions](remote-sessions/index.md)
 ### [How to guide for Windows](https://docs.microsoft.com/windows/uwp/launch-resume/remote-sessions)

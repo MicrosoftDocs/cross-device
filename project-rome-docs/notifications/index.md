@@ -35,4 +35,4 @@ When using Graph notifications, the app server is expected to use Microsoft Grap
 To get started with client-side Graph Notifications integration and start receiving and managing notifications using the native SDKs, select your preferred development platform on the left navigation pane. 
 
 * [Sending notifications using MS Graph APIs](sending-notifications.md)
-* [Receiving notifications using the Project Rome SDK](receiving-notifications/index.md)
+* [Receiving notifications using the Project Rome SDK](receiving-notifications.md)

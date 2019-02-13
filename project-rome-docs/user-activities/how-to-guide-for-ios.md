@@ -17,7 +17,7 @@ The features of Project Rome are supported by an underlying platform called the 
 
 This steps below will reference code from the [Project Rome iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) that is available on GitHub.  
 
-See the [API reference](../api-reference/index.md) page for links to the reference docs relevant to these scenarios.
+See the [API reference](api-reference-for-ios.md) page for links to the reference docs relevant to these scenarios.
 
 ## Setting up the Connected Devices Platform and Notifications
 
@@ -138,7 +138,7 @@ mDisplayText = "Created by OneSDK Sample App";
 mActivationUri = "http://contoso.com");
 ```
 > [!TIP] 
-> In addition to the properties above, there are many other features that can be configured. For a complete look at the different ways that a UserActivity can be customized, see the **[MCDUserActivity](../../../objectivec-api/userdata.useractivities/MCDUserActivity.md)**, **[MCDUserActivityVisualElements](../../../objectivec-api/userdata.useractivities/MCDUserActivityVisualElements.md)**, and **[MCDUserActivityAttribution](../../../objectivec-api/userdata.useractivities/MCDUserActivityAttribution.md)** classes. See the [User Activities best practices](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities-best-practices) guide for detailed recommendations on how to design User Activities.
+> In addition to the properties above, there are many other features that can be configured. For a complete look at the different ways that a UserActivity can be customized, see the **[MCDUserActivity](../objectivec-api/userdata.useractivities/MCDUserActivity.md)**, **[MCDUserActivityVisualElements](../objectivec-api/userdata.useractivities/MCDUserActivityVisualElements.md)**, and **[MCDUserActivityAttribution](../objectivec-api/userdata.useractivities/MCDUserActivityAttribution.md)** classes. See the [User Activities best practices](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities-best-practices) guide for detailed recommendations on how to design User Activities.
 
 ## Update an existing User Activity
 
@@ -210,4 +210,4 @@ Your app can read User Activities and present them to the user just as the Windo
 }
 ```
 
-Now your app should have a populated list of **MCDUserActivitySessionHistoryItem**s. Each of these can deliver the underlying **MCDUserActivity** (see **[MCDUserActivitySessionHistoryItem](../../../objectivec-api/userdata.useractivities/MCDUserActivitySessionHistoryItem.md)** for details), which you can then display to the user.
+Now your app should have a populated list of **MCDUserActivitySessionHistoryItem**s. Each of these can deliver the underlying **MCDUserActivity** (see **[MCDUserActivitySessionHistoryItem](../objectivec-api/userdata.useractivities/MCDUserActivitySessionHistoryItem.md)** for details), which you can then display to the user.

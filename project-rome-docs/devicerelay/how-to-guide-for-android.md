@@ -414,7 +414,7 @@ private void closeAppServiceConnection()
 ```
 
 ### Related topics
-* [API reference page](../api-reference/index.md) 
+* [API reference page](api-reference-for-android.md) 
 * [Android sample app](https://github.com/Microsoft/project-rome/tree/master/Android/samples) 
 * [Communicate with a remote app service (UWP)](https://docs.microsoft.com/windows/uwp/launch-resume/communicate-with-a-remote-app-service)
 * [Create and consume an app service (UWP)](https://docs.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service).

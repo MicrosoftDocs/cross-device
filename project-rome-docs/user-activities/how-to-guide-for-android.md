@@ -17,17 +17,17 @@ See the [API reference](../api-reference/index.md) page for links to the referen
 
 This steps below will reference code from the [Project Rome Android sample app](https://github.com/Microsoft/project-rome/tree/master/Android/samples).
 
-[!INCLUDE [android/dev-reqs](../../../includes/android/dev-reqs.md)]
+[!INCLUDE [android/dev-reqs](../includes/android/dev-reqs.md)]
 
-[!INCLUDE [android/preliminary-setup](../../../includes/android/preliminary-setup.md)]
+[!INCLUDE [android/preliminary-setup](../includes/android/preliminary-setup.md)]
 
-[!INCLUDE [android/auth-scopes](../../../includes/auth-scopes.md)]
+[!INCLUDE [android/auth-scopes](../includes/auth-scopes.md)]
 
-[!INCLUDE [android/dev-center-onboarding](../../../includes/android/notifications-dev-center-onboarding.md)]
+[!INCLUDE [android/dev-center-onboarding](../includes/android/notifications-dev-center-onboarding.md)]
 
 ## Using the platform
 
-[!INCLUDE [android/create-setup-events-start-platform](../../../includes/android/create-setup-events-start-platform.md)]
+[!INCLUDE [android/create-setup-events-start-platform](../includes/android/create-setup-events-start-platform.md)]
 
 ### Initialize a User Activity channel
 

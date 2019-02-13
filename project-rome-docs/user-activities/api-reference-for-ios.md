@@ -4,6 +4,6 @@ The following APIs allow an app to create and publish Windows-style User Activit
 
 ## API groups
 
-### [ConnectedDevices](../../../objectivec-api/connecteddevices/index.md)
-### [UserActivities](../../../objectivec-api/userdata.useractivities/index.md)
-### [UserData](../../../objectivec-api/userdata/index.md)
+### [ConnectedDevices](../objectivec-api/connecteddevices/index.md)
+### [UserActivities](../objectivec-api/userdata.useractivities/index.md)
+### [UserData](../objectivec-api/userdata/index.md)

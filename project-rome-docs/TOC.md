@@ -1,19 +1,19 @@
 # [Project Rome docs](index.md)
 
 ## [Device Relay](devicerelay/index.md)
-### [How to guide for Windows](devicerelay/how-to-guide-for-windows.md)
 ### [How to guide for Android](devicerelay/how-to-guide-for-android.md)
 ### [API reference for Android](devicerelay/api-reference-for-android.md)
 ### [How to guide for iOS](devicerelay/how-to-guide-for-ios.md)
 ### [API reference for iOS](devicerelay/api-reference-for-ios.md)
+### [How to guide for Windows](devicerelay/how-to-guide-for-windows.md)
 ### [How to guide for Microsoft Graph](devicerelay/how-to-guide-for-microsoft-graph.md)
 
 ## [User Activities](user-activities/index.md)
-### [How to guide for Windows](user-activities/how-to-guide-for-windows.md)
 ### [How to guide for Android](user-activities/how-to-guide-for-android.md)
 ### [API reference for Android](user-activities/api-reference-for-android.md)
 ### [How to guide for iOS](user-activities/how-to-guide-for-ios.md)
 ### [API reference for iOS](user-activities/api-reference-for-ios.md)
+### [How to guide for Windows](user-activities/how-to-guide-for-windows.md)
 ### [How to guide for Microsoft Graph](user-activities/how-to-guide-for-microsoft-graph.md)
 
 ## [Notifications](notifications/index.md)

@@ -7,7 +7,7 @@ ms.custom: seodec2018
 
 # Device Relay
 
-Device Relay allows you to command or initiate actions remotely using a local device. 
+Device Relay allows you to command or initiate actions remotely using a local device.
 
 Actions can include remote app launching, remote messaging, and the process of discovering and identifying remote systems to connect to.
 

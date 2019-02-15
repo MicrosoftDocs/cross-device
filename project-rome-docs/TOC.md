@@ -1,21 +1,19 @@
 # [Project Rome docs](index.md)
 
 ## [Device Relay](devicerelay/index.md)
-### [How to guide for Windows](https://docs.microsoft.com/windows/uwp/launch-resume/connected-apps-and-devices)
-### [API reference for Windows](https://docs.microsoft.com/uwp/api/Windows.System.RemoteSystems)
 ### [How to guide for Android](devicerelay/how-to-guide-for-android.md)
 ### [API reference for Android](devicerelay/api-reference-for-android.md)
 ### [How to guide for iOS](devicerelay/how-to-guide-for-ios.md)
 ### [API reference for iOS](devicerelay/api-reference-for-ios.md)
+### [How to guide for Windows](devicerelay/how-to-guide-for-windows.md)
 ### [How to guide for Microsoft Graph](devicerelay/how-to-guide-for-microsoft-graph.md)
 
 ## [User Activities](user-activities/index.md)
-### [How to guide for Windows](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities)
-### [API reference for Windows](https://docs.microsoft.com/uwp/api/windows.applicationmodel.useractivities)
 ### [How to guide for Android](user-activities/how-to-guide-for-android.md)
 ### [API reference for Android](user-activities/api-reference-for-android.md)
 ### [How to guide for iOS](user-activities/how-to-guide-for-ios.md)
 ### [API reference for iOS](user-activities/api-reference-for-ios.md)
+### [How to guide for Windows](user-activities/how-to-guide-for-windows.md)
 ### [How to guide for Microsoft Graph](user-activities/how-to-guide-for-microsoft-graph.md)
 
 ## [Notifications](notifications/index.md)
@@ -30,8 +28,7 @@
 ### [Sending notifications using MS Graph APIs](notifications/sending-notifications.md)
 
 ## [Remote sessions](remote-sessions/index.md)
-### [How to guide for Windows](https://docs.microsoft.com/windows/uwp/launch-resume/remote-sessions)
-### [API reference for Windows](https://docs.microsoft.com/uwp/api/windows.system.remotesystems.remotesystemsession)
+### [How to guide for Windows](remote-sessions/how-to-guide-for-windows.md)
 
 ## [Nearby sharing](nearby-sharing/index.md)
 ### [API reference for Android](nearby-sharing/api-reference-for-android.md)

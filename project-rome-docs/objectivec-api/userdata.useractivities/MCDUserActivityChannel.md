@@ -88,3 +88,19 @@ Gets the session history entries for a given activity.
 * `activityId` The ID of the activity to get history for.
 * `startTime` The time from which to consider session history.
 * `completionBlock` The code block to execute upon completion. This provides access to the activity history.
+
+### getRecentSessionHistoryItemsForTimeRangeAsync
+`- (void)getRecentSessionHistoryItemsForTimeRangeAsync:(nonnull NSDate*)startTime
+                                 endTime:(nonnull NSDate*)endTime
+                                 maxActivities:(NSInteger)maxActivities
+                                 completion:(void (^_Nonnull)(NSArray<MCDUserActivitySessionHistoryItem*>* _Nonnull,
+                                                       NSError* _Nullable))completionBlock;`
+
+Gets the session history entries for a given activity.
+
+#### Parameters
+* `startTime` The time from which to start considering session history.
+* `endTime` The time from which to end considering session history.
+* `maxActivities` 
+* `completion` The code block to execute upon completion.
+* `completionBlock` The code block to execute upon completion. This provides access to the activity history.

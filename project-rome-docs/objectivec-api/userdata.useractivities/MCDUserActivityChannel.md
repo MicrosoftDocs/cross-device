@@ -101,6 +101,6 @@ Gets the session history entries for a given activity.
 #### Parameters
 * `startTime` The time from which to start considering session history.
 * `endTime` The time from which to end considering session history.
-* `maxActivities` 
+* `maxActivities` The maximum number of user activities to retrieve.
 * `completion` The code block to execute upon completion.
 * `completionBlock` The code block to execute upon completion. This provides access to the activity history.

@@ -10,7 +10,7 @@ keywords: microsoft, windows, user activities, iOS, iPhone, objectiveC, connecte
 @interface MCDUserDataFeedNotificationTypes : NSObject
 ```
 
-This class provides the MCDUserDataFeedNotficationTypes.
+This class provides the valid notification types for MCDUserDataFeedSyncScope.notificationType.
 
 
 ## Properties

@@ -27,7 +27,7 @@ Event for when the sync status of the UserDataFeed changes.
 ### daysToSync
 `@property(nonatomic, readwrite) NSInteger daysToSync;`
 
-The number of days of data to sync, which should be fewer than 30 represents the default value, which will be determined by the server.
+The number of days of data to sync, which should be fewer than 30.  It represents the default value, which will be determined by the server.
 
 ## Constructors
 

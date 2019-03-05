@@ -10,7 +10,7 @@ keywords: microsoft, windows, user activities, iOS, iPhone, objectiveC, connecte
 @interface MCDUserDataFeedSyncScopeFlags : NSObject
 ```
 
-This class represents the MCDUserDataFeedSyncScopeFlags available.
+This class provides optional valid flags for MCDUserDataFeedSyncScope.syncScopeFlags.
 
 ## Properties
 

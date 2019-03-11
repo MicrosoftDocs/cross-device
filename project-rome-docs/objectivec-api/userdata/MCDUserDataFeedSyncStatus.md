@@ -10,7 +10,7 @@ keywords: microsoft, windows, user activities, iOS, iPhone, objectiveC, connecte
 typedef NS_ENUM(NSInteger, MCDUserDataSyncStatus)
 ```
 
-Contains values that describe the state of a **[MCDUserDataFeed](MCDUserDataFeed.md)**'s synchronization with the Connected Devices Platform backend. 
+Contains values that describe the state of a **[MCDUserDataFeed](MCDUserDataFeed.md)**'s synchronization with the Connected Devices Platform backend.
 
 |Name | Value | Description |
 |:-- |:-- |:-- |

@@ -10,6 +10,6 @@ The UserNotifications namespace contains APIs that allow an app to receive and m
 
 ### API groups
 
-#### [Base](https://docs.microsoft.com/en-us/windows/project-rome/objectivec-api/base/index)
-#### [Core](https://docs.microsoft.com/en-us/windows/project-rome/objectivec-api/core/index)
+#### [ConnectedDevices](../../objectivec-api/connecteddevices/index.md)
+#### [UserData](../../objectivec-api/userdata/index.md)
 #### [Graph Notification APIs](usernotifications/index.md)

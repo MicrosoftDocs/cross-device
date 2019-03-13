@@ -5,4 +5,4 @@ The following namespaces contain APIs that allow an Android app to implement the
 ## Namespaces
 
 #### [ConnectedDevices](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices)
-#### [NearShare](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.nearshare)
+#### [NearShare](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.remotesystems.commanding.nearshare)

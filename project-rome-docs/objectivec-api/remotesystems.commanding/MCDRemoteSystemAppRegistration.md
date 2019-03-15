@@ -12,7 +12,8 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 
 This class contains all of the information about this app that another could discover and use.
 
-> [!NOTE] MCDRemoteSystemAppRegistration information must be published before any outgoing communication to another app is possble. This is so that the other application can know how to respond to that communication.
+> [!NOTE] 
+> MCDRemoteSystemAppRegistration information must be published before any outgoing communication to another app is possble. This is so that the other application can know how to respond to that communication.
 
 ## Properties
 
@@ -31,7 +32,8 @@ Account that this registration belongs to.
 
 Array of AppServiceProviders that this app supports.
 
-> [!NOTE] An app service provider must be present in (though not necessarily published) this array in order to receive incoming connections.
+> [!NOTE] 
+> An app service provider must be present in (though not necessarily published) this array in order to receive incoming connections.
 
 ### launchUriProvider
 `@property(nonatomic, readwrite, nullable) id<MCDLaunchUriProvider> launchUriProvider;`

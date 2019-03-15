@@ -14,7 +14,8 @@ Manages the registration for the Connected Devices platform cloud notification f
 MCDConnectedDevicesNotificationRegistrationManager manages the notification information registered for each account. Any time an app's notification information changes (for example, when APNS changes its token), or when the notification information is expiring, an app should re-register its information. 
 If an application only cares about responses to outgoing communication, a Polling registration may be used.
 
-> [!NOTE] Notification information must be registered before many ConnectedDevices scenarios will work successfully. 
+> [!NOTE] 
+> Notification information must be registered before many ConnectedDevices scenarios will work successfully. 
 
 ## Properties
 

@@ -11,28 +11,55 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 ```  
 Manages the registration for the Connected Devices platform cloud notification for all accounts.
 
+MCDConnectedDevicesNotificationRegistrationManager manages the notification information registered for each account. Any time an app's notification information changes (for example, when APNS changes its token), or when the notification information is expiring, an app should re-register its information. 
+If an application only cares about responses to outgoing communication, a Polling registration may be used.
+
+> [!NOTE] Notification information must be registered before many ConnectedDevices scenarios will work successfully. 
+
 ## Properties
 
 ### registrationStateChanged
 `@property(nonatomic, readonly, nonnull) MCDEvent<MCDConnectedDevicesNotificationRegistrationManager*, MCDConnectedDevicesNotificationRegistrationStateChangedEventArgs*>* registrationStateChanged;`
 
-Event for when the registration state changes for a given account. (from **in_progress** to **succeeded**, for example).
+Event to let the app know when notification registration state changes for an account. 
 
 ## Methods
 
 ### registerForAccountAsync
-`- (void) registerForAccountAsync:(MCDConnectedDevicesAccount* _Nonnull) account registration:(MCDConnectedDevicesNotificationRegistration* _Nonnull) notificationRegistration callback:(nonnull void (^)(BOOL, NSError* _Nullable)) callback;`
+`- (void) registerForAccountAsync:(MCDConnectedDevicesAccount* _Nonnull)account registration:(MCDConnectedDevicesNotificationRegistration* _Nonnull)notificationRegistration callback:(nonnull void (^)(BOOL, NSError* _Nullable))callback __attribute__((deprecated("Use registerAsync instead")));`
 
-Register this application for this user with a push notification service so notification can be received by this user.
+Register the given account with the given notification registration information. This creates a notification channel so that this application can be notified about new Connected Devices information for this account. Note that other applications can not communicate with this app using this notification channel until 
+the MCDRemoteSystemAppRegistration information is published.
+
+> [!WARNING]
+> This funciton is deprecated. Please use registerAsync instead.
 
 #### Parameters 
 * `account` 
 
-The MCDConnectedDevicesAccount to perform the registration under.
+Account for which to register notification information.
 
 * `notificationRegistration` 
 
-Contains the information required to perform the app's registration with a push notification service.
+Notification information to register.
+
+* `callback` 
+
+The callback result for if the registration completed successfully.
+
+### registerAsync
+`- (void) registerAsync:(MCDConnectedDevicesAccount* _Nonnull)account registration:(MCDConnectedDevicesNotificationRegistration* _Nonnull)notificationRegistration completion:(nonnull void (^)(MCDConnectedDevicesNotificationRegistrationResult* _Nonnull, NSError* _Nullable))callback;`
+
+Register the given account with the given notification registration information. This creates a notification channel so that this application can be notified about new Connected Devices information for this account. Note that other applications can not communicate with this app using this notification channel until the MCDRemoteSystemAppRegistration information is published.
+
+#### Parameters 
+* `account` 
+
+Account for which to register notification information.
+
+* `notificationRegistration` 
+
+Notification information to register.
 
 * `callback` 
 
@@ -41,11 +68,13 @@ The callback result for if the registration completed successfully.
 ### getNotificationRegistrationStateForAccount
 `- (MCDConnectedDevicesNotificationRegistrationState) getNotificationRegistrationStateForAccount:(MCDConnectedDevicesAccount* _Nonnull)account;`
 
+Retrieve the current notification registration state for the given account. The notification information that is registered will eventually expire (useful if the app is uninstalled or not run in a very long time). An app should re-register its notificaiton information when the registration is expiring / expired. 
+
 #### Parameters 
 * `account`
 
-The MCDConnectedDevicesAccount to get the registration state for.
+Account for which to get registration state.
 
 #### Returns
 
-Return MCDConnectedDevicesNotificationRegistrationState for the registration state.
+State of the notification registration.

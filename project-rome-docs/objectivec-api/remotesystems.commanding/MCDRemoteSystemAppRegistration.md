@@ -10,30 +10,35 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 @interface MCDRemoteSystemAppRegistration : NSObject
 ```  
 
-This class represents an application that is to be registered with the Connected Devices platform.
-Registration is required (**saveAsync** must have successfully completed) to receive responses from commands as well as to allow other apps to discover this application and its attributes and capabilities.
+This class contains all of the information about this app that another could discover and use.
+
+> [!NOTE] MCDRemoteSystemAppRegistration information must be published before any outgoing communication to another app is possble. This is so that the other application can know how to respond to that communication.
 
 ## Properties
 
 ### account
 `@property(nonatomic, readonly, nullable) MCDConnectedDevicesAccount* account;`
 
-The current MCDConnectedDevicesAccount account provided.
+Account that this registration belongs to.
 
 ### attributes
 `@property(nonatomic, copy, nullable) NSDictionary<NSString*, NSString*>* attributes;`
 
-A **Map** of attributes to set in the registration.
+ Dictionary of strings that describe the attributes of this app.
 
 ### appServiceProviders
 `@property(nonatomic, copy, nullable) NSArray<id<MCDAppServiceProvider>>* appServiceProviders;`
 
-The app service providers associated with the registration. New values are made available to discovering apps and devices via the **saveAsync** call.
+Array of AppServiceProviders that this app supports.
+
+> [!NOTE] An app service provider must be present in (though not necessarily published) this array in order to receive incoming connections.
 
 ### launchUriProvider
 `@property(nonatomic, readwrite, nullable) id<MCDLaunchUriProvider> launchUriProvider;`
 
-The launch uri provider associated with this application.
+Launch Uri provider for this app.
+
+> [!NOTE] A launch uri provider must be stored in (though not necessarily published) this property in order to receive incoming requests.
 
 ## Constructors
 
@@ -41,16 +46,16 @@ The launch uri provider associated with this application.
 `+(nullable instancetype) getForAccount:(MCDConnectedDevicesAccount* _Nonnull) account
                               platform:(MCDConnectedDevicesPlatform* _Nonnull) platform;`
 
-Creates and initializes a new instance of this class.
+Gets the current remote system app registration for the account.
 
 #### Parameters
 * `account` 
 
-The current MCDConnectedDevicesAccount account provided.
+Account to retrieve the registration for
 
 * `platform` 
 
-The current MCDConnectedDevicesPlatform account provided.
+Platform to get registration from
 
 #### Returns
 Returns an MCDRemoteSystemAppRegistration object for the provided Account.
@@ -58,12 +63,29 @@ Returns an MCDRemoteSystemAppRegistration object for the provided Account.
 ## Methods
 
 ### saveAsync
-`- (void)saveAsync:(nonnull void (^)(BOOL, NSError* _Nullable))callback;`
+`- (void)saveAsync:(nonnull void (^)(BOOL, NSError* _Nullable))callback  __attribute__((deprecated("Use publishAsync instead")));`
 
-Saves the registration so that other apps and devices can discover it.
+Saves the information currently stored in the RemoteSystemAppRegistration such that other applications can discover it.
+
+> [!NOTE] MCDConnectedDevicesNotificationRegistration must be registered for this call to succeed.
+
+> [!WARNING] Deprecated. Use publishAsync instead.
 
 #### Parameters
 
 * `callback`
 
-The callback result indicates if the registration was saved or not. 
+The callback indicates the result of saving the information.
+
+### publishAsync
+`- (void)publishAsync:(nonnull void (^)(MCDRemoteSystemAppRegistrationPublishResult* _Nonnull, NSError* _Nullable))completionBlock;`
+
+Publishes the information currently stored in the MCDRemoteSystemAppRegistration such that other applications can discover it.
+
+> [!NOTE] MCDConnectedDevicesNotificationRegistration must be registered for this call to succeed.
+
+#### Parameters
+
+* `callback`
+
+The callback indicates the result of saving the information.

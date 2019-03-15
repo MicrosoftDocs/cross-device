@@ -17,9 +17,9 @@ Result of processing a notification.
 
 `+ (nullable instancetype)tryParse:(NSDictionary* _Nonnull)dictionary;`
 
-<description>
+Attempts to parse a MCDConnectedDevicesNotification from an APNS formatted map.
 
 #### Parameters 
 * `dictionary` 
 
-<description>
+The map received from the APNS notification to the Connected Devices platform for processing.

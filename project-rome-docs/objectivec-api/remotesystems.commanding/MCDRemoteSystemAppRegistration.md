@@ -54,11 +54,11 @@ Gets the current remote system app registration for the account.
 #### Parameters
 * `account` 
 
-Account to retrieve the registration for
+Account to retrieve the registration for.
 
 * `platform` 
 
-Platform to get registration from
+Platform to get registration from.
 
 #### Returns
 Returns an MCDRemoteSystemAppRegistration object for the provided Account.

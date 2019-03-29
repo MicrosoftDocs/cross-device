@@ -14,10 +14,10 @@ This class provides the notification change reader which handles the receiving a
 
 ## Properties
 
-### id
-`@property(class, readonly, nonnull) id<MCDUserDataFeedSyncScope> syncScope;`
+### syncScope
+`@property(class, readonly, nonnull) MCDUserDataFeedSyncScope* syncScope;`
 
-Id used to ensure UserNotifications are included in the feed.
+SyncScope used to ensure UserNotifications are included in the feed.
 
 ## Constructors
 

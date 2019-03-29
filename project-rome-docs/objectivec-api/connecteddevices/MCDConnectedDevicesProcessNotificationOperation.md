@@ -9,7 +9,10 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 ```
 @interface MCDConnectedDevicesProcessNotificationOperation : NSObject
 ```  
-The result of giving a notification to the Rome platform for processing.
+The result of giving an APNS notification to the Connected Devices platform for processing.
+
+> [!NOTE] 
+> This class is deprecated use MCDConnectedDevicesNotification instead. 
 
 ## Properties
 

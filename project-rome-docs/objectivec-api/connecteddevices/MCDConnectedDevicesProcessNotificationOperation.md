@@ -12,7 +12,7 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 The result of giving an APNS notification to the Connected Devices platform for processing.
 
 > [!NOTE] 
-> This class is deprecated use MCDConnectedDevicesNotification instead. 
+> This class is deprecated, use MCDConnectedDevicesNotification instead. 
 
 ## Properties
 

@@ -69,7 +69,7 @@ The callback result for if the registration completed successfully.
 ### getNotificationRegistrationStateForAccount
 `- (MCDConnectedDevicesNotificationRegistrationState) getNotificationRegistrationStateForAccount:(MCDConnectedDevicesAccount* _Nonnull)account;`
 
-Retrieve the current notification registration state for the given account. The notification information that is registered will eventually expire (useful if the app is uninstalled or not run in a very long time). An app should re-register its notificaiton information when the registration is expiring / expired. 
+Retrieve the current notification registration state for the given account. The notification information that is registered will eventually expire (useful if the app is uninstalled or not run in a very long time). An app should re-register its notification information when the registration is expiring / expired. 
 
 #### Parameters 
 * `account`

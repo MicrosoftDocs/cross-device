@@ -12,8 +12,8 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 
 This class contains all of the information about this app that another could discover and use.
 
-> [!NOTE] 
-> MCDRemoteSystemAppRegistration information must be published before any outgoing communication to another app is possble. This is so that the other application can know how to respond to that communication.
+> 
+> [!NOTE] MCDRemoteSystemAppRegistration information must be published before any outgoing communication to another app is possble. This is so that the other application can know how to respond to that communication.
 
 ## Properties
 
@@ -33,15 +33,14 @@ Account that this registration belongs to.
 Array of AppServiceProviders that this app supports.
 
 > [!NOTE] 
-> An app service provider must be present in (though not necessarily published) this array in order to receive incoming connections.
+> An app service provider must be present in this array in order to receive incoming connections.  MCDRemoteSystemAppRegistration.publishAsync() does not need to be called for the app service provider to receive requests.  
 
 ### launchUriProvider
 `@property(nonatomic, readwrite, nullable) id<MCDLaunchUriProvider> launchUriProvider;`
 
 Launch Uri provider for this app.
 
-> [!NOTE] 
-> A launch uri provider must be stored in (though not necessarily published) this property in order to receive incoming requests.
+> [!NOTE] A launch uri provider must be stored in this property in order to receive incoming requests.  MCDRemoteSystemAppRegistration.publishAsync() does not need to be called for the app service provider to receive requests.  
 
 ## Constructors
 
@@ -70,11 +69,9 @@ Returns an MCDRemoteSystemAppRegistration object for the provided Account.
 
 Saves the information currently stored in the RemoteSystemAppRegistration such that other applications can discover it.
 
-> [!NOTE] 
-> MCDConnectedDevicesNotificationRegistration must be registered for this call to succeed.
+> [!NOTE] MCDConnectedDevicesNotificationRegistration must be registered for this call to succeed.
 
-> [!WARNING] 
-> Deprecated. Use publishAsync instead.
+> [!WARNING] Deprecated. Use publishAsync instead.
 
 #### Parameters
 
@@ -87,8 +84,7 @@ The callback indicates the result of saving the information.
 
 Publishes the information currently stored in the MCDRemoteSystemAppRegistration such that other applications can discover it.
 
-> [!NOTE] 
-> MCDConnectedDevicesNotificationRegistration must be registered for this call to succeed.
+> [!NOTE] MCDConnectedDevicesNotificationRegistration must be registered for this call to succeed.
 
 #### Parameters
 

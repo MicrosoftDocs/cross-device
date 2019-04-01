@@ -57,7 +57,7 @@ Returns an instance of this class.
 ## Methods
 
 ### subscribeToSyncScopesAsync
-`- (void)subscribeToSyncScopesAsync:(NSArray<id<MCDUserDataFeedSyncScope>>* _Nonnull) syncScopes callback:(nonnull void (^)(BOOL, NSError* _Nullable)) callback;`
+`- (void)subscribeToSyncScopesAsync:(NSArray<MCDUserDataFeedSyncScope*>* _Nonnull) syncScopes callback:(nonnull void (^)(BOOL, NSError* _Nullable)) callback;`
 
 Adds **MCDUserDataFeedSyncScope** instances to this MCDUserDataFeed.  This MCDUserDataFeed is synchronized according to the **MCDUserDataFeedSyncScope** instances specified.
 

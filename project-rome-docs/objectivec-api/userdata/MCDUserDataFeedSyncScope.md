@@ -7,7 +7,7 @@ keywords: microsoft, windows, user activities, iOS, iPhone, objectiveC, connecte
 # class `MCDUserDataFeedSyncScope`
 
 ```
-@protocol MCDUserDataFeedSyncScope<NSObject>
+@interface MCDUserDataFeedSyncScope : NSObject
 ```
  This interface represents the user data that is synchronized with the Connected Devices Platform
  backend when the app uses certain user-specific Connected Devices functionality, such as user

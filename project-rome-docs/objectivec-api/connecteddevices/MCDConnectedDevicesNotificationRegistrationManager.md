@@ -33,7 +33,7 @@ Register the given account with the given notification registration information.
 the MCDRemoteSystemAppRegistration information is published.
 
 > [!WARNING]
-> This funciton is deprecated. Please use registerAsync instead.
+> This function is deprecated. Please use registerAsync instead.
 
 #### Parameters 
 * `account` 

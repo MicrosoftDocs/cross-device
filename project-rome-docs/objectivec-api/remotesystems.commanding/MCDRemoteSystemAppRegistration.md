@@ -33,7 +33,7 @@ Account that this registration belongs to.
 Array of AppServiceProviders that this app supports.
 
 > [!NOTE] 
-> An app service provider must be present in (though not necessarily published) this array in order to receive incoming connections.
+> An app service provider must be present in this array in order to receive incoming connections.  MCDRemoteSystemAppRegistration.publishAsync() does not need to be called for the app service provider to receive requests.  
 
 ### launchUriProvider
 `@property(nonatomic, readwrite, nullable) id<MCDLaunchUriProvider> launchUriProvider;`
@@ -41,7 +41,7 @@ Array of AppServiceProviders that this app supports.
 Launch Uri provider for this app.
 
 > [!NOTE] 
-> A launch uri provider must be stored in (though not necessarily published) this property in order to receive incoming requests.
+> A launch uri provider must be stored in this property in order to receive incoming requests.  MCDRemoteSystemAppRegistration.publishAsync() does not need to be called for the app service provider to receive requests.  
 
 ## Constructors
 

@@ -31,9 +31,7 @@ connected to cloud connected, or the reverse.
 Event for when a remote system is removed. 
 
 ### enumerationCompleted
-```@property(nonatomic, readonly, nonnull)
-    MCDEvent<MCDRemoteSystemWatcher*, MCDRemoteSystemEnumerationCompletedEventArgs*>* enumerationCompleted;
-```
+`@property(nonatomic, readonly, nonnull) MCDEvent<MCDRemoteSystemWatcher*, MCDRemoteSystemEnumerationCompletedEventArgs*>* enumerationCompleted;`
 
 Event for when the initial discovery of currently-discoverable devices has finished.  The discovery process will continue to run and will raise additional events if the set of existing remote systems changes.
 

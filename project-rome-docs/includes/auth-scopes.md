@@ -15,6 +15,9 @@ If you're using an MSA, you will need to include the following scopes in your si
 
 If you're using an AAD account, you'll need to request the following audiences: `"https://cdpcs.access.microsoft.com"`, `"https://cs.dds.microsoft.com"`, `"https://wns.windows.com/"`, and `"https://activity.microsoft.com"`.
 
+> [!NOTE]
+> Azure Active Directory (AAD) accounts are not supported with the Device Relay APIs.
+
 Whether you use the provided **ConnectedDevicesAccountManager** implementation or not, if you are using AAD you'll need to specify the following permissions in your app's registration on the Azure portal (portal.azure.com > Azure Active Directory > App registrations): 
 * Microsoft Activity Feed Service 
   * Deliver and modify user notifications for this app

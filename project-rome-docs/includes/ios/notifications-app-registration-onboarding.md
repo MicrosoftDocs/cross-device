@@ -8,6 +8,9 @@ ms.localizationpriority: medium
 
 ### MSA and AAD Authentication Registration
 
+> [!NOTE]
+> Azure Active Directory (AAD) accounts are not supported with the Device Relay APIs.
+
 If you do not already have an MSA and wish to use one, register on [account.microsoft.com](https://account.microsoft.com/account).
 
 Next, if you are using MSA as the authentication and identity framework for your users, you must register your app with Microsoft by following the instructions on the [Application Registration Portal](https://apps.dev.microsoft.com/) (if you do not have a Microsoft developer account, you must create one first). You should receive a client ID string for your app; make sure to remember the location or save this. Later this will be used during Graph Notifications onboarding. 

@@ -21,7 +21,6 @@ The platform requires an authenticated user to access the platform.  You'll need
  ConnectedDevicesPlatform sPlatform.getAccountManager().accessTokenRequested().subscribe((accountManager, args) -> {
 
     // Get access token
-                 
 }
 ```
 

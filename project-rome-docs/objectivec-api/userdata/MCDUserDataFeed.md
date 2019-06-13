@@ -56,8 +56,11 @@ Returns an instance of this class.
 
 ## Methods
 
+> [!WARNING]
+> This function is deprecated, 'subscribeToSyncScopesWithResultAsync' instead.
+
 ### subscribeToSyncScopesAsync
-`- (void)subscribeToSyncScopesAsync:(NSArray<MCDUserDataFeedSyncScope*>* _Nonnull) syncScopes callback:(nonnull void (^)(BOOL, NSError* _Nullable)) callback;`
+`- (void)subscribeToSyncScopesAsync:(NSArray<MCDUserDataFeedSyncScope*>* _Nonnull) syncScopes callback:(nonnull void (^)(BOOL, NSError* _Nullable)) callback  __attribute__((deprecated("Use subscribeToSyncScopesWithResultAsync instead")));`
 
 Adds **MCDUserDataFeedSyncScope** instances to this MCDUserDataFeed.  This MCDUserDataFeed is synchronized according to the **MCDUserDataFeedSyncScope** instances specified.
 
@@ -68,7 +71,21 @@ An array of **MCDSyncScope** instances.
 
 * `callback`
 
-The callback result indicates if subscription is successful, or not. 
+The callback result indicates if subscription is successful, or not.
+
+### subscribeToSyncScopesWithResultAsync
+`- (void)subscribeToSyncScopesWithResultAsync:(NSArray<MCDUserDataFeedSyncScope*>* _Nonnull) syncScopes callback:(nonnull void (^)(MCDUserDataFeedSubscribeResult* _Nullable, NSError* _Nullable)) callback;`
+
+Adds **MCDUserDataFeedSyncScope** instances to this MCDUserDataFeed.  This MCDUserDataFeed is synchronized according to the **MCDUserDataFeedSyncScope** instances specified.
+
+#### Parameters
+
+* `syncScopes`
+An array of **MCDSyncScope** instances.
+
+* `callback`
+
+The callback result indicates if subscription is successful, or not.
 
 ### startSync
 `- (void)startSync;`

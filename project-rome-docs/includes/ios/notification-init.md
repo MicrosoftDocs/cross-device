@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 Register your application for [Apple Push Notification](https://developer.apple.com/notifications/) support. Be sure to make note of the sender ID and server key that you receive; you'll need them later. 
 
-### Register your app form cross-device Connected Devices Platform access
+### Register your app for cross-device Connected Devices Platform access
 
 Next, register your app for the [cross-device experiences feature of the Microsoft Developer Dashboard](https://developer.microsoft.com/dashboard/crossplatform/web). This is a different procedure from registering on the Windows Dev Center, which was covered in the preliminary steps above. It authorizes the Connected Devices Platform to send notifications using the native push notification service. The Dev Center on-boarding process will require:
 * Your app's client ID.

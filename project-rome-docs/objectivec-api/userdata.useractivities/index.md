@@ -1,4 +1,4 @@
-# UserNotifications namespace
+# UserActivities namespace
 ```
 ConnectedDevicesUserDataUserActivities.h
 ```

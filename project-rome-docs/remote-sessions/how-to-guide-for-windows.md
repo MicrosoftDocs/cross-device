@@ -1,3 +1,7 @@
+---
+title: Implementing Remote Sessions for Windows
+---
+
 # Implementing Remote Sessions for Windows
 
 The Windows related how-to and API pages for Project Rome are included in the UWP section of the Microsoft docs site. Check out the following articles to learn how to implement Remote Sessions for Windows apps:

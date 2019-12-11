@@ -1,3 +1,7 @@
+---
+title: ConnectedDevices namespace
+---
+
 # ConnectedDevices namespace
 ```
 ConnectedDevices.h

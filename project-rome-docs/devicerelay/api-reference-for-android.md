@@ -1,3 +1,7 @@
+---
+title: Android Commanding API reference
+---
+
 # Android Commanding API reference
 
 The following namespaces allow apps to discover and connect with remote devices and applications through remote app launching and remote messaging.

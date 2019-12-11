@@ -1,3 +1,7 @@
+---
+title: RemoteSystems namespace
+---
+
 # RemoteSystems namespace
 ```
 ConnectedDevicesRemoteSystems.h

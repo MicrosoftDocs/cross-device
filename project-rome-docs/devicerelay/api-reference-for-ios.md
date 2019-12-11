@@ -1,3 +1,7 @@
+---
+title: iOS Device Relay API reference
+---
+
 # iOS Device Relay API reference
 
 The following APIs allow apps to discover and connect with remote devices and applications through remote app launching and remote messaging.

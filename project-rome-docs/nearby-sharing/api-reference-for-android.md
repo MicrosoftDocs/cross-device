@@ -1,3 +1,7 @@
+---
+title: Android Nearby sharing API reference
+---
+
 # Android Nearby sharing API reference
 
 The following namespaces contain APIs that allow an Android app to implement the Windows-based Nearby sharing feature.

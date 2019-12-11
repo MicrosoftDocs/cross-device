@@ -1,3 +1,7 @@
+---
+title: UserActivities namespace
+---
+
 # UserActivities namespace
 ```
 ConnectedDevicesUserDataUserActivities.h

@@ -1,3 +1,7 @@
+---
+title: UserNotifications namespace for Windows
+---
+
 # UserNotifications namespace for Windows
 winrt.Microsoft.ConnectedDevices.UserNotifications
 

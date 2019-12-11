@@ -1,3 +1,7 @@
+---
+title: UserNotifications namespace for iOS
+---
+
 # UserNotifications namespace for iOS
 ```
 ConnectedDevicesUserDataUserNotifications.h

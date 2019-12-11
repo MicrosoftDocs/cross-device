@@ -1,3 +1,7 @@
+---
+title: iOS User Activities API reference
+---
+
 # iOS User Activities API reference
 
 The following APIs allow an app to create and publish Windows-style User Activities.

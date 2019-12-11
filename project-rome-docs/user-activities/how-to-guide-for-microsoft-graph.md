@@ -1,3 +1,7 @@
+---
+title: Using Microsoft Graph's User Activities REST APIs
+---
+
 # Using Microsoft Graph's User Activities REST APIs
 
 The User Activities feature can be implemented through REST API calls with Microsoft Graph. You can find more information and API reference documentation in the [Project Rome section of the Microsoft Graph docs](https://developer.microsoft.com/graph/docs/api-reference/beta/resources/project_rome_overview#activities).

@@ -1,3 +1,7 @@
+---
+title: RemoteSystems.Commanding namespace
+---
+
 # RemoteSystems.Commanding namespace
 ```
 ConnectedDevicesRemoteSystemsCommanding.h

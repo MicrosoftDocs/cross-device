@@ -1,3 +1,7 @@
+---
+title: Android User Activities API reference
+---
+
 # Android User Activities API reference
 
 The following namespaces contain APIs that allow an app to create and publish Windows-style User Activities.

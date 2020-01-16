@@ -7,7 +7,7 @@ ms.custom: "seodec2018, RS5"
 
 # Project Rome
 
-[Project Rome](https://developer.microsoft.com/en-us/windows/project-rome) is Microsoft's cross-device experiences platform for apps. 
+[Project Rome](https://developer.microsoft.com/windows/project-rome) is Microsoft's cross-device experiences platform for apps. 
 
 On this site you will find developer documentation for Project Rome and links to other useful resources.
 
@@ -35,7 +35,7 @@ Some other scenarios are enabled by using a combination of Microsoft Graph APIs 
 
 Project Rome is currently implemented for the below platforms. Follow the links for samples and SDK downloads.
 
-[windows-sdk]:             https://developer.microsoft.com/en-us/windows/downloads
+[windows-sdk]:             https://developer.microsoft.com/windows/downloads
 [windows-sdk-badge]:       https://img.shields.io/badge/sdk-April%202018%20Update-brightgreen.svg
 [windows-drsample]:        https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/RemoteSystems
 [windows-afsample]:        https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/UserActivity 
@@ -88,7 +88,7 @@ Project Rome is currently implemented for the below platforms. Follow the links 
 
 * [Project Rome for Android Update: Now with App Services Support](https://blogs.windows.com/buildingapps/2017/03/23/project-rome-android-update-now-app-services-support/#DBm1Ic4JX8vXv2h0.97)
 
-* [Building a Remote Control Companion App for Android with Project Rome](https://blog.xamarin.com/building-remote-control-companion-app-android-project-rome/)
+* [Building a Remote Control Companion App for Android with Project Rome](https://devblogs.microsoft.com/xamarin/building-remote-control-companion-app-android-project-rome/)
 
 * [New Share Experience in Windows 10 Creators Update](https://blogs.windows.com/buildingapps/2017/04/06/new-share-experience-windows-10-creators-update/#OGskrWcLLlrCTCSH.97)
 
@@ -96,7 +96,7 @@ Project Rome is currently implemented for the below platforms. Follow the links 
 
 ## Other resources
 
-* [Web-to-app linking](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/web-to-app-linking)
+* [Web-to-app linking](https://docs.microsoft.com/windows/uwp/launch-resume/web-to-app-linking)
 
 * [//Build 2016 talk](https://channel9.msdn.com/Events/Build/2016/B831)
 
@@ -104,5 +104,5 @@ Project Rome is currently implemented for the below platforms. Follow the links 
 
 ## Give feedback
 
-|[UserVoice](https://wpdev.uservoice.com/forums/110705-universal-windows-platform/category/183208-connected-apps-and-devices-project-rome)|[Feedback Hub](https://support.microsoft.com/en-us/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app)|[Contact Us](mailto:projectrometeam@microsoft.com)|
+|[UserVoice](https://wpdev.uservoice.com/forums/110705-universal-windows-platform/category/183208-connected-apps-and-devices-project-rome)|[Feedback Hub](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app)|[Contact Us](mailto:projectrometeam@microsoft.com)|
 |-----|-----|-----|

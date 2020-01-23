@@ -104,5 +104,5 @@ Project Rome is currently implemented for the below platforms. Follow the links 
 
 ## Give feedback
 
-|[UserVoice](https://wpdev.uservoice.com/forums/110705-universal-windows-platform/category/183208-connected-apps-and-devices-project-rome)|[Feedback Hub](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app)|[Contact Us](mailto:projectrometeam@microsoft.com)|
-|-----|-----|-----|
+|[Feedback Hub](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app)|[Contact Us](mailto:projectrometeam@microsoft.com)|
+|-----|-----|

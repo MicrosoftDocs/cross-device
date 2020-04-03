@@ -1,5 +1,6 @@
 ---
 title: ConnectedDevices namespace
+description: Use the APIs in the ConnectedDevices namespace to enable a client app to register with the platform.
 ---
 
 # ConnectedDevices namespace

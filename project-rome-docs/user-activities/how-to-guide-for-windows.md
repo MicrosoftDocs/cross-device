@@ -1,5 +1,6 @@
 ---
 title: Implementing User Activities for Windows
+description: Learn how to implement User Activities for Windows apps.
 ---
 
 # Implementing User Activities for Windows

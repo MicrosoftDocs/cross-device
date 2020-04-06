@@ -1,6 +1,6 @@
 ---
 title: API reference for iOS
-description: 
+description: Use the APIs in the UserNotifications namespace for iOS to receive and manage user notifications published by your app server via Microsoft Graph Notifications. 
 ms.custom: seodec18
 ---
 

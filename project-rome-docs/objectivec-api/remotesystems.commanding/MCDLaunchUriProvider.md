@@ -1,6 +1,6 @@
 ---
 title: MCDLaunchUriProvider
-description: 
+description: A class used to manage the handling of a URI through the launching of an application.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 

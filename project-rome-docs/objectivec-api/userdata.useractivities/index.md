@@ -1,8 +1,10 @@
 ---
 title: UserActivities namespace
+description: Use the APIs in the UserActivities namespace to allow your application to create and publish Windows-style User Activities. 
 ---
 
 # UserActivities namespace
+
 ```
 ConnectedDevicesUserDataUserActivities.h
 ```

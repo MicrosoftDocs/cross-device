@@ -1,5 +1,6 @@
 ---
 title: Android User Notifications API reference
+description: Use the Android UserNotifications APIs to receive and manage user notifications published by your app server via Microsoft Graph Notifications.
 ---
 
 # Android User Notifications API reference

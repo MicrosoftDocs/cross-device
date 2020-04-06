@@ -1,5 +1,6 @@
 ---
 title: Implementing Remote Sessions for Windows
+description: Learn how to implement Remote Sessions for Windows apps.
 ---
 
 # Implementing Remote Sessions for Windows

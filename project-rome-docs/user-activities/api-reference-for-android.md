@@ -1,5 +1,6 @@
 ---
 title: Android User Activities API reference
+description: Use the Android User Activities APIs to allow your app to create and publish Windows-style User Activities.
 ---
 
 # Android User Activities API reference

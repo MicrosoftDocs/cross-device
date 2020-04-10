@@ -8,7 +8,7 @@ description: Use the APIs in the RemoteSystems namespace to send commands to a r
 ConnectedDevicesRemoteSystemsCommanding.h
 ```
 
-The RemoteSystems namespace contains APIs that that allow a client app to send commands to a remote device. Actions can include remote app launching and remote messaging.
+The RemoteSystems namespace contains APIs that allow a client app to send commands to a remote device. Actions can include remote app launching and remote messaging.
 
 #### [MCDAppServiceClosedEventArgs](MCDAppServiceClosedEventArgs.md)
 #### [MCDAppServiceClosedStatus](MCDAppServiceClosedStatus.md)

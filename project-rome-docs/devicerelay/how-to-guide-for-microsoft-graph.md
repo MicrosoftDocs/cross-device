@@ -1,5 +1,6 @@
 ---
 title: Using Microsoft Graph's Device Relay REST APIs
+description: Learn how to use Microsoft Graph's Device Relay REST APIs to discover your devices, launch apps, and interact with app services.
 ---
 
 # Using Microsoft Graph's Device Relay REST APIs

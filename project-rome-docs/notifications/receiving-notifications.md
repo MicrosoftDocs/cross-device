@@ -1,5 +1,6 @@
 ---
 title: Receiving notifications using the Project Rome SDK
+description: Learn how to use the Project Rome SDK to enable the receipt of MSGraph notifications in your app.
 ---
 
 

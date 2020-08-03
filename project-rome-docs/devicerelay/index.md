@@ -1,6 +1,6 @@
 ---
 title: Initiate Actions Remotely - Device Relay
-description: Use a local device to initiate an action on a remote device.
+description: Learn how to use a local device to initiate an action on a remote device, such as remote app launching.
 ms.topic: overview
 ms.custom: seodec2018
 ---

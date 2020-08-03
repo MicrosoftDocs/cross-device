@@ -1,6 +1,6 @@
 ---
 title: MCDRemoteSystemStatus
-description:  Contains values that describe the availability of a remote system.
+description: Learn about the 'MCDRemoteSystemStatus' enum. This enum contains values that describe the availability of a remote system.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 

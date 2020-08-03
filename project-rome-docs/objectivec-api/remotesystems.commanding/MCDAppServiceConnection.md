@@ -1,6 +1,6 @@
 ---
 title: MCDAppServiceConnection
-description:  This class manages a connection to a particular remote app service.
+description: Learn about the 'MCDAppServiceConnection' class. This class manages a connection to a particular remote app service.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 

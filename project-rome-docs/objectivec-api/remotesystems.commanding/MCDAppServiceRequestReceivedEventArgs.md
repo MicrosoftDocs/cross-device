@@ -1,6 +1,6 @@
 ---
 title: MCDAppServiceRequestReceivedEventArgs
-description: Contains data associated with a "request received" event.
+description: Learn about the 'MCDAppServiceRequestReceivedEventArgs' class. This class contains data associated with a "request received" event.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 

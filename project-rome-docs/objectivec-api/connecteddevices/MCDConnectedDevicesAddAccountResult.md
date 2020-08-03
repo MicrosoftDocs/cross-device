@@ -1,6 +1,6 @@
 ---
 title: MCDConnectedDevicesAddAccountResult
-description: Result of MCDConnectedDevicesAccountManager.addAccountAsync(). 
+description: Learn about the 'MCDConnectedDevicesAddAccountResult' class. See the property for the 'add account operation status'.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 

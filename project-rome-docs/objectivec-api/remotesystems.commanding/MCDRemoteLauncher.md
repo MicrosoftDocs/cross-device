@@ -1,6 +1,6 @@
 ---
 title: MCDRemoteLauncher
-description: A class used to launch an app on a remote device using a URI.
+description: Learn about the 'MCDRemoteLauncher' class. This class is used to launch an app on a remote device using a URI.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 

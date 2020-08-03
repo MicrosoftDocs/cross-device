@@ -1,6 +1,6 @@
 ---
 title: MCDRemoteSystemAccountFilter
-description: Filter for the accounts to discover remote systems with.
+description: Learn how to filter for the accounts to discover remote systems using constructors like 'filterwithAccount'.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 

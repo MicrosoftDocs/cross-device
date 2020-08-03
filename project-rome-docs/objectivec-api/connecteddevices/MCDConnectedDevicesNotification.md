@@ -1,6 +1,6 @@
 ---
 title: MCDConnectedDevicesNotification
-description: Result of processing a notification. 
+description: Learn about the 'MCDConnectedDevicesNotification' class. This class is the result of processing a notification.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 

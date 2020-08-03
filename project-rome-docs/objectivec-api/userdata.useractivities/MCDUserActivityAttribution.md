@@ -1,6 +1,6 @@
 ---
 title: MCDUserActivityAttribution
-description: This class manages the graphical elements of a user activity. 
+description: Learn about the 'MCDUserActivityAttribution' class. This class manages the graphical elements of a user activity.
 keywords: microsoft, windows, user activities, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 

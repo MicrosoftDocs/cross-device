@@ -1,6 +1,6 @@
 ---
 title: MCDRemoteSystemAddedEventArgs
-description: Event arguments for the RemoteSystemWatcher RemoteSystemAdded event.
+description: Learn about the 'MCDRemoteSystemAddedEventArgs' class. This class is for event arguments for the RemoteSystemWatcher 'RemoteSystemAdded' event.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 

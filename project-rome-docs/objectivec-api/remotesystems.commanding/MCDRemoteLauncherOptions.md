@@ -1,6 +1,6 @@
 ---
 title: MCDRemoteLauncherOptions
-description:  A class to represent options for the remote launch feature.
+description: Learn about the 'MCDRemoteLauncherOptions' class. This class represents options for the remote launch feature.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 

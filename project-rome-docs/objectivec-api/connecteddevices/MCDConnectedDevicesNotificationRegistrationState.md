@@ -1,6 +1,6 @@
 ---
 title: MCDConnectedDevicesNotificationRegistrationState
-description: Learn about the 'MCDConnectedDevicesNotificationRegistrationState' class. These values are used to communicate the status of cloud registration.
+description: Learn about the MCDConnectedDevicesNotificationRegistrationState class. These values are used to communicate the status of cloud registration.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: MCDRemoteSystemKinds
-description: Learn about the 'MCDRemoteSystemKinds' class. This class contains string fields that represent remote system device types.
+description: Learn about the MCDRemoteSystemKinds class. This class contains string fields that represent remote system device types.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 

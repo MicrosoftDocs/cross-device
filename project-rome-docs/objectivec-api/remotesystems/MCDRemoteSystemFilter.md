@@ -1,6 +1,6 @@
 ---
 title: MCDRemoteSystemFilter
-description: Learn about the 'MCDRemoteSystemFilter' protocol. It's a protocol for objects that act as remote system discovery filters.
+description: Learn about the MCDRemoteSystemFilter protocol. It's a protocol for objects that act as remote system discovery filters.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 

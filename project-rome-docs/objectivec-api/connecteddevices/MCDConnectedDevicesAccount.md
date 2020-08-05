@@ -1,6 +1,6 @@
 ---
 title: MCDConnectedDevicesAccount
-description: Learn about the 'MCDConnectedDevicesAccount' class. This class represents a single user account known by an app.
+description: Learn about the MCDConnectedDevicesAccount class. This class represents a single user account known by an app.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 

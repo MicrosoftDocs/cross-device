@@ -1,6 +1,6 @@
 ---
 title: MCDConnectedDevicesNotificationType
-description: Learn about the 'MCDConnectedDevicesNotificationType' enum. This enum contains values that describe the type (service) of a notification.
+description: Learn about the MCDConnectedDevicesNotificationType enum. This enum contains values that describe the type (service) of a notification.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 

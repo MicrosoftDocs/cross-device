@@ -1,6 +1,6 @@
 ---
 title: MCDRemoteSystemAuthorizationKindFilter
-description: Learn about the 'MCDRemoteSystemAuthorizationKindFilter' class. This class is used to filter remote systems based on authorization type.
+description: Learn about the MCDRemoteSystemAuthorizationKindFilter class. This class is used to filter remote systems based on authorization type.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: MCDUserNotificationPriority
-description: Learn about the 'MCDUserNotificationPriority' enum. This enum contains values that describe the priority of a user notification.
+description: Learn about the MCDUserNotificationPriority enum. This enum contains values that describe the priority of a user notification.
 keywords: microsoft, windows, Graph Notifications, how-to iOS, how-to iPhone 
 ---
 

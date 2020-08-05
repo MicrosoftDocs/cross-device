@@ -1,6 +1,6 @@
 ---
 title: MCDUserNotificationChannel
-description: Learn about the 'MCDUserNotificationChannel' class. This class manages the life cycle of user notifications.
+description: Learn about the MCDUserNotificationChannel class. This class manages the life cycle of user notifications.
 keywords: microsoft, windows, device relay, how-to iOS, how-to iPhone 
 ---
 

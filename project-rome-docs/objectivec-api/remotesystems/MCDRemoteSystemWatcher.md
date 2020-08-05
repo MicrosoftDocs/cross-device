@@ -1,6 +1,6 @@
 ---
 title: MCDRemoteSystemWatcher
-description: Learn about the 'MCDRemoteSystemWatcher' class and its properties. This class is used to discover remote systems.
+description: Learn about the MCDRemoteSystemWatcher class and its properties. This class is used to discover remote systems.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 

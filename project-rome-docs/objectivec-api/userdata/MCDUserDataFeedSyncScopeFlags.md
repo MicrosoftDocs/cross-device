@@ -1,6 +1,6 @@
 ---
 title: MCDUserDataFeedSyncScopeFlags
-description: Learn about the 'MCDUserDataFeedSyncScopeFlags' class. This class provides optional valid flags for 'MCDUserDataFeedSyncScope.syncScopeFlags'.
+description: Learn about the MCDUserDataFeedSyncScopeFlags class. This class provides optional valid flags for MCDUserDataFeedSyncScope.syncScopeFlags.
 keywords: microsoft, windows, user activities, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 

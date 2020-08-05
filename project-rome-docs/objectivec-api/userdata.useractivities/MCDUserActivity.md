@@ -1,6 +1,6 @@
 ---
 title: MCDUserActivity
-description: Learn about the 'MCDUserActivity' class and its properties. This class represents a single user activity instance.
+description: Learn about the MCDUserActivity class and its properties. This class represents a single user activity instance.
 keywords: microsoft, windows, user activities, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 

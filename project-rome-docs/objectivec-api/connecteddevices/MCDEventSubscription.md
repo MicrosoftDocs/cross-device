@@ -1,6 +1,6 @@
 ---
 title: MCDEventSubscription
-description: Learn about the 'MCDEventSubscription' class. This interface provides a simple way to manage an event subscription.
+description: Learn about the MCDEventSubscription class. This interface provides a simple way to manage an event subscription.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 

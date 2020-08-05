@@ -1,6 +1,6 @@
 ---
 title: MCDConnectedDevicesAccountAddedStatus
-description: Learn about the 'MCDConnectedDevicesAccountAddedStatus' enum. This enum contains the values that describe the add account operation status.
+description: Learn about the MCDConnectedDevicesAccountAddedStatus enum. This enum contains values that describe the add account operation status.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 

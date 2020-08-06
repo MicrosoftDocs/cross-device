@@ -1,6 +1,6 @@
 ---
 title: MCDRemoteSystem
-description: A class to represent a remote system.
+description: Learn about the MCDRemoteSystem class and its properties. This class is used to represent a remote system.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome
 ---
 

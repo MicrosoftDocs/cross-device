@@ -1,6 +1,6 @@
 ---
 title: MCDUserDataFeedNotificationTypes
-description: This class is responsible for providing the notification types
+description: Learn about the MCDUserDataFeedNotificationTypes class. This class is responsible for providing the notification types.
 keywords: microsoft, windows, user activities, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 

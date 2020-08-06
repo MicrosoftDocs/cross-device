@@ -1,6 +1,6 @@
 ---
 title: MCDUserDataFeedPlatforms
-description: Provides the valid platform for the  MCDUserDataFeedSyncScope.
+description: Learn about the MCDUserDataFeedPlatforms class. This class provides the valid platform for the MCDUserDataFeedSyncScope.
 keywords: microsoft, windows, user activities, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 

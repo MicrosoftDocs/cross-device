@@ -1,6 +1,6 @@
 ---
 title: Create and Publish User Activities
-description: Create and publish Windows style user activities.
+description: Learn how to create and publish Windows-style user activities. User Activities are cloud-based constructs that track the state of a user's tasks in an app.
 ms.localizationpriority: medium
 ms.topic: overview
 ms.custom: seodec2018

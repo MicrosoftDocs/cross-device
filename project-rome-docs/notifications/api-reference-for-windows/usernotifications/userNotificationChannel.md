@@ -1,6 +1,6 @@
 ---
 title: UserNotificationChannel
-description: This class manages the life cycle of user notifications.
+description: Learn about the UserNotificationChannel class. This class manages the life cycle of user notifications.
 keywords: microsoft, windows, Graph Notifications, how-to Windows 
 ---
 

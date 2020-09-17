@@ -88,7 +88,7 @@ Project Rome is currently implemented for the below platforms. Follow the links 
 
 * [Project Rome for Android Update: Now with App Services Support](https://blogs.windows.com/buildingapps/2017/03/23/project-rome-android-update-now-app-services-support/#DBm1Ic4JX8vXv2h0.97)
 
-* [Building a Remote Control Companion App for Android with Project Rome](https://blog.xamarin.com/building-remote-control-companion-app-android-project-rome/)
+* [Building a Remote Control Companion App for Android with Project Rome](https://devblogs.microsoft.com/xamarin/building-remote-control-companion-app-android-project-rome/)
 
 * [New Share Experience in Windows 10 Creators Update](https://blogs.windows.com/buildingapps/2017/04/06/new-share-experience-windows-10-creators-update/#OGskrWcLLlrCTCSH.97)
 
@@ -106,3 +106,4 @@ Project Rome is currently implemented for the below platforms. Follow the links 
 
 |[Feedback Hub](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app)|[Contact Us](mailto:projectrometeam@microsoft.com)|
 |-----|-----|
+

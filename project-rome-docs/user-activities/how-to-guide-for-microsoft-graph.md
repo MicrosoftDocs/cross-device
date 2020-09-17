@@ -1,5 +1,6 @@
 ---
 title: Using Microsoft Graph's User Activities REST APIs
+description: Use Microsoft Graph's User Activities REST APIs to create, publish, update, and read Windows-style User Activities. 
 ---
 
 # Using Microsoft Graph's User Activities REST APIs

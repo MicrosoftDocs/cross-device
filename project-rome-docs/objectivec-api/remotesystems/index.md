@@ -1,5 +1,6 @@
 ---
 title: RemoteSystems namespace
+description: Use the APIs in the RemoteSystems namespace to allow a client app to discover information about remote devices and applications.
 ---
 
 # RemoteSystems namespace

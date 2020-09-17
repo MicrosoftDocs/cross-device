@@ -1,6 +1,6 @@
 ---
 title: Send Files to Nearby Devices - Nearby Sharing
-description: Send files or websites to nearby devices using Bluetooth or WiFi.
+description: Learn about Nearby Sharing. Nearby Sharing is used to send files or websites to nearby devices using Bluetooth or WiFi.
 ms.localizationpriority: medium
 ms.topic: overview
 ms.custom: seodec2018

@@ -100,9 +100,10 @@ Project Rome is currently implemented for the below platforms. Follow the links 
 
 * [//Build 2016 talk](https://channel9.msdn.com/Events/Build/2016/B831)
 
-* [MS Dev Show podcast](http://msdevshow.com/2016/11/project-rome-with-shawn-henry/)
+* [MS Dev Show podcast](https://msdevshow.com/2016/11/project-rome-with-shawn-henry/)
 
 ## Give feedback
 
-|[UserVoice](https://wpdev.uservoice.com/forums/110705-universal-windows-platform/category/183208-connected-apps-and-devices-project-rome)|[Feedback Hub](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app)|[Contact Us](mailto:projectrometeam@microsoft.com)|
-|-----|-----|-----|
+|[Feedback Hub](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app)|[Contact Us](mailto:projectrometeam@microsoft.com)|
+|-----|-----|
+

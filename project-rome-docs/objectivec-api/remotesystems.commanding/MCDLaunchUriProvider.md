@@ -1,6 +1,6 @@
 ---
 title: MCDLaunchUriProvider
-description: 
+description: Learn about the MCDLaunchUriProvider protocol. This protocol is used to manage the handling of a URI through launching an application.
 keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Project Rome 
 ---
 

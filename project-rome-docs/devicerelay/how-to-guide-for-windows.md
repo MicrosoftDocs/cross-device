@@ -1,5 +1,6 @@
 ---
 title: Implementing Device Relay for Windows
+description: Learn how to implement Device Relay for Windows apps.
 ---
 
 # Implementing Device Relay for Windows

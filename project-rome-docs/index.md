@@ -98,11 +98,11 @@ Project Rome is currently implemented for the below platforms. Follow the links 
 
 * [Project Rome: Driving user engagement across devices, apps and platforms](https://blogs.windows.com/windowsdeveloper/2017/05/16/project-rome-driving-user-engagement-across-devices-apps-platforms/#jsUX3bEM6c8SpkIF.97)
 
-* [Building connected apps with UWP and Project Rome](https://docs.microsoft.com/en-us/archive/msdn-magazine/2018/may/universal-windows-platform-building-connected-apps-with-uwp-and-project-rome)
+* [Building connected apps with UWP and Project Rome](https://docs.microsoft.com/archive/msdn-magazine/2018/may/universal-windows-platform-building-connected-apps-with-uwp-and-project-rome)
 
 * [Project Rome: Driving User Engagement Across Devices, Apps, and Platforms](https://blogs.windows.com/windowsdeveloper/2017/05/16/project-rome-driving-user-engagement-across-devices-apps-platforms/#hZYfcfYVCFfBv0pS.97)
 
-* [Enabling human-centric notification experiences using Microsoft Graph notifications](https://docs.microsoft.com/en-us/graph/notifications-concept-overview)
+* [Enabling human-centric notification experiences using Microsoft Graph notifications](https://docs.microsoft.com/graph/notifications-concept-overview)
 
 ## Podcasts and recordings
 

@@ -80,6 +80,8 @@ Project Rome is currently implemented for the below platforms. Follow the links 
 | **MSGraph**                       | Device Relay, Activities/Timeline, Microsoft Graph Notifications | [![REST][graph-relay-badge]][graph-relay]<br> [![REST][graph-activities-badge]][graph-activities]<br>[![REST][graph-notification-badge]][graph-notification]          | [Device Relay][graph-relay-sample]<br>[Activities/Timeline][graph-activities-sample]<br>[Graph Notifications][graph-notification-sample]
 
 ## Project Rome blog posts
+* [Announcing Project Rome SDK for Android and iOS version 1.0!](https://blogs.windows.com/windowsdeveloper/2019/01/29/announcing-project-rome-sdk-for-android-and-ios-version-1-0/)
+
 * [Cross-device experiences with Project Rome](https://blogs.windows.com/buildingapps/2016/10/11/cross-device-experience-with-project-rome/#iQTseFlAMJRopU9k.97)
 
 * [Going social: Project Rome, Maps, & Social Network Integration](https://blogs.windows.com/buildingapps/2016/10/27/going-social-project-rome-maps-social-network-integration-app-dev-on-xbox-series/#SCfoEZ1q8c1yBMei.97)
@@ -94,13 +96,31 @@ Project Rome is currently implemented for the below platforms. Follow the links 
 
 * [Web-to-App Linking with AppUriHandlers](https://blogs.windows.com/buildingapps/2016/10/14/web-to-app-linking-with-appurihandlers/#fIh7USaxBYS8JqfT.97)
 
-## Other resources
+* [Project Rome: Driving user engagement across devices, apps and platforms](https://blogs.windows.com/windowsdeveloper/2017/05/16/project-rome-driving-user-engagement-across-devices-apps-platforms/#jsUX3bEM6c8SpkIF.97)
+
+* [Building connected apps with UWP and Project Rome](https://docs.microsoft.com/archive/msdn-magazine/2018/may/universal-windows-platform-building-connected-apps-with-uwp-and-project-rome)
+
+* [Project Rome: Driving User Engagement Across Devices, Apps, and Platforms](https://blogs.windows.com/windowsdeveloper/2017/05/16/project-rome-driving-user-engagement-across-devices-apps-platforms/#hZYfcfYVCFfBv0pS.97)
+
+* [Enabling human-centric notification experiences using Microsoft Graph notifications](https://docs.microsoft.com/graph/notifications-concept-overview)
+
+## Podcasts and recordings
+
+* [Project Rome at Microsoft //Build 2018](https://channel9.msdn.com/Events/Build/2018/BRK2417)
+
+* [Build 2017: Channel 9 live: Project Rome Q&A](https://channel9.msdn.com/Events/Build/2017/C9R11)
+
+* [Build 2017: MS Dev Show: Project Rome](https://channel9.msdn.com/Shows/msdevshow/Episode-153-Project-Rome-with-Vikas-Bhatia-and-Shawn-Henry)
+
+* [MS Dev Show podcast: Project Rome with Shawn Henry (Nov 8, 2016)](https://msdevshow.com/2016/11/project-rome-with-shawn-henry/)
 
 * [Web-to-app linking](https://docs.microsoft.com/windows/uwp/launch-resume/web-to-app-linking)
 
-* [//Build 2016 talk](https://channel9.msdn.com/Events/Build/2016/B831)
+* [Build 2016: Driving User Engagement with Connected Apps and Devices](https://channel9.msdn.com/Events/Build/2016/B831)
 
-* [MS Dev Show podcast](https://msdevshow.com/2016/11/project-rome-with-shawn-henry/)
+* [One Dev Minute: Create cross-device apps with Project Rome](https://www.youtube.com/watch?v=7jn-kooKE8U)
+
+* [Getting Started with Microsoft Graph and Notifications](https://www.youtube.com/watch?v=cmpPFhrS8ZA)
 
 ## Give feedback
 

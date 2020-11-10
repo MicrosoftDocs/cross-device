@@ -7,7 +7,7 @@ ms.custom: "seodec2018, RS5"
 
 # Project Rome
 
-[Project Rome](https://developer.microsoft.com/windows/project-rome) is Microsoft's cross-device experiences platform for apps. 
+[Project Rome](https://developer.microsoft.com/windows/project-rome) is Microsoft's cross-device experiences platform for apps.
 
 On this site you will find developer documentation for Project Rome and links to other useful resources.
 
@@ -38,7 +38,7 @@ Project Rome is currently implemented for the below platforms. Follow the links 
 [windows-sdk]:             https://developer.microsoft.com/windows/downloads
 [windows-sdk-badge]:       https://img.shields.io/badge/sdk-April%202018%20Update-brightgreen.svg
 [windows-drsample]:        https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/RemoteSystems
-[windows-afsample]:        https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/UserActivity 
+[windows-afsample]:        https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/UserActivity
 
 [winredist-sdk]:           https://www.nuget.org/packages/Microsoft.ConnectedDevices.UserNotifications
 [winredist-sdk-badge]:     https://img.shields.io/nuget/v/Microsoft.ConnectedDevices.UserNotifications.svg
@@ -52,8 +52,8 @@ Project Rome is currently implemented for the below platforms. Follow the links 
 [ios-sdk-badge]:           https://img.shields.io/cocoapods/v/ProjectRomeSdk.svg
 [ios-sample]:              https://github.com/microsoft/project-rome/tree/master/iOS/samples
 
-[android-sdk]:             https://bintray.com/connecteddevices/maven/com.microsoft.connecteddevices%3Aconnecteddevices-sdk/_latestVersion
-[android-sdk-badge]:       https://api.bintray.com/packages/connecteddevices/maven/com.microsoft.connecteddevices%3Aconnecteddevices-sdk/images/download.svg
+[android-sdk]:             https://github.com/microsoft/project-rome/tree/mvn-repo/com/microsoft/connecteddevices/connecteddevices-sdk
+[android-sdk-badge]:       https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Fraw.github.com%2Fmicrosoft%2Fproject-rome%2Fmvn-repo%2Fcom%2Fmicrosoft%2Fconnecteddevices%2Fconnecteddevices-sdk%2Fmaven-metadata.xml
 [android-sample]:          https://github.com/microsoft/project-rome/tree/master/Android/samples
 
 [graph-relay]:             https://developer.microsoft.com/graph/docs/api-reference/beta/resources/project_rome_overview
@@ -73,7 +73,7 @@ Project Rome is currently implemented for the below platforms. Follow the links 
 |   Platform                        | Features                                                         |           SDK Package                          |   Samples                                       |
 | :-------------------------------- | :--------------------------------------------------------------- |:---------------------------------------------- | :---------------------------------------------- |
 | **Windows SDK**                   | Device Relay, Activities/Timeline                                | [![SDK][windows-sdk-badge]][windows-sdk]       | [Project Rome for Device Relay Windows sample][windows-drsample] <br> [Project Rome for Activities Windows sample][windows-afsample]
-| **Windows (Preview)**             |                                    Microsoft Graph Notifications | [![Nuget][winredist-sdk-badge]][winredist-sdk] | [Graph Notifications for Windows sample][winredist-sample] 
+| **Windows (Preview)**             |                                    Microsoft Graph Notifications | [![Nuget][winredist-sdk-badge]][winredist-sdk] | [Graph Notifications for Windows sample][winredist-sample]
 | **Android**             | Device Relay, Activities/Timeline, Microsoft Graph Notifications (Preview) | [![Maven][android-sdk-badge]][android-sdk]     | [Project Rome for Android sample][android-sample]
 | **iOS**                 | Device Relay, Activities/Timeline, Microsoft Graph Notifications (Preview) | [![CocoaPod][ios-sdk-badge]][ios-sdk]          | [Project Rome for iOS sample][ios-sample]
 | **Xamarin for Android (Preview)** | Device Relay                                                     | [![Nuget][xamarin-sdk-badge]][xamarin-sdk]     | [Xamarin for Android sample][xamarin-sample]

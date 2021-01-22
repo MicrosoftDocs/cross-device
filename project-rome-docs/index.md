@@ -56,17 +56,17 @@ Project Rome is currently implemented for the below platforms. Follow the links 
 [android-sdk-badge]:       https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Fraw.github.com%2Fmicrosoft%2Fproject-rome%2Fmvn-repo%2Fcom%2Fmicrosoft%2Fconnecteddevices%2Fconnecteddevices-sdk%2Fmaven-metadata.xml
 [android-sample]:          https://github.com/microsoft/project-rome/tree/master/Android/samples
 
-[graph-relay]:             https://developer.microsoft.com/graph/docs/api-reference/beta/resources/project_rome_overview
-[graph-activities]:        https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/activity-feed-api-overview
-[graph-notification]:      https://developer.microsoft.com/graph/docs/api-reference/beta/resources/notifications-api-overview
+[graph-relay]:             /graph/api/resources/project-rome-overview
+[graph-activities]:        /graph/api/resources/activity-feed-api-overview
+[graph-notification]:      /graph/api/resources/notifications-api-overview
 
 [graph-relay-badge]:       https://img.shields.io/badge/Device_Relay-Beta-orange.svg
 [graph-activities-badge]:  https://img.shields.io/badge/Activities-1.0-brightgreen.svg
 [graph-notification-badge]:https://img.shields.io/badge/Graph_Notifications-Beta-orange.svg
 
-[graph-relay-sample]:        https://developer.microsoft.com/graph/docs/api-reference/beta/resources/project_rome_overview
-[graph-activities-sample]:   https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/activity-feed-api-overview
-[graph-notification-sample]: https://developer.microsoft.com/graph/docs/api-reference/beta/resources/notifications-api-overview
+[graph-relay-sample]:        /graph/api/resources/project-rome-overview
+[graph-activities-sample]:   /graph/api/resources/activity-feed-api-overview
+[graph-notification-sample]: /graph/api/resources/notifications-api-overview
 
 
 
@@ -98,11 +98,11 @@ Project Rome is currently implemented for the below platforms. Follow the links 
 
 * [Project Rome: Driving user engagement across devices, apps and platforms](https://blogs.windows.com/windowsdeveloper/2017/05/16/project-rome-driving-user-engagement-across-devices-apps-platforms/#jsUX3bEM6c8SpkIF.97)
 
-* [Building connected apps with UWP and Project Rome](https://docs.microsoft.com/archive/msdn-magazine/2018/may/universal-windows-platform-building-connected-apps-with-uwp-and-project-rome)
+* [Building connected apps with UWP and Project Rome](/archive/msdn-magazine/2018/may/universal-windows-platform-building-connected-apps-with-uwp-and-project-rome)
 
 * [Project Rome: Driving User Engagement Across Devices, Apps, and Platforms](https://blogs.windows.com/windowsdeveloper/2017/05/16/project-rome-driving-user-engagement-across-devices-apps-platforms/#hZYfcfYVCFfBv0pS.97)
 
-* [Enabling human-centric notification experiences using Microsoft Graph notifications](https://docs.microsoft.com/graph/notifications-concept-overview)
+* [Enabling human-centric notification experiences using Microsoft Graph notifications](/graph/notifications-concept-overview)
 
 ## Podcasts and recordings
 
@@ -114,7 +114,7 @@ Project Rome is currently implemented for the below platforms. Follow the links 
 
 * [MS Dev Show podcast: Project Rome with Shawn Henry (Nov 8, 2016)](https://msdevshow.com/2016/11/project-rome-with-shawn-henry/)
 
-* [Web-to-app linking](https://docs.microsoft.com/windows/uwp/launch-resume/web-to-app-linking)
+* [Web-to-app linking](/windows/uwp/launch-resume/web-to-app-linking)
 
 * [Build 2016: Driving User Engagement with Connected Apps and Devices](https://channel9.msdn.com/Events/Build/2016/B831)
 
@@ -126,4 +126,3 @@ Project Rome is currently implemented for the below platforms. Follow the links 
 
 |[Feedback Hub](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app)|[Contact Us](mailto:projectrometeam@microsoft.com)|
 |-----|-----|
-

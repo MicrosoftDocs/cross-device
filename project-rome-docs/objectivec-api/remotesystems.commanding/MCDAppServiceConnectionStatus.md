@@ -10,7 +10,7 @@ keywords: microsoft, windows, iOS, iPhone, objectiveC, connected devices, Projec
 typedef NS_ENUM(NSInteger, MCDAppServiceConnectionStatus)
 ```
 
-Contains values that describe the status of a connection to a remote app service. See [Create and consume an app service](https://docs.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service) for information on app services on Windows devices.
+Contains values that describe the status of a connection to a remote app service. See [Create and consume an app service](/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service) for information on app services on Windows devices.
 
 |Name   |Value   |Description   |
 |--------|-------|-------------|

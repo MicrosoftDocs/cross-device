@@ -173,7 +173,7 @@
     {
       "source_path": "project-rome-docs/remote-sessions/windows/index.md",
       "redirect_url": "/windows/uwp/launch-resume/remote-sessions",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "project-rome-docs/user-activities/android/api-reference/index.md",

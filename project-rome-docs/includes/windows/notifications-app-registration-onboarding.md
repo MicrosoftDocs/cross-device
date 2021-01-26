@@ -8,7 +8,7 @@ Next, if you are using MSA as the authentication and identity framework for your
 Note that an app using MSA authentication needs to be registered as a Live SDK application as shown below.
 ![Application Registration Portal](../../notifications/media/msa_app_registration/app_registration_portal.png)
 
-If you're writing an app that uses AAD as work account or school account authentication and identity framework, you must register your app via [Azure Active Directory Authentication Libraries](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) in order to get the client ID, as shown below. 
+If you're writing an app that uses AAD as work account or school account authentication and identity framework, you must register your app via [Azure Active Directory Authentication Libraries](/azure/active-directory/develop/active-directory-authentication-libraries) in order to get the client ID, as shown below. 
  ![AAD Registration Portal](../../notifications/media/aad_registration_portal/aad_registration_portal.png)
 When creating a new app registration, there are a few permissions required in order to use Graph Notifications and other connected device platform capabilities. Please see below. 
 ![AAD Registration Portal – Setting – Required Permissions](../../notifications/media/aad_registration_portal/aad_registration_portal_permissions.png)

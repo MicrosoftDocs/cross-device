@@ -9,6 +9,6 @@ The following namespaces contain APIs that allow an app to create and publish Wi
 
 ## Namespaces
 
-#### [ConnectedDevices](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices)
-#### [UserActivities](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.userdata.useractivities)
-#### [UserData](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.userdata)
+#### [ConnectedDevices](/java/api/com.microsoft.connecteddevices)
+#### [UserActivities](/java/api/com.microsoft.connecteddevices.userdata.useractivities)
+#### [UserData](/java/api/com.microsoft.connecteddevices.userdata)

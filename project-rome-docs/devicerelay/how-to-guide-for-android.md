@@ -204,7 +204,7 @@ Use the returned **AsyncOperation** to handle the result of the launch attempt.
 ```
 Depending on the URI that is sent, you can launch an app in a specific state or configuration on a remote device. This allows for the ability to continue a user task, like watching a movie, on a different device without interruption. 
 
-Depending on your use case, you may need to cover the cases in which no apps on the targeted system can handle the URI, or multiple apps can handle it. The **[RemoteLauncher](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.commanding._remote_launcher)** class and **[RemoteLauncherOptions](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.commanding._remote_launcher_options)** class describe how to do this.
+Depending on your use case, you may need to cover the cases in which no apps on the targeted system can handle the URI, or multiple apps can handle it. The **[RemoteLauncher](/java/api/com.microsoft.connecteddevices.commanding._remote_launcher)** class and **[RemoteLauncherOptions](/java/api/com.microsoft.connecteddevices.commanding._remote_launcher_options)** class describe how to do this.
 
 ### B) Remote app services
 
@@ -213,7 +213,7 @@ Your Android app can use the Connected Devices Portal interact with app services
 #### Set up the app service on the target device
 This guide will use the [Roman Test App for Windows](https://aka.ms/romeapp) as its target app service. Therefore, the code below will cause an Android app to look for that specific app service on the given remote system. If you wish to test this scenario,download the Roman Test App on a Windows device and make sure you are signed in with the same MSA that you used in the preliminary steps above. 
 
-For instructions on how to write your own UWP app service, see [Create and consume an app service (UWP)](https://docs.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service). You will need to make a few changes in order to make the service compatible with Connected Devices. See the [UWP guide for remote app services](https://docs.microsoft.com/windows/uwp/launch-resume/communicate-with-a-remote-app-service) for instructions on how to do this. 
+For instructions on how to write your own UWP app service, see [Create and consume an app service (UWP)](/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service). You will need to make a few changes in order to make the service compatible with Connected Devices. See the [UWP guide for remote app services](/windows/uwp/launch-resume/communicate-with-a-remote-app-service) for instructions on how to do this. 
 
 #### Open an app service connection on the client device
 Your Android app must acquire a reference to a remote device or application. Like the launch section, this scenario requires the use of a **RemoteSystemConnectionRequest**, which can be constructed from either a **RemoteSystem** or a **RemoteSystemApp** representing an available app on the system.
@@ -225,7 +225,7 @@ Your Android app must acquire a reference to a remote device or application. Lik
 // connection is opened.
 private RemoteSystem target = null;
 ```
-Additionally, your app will need to identify its targeted app service using two strings: the *app service name* and *package identifier*. These are found in the source code of the app service provider (see [Create and consume an app service (UWP)](https://msdn.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service) for details on how to get this strings for Windows app services). Together these strings construct the **AppServiceDescription**, which is fed into an **AppServiceConnection** instance.
+Additionally, your app will need to identify its targeted app service using two strings: the *app service name* and *package identifier*. These are found in the source code of the app service provider (see [Create and consume an app service (UWP)](/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service) for details on how to get this strings for Windows app services). Together these strings construct the **AppServiceDescription**, which is fed into an **AppServiceConnection** instance.
 
 ```Java
 // this is defined below
@@ -297,7 +297,7 @@ Declare a variable to store the message to send. On Android, the messages that y
 private Map<String, Object> mMessagePayload = null;
 ```
 > [!NOTE]
-> When your app communicates with app services on other platforms, the Connected Devices Platform translates the **Map** into the matching construct on the receiving platform. For example, a **[Map](https://developer.android.com/reference/java/util/Map)** sent from this app to a Windows app service gets translated into a [**ValueSet**](https://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.valueset) object (of the .NET Framework), which can then be interpreted by the app service. Information passed in the other direction undergoes the reverse translation.
+> When your app communicates with app services on other platforms, the Connected Devices Platform translates the **Map** into the matching construct on the receiving platform. For example, a **[Map](https://developer.android.com/reference/java/util/Map)** sent from this app to a Windows app service gets translated into a [**ValueSet**](/uwp/api/Windows.Foundation.Collections.ValueSet) object (of the .NET Framework), which can then be interpreted by the app service. Information passed in the other direction undergoes the reverse translation.
 
 The following method composes a message that can be interpreted by the Roman Test App's app service for Windows.
 
@@ -416,5 +416,5 @@ private void closeAppServiceConnection()
 ### Related topics
 * [API reference page](api-reference-for-android.md) 
 * [Android sample app](https://github.com/Microsoft/project-rome/tree/master/Android/samples) 
-* [Communicate with a remote app service (UWP)](https://docs.microsoft.com/windows/uwp/launch-resume/communicate-with-a-remote-app-service)
-* [Create and consume an app service (UWP)](https://docs.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service).
+* [Communicate with a remote app service (UWP)](/windows/uwp/launch-resume/communicate-with-a-remote-app-service)
+* [Create and consume an app service (UWP)](/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service).

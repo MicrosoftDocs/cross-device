@@ -19,7 +19,7 @@ Microsoft Account (MSA) or Azure Active Directory (AAD) authentication is requir
 
 Using your chosen authentication method, you must register your app with Microsoft by following the instructions on the [Application Registration Portal](https://apps.dev.microsoft.com/). If you do not have a Microsoft developer account, you will need to create one.
 
-When you register an app using an MSA, you should receive a client ID string. Save this for later. This will allow your app to access Microsoft's Connected Devices Platform resources. If you're using AAD, see [Azure Active Directory Authentication Libraries](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) for instructions on getting the client ID string.
+When you register an app using an MSA, you should receive a client ID string. Save this for later. This will allow your app to access Microsoft's Connected Devices Platform resources. If you're using AAD, see [Azure Active Directory Authentication Libraries](/azure/active-directory/develop/active-directory-authentication-libraries) for instructions on getting the client ID string.
 
 ### Add the SDK
 

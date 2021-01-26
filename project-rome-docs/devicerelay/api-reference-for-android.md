@@ -9,6 +9,6 @@ The following namespaces allow apps to discover and connect with remote devices 
 
 ## Namespaces
 
-#### [ConnectedDevices](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices)
-#### [RemoteSystems](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.remotesystems)
-#### [RemoteSystems.Commanding](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.remotesystems.commanding)
+#### [ConnectedDevices](/java/api/com.microsoft.connecteddevices)
+#### [RemoteSystems](/java/api/com.microsoft.connecteddevices.remotesystems)
+#### [RemoteSystems.Commanding](/java/api/com.microsoft.connecteddevices.remotesystems.commanding)

@@ -29,7 +29,7 @@ Take a look at the How-To Guide under each platform node (Windows, Android, and 
 The guide includes specific steps for using Graph Notifications – including registering cross-platform app identities and mobile push credentials. If you are new to using Microsoft Graph, steps are included for registering your app for Microsoft Account (MSA), for consumer-facing apps) or Azure Active Directory (AAD) for work and school accounts. MSA and AAD are user identities that enable you to take advantage of workloads on Microsoft Graph beyond just notifications, to enable richer business scenarios. 
 
 ### Microsoft Graph APIs
-When using Graph notifications, the app server is expected to use Microsoft Graph API (beta) to send notifications. For more information on app server-side integration, please see the [API Reference Docs](https://developer.microsoft.com/graph/docs/api-reference/beta/resources/notifications-api-overview) regarding usage of the API. 
+When using Graph notifications, the app server is expected to use Microsoft Graph API (beta) to send notifications. For more information on app server-side integration, please see the [API Reference Docs](/graph/api/resources/notifications-api-overview) regarding usage of the API. 
 
 ### Client-side SDK
 To get started with client-side Graph Notifications integration and start receiving and managing notifications using the native SDKs, select your preferred development platform on the left navigation pane. 

@@ -24,7 +24,7 @@ After you complete the workflow on the Developer dashboard, you must modify the 
 
 ### Associate the notification service with the local Platform
 
-Finally, you must associate push notification functionality with the Connected Devices Platform in your app. In the steps above, you initialized the Platform with a `null` *notificationProvider* parameter. Here, you need to construct and pass in an object that implements **[NotificationProvider](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.core._notification_provider)**. The main thing to note is the `getNotificationRegistrationAsync` method, which must return a **[NotificationRegistration](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.core._notification_registration)** instance. The **NotificationRegistration** is responsible for supplying the Connected Devices Platform with an access token (and related information) for the notification service.
+Finally, you must associate push notification functionality with the Connected Devices Platform in your app. In the steps above, you initialized the Platform with a `null` *notificationProvider* parameter. Here, you need to construct and pass in an object that implements **[NotificationProvider](/java/api/com.microsoft.connecteddevices.core._notification_provider)**. The main thing to note is the `getNotificationRegistrationAsync` method, which must return a **[NotificationRegistration](/java/api/com.microsoft.connecteddevices.core._notification_registration)** instance. The **NotificationRegistration** is responsible for supplying the Connected Devices Platform with an access token (and related information) for the notification service.
 
 
 ```Java

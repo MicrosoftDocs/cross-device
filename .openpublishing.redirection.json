@@ -2,202 +2,202 @@
   "redirections": [
     {
       "source_path": "project-rome-docs/devicerelay/android/api-reference/index.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/devicerelay/api-reference-for-android",
+      "redirect_url": "/windows/project-rome/devicerelay/api-reference-for-android",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/devicerelay/android/how-to-guides/command-remote-devices-and-apps-android.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/devicerelay/how-to-guide-for-android",
+      "redirect_url": "/windows/project-rome/devicerelay/how-to-guide-for-android",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/devicerelay/ios/api-reference/index.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/devicerelay/api-reference-for-ios",
+      "redirect_url": "/windows/project-rome/devicerelay/api-reference-for-ios",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/devicerelay/ios/how-to-guides/command-remote-devices-and-apps-ios.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/devicerelay/how-to-guide-for-ios",
+      "redirect_url": "/windows/project-rome/devicerelay/how-to-guide-for-ios",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/devicerelay/msgraph/index.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/devicerelay/how-to-guide-for-microsoft-graph",
+      "redirect_url": "/windows/project-rome/devicerelay/how-to-guide-for-microsoft-graph",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/msgraph-notifications/index.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/notifications/",
+      "redirect_url": "/windows/project-rome/notifications/",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/msgraph-notifications/receiving-notifications/android/api-reference/index.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-android",
+      "redirect_url": "/windows/project-rome/notifications/api-reference-for-android",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/msgraph-notifications/receiving-notifications/android/index.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/notifications/how-to-guide-for-android",
+      "redirect_url": "/windows/project-rome/notifications/how-to-guide-for-android",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/msgraph-notifications/receiving-notifications/ios/api-reference/index.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-ios/",
+      "redirect_url": "/windows/project-rome/notifications/api-reference-for-ios/",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/msgraph-notifications/receiving-notifications/ios/api-reference/usernotifications/MCDUserNotification.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-ios/usernotifications/mcdusernotification",
+      "redirect_url": "/windows/project-rome/notifications/api-reference-for-ios/usernotifications/mcdusernotification",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/msgraph-notifications/receiving-notifications/ios/api-reference/usernotifications/MCDUserNotificationChannel.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-ios/usernotifications/mcdusernotificationchannel",
+      "redirect_url": "/windows/project-rome/notifications/api-reference-for-ios/usernotifications/mcdusernotificationchannel",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/msgraph-notifications/receiving-notifications/ios/api-reference/usernotifications/MCDUserNotificationPriority.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-ios/usernotifications/mcdusernotificationpriority",
+      "redirect_url": "/windows/project-rome/notifications/api-reference-for-ios/usernotifications/mcdusernotificationpriority",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/msgraph-notifications/receiving-notifications/ios/api-reference/usernotifications/MCDUserNotificationReadState.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-ios/usernotifications/mcdusernotificationreadstate",
+      "redirect_url": "/windows/project-rome/notifications/api-reference-for-ios/usernotifications/mcdusernotificationreadstate",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/msgraph-notifications/receiving-notifications/ios/api-reference/usernotifications/MCDUserNotificationReadStateFilter.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-ios/usernotifications/mcdusernotificationreadstatefilter",
+      "redirect_url": "/windows/project-rome/notifications/api-reference-for-ios/usernotifications/mcdusernotificationreadstatefilter",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/msgraph-notifications/receiving-notifications/ios/api-reference/usernotifications/MCDUserNotificationReader.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-ios/usernotifications/mcdusernotificationreader",
+      "redirect_url": "/windows/project-rome/notifications/api-reference-for-ios/usernotifications/mcdusernotificationreader",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/msgraph-notifications/receiving-notifications/ios/api-reference/usernotifications/MCDUserNotificationReaderOptions.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-ios/usernotifications/mcdusernotificationreaderoptions",
+      "redirect_url": "/windows/project-rome/notifications/api-reference-for-ios/usernotifications/mcdusernotificationreaderoptions",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/msgraph-notifications/receiving-notifications/ios/api-reference/usernotifications/MCDUserNotificationReaderStartPosition.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-ios/usernotifications/mcdusernotificationreaderstartposition",
+      "redirect_url": "/windows/project-rome/notifications/api-reference-for-ios/usernotifications/mcdusernotificationreaderstartposition",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/msgraph-notifications/receiving-notifications/ios/api-reference/usernotifications/MCDUserNotificationStatus.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-ios/usernotifications/mcdusernotificationstatus",
+      "redirect_url": "/windows/project-rome/notifications/api-reference-for-ios/usernotifications/mcdusernotificationstatus",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/msgraph-notifications/receiving-notifications/ios/api-reference/usernotifications/MCDUserNotificationStatusFilter.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-ios/usernotifications/mcdusernotificationstatusfilter",
+      "redirect_url": "/windows/project-rome/notifications/api-reference-for-ios/usernotifications/mcdusernotificationstatusfilter",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/msgraph-notifications/receiving-notifications/ios/api-reference/usernotifications/MCDUserNotificationUpdateResult.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-ios/usernotifications/mcdusernotificationupdateresult",
+      "redirect_url": "/windows/project-rome/notifications/api-reference-for-ios/usernotifications/mcdusernotificationupdateresult",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/msgraph-notifications/receiving-notifications/ios/api-reference/usernotifications/MCDUserNotificationUserActionState.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-ios/usernotifications/mcdusernotificationuseractionstate",
+      "redirect_url": "/windows/project-rome/notifications/api-reference-for-ios/usernotifications/mcdusernotificationuseractionstate",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/msgraph-notifications/receiving-notifications/ios/api-reference/usernotifications/MCDUserNotificationUserActionStateFilter.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-ios/usernotifications/mcdusernotificationuseractionstatefilter",
+      "redirect_url": "/windows/project-rome/notifications/api-reference-for-ios/usernotifications/mcdusernotificationuseractionstatefilter",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/msgraph-notifications/receiving-notifications/receiving-notifications/ios/api-reference/usernotifications/index.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-ios/usernotifications/index",
+      "redirect_url": "/windows/project-rome/notifications/api-reference-for-ios/usernotifications/index",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/msgraph-notifications/receiving-notifications/ios/index.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/notifications/how-to-guide-for-ios",
+      "redirect_url": "/windows/project-rome/notifications/how-to-guide-for-ios",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/msgraph-notifications/receiving-notifications/windows/api-reference/index.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-windows/",
+      "redirect_url": "/windows/project-rome/notifications/api-reference-for-windows/",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/msgraph-notifications/receiving-notifications/windows/api-reference/usernotifications/index.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-windows/usernotifications/index",
+      "redirect_url": "/windows/project-rome/notifications/api-reference-for-windows/usernotifications/index",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/msgraph-notifications/receiving-notifications/windows/api-reference/usernotifications/userNotification.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-windows/usernotifications/usernotification",
+      "redirect_url": "/windows/project-rome/notifications/api-reference-for-windows/usernotifications/usernotification",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/msgraph-notifications/receiving-notifications/windows/api-reference/usernotifications/userNotificationChannel.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-windows/usernotifications/usernotificationchannel",
+      "redirect_url": "/windows/project-rome/notifications/api-reference-for-windows/usernotifications/usernotificationchannel",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/msgraph-notifications/receiving-notifications/windows/api-reference/usernotifications/userNotificationReader.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-windows/usernotifications/usernotificationreader",
+      "redirect_url": "/windows/project-rome/notifications/api-reference-for-windows/usernotifications/usernotificationreader",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/msgraph-notifications/receiving-notifications/windows/api-reference/usernotifications/userNotificationReaderOptions.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-windows/usernotifications/usernotificationreaderoptions",
+      "redirect_url": "/windows/project-rome/notifications/api-reference-for-windows/usernotifications/usernotificationreaderoptions",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/msgraph-notifications/receiving-notifications/windows/api-reference/usernotifications/userNotificationUpdateResults.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-windows/usernotifications/usernotificationupdateresults",
+      "redirect_url": "/windows/project-rome/notifications/api-reference-for-windows/usernotifications/usernotificationupdateresults",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/msgraph-notifications/receiving-notifications/windows/index.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/notifications/how-to-guide-for-windows",
+      "redirect_url": "/windows/project-rome/notifications/how-to-guide-for-windows",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/msgraph-notifications/sending-notifications.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/notifications/sending-notifications",
+      "redirect_url": "/windows/project-rome/notifications/sending-notifications",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/nearby-sharing/android/api-reference/index.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/nearby-sharing/api-reference-for-android",
+      "redirect_url": "/windows/project-rome/nearby-sharing/api-reference-for-android",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/remote-sessions/windows/index.md",
-      "redirect_url": "https://docs.microsoft.com/windows/uwp/launch-resume/remote-sessions",
+      "redirect_url": "/windows/uwp/launch-resume/remote-sessions",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/user-activities/android/api-reference/index.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/user-activities/api-reference-for-android",
+      "redirect_url": "/windows/project-rome/user-activities/api-reference-for-android",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/user-activities/android/how-to-guides/user-activities-android.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/user-activities/how-to-guide-for-android",
+      "redirect_url": "/windows/project-rome/user-activities/how-to-guide-for-android",
       "redirect_document_id": true
     },
     {
       "source_path": "project-rome-docs/user-activities/ios/api-reference/index.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/user-activities/api-reference-for-ios",
+      "redirect_url": "/windows/project-rome/user-activities/api-reference-for-ios",
       "redirect_document_id": true
     },
     {
       "source_path": " project-rome-docs/user-activities/ios/how-to-guides/user-activities-ios.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/user-activities/how-to-guide-for-ios",
+      "redirect_url": "/windows/project-rome/user-activities/how-to-guide-for-ios",
       "redirect_document_id": true
     },
     {
       "source_path": " project-rome-docs/user-activities/msgraph/index.md",
-      "redirect_url": "https://docs.microsoft.com/windows/project-rome/user-activities/how-to-guide-for-microsoft-graph",
+      "redirect_url": "/windows/project-rome/user-activities/how-to-guide-for-microsoft-graph",
       "redirect_document_id": true
     }
   ]

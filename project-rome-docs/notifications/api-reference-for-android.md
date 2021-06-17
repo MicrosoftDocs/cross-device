@@ -10,5 +10,5 @@ The following namespaces contain APIs that allow an app to receive and manage Us
 ## Namespaces
 
 #### [ConnectedDevices](/java/api/com.microsoft.connecteddevices)
-#### [UserNotifications]( https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.usernotifications)
+#### [UserNotifications](/java/api/com.microsoft.connecteddevices.usernotifications)
 #### [UserData](/java/api/com.microsoft.connecteddevices.userdata)

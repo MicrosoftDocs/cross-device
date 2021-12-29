@@ -3,7 +3,6 @@ title: include file
 description: include file
 ms.topic: include
 ms.assetid: 771ceeb1-638f-4fba-8c34-953870b5d855
-ms.localizationpriority: medium
 ---
 
 ### MSA and AAD Authentication Registration

@@ -3,7 +3,6 @@ title: include file
 description: include file
 ms.topic: include
 ms.assetid: 
-ms.localizationpriority: medium
 ---
 
 ### Create the platform

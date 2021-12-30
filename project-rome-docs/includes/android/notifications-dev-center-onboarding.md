@@ -3,7 +3,6 @@ title: include file
 description: include file
 ms.topic: include
 ms.assetid: dc4d7bbd-bc87-42b1-9924-52c7bfcd5b5f
-ms.localizationpriority: medium
 ---
 
 ### Register your app for push notifications

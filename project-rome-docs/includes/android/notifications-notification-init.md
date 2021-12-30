@@ -3,7 +3,6 @@ title: include file
 description: include file
 ms.topic: include
 ms.assetid: 9fb27596-e9a3-443a-9c12-9e02a893e32c
-ms.localizationpriority: medium
 ---
 
 

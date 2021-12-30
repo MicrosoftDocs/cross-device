@@ -1,7 +1,6 @@
 ---
 title: Connect to Another Device via Remote Session
 description: Learn how to use a session to connect your local app to a remote device. Remote sessions can be used for explicit app-to-app messaging.
-ms.localizationpriority: medium
 ms.topic: overview
 ms.custom: seodec2018
 ---

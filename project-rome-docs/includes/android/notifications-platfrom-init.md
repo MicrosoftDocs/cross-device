@@ -3,7 +3,6 @@ title: include file
 description: include file
 ms.topic: include
 ms.assetid: 9f679e13-b1b3-40f8-bd44-679e4dffc0d4
-ms.localizationpriority: medium
 ---
 
 ### Add the SDK

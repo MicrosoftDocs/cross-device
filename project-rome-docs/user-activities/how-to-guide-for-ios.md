@@ -4,7 +4,6 @@ description: This guide shows how to create, publish, and read Windows-based Use
 ms.topic: article
 keywords: microsoft, windows, project rome, user activities, ios
 ms.assetid: 445f1dd4-f3c7-46e4-a7cd-42a1fb411172
-ms.localizationpriority: medium
 ---
 
 # Implementing User Activities for iOS

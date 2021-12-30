@@ -3,7 +3,6 @@ title: include file
 description: include file
 ms.topic: include
 ms.assetid: 30df8538-1c1f-498f-af25-0be0aed687c8
-ms.localizationpriority: medium
 ---
 
 ### TODO Configure your app to be APNs notification-compatible

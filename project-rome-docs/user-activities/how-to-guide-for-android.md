@@ -4,7 +4,6 @@ description: This guide shows how to create, publish, and read Windows-based Use
 ms.topic: article
 keywords: microsoft, windows, project rome, user activities, android
 ms.assetid: 8cfb7544-913c-48c0-8528-52b93ba8b0c6
-ms.localizationpriority: medium
 ---
 
 # Implementing User Activities for Android

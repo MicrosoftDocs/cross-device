@@ -1,7 +1,6 @@
 ---
 title: Microsoft Graph Notifications
 description: Include Microsoft Graph notifications in your application to re-engage users in a human-centric way.
-ms.localizationpriority: medium
 ms.topic: overview
 ms.custom: seodec2018
 ---

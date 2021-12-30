@@ -3,7 +3,6 @@ title: include file
 description: include file
 ms.topic: include
 ms.assetid: fcbcfd8f-6eea-421a-97bb-31ea3c987728
-ms.localizationpriority: medium
 ---
 
 ## Preliminary setup for push notifications

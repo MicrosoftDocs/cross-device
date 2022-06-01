@@ -10,7 +10,7 @@ ms.assetid: 9fb27596-e9a3-443a-9c12-9e02a893e32c
 
 Like previously mentioned, the app clients need to provide knowledge about the native push notification pipeline being used for each mobile platform to the client-side SDK and the Connected Devices Platform during the registration process, to allow Graph notification service to fan-out notifications to each app client endpoint when your app server publishes a user-targeting notification via Microsoft Graph APIs.
 
-In the steps above, you initialized the Platform with a `null` *notificationProvider* parameter. Here, you need to construct and pass in an object that implements **[NotificationProvider](/java/api/com.microsoft.connecteddevices.core._notification_provider)**. The main thing to note is the `getNotificationRegistrationAsync` method, which must return a **[NotificationRegistration](/java/api/com.microsoft.connecteddevices.core._notification_registration)** instance. The **NotificationRegistration** is responsible for supplying the Connected Devices Platform with an access token (and related information) for the notification service.
+In the steps above, you initialized the Platform with a `null` *notificationProvider* parameter. Here, you need to construct and pass in an object that implements **NotificationProvider**. The main thing to note is the `getNotificationRegistrationAsync` method, which must return a **[NotificationRegistration](/java/api/com.microsoft.connecteddevices.core._notification_registration)** instance. The **NotificationRegistration** is responsible for supplying the Connected Devices Platform with an access token (and related information) for the notification service.
 
 ```java
 private NotificationRegistration mNotificationRegistration;

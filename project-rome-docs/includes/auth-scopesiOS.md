@@ -6,7 +6,7 @@ ms.assetid: 93f45482-14e4-4aec-8185-ee05b592215f
 
 ### Set up authentication and account management
 
-The Connected Devices Platform requires a valid OAuth token to be used in the registration process.  You may use your preferred method of generating and managing the OAuth tokens.  However, to help developers get started using the platform, we've included an authentication provider as a part of the [iOS sample app](https://github.com/Microsoft/project-rome/tree/master/iOS/samples/account-provider-sample) that you can use to generate and manage refresh tokens in your app.
+The Connected Devices Platform requires a valid OAuth token to be used in the registration process.  You may use your preferred method of generating and managing the OAuth tokens.  However, to help developers get started using the platform, we've included an authentication provider as a part of the [iOS sample app](https://github.com/microsoft/project-rome/tree/master/iOS/samples/SDKSample) that you can use to generate and manage refresh tokens in your app.
 
 If you do not use the provided code, you will need to implement the **[MCDConnectedDevicesAccountManager](../objectivec-api/connecteddevices/MCDConnectedDevicesAccountManager.md)** interface yourself.
 

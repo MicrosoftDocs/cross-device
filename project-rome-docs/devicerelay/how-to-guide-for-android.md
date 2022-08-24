@@ -203,7 +203,7 @@ Use the returned **AsyncOperation** to handle the result of the launch attempt.
 ```
 Depending on the URI that is sent, you can launch an app in a specific state or configuration on a remote device. This allows for the ability to continue a user task, like watching a movie, on a different device without interruption. 
 
-Depending on your use case, you may need to cover the cases in which no apps on the targeted system can handle the URI, or multiple apps can handle it. The **[RemoteLauncher](/java/api/com.microsoft.connecteddevices.commanding._remote_launcher)** class and **[RemoteLauncherOptions](/java/api/com.microsoft.connecteddevices.commanding._remote_launcher_options)** class describe how to do this.
+Depending on your use case, you may need to cover the cases in which no apps on the targeted system can handle the URI, or multiple apps can handle it. The **[RemoteLauncher](/java/api/com.microsoft.connecteddevices.remotesystems.commanding.remotelauncher)** class and **[RemoteLauncherOptions](/java/api/com.microsoft.connecteddevices.remotesystems.commanding.remotelauncheroptions)** class describe how to do this.
 
 ### B) Remote app services
 

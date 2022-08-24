@@ -171,7 +171,7 @@ operation.whenCompleteAsync(new AsyncOperation.ResultBiConsumer<Void, Throwable>
 ```
 
 > [!TIP] 
-> In addition to the properties above, there are many other features that can be configured. For a complete look at the different ways that a UserActivity can be customized, see the **[UserActivity](/java/api/com.microsoft.connecteddevices.useractivities._user_activity)**, **[UserActivityVisualElements](/java/api/com.microsoft.connecteddevices.useractivities._user_activity_visual_elements)**, and **[UserActivityAttribution](/java/api/com.microsoft.connecteddevices.useractivities._user_activity_attribution)** classes. See the [User Activities best practices](/windows/uwp/launch-resume/useractivities-best-practices) guide for detailed recommendations on how to design User Activities.
+> In addition to the properties above, there are many other features that can be configured. For a complete look at the different ways that a UserActivity can be customized, see the **[UserActivity](/java/api/com.microsoft.connecteddevices.userdata.useractivities.useractivity)**, **[UserActivityVisualElements](/java/api/com.microsoft.connecteddevices.userdata.useractivities.useractivityvisualelements)**, and **[UserActivityAttribution](/java/api/com.microsoft.connecteddevices.userdata.useractivities.useractivityattribution)** classes. See the [User Activities best practices](/windows/uwp/launch-resume/useractivities-best-practices) guide for detailed recommendations on how to design User Activities.
 
 ### Update an existing User Activity
 
@@ -232,4 +232,4 @@ operation.whenCompleteAsync(new AsyncOperation.ResultBiConsumer<UserActivitySess
 });
 ```
 
-Now your app should have a populated list of **UserActivitySessionHistoryItem**s. Each of these can deliver the underlying **UserActivity** (see **[UserActivitySessionHistoryItem](/java/api/com.microsoft.connecteddevices.useractivities._user_activity_session_history_item)** for details), which you can then display to the user.
+Now your app should have a populated list of **UserActivitySessionHistoryItem**s. Each of these can deliver the underlying **UserActivity** (see **[UserActivitySessionHistoryItem](/java/api/com.microsoft.connecteddevices.userdata.useractivities.useractivitysessionhistoryitem)** for details), which you can then display to the user.

@@ -4,19 +4,19 @@ Thank you for your interest in our documentation. We appreciate your feedback, e
 
 ## Sign a CLA
 
-If you want to contribute more than a couple lines and you're not a Microsoft employee, you need to [sign a Microsoft Contribution Licensing Agreement (CLA)](https://cla.microsoft.com/). 
+If you want to contribute more than a couple lines and you're not a Microsoft employee, you need to [sign a Microsoft Contribution Licensing Agreement (CLA)](https://cla.microsoft.com/).
 
 ## Propose a minor change
 
 To suggest a simple change to the docs, follow these steps:
 
-1. If you're viewing the Docs.microsoft.com page, click the **Edit** button in the upper right of the page.  You will be redirected to the corresponding Markdown source file in the [GitHub repository](https://github.com/MicrosoftDocs/project-rome). If you are already in the GitHub repo, you can just navigate to the source file that you would like to change.
+1. If you're viewing a Microsoft Docs page, click the **Edit** button in the upper right of the page.  You will be redirected to the corresponding Markdown source file in the [GitHub repository](https://github.com/MicrosoftDocs/project-rome). If you are already in the GitHub repo, you can just navigate to the source file that you would like to change.
 2. If you don't already have a GitHub account, click **Sign Up** in the upper right and create a new account.
-3. From the GitHub page you would like to change, click the pencil icon. 
+3. From the GitHub page you would like to change, click the pencil icon.
 4. Modify the file and use the preview tab to ensure the changes look good.
 5. When you're done, commit your changes and open a pull request.
 
-After you create the pull request, a member of the Windows 10 docs team will review it. If your request is accepted, the updates will be published to [https://docs.microsoft.com/windows/project-rome/](https://docs.microsoft.com/windows/project-rome/).
+After you create the pull request, a member of the Windows 10 docs team will review it. If your request is accepted, the updates will be published to [Project Rome](https://docs.microsoft.com/windows/project-rome/).
 
 ## Make more substantial changes
 
@@ -45,7 +45,7 @@ After pushing your contribution to the remote repo, you will be sent an email fr
 - Click the **New pull request** button. The "base fork:" will be listed as "MicrosoftDocs/project-rome", and the "head fork:" should show your fork of the repo and the branch in which you made your changes. You can review your changes here as well. 
 - Click the **Create pull request** button. You will then need to give your PR a title and description. Finally click the **Create pull request** button once more.
 
-Once your PR is submitted, a member of the Windows 10 docs team will review it. When it is accepted, you will be able to view your changes on the [staging site](https://review.docs.microsoft.com/windows/project-rome/). These updates will eventually be published live to [https://docs.microsoft.com/windows/project-rome/](https://docs.microsoft.com/windows/project-rome/).
+Once your PR is submitted, a member of the Windows 10 docs team will review it. When it is accepted, you will be able to view your changes on the [staging site](https://review.docs.microsoft.com/windows/project-rome/). These updates will eventually be published live to [Project Rome](https://docs.microsoft.com/windows/project-rome/).
 
 ## Using Issues to provide feedback on Project Rome documentation
 
@@ -54,8 +54,10 @@ To provide feedback rather than directly modifying the documentation pages, [cre
 Be sure to include the topic title and the URL for the page in question.
 
 ## Additional resources
+
 - [Getting started with writing and formatting on GitHub](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
 
 ## Additional resources for Microsoft employees
+
 - [Connect your GitHub account and MS alias](https://review.docs.microsoft.com/windows-authoring-guide/github-account#2-connect-your-github-account-and-ms-alias-on-the-microsoft-open-source-portal)
 - [Resources for writing Markdown](https://review.docs.microsoft.com/windows-authoring-guide/writing-guidance/writing-markdown)

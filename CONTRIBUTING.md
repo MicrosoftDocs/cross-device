@@ -16,7 +16,7 @@ To suggest a simple change to the docs, follow these steps:
 4. Modify the file and use the preview tab to ensure the changes look good.
 5. When you're done, commit your changes and open a pull request.
 
-After you create the pull request, a member of the Windows 10 docs team will review it. If your request is accepted, the updates will be published to [Project Rome](https://docs.microsoft.com/windows/project-rome/).
+After you create the pull request, a member of the Windows 10 docs team will review it. If your request is accepted, the updates will be published to [Project Rome](https://learn.microsoft.com/windows/project-rome/).
 
 ## Make more substantial changes
 
@@ -45,7 +45,7 @@ After pushing your contribution to the remote repo, you will be sent an email fr
 - Click the **New pull request** button. The "base fork:" will be listed as "MicrosoftDocs/project-rome", and the "head fork:" should show your fork of the repo and the branch in which you made your changes. You can review your changes here as well. 
 - Click the **Create pull request** button. You will then need to give your PR a title and description. Finally click the **Create pull request** button once more.
 
-Once your PR is submitted, a member of the Windows 10 docs team will review it. When it is accepted, you will be able to view your changes on the [staging site](https://review.docs.microsoft.com/windows/project-rome/). These updates will eventually be published live to [Project Rome](https://docs.microsoft.com/windows/project-rome/).
+Once your PR is submitted, a member of the Windows 10 docs team will review it. When it is accepted, you will be able to view your changes on the [staging site](https://review.learn.microsoft.com/windows/project-rome/). These updates will eventually be published live to [Project Rome](https://learn.microsoft.com/windows/project-rome/).
 
 ## Using Issues to provide feedback on Project Rome documentation
 
@@ -59,5 +59,5 @@ Be sure to include the topic title and the URL for the page in question.
 
 ## Additional resources for Microsoft employees
 
-- [Connect your GitHub account and MS alias](https://review.docs.microsoft.com/windows-authoring-guide/github-account#2-connect-your-github-account-and-ms-alias-on-the-microsoft-open-source-portal)
-- [Resources for writing Markdown](https://review.docs.microsoft.com/windows-authoring-guide/writing-guidance/writing-markdown)
+- [Connect your GitHub account and MS alias](https://review.learn.microsoft.com/windows-authoring-guide/github-account#2-connect-your-github-account-and-ms-alias-on-the-microsoft-open-source-portal)
+- [Resources for writing Markdown](https://review.learn.microsoft.com/windows-authoring-guide/writing-guidance/writing-markdown)

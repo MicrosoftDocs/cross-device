@@ -27,7 +27,7 @@ dependencies {
 }
 ```
 
-If you wish to use ProGuard in your app, add the ProGuard Rules for these new APIs. Create a file called *proguard-rules.txt* in the *App* folder of your project, and paste in the contents of [ProGuard_Rules_for_Android_Rome_SDK.txt](https://github.com/Microsoft/project-rome/blob/master/Android/ProGuard_Rules_for_Android_Rome_SDK.txt).
+If you wish to use ProGuard in your app, add the ProGuard Rules for these new APIs. Create a file called *proguard-rules.txt* in the *App* folder of your project, and paste in the contents of ProGuard_Rules_for_Android_Rome_SDK.txt.
 
 In your project's *AndroidManifest.xml* file, add the following permissions inside the `<manifest>` element (if they are not already present). This gives your app permission to connect to the Internet and to enable Bluetooth discovery on your device.
 
@@ -60,7 +60,7 @@ The **NotificationProvider** parameter is only needed for certain scenarios. In 
 
 The **UserAccountProvider** is needed to deliver an OAuth 2.0 access token for the current user's access to the Connected Devices Platform. It will be called the first time the app is run and upon the expiration of a platform-managed refresh token. 
 
-In order to help developers onboard with the platform more easily, we have provided account provider implementations for Android and iOS. These implementations, found in the [authentication provider sample](https://github.com/Microsoft/project-rome/tree/master/Android/samples/account-provider-sample), can be used to obtain the OAuth 2.0 access token and refresh token for your app.
+In order to help developers onboard with the platform more easily, we have provided account provider implementations for Android and iOS. These implementations, found in the authentication provider sample, can be used to obtain the OAuth 2.0 access token and refresh token for your app.
 
 [!INCLUDE [auth-scopes](../auth-scopes.md)]
 

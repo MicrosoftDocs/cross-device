@@ -1,0 +1,29 @@
+### YamlMime:Hub
+
+title: Windows Cross-Device documentation
+summary: Learn how to implement cross-device synchronization between Windows PCs and other devices, such as Android smartphones.
+brand: windows
+
+metadata:
+  title: Windows Cross-Device documentation
+  description: Learn how to implement cross-device synchronization between Windows PCs and other devices, such as Android smartphones.
+  ms.service: linux-resources 
+  ms.topic: hub-page
+  author: mattwojo
+  ms.author: mattwoj
+  ms.date: 01/29/2024
+
+productDirectory:
+  title: Cross-device continuity between Windows and other devices
+  summary: Learn how to implement cross-device synchronization between Windows PCs and other devices, such as Android smartphones.
+  items:
+    # Card
+    - title: Phone Link
+      imageSrc: ./images/phonelink-icon.png
+      summary: Learn how to enable your mobile app to share recent website URLs and document links to a Windows PC that has set up Phone Link.
+      url: windows/cross-device/phonelink/index.md
+    # Card
+    - title: Project Rome
+      imageSrc: ./images/windows-logo.png
+      summary: Learn more about Project Rome, Microsoft's cross-device experiences platform for apps.
+      url: /windows/project-rome

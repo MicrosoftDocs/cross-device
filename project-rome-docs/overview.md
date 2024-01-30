@@ -2,7 +2,6 @@
 title: Build Cross-Device Applications
 description: Learn about the cross-device and cross-platform features enables for Windows 10 applications using Project Rome.
 ms.topic: overview
-ms.custom: "seodec2018, RS5"
 ---
 
 # Project Rome

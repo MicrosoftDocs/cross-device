@@ -72,13 +72,14 @@ Project Rome is currently implemented for the below platforms. Follow the links 
 |   Platform                        | Features                                                         |           SDK Package                          |   Samples                                       |
 | :-------------------------------- | :--------------------------------------------------------------- |:---------------------------------------------- | :---------------------------------------------- |
 | **Windows SDK**                   | Device Relay, Activities/Timeline                                | [![SDK][windows-sdk-badge]][windows-sdk]       | [Project Rome for Device Relay Windows sample][windows-drsample] <br> [Project Rome for Activities Windows sample][windows-afsample]
-| **Windows (Preview)**             |                                    Microsoft Graph Notifications | [![Nuget][winredist-sdk-badge]][winredist-sdk] | [Graph Notifications for Windows sample][winredist-sample]
+| **Windows (Preview)**             |                                    Microsoft Graph Notifications | [![Nuget 1][winredist-sdk-badge]][winredist-sdk] | [Graph Notifications for Windows sample][winredist-sample]
 | **Android**             | Device Relay, Activities/Timeline, Microsoft Graph Notifications (Preview) | [![Maven][android-sdk-badge]][android-sdk]     | [Project Rome for Android sample][android-sample]
 | **iOS**                 | Device Relay, Activities/Timeline, Microsoft Graph Notifications (Preview) | [![CocoaPod][ios-sdk-badge]][ios-sdk]          | [Project Rome for iOS sample][ios-sample]
-| **Xamarin for Android (Preview)** | Device Relay                                                     | [![Nuget][xamarin-sdk-badge]][xamarin-sdk]     | [Xamarin for Android sample][xamarin-sample]
-| **MSGraph**                       | Device Relay, Activities/Timeline, Microsoft Graph Notifications | [![REST][graph-relay-badge]][graph-relay]<br> [![REST][graph-activities-badge]][graph-activities]<br>[![REST][graph-notification-badge]][graph-notification]          | [Device Relay][graph-relay-sample]<br>[Activities/Timeline][graph-activities-sample]<br>[Graph Notifications][graph-notification-sample]
+| **Xamarin for Android (Preview)** | Device Relay                                                     | [![Nuget 2][xamarin-sdk-badge]][xamarin-sdk]     | [Xamarin for Android sample][xamarin-sample]
+| **MSGraph**                       | Device Relay, Activities/Timeline, Microsoft Graph Notifications | [![REST 1][graph-relay-badge]][graph-relay]<br> [![REST 3][graph-activities-badge]][graph-activities]<br>[![REST 2][graph-notification-badge]][graph-notification]          | [Device Relay][graph-relay-sample]<br>[Activities/Timeline][graph-activities-sample]<br>[Graph Notifications][graph-notification-sample]
 
 ## Project Rome blog posts
+
 * [Announcing Project Rome SDK for Android and iOS version 1.0!](https://blogs.windows.com/windowsdeveloper/2019/01/29/announcing-project-rome-sdk-for-android-and-ios-version-1-0/)
 
 * [Cross-device experiences with Project Rome](https://blogs.windows.com/buildingapps/2016/10/11/cross-device-experience-with-project-rome/#iQTseFlAMJRopU9k.97)

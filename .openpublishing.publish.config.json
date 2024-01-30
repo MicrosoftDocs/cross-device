@@ -1,9 +1,9 @@
 {
   "docsets_to_publish": [
     {
-      "docset_name": "cross-device",
+      "docset_name": "project-rome",
       "build_source_folder": "project-rome-docs",
-      "build_output_subfolder": "cross-device",
+      "build_output_subfolder": "project-rome",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],

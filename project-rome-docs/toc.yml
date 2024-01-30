@@ -2,7 +2,7 @@
   href: index.yml
   items: 
   - name: Phone Link Task Continuity
-    href: /phonelink/index.md
+    href: phonelink/index.md
   - name: Project Rome
     href: overview.md
     items: 

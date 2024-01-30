@@ -1,0 +1,69 @@
+- name: Windows Cross-Device docs
+  href: index.yml
+  items: 
+  - name: Phone Link Task Continuity
+    href: /phonelink/index.md
+  - name: Project Rome
+    href: overview.md
+    items: 
+    - name: Device Relay
+      href: devicerelay/index.md
+      items: 
+      - name: How to guide for Android
+        href: devicerelay/how-to-guide-for-android.md
+      - name: API reference for Android
+        href: devicerelay/api-reference-for-android.md
+      - name: How to guide for iOS
+        href: devicerelay/how-to-guide-for-ios.md
+      - name: API reference for iOS
+        href: devicerelay/api-reference-for-ios.md
+      - name: How to guide for Windows
+        href: devicerelay/how-to-guide-for-windows.md
+      - name: How to guide for Microsoft Graph
+        href: devicerelay/how-to-guide-for-microsoft-graph.md
+    - name: User Activities
+      href: user-activities/index.md
+      items: 
+      - name: How to guide for Android
+        href: user-activities/how-to-guide-for-android.md
+      - name: API reference for Android
+        href: user-activities/api-reference-for-android.md
+      - name: How to guide for iOS
+        href: user-activities/how-to-guide-for-ios.md
+      - name: API reference for iOS
+        href: user-activities/api-reference-for-ios.md
+      - name: How to guide for Windows
+        href: user-activities/how-to-guide-for-windows.md
+      - name: How to guide for Microsoft Graph
+        href: user-activities/how-to-guide-for-microsoft-graph.md
+    - name: Notifications
+      href: notifications/index.md
+      items: 
+      - name: How to guide for Windows
+        href: notifications/how-to-guide-for-windows.md
+      - name: API reference for Windows
+        href: notifications//api-reference-for-windows/index.md
+      - name: How to guide for Android
+        href: notifications/how-to-guide-for-android.md
+      - name: API reference for Android
+        href: notifications/api-reference-for-android.md
+      - name: How to guide for iOS
+        href: notifications/how-to-guide-for-ios.md
+      - name: API reference for iOS
+        href: notifications/api-reference-for-ios/index.md
+      - name: How to guide for Microsoft Graph
+        href: notifications/sending-notifications.md
+      - name: API reference for Microsoft Graph
+        href: notifications/api-reference-for-windows/usernotifications/index.md
+      - name: Sending notifications using MS Graph APIs
+        href: notifications/sending-notifications.md
+    - name: Remote sessions
+      href: remote-sessions/index.md
+      items: 
+      - name: How to guide for Windows
+        href: remote-sessions/how-to-guide-for-windows.md
+    - name: Nearby sharing
+      href: nearby-sharing/index.md
+      items: 
+      - name: API reference for Android
+        href: nearby-sharing/api-reference-for-android.md

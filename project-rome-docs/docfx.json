@@ -4,7 +4,8 @@
       {
         "files": [
           "**/*.md",
-          "**/index.yml"
+          "**/index.yml",
+          "**/toc.yml"
         ],
         "exclude": [
           "**/obj/**",

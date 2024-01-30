@@ -21,7 +21,7 @@ productDirectory:
     - title: Phone Link
       imageSrc: ./images/phonelink-icon.png
       summary: Learn how to enable your mobile app to share recent website URLs and document links to a Windows PC that has set up Phone Link.
-      url: windows/cross-device/phonelink/index.md
+      url: windows/project-rome/phonelink/index.md
     # Card
     - title: Project Rome
       imageSrc: ./images/windows-logo.png
